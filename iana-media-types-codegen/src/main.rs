@@ -1,5 +1,6 @@
 use anyhow::Result;
 use inflector::Inflector;
+use std::{fmt, fs, path::PathBuf, process::Command};
 
 #[derive(Debug, Clone)]
 struct MediaType {
@@ -16,7 +17,7 @@ impl MediaType {
         for line in csv
             .lines()
             .skip(1 /* CSV header */)
-            .filter(|line| !line.contains("OBSOLETED"))
+            .filter(|line| !line.contains("OBSOLETE"))
         {
             let mut iter = line.split(',');
             match (iter.next(), iter.next()) {
@@ -38,15 +39,17 @@ impl MediaType {
         let name = &self.name;
         let member_idents = &self.member_idents;
         quote::quote! {
+            #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
             pub enum #name {
-                #(#member_idents),*
+                #(#member_idents,)*
+                Other(String),
             }
         }
     }
 }
 
 fn as_ident(name: &str) -> syn::Ident {
-    let name = name.replace(['.', '+'], "-").to_class_case();
+    let name = name.replace(['.', '+'], "-").to_pascal_case();
     if name.starts_with(|c: char| c.is_digit(10)) {
         quote::format_ident!("_{}", name)
     } else {
@@ -54,11 +57,25 @@ fn as_ident(name: &str) -> syn::Ident {
     }
 }
 
+impl fmt::Display for MediaType {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{}", self.enum_definition())?;
+        Ok(())
+    }
+}
+
 fn main() -> Result<()> {
     let application = MediaType::new(
-        quote::format_ident!("MediaType"),
+        quote::format_ident!("Application"),
         "https://www.iana.org/assignments/media-types/application.csv",
     )?;
-    println!("{}", application.enum_definition());
+
+    let root = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+        .join("../iana-media-types")
+        .canonicalize()?;
+    fs::write(root.join("src/application.rs"), format!("{}", application))?;
+
+    Command::new("cargo").arg("fmt").spawn()?;
+
     Ok(())
 }
