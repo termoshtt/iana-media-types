@@ -1,4 +1,4 @@
-iana-media-type crate
+iana-media-types crate
 -----------------------
 
 [IANA Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml)
