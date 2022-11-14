@@ -1,5 +1,5 @@
 [package]
-name = "iana-media-type-codegen"
+name = "iana-media-types-codegen"
 version = "0.1.0"
 edition = "2021"
 

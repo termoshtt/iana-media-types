@@ -1,5 +1,5 @@
 [package]
-name = "iana-media-type"
+name = "iana-media-types"
 version = "0.1.0"
 edition = "2021"
 
