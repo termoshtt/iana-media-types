@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "iana-media-type",
+  "iana-media-type-codegen",
+]
