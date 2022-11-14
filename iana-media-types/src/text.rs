@@ -18,8 +18,6 @@ pub enum Text {
     Csv,
     #[doc = "text/csv-schema"]
     CsvSchema,
-    #[doc = "text/directory"]
-    DirectoryDEPRECATEDByRFC6350,
     #[doc = "text/dns"]
     Dns,
     #[doc = "text/encaprtp"]
@@ -188,7 +186,6 @@ impl ::std::fmt::Display for Text {
             Text::Css => write!(f, "text/css")?,
             Text::Csv => write!(f, "text/csv")?,
             Text::CsvSchema => write!(f, "text/csv-schema")?,
-            Text::DirectoryDEPRECATEDByRFC6350 => write!(f, "text/directory")?,
             Text::Dns => write!(f, "text/dns")?,
             Text::Encaprtp => write!(f, "text/encaprtp")?,
             Text::Example => write!(f, "text/example")?,
@@ -285,7 +282,6 @@ impl From<&str> for Text {
             "text/css" => Text::Css,
             "text/csv" => Text::Csv,
             "text/csv-schema" => Text::CsvSchema,
-            "text/directory" => Text::DirectoryDEPRECATEDByRFC6350,
             "text/dns" => Text::Dns,
             "text/encaprtp" => Text::Encaprtp,
             "text/example" => Text::Example,

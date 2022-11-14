@@ -17,7 +17,7 @@ impl MediaType {
         for line in csv
             .lines()
             .skip(1 /* CSV header */)
-            .filter(|line| !line.contains("OBSOLETE"))
+            .filter(|line| !line.contains("OBSOLETE") && !line.contains("DEPRECATED"))
         {
             let mut iter = line.split(',');
             match (iter.next(), iter.next()) {

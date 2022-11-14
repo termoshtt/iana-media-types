@@ -146,10 +146,6 @@ pub enum Image {
     VndZbrushPcx,
     #[doc = "image/wmf"]
     Wmf,
-    #[doc = "image/emf"]
-    XEmfDEPRECATEDInFavorOfImageEmf,
-    #[doc = "image/wmf"]
-    XWmfDEPRECATEDInFavorOfImageWmf,
     Other(String),
 }
 impl ::std::fmt::Display for Image {
@@ -228,8 +224,6 @@ impl ::std::fmt::Display for Image {
             Image::VndXiff => write!(f, "image/vnd.xiff")?,
             Image::VndZbrushPcx => write!(f, "image/vnd.zbrush.pcx")?,
             Image::Wmf => write!(f, "image/wmf")?,
-            Image::XEmfDEPRECATEDInFavorOfImageEmf => write!(f, "image/emf")?,
-            Image::XWmfDEPRECATEDInFavorOfImageWmf => write!(f, "image/wmf")?,
             Image::Other(template) => write!(f, "{}", template)?,
         }
         Ok(())
@@ -311,8 +305,6 @@ impl From<&str> for Image {
             "image/vnd.xiff" => Image::VndXiff,
             "image/vnd.zbrush.pcx" => Image::VndZbrushPcx,
             "image/wmf" => Image::Wmf,
-            "image/emf" => Image::XEmfDEPRECATEDInFavorOfImageEmf,
-            "image/wmf" => Image::XWmfDEPRECATEDInFavorOfImageWmf,
             _ => Image::Other(input.to_string()),
         }
     }

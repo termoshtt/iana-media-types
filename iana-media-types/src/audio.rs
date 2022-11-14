@@ -302,8 +302,6 @@ pub enum Audio {
     VndOctelSbc,
     #[doc = "audio/vnd.presonus.multitrack"]
     VndPresonusMultitrack,
-    #[doc = "audio/vnd.qcelp"]
-    VndQcelpDEPRECATEDInFavorOfAudioQcelp,
     #[doc = "audio/vnd.rhetorex.32kadpcm"]
     VndRhetorex32Kadpcm,
     #[doc = "audio/vnd.rip"]
@@ -472,7 +470,6 @@ impl ::std::fmt::Display for Audio {
             Audio::VndNueraEcelp9600 => write!(f, "audio/vnd.nuera.ecelp9600")?,
             Audio::VndOctelSbc => write!(f, "audio/vnd.octel.sbc")?,
             Audio::VndPresonusMultitrack => write!(f, "audio/vnd.presonus.multitrack")?,
-            Audio::VndQcelpDEPRECATEDInFavorOfAudioQcelp => write!(f, "audio/vnd.qcelp")?,
             Audio::VndRhetorex32Kadpcm => write!(f, "audio/vnd.rhetorex.32kadpcm")?,
             Audio::VndRip => write!(f, "audio/vnd.rip")?,
             Audio::VndSealedmediaSoftsealMpeg => write!(f, "audio/vnd.sealedmedia.softseal.mpeg")?,
@@ -638,7 +635,6 @@ impl From<&str> for Audio {
             "audio/vnd.nuera.ecelp9600" => Audio::VndNueraEcelp9600,
             "audio/vnd.octel.sbc" => Audio::VndOctelSbc,
             "audio/vnd.presonus.multitrack" => Audio::VndPresonusMultitrack,
-            "audio/vnd.qcelp" => Audio::VndQcelpDEPRECATEDInFavorOfAudioQcelp,
             "audio/vnd.rhetorex.32kadpcm" => Audio::VndRhetorex32Kadpcm,
             "audio/vnd.rip" => Audio::VndRip,
             "audio/vnd.sealedmedia.softseal.mpeg" => Audio::VndSealedmediaSoftsealMpeg,
