@@ -102,17 +102,17 @@ impl fmt::Display for MediaType {
 }
 
 fn main() -> Result<()> {
-    let application = MediaType::new(
-        quote::format_ident!("Application"),
-        "https://www.iana.org/assignments/media-types/application.csv",
-    )?;
-
     let root = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
         .join("../iana-media-types")
         .canonicalize()?;
-    fs::write(root.join("src/application.rs"), format!("{}", application))?;
+
+    for (name, ident) in [("application", "Application"), ("audio", "Audio")] {
+        let path = root.join(format!("src/{}.rs", name));
+        let url = format!("https://www.iana.org/assignments/media-types/{}.csv", name);
+        let media_type = MediaType::new(quote::format_ident!("{}", ident), &url)?;
+        fs::write(path, format!("{}", media_type))?;
+    }
 
     Command::new("cargo").arg("fmt").spawn()?;
-
     Ok(())
 }
