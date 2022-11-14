@@ -21,9 +21,13 @@ impl MediaType {
         {
             let mut iter = line.split(',');
             match (iter.next(), iter.next()) {
-                (Some(name), Some(media_type)) => {
+                (Some(name), Some(ty)) => {
+                    let ty = ty.trim();
+                    if ty.is_empty() {
+                        continue;
+                    }
                     member_idents.push(as_ident(name));
-                    member_templates.push(media_type.trim().to_string());
+                    member_templates.push(ty.to_string());
                 }
                 _ => continue,
             }
@@ -84,12 +88,14 @@ impl MediaType {
 }
 
 fn as_ident(name: &str) -> syn::Ident {
-    let name = name.replace(['.', '+'], "-").to_pascal_case();
-    if name.starts_with(|c: char| c.is_digit(10)) {
-        quote::format_ident!("_{}", name)
-    } else {
-        quote::format_ident!("{}", name)
+    let mut escaped = name.replace(['.', '+'], "-").to_pascal_case();
+    if escaped.starts_with(|c: char| c.is_digit(10)) {
+        escaped = format!("_{}", escaped);
     }
+    if name.ends_with('+') {
+        escaped = format!("{}_", escaped);
+    }
+    quote::format_ident!("{}", escaped)
 }
 
 impl fmt::Display for MediaType {
@@ -106,13 +112,23 @@ fn main() -> Result<()> {
         .join("../iana-media-types")
         .canonicalize()?;
 
-    for (name, ident) in [("application", "Application"), ("audio", "Audio")] {
+    for (name, ident) in [
+        ("application", "Application"),
+        ("audio", "Audio"),
+        ("font", "Font"),
+        ("image", "Image"),
+        ("message", "Message"),
+        ("model", "Model"),
+        ("multipart", "Multipart"),
+        ("text", "Text"),
+        ("video", "Video"),
+    ] {
         let path = root.join(format!("src/{}.rs", name));
         let url = format!("https://www.iana.org/assignments/media-types/{}.csv", name);
         let media_type = MediaType::new(quote::format_ident!("{}", ident), &url)?;
         fs::write(path, format!("{}", media_type))?;
     }
 
-    Command::new("cargo").arg("fmt").spawn()?;
+    Command::new("cargo").arg("fmt").current_dir(root).spawn()?;
     Ok(())
 }
