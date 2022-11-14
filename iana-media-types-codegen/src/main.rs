@@ -46,6 +46,23 @@ impl MediaType {
             }
         }
     }
+
+    fn impl_display(&self) -> proc_macro2::TokenStream {
+        let name = &self.name;
+        let member_idents = &self.member_idents;
+        let member_templates = &self.member_templates;
+        quote::quote! {
+            impl ::std::fmt::Display for #name {
+                fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+                    match self {
+                        #(#name::#member_idents => write!(f, #member_templates)?,)*
+                        #name::Other(template) => write!(f, "{}", template)?,
+                    }
+                    Ok(())
+                }
+            }
+        }
+    }
 }
 
 fn as_ident(name: &str) -> syn::Ident {
@@ -60,6 +77,7 @@ fn as_ident(name: &str) -> syn::Ident {
 impl fmt::Display for MediaType {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}", self.enum_definition())?;
+        write!(f, "{}", self.impl_display())?;
         Ok(())
     }
 }
