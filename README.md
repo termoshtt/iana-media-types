@@ -1,5 +1,6 @@
 iana-media-types crate
 -----------------------
+[![master](https://img.shields.io/badge/docs-master-blue)](https://termoshtt.github.io/iana-media-types/iana_media_types/index.html)
 
 [IANA Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml)
 
