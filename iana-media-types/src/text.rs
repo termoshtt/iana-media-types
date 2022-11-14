@@ -1,91 +1,178 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Text {
+    #[doc = "text/1d-interleaved-parityfec"]
     _1DInterleavedParityfec,
+    #[doc = "text/cache-manifest"]
     CacheManifest,
+    #[doc = "text/calendar"]
     Calendar,
+    #[doc = "text/cql"]
     Cql,
+    #[doc = "text/cql-expression"]
     CqlExpression,
+    #[doc = "text/cql-identifier"]
     CqlIdentifier,
+    #[doc = "text/css"]
     Css,
+    #[doc = "text/csv"]
     Csv,
+    #[doc = "text/csv-schema"]
     CsvSchema,
+    #[doc = "text/directory"]
     DirectoryDEPRECATEDByRFC6350,
+    #[doc = "text/dns"]
     Dns,
+    #[doc = "text/encaprtp"]
     Encaprtp,
+    #[doc = "text/example"]
     Example,
+    #[doc = "text/fhirpath"]
     Fhirpath,
+    #[doc = "text/flexfec"]
     Flexfec,
+    #[doc = "text/fwdred"]
     Fwdred,
+    #[doc = "text/gff3"]
     Gff3,
+    #[doc = "text/grammar-ref-list"]
     GrammarRefList,
+    #[doc = "text/hl7v2"]
     Hl7V2,
+    #[doc = "text/html"]
     Html,
+    #[doc = "text/javascript"]
     Javascript,
+    #[doc = "text/jcr-cnd"]
     JcrCnd,
+    #[doc = "text/markdown"]
     Markdown,
+    #[doc = "text/mizar"]
     Mizar,
+    #[doc = "text/n3"]
     N3,
+    #[doc = "text/parameters"]
     Parameters,
+    #[doc = "text/parityfec"]
     Parityfec,
+    #[doc = "text/provenance-notation"]
     ProvenanceNotation,
+    #[doc = "text/prs.fallenstein.rst"]
     PrsFallensteinRst,
+    #[doc = "text/prs.lines.tag"]
     PrsLinesTag,
+    #[doc = "text/prs.prop.logic"]
     PrsPropLogic,
+    #[doc = "text/raptorfec"]
     Raptorfec,
+    #[doc = "text/RED"]
     Red,
+    #[doc = "text/rfc822-headers"]
     Rfc822Headers,
+    #[doc = "text/rtf"]
     Rtf,
+    #[doc = "text/rtp-enc-aescm128"]
     RtpEncAescm128,
+    #[doc = "text/rtploopback"]
     Rtploopback,
+    #[doc = "text/rtx"]
     Rtx,
+    #[doc = "text/SGML"]
     Sgml,
+    #[doc = "text/shaclc"]
     Shaclc,
+    #[doc = "text/shex"]
     Shex,
+    #[doc = "text/spdx"]
     Spdx,
+    #[doc = "text/strings"]
     Strings,
+    #[doc = "text/t140"]
     T140,
+    #[doc = "text/tab-separated-values"]
     TabSeparatedValues,
+    #[doc = "text/troff"]
     Troff,
+    #[doc = "text/turtle"]
     Turtle,
+    #[doc = "text/ulpfec"]
     Ulpfec,
+    #[doc = "text/uri-list"]
     UriList,
+    #[doc = "text/vcard"]
     Vcard,
+    #[doc = "text/vnd.a"]
     VndA,
+    #[doc = "text/vnd.abc"]
     VndAbc,
+    #[doc = "text/vnd.ascii-art"]
     VndAsciiArt,
+    #[doc = "text/vnd.curl"]
     VndCurl,
+    #[doc = "text/vnd.debian.copyright"]
     VndDebianCopyright,
+    #[doc = "text/vnd.DMClientScript"]
     VndDMClientScript,
+    #[doc = "text/vnd.dvb.subtitle"]
     VndDvbSubtitle,
+    #[doc = "text/vnd.esmertec.theme-descriptor"]
     VndEsmertecThemeDescriptor,
+    #[doc = "text/vnd.exchangeable"]
     VndExchangeable,
+    #[doc = "text/vnd.familysearch.gedcom"]
     VndFamilysearchGedcom,
+    #[doc = "text/vnd.ficlab.flt"]
     VndFiclabFlt,
+    #[doc = "text/vnd.fly"]
     VndFly,
+    #[doc = "text/vnd.fmi.flexstor"]
     VndFmiFlexstor,
+    #[doc = "text/vnd.gml"]
     VndGml,
+    #[doc = "text/vnd.graphviz"]
     VndGraphviz,
+    #[doc = "text/vnd.hans"]
     VndHans,
+    #[doc = "text/vnd.hgl"]
     VndHgl,
+    #[doc = "text/vnd.in3d.3dml"]
     VndIn3D3Dml,
+    #[doc = "text/vnd.in3d.spot"]
     VndIn3DSpot,
+    #[doc = "text/vnd.IPTC.NewsML"]
     VndIPTCNewsML,
+    #[doc = "text/vnd.IPTC.NITF"]
     VndIPTCNITF,
+    #[doc = "text/vnd.latex-z"]
     VndLatexZ,
+    #[doc = "text/vnd.motorola.reflex"]
     VndMotorolaReflex,
+    #[doc = "text/vnd.ms-mediapackage"]
     VndMsMediapackage,
+    #[doc = "text/vnd.net2phone.commcenter.command"]
     VndNet2PhoneCommcenterCommand,
+    #[doc = "text/vnd.radisys.msml-basic-layout"]
     VndRadisysMsmlBasicLayout,
+    #[doc = "text/vnd.senx.warpscript"]
     VndSenxWarpscript,
+    #[doc = "text/vnd.sun.j2me.app-descriptor"]
     VndSunJ2MeAppDescriptor,
+    #[doc = "text/vnd.sosi"]
     VndSosi,
+    #[doc = "text/vnd.trolltech.linguist"]
     VndTrolltechLinguist,
+    #[doc = "text/vnd.wap.si"]
     VndWapSi,
+    #[doc = "text/vnd.wap.sl"]
     VndWapSl,
+    #[doc = "text/vnd.wap.wml"]
     VndWapWml,
+    #[doc = "text/vnd.wap.wmlscript"]
     VndWapWmlscript,
+    #[doc = "text/vtt"]
     Vtt,
+    #[doc = "text/xml"]
     Xml,
+    #[doc = "text/xml-external-parsed-entity"]
     XmlExternalParsedEntity,
     Other(String),
 }

@@ -1,1503 +1,3002 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Application {
+    #[doc = "application/1d-interleaved-parityfec"]
     _1DInterleavedParityfec,
+    #[doc = "application/3gpdash-qoe-report+xml"]
     _3GpdashQoeReportXml,
+    #[doc = "application/3gppHal+json"]
     _3GppHalJson,
+    #[doc = "application/3gppHalForms+json"]
     _3GppHalFormsJson,
+    #[doc = "application/3gpp-ims+xml"]
     _3GppImsXml,
+    #[doc = "application/A2L"]
     A2L,
+    #[doc = "application/ace+cbor"]
     AceCbor,
+    #[doc = "application/ace+json"]
     AceJson,
+    #[doc = "application/activemessage"]
     Activemessage,
+    #[doc = "application/activity+json"]
     ActivityJson,
+    #[doc = "application/aif+cbor"]
     AifCbor,
+    #[doc = "application/aif+json"]
     AifJson,
+    #[doc = "application/alto-cdni+json"]
     AltoCdniJson,
+    #[doc = "application/alto-cdnifilter+json"]
     AltoCdnifilterJson,
+    #[doc = "application/alto-costmap+json"]
     AltoCostmapJson,
+    #[doc = "application/alto-costmapfilter+json"]
     AltoCostmapfilterJson,
+    #[doc = "application/alto-directory+json"]
     AltoDirectoryJson,
+    #[doc = "application/alto-endpointprop+json"]
     AltoEndpointpropJson,
+    #[doc = "application/alto-endpointpropparams+json"]
     AltoEndpointpropparamsJson,
+    #[doc = "application/alto-endpointcost+json"]
     AltoEndpointcostJson,
+    #[doc = "application/alto-endpointcostparams+json"]
     AltoEndpointcostparamsJson,
+    #[doc = "application/alto-error+json"]
     AltoErrorJson,
+    #[doc = "application/alto-networkmapfilter+json"]
     AltoNetworkmapfilterJson,
+    #[doc = "application/alto-networkmap+json"]
     AltoNetworkmapJson,
+    #[doc = "application/alto-propmap+json"]
     AltoPropmapJson,
+    #[doc = "application/alto-propmapparams+json"]
     AltoPropmapparamsJson,
+    #[doc = "application/alto-updatestreamcontrol+json"]
     AltoUpdatestreamcontrolJson,
+    #[doc = "application/alto-updatestreamparams+json"]
     AltoUpdatestreamparamsJson,
+    #[doc = "application/AML"]
     Aml,
+    #[doc = "application/andrew-inset"]
     AndrewInset,
+    #[doc = "application/applefile"]
     Applefile,
+    #[doc = "application/at+jwt"]
     AtJwt,
+    #[doc = "application/ATF"]
     Atf,
+    #[doc = "application/ATFX"]
     Atfx,
+    #[doc = "application/atom+xml"]
     AtomXml,
+    #[doc = "application/atomcat+xml"]
     AtomcatXml,
+    #[doc = "application/atomdeleted+xml"]
     AtomdeletedXml,
+    #[doc = "application/atomicmail"]
     Atomicmail,
+    #[doc = "application/atomsvc+xml"]
     AtomsvcXml,
+    #[doc = "application/atsc-dwd+xml"]
     AtscDwdXml,
+    #[doc = "application/atsc-dynamic-event-message"]
     AtscDynamicEventMessage,
+    #[doc = "application/atsc-held+xml"]
     AtscHeldXml,
+    #[doc = "application/atsc-rdt+json"]
     AtscRdtJson,
+    #[doc = "application/atsc-rsat+xml"]
     AtscRsatXml,
+    #[doc = "application/ATXML"]
     Atxml,
+    #[doc = "application/auth-policy+xml"]
     AuthPolicyXml,
+    #[doc = "application/automationml-aml+xml"]
     AutomationmlAmlXml,
+    #[doc = "application/automationml-amlx+zip"]
     AutomationmlAmlxZip,
+    #[doc = "application/bacnet-xdd+zip"]
     BacnetXddZip,
+    #[doc = "application/batch-SMTP"]
     BatchSMTP,
+    #[doc = "application/beep+xml"]
     BeepXml,
+    #[doc = "application/calendar+json"]
     CalendarJson,
+    #[doc = "application/calendar+xml"]
     CalendarXml,
+    #[doc = "application/call-completion"]
     CallCompletion,
+    #[doc = "application/CALS-1840"]
     Cals1840,
+    #[doc = "application/captive+json"]
     CaptiveJson,
+    #[doc = "application/cbor"]
     Cbor,
+    #[doc = "application/cbor-seq"]
     CborSeq,
+    #[doc = "application/cccex"]
     Cccex,
+    #[doc = "application/ccmp+xml"]
     CcmpXml,
+    #[doc = "application/ccxml+xml"]
     CcxmlXml,
+    #[doc = "application/cda+xml"]
     CdaXml,
+    #[doc = "application/CDFX+XML"]
     CdfxXml,
+    #[doc = "application/cdmi-capability"]
     CdmiCapability,
+    #[doc = "application/cdmi-container"]
     CdmiContainer,
+    #[doc = "application/cdmi-domain"]
     CdmiDomain,
+    #[doc = "application/cdmi-object"]
     CdmiObject,
+    #[doc = "application/cdmi-queue"]
     CdmiQueue,
+    #[doc = "application/cdni"]
     Cdni,
+    #[doc = "application/CEA"]
     Cea,
+    #[doc = "application/cea-2018+xml"]
     Cea2018Xml,
+    #[doc = "application/cellml+xml"]
     CellmlXml,
+    #[doc = "application/cfw"]
     Cfw,
+    #[doc = "application/city+json"]
     CityJson,
+    #[doc = "application/clr"]
     Clr,
+    #[doc = "application/clue_info+xml"]
     ClueInfoXml,
+    #[doc = "application/clue+xml"]
     ClueXml,
+    #[doc = "application/cms"]
     Cms,
+    #[doc = "application/cnrp+xml"]
     CnrpXml,
+    #[doc = "application/coap-group+json"]
     CoapGroupJson,
+    #[doc = "application/coap-payload"]
     CoapPayload,
+    #[doc = "application/commonground"]
     Commonground,
+    #[doc = "application/concise-problem-details+cbor"]
     ConciseProblemDetailsCbor,
+    #[doc = "application/conference-info+xml"]
     ConferenceInfoXml,
+    #[doc = "application/cpl+xml"]
     CplXml,
+    #[doc = "application/cose"]
     Cose,
+    #[doc = "application/cose-key"]
     CoseKey,
+    #[doc = "application/cose-key-set"]
     CoseKeySet,
+    #[doc = "application/cose-x509"]
     CoseX509,
+    #[doc = "application/csrattrs"]
     Csrattrs,
+    #[doc = "application/csta+xml"]
     CstaXml,
+    #[doc = "application/CSTAdata+xml"]
     CstadataXml,
+    #[doc = "application/csvm+json"]
     CsvmJson,
+    #[doc = "application/cwl"]
     Cwl,
+    #[doc = "application/cwl+json"]
     CwlJson,
+    #[doc = "application/cwt"]
     Cwt,
+    #[doc = "application/cybercash"]
     Cybercash,
+    #[doc = "application/dash+xml"]
     DashXml,
+    #[doc = "application/dash-patch+xml"]
     DashPatchXml,
+    #[doc = "application/dashdelta"]
     Dashdelta,
+    #[doc = "application/davmount+xml"]
     DavmountXml,
+    #[doc = "application/dca-rft"]
     DcaRft,
+    #[doc = "application/DCD"]
     Dcd,
+    #[doc = "application/dec-dx"]
     DecDx,
+    #[doc = "application/dialog-info+xml"]
     DialogInfoXml,
+    #[doc = "application/dicom"]
     Dicom,
+    #[doc = "application/dicom+json"]
     DicomJson,
+    #[doc = "application/dicom+xml"]
     DicomXml,
+    #[doc = "application/DII"]
     Dii,
+    #[doc = "application/DIT"]
     Dit,
+    #[doc = "application/dns"]
     Dns,
+    #[doc = "application/dns+json"]
     DnsJson,
+    #[doc = "application/dns-message"]
     DnsMessage,
+    #[doc = "application/dots+cbor"]
     DotsCbor,
+    #[doc = "application/dskpp+xml"]
     DskppXml,
+    #[doc = "application/dssc+der"]
     DsscDer,
+    #[doc = "application/dssc+xml"]
     DsscXml,
+    #[doc = "application/dvcs"]
     Dvcs,
+    #[doc = "application/EDI-consent"]
     EdiConsent,
+    #[doc = "application/EDIFACT"]
     Edifact,
+    #[doc = "application/EDI-X12"]
     EdiX12,
+    #[doc = "application/efi"]
     Efi,
+    #[doc = "application/elm+json"]
     ElmJson,
+    #[doc = "application/elm+xml"]
     ElmXml,
+    #[doc = "application/EmergencyCallData.cap+xml"]
     EmergencyCallDataCapXml,
+    #[doc = "application/EmergencyCallData.Comment+xml"]
     EmergencyCallDataCommentXml,
+    #[doc = "application/EmergencyCallData.Control+xml"]
     EmergencyCallDataControlXml,
+    #[doc = "application/EmergencyCallData.DeviceInfo+xml"]
     EmergencyCallDataDeviceInfoXml,
+    #[doc = "application/EmergencyCallData.eCall.MSD"]
     EmergencyCallDataECallMSD,
+    #[doc = "application/EmergencyCallData.LegacyESN+json"]
     EmergencyCallDataLegacyESNJson,
+    #[doc = "application/EmergencyCallData.ProviderInfo+xml"]
     EmergencyCallDataProviderInfoXml,
+    #[doc = "application/EmergencyCallData.ServiceInfo+xml"]
     EmergencyCallDataServiceInfoXml,
+    #[doc = "application/EmergencyCallData.SubscriberInfo+xml"]
     EmergencyCallDataSubscriberInfoXml,
+    #[doc = "application/EmergencyCallData.VEDS+xml"]
     EmergencyCallDataVEDSXml,
+    #[doc = "application/emma+xml"]
     EmmaXml,
+    #[doc = "application/emotionml+xml"]
     EmotionmlXml,
+    #[doc = "application/encaprtp"]
     Encaprtp,
+    #[doc = "application/epp+xml"]
     EppXml,
+    #[doc = "application/epub+zip"]
     EpubZip,
+    #[doc = "application/eshop"]
     Eshop,
+    #[doc = "application/example"]
     Example,
+    #[doc = "application/exi"]
     Exi,
+    #[doc = "application/expect-ct-report+json"]
     ExpectCtReportJson,
+    #[doc = "application/express"]
     Express,
+    #[doc = "application/fastinfoset"]
     Fastinfoset,
+    #[doc = "application/fastsoap"]
     Fastsoap,
+    #[doc = "application/fdf"]
     Fdf,
+    #[doc = "application/fdt+xml"]
     FdtXml,
+    #[doc = "application/fhir+json"]
     FhirJson,
+    #[doc = "application/fhir+xml"]
     FhirXml,
+    #[doc = "application/fits"]
     Fits,
+    #[doc = "application/flexfec"]
     Flexfec,
+    #[doc = "application/font-sfnt"]
     FontSfntDEPRECATEDInFavorOfFontSfnt,
+    #[doc = "application/font-tdpfr"]
     FontTdpfr,
+    #[doc = "application/font-woff"]
     FontWoffDEPRECATEDInFavorOfFontWoff,
+    #[doc = "application/framework-attributes+xml"]
     FrameworkAttributesXml,
+    #[doc = "application/geo+json"]
     GeoJson,
+    #[doc = "application/geo+json-seq"]
     GeoJsonSeq,
+    #[doc = "application/geopackage+sqlite3"]
     GeopackageSqlite3,
+    #[doc = "application/geoxacml+xml"]
     GeoxacmlXml,
+    #[doc = "application/gltf-buffer"]
     GltfBuffer,
+    #[doc = "application/gml+xml"]
     GmlXml,
+    #[doc = "application/gzip"]
     Gzip,
+    #[doc = "application/H224"]
     H224,
+    #[doc = "application/held+xml"]
     HeldXml,
+    #[doc = "application/hl7v2+xml"]
     Hl7V2Xml,
+    #[doc = "application/http"]
     Http,
+    #[doc = "application/hyperstudio"]
     Hyperstudio,
+    #[doc = "application/ibe-key-request+xml"]
     IbeKeyRequestXml,
+    #[doc = "application/ibe-pkg-reply+xml"]
     IbePkgReplyXml,
+    #[doc = "application/ibe-pp-data"]
     IbePpData,
+    #[doc = "application/iges"]
     Iges,
+    #[doc = "application/im-iscomposing+xml"]
     ImIscomposingXml,
+    #[doc = "application/index"]
     Index,
+    #[doc = "application/index.cmd"]
     IndexCmd,
+    #[doc = "application/index.obj"]
     IndexObj,
+    #[doc = "application/index.response"]
     IndexResponse,
+    #[doc = "application/index.vnd"]
     IndexVnd,
+    #[doc = "application/inkml+xml"]
     InkmlXml,
+    #[doc = "application/IOTP"]
     Iotp,
+    #[doc = "application/ipfix"]
     Ipfix,
+    #[doc = "application/ipp"]
     Ipp,
+    #[doc = "application/ISUP"]
     Isup,
+    #[doc = "application/its+xml"]
     ItsXml,
+    #[doc = "application/jf2feed+json"]
     Jf2FeedJson,
+    #[doc = "application/jose"]
     Jose,
+    #[doc = "application/jose+json"]
     JoseJson,
+    #[doc = "application/jrd+json"]
     JrdJson,
+    #[doc = "application/jscalendar+json"]
     JscalendarJson,
+    #[doc = "application/json"]
     Json,
+    #[doc = "application/json-patch+json"]
     JsonPatchJson,
+    #[doc = "application/json-seq"]
     JsonSeq,
+    #[doc = "application/jwk+json"]
     JwkJson,
+    #[doc = "application/jwk-set+json"]
     JwkSetJson,
+    #[doc = "application/jwt"]
     Jwt,
+    #[doc = "application/kpml-request+xml"]
     KpmlRequestXml,
+    #[doc = "application/kpml-response+xml"]
     KpmlResponseXml,
+    #[doc = "application/ld+json"]
     LdJson,
+    #[doc = "application/lgr+xml"]
     LgrXml,
+    #[doc = "application/link-format"]
     LinkFormat,
+    #[doc = "application/linkset"]
     Linkset,
+    #[doc = "application/linkset+json"]
     LinksetJson,
+    #[doc = "application/load-control+xml"]
     LoadControlXml,
+    #[doc = "application/logout+jwt"]
     LogoutJwt,
+    #[doc = "application/lost+xml"]
     LostXml,
+    #[doc = "application/lostsync+xml"]
     LostsyncXml,
+    #[doc = "application/lpf+zip"]
     LpfZip,
+    #[doc = "application/LXF"]
     Lxf,
+    #[doc = "application/mac-binhex40"]
     MacBinhex40,
+    #[doc = "application/macwriteii"]
     Macwriteii,
+    #[doc = "application/mads+xml"]
     MadsXml,
+    #[doc = "application/manifest+json"]
     ManifestJson,
+    #[doc = "application/marc"]
     Marc,
+    #[doc = "application/marcxml+xml"]
     MarcxmlXml,
+    #[doc = "application/mathematica"]
     Mathematica,
+    #[doc = "application/mathml+xml"]
     MathmlXml,
+    #[doc = "application/mathml-content+xml"]
     MathmlContentXml,
+    #[doc = "application/mathml-presentation+xml"]
     MathmlPresentationXml,
+    #[doc = "application/mbms-associated-procedure-description+xml"]
     MbmsAssociatedProcedureDescriptionXml,
+    #[doc = "application/mbms-deregister+xml"]
     MbmsDeregisterXml,
+    #[doc = "application/mbms-envelope+xml"]
     MbmsEnvelopeXml,
+    #[doc = "application/mbms-msk-response+xml"]
     MbmsMskResponseXml,
+    #[doc = "application/mbms-msk+xml"]
     MbmsMskXml,
+    #[doc = "application/mbms-protection-description+xml"]
     MbmsProtectionDescriptionXml,
+    #[doc = "application/mbms-reception-report+xml"]
     MbmsReceptionReportXml,
+    #[doc = "application/mbms-register-response+xml"]
     MbmsRegisterResponseXml,
+    #[doc = "application/mbms-register+xml"]
     MbmsRegisterXml,
+    #[doc = "application/mbms-schedule+xml"]
     MbmsScheduleXml,
+    #[doc = "application/mbms-user-service-description+xml"]
     MbmsUserServiceDescriptionXml,
+    #[doc = "application/mbox"]
     Mbox,
+    #[doc = "application/media_control+xml"]
     MediaControlXml,
+    #[doc = "application/media-policy-dataset+xml"]
     MediaPolicyDatasetXml,
+    #[doc = "application/mediaservercontrol+xml"]
     MediaservercontrolXml,
+    #[doc = "application/merge-patch+json"]
     MergePatchJson,
+    #[doc = "application/metalink4+xml"]
     Metalink4Xml,
+    #[doc = "application/mets+xml"]
     MetsXml,
+    #[doc = "application/MF4"]
     Mf4,
+    #[doc = "application/mikey"]
     Mikey,
+    #[doc = "application/mipc"]
     Mipc,
+    #[doc = "application/missing-blocks+cbor-seq"]
     MissingBlocksCborSeq,
+    #[doc = "application/mmt-aei+xml"]
     MmtAeiXml,
+    #[doc = "application/mmt-usd+xml"]
     MmtUsdXml,
+    #[doc = "application/mods+xml"]
     ModsXml,
+    #[doc = "application/moss-keys"]
     MossKeys,
+    #[doc = "application/moss-signature"]
     MossSignature,
+    #[doc = "application/mosskey-data"]
     MosskeyData,
+    #[doc = "application/mosskey-request"]
     MosskeyRequest,
+    #[doc = "application/mp21"]
     Mp21,
+    #[doc = "application/mp4"]
     Mp4,
+    #[doc = "application/mpeg4-generic"]
     Mpeg4Generic,
+    #[doc = "application/mpeg4-iod"]
     Mpeg4Iod,
+    #[doc = "application/mpeg4-iod-xmt"]
     Mpeg4IodXmt,
+    #[doc = "application/mrb-consumer+xml"]
     MrbConsumerXml,
+    #[doc = "application/mrb-publish+xml"]
     MrbPublishXml,
+    #[doc = "application/msc-ivr+xml"]
     MscIvrXml,
+    #[doc = "application/msc-mixer+xml"]
     MscMixerXml,
+    #[doc = "application/msword"]
     Msword,
+    #[doc = "application/mud+json"]
     MudJson,
+    #[doc = "application/multipart-core"]
     MultipartCore,
+    #[doc = "application/mxf"]
     Mxf,
+    #[doc = "application/n-quads"]
     NQuads,
+    #[doc = "application/n-triples"]
     NTriples,
+    #[doc = "application/nasdata"]
     Nasdata,
+    #[doc = "application/news-checkgroups"]
     NewsCheckgroups,
+    #[doc = "application/news-groupinfo"]
     NewsGroupinfo,
+    #[doc = "application/news-transmission"]
     NewsTransmission,
+    #[doc = "application/nlsml+xml"]
     NlsmlXml,
+    #[doc = "application/node"]
     Node,
+    #[doc = "application/nss"]
     Nss,
+    #[doc = "application/oauth-authz-req+jwt"]
     OauthAuthzReqJwt,
+    #[doc = "application/oblivious-dns-message"]
     ObliviousDnsMessage,
+    #[doc = "application/ocsp-request"]
     OcspRequest,
+    #[doc = "application/ocsp-response"]
     OcspResponse,
+    #[doc = "application/octet-stream"]
     OctetStream,
+    #[doc = "application/ODA"]
     Oda,
+    #[doc = "application/odm+xml"]
     OdmXml,
+    #[doc = "application/ODX"]
     Odx,
+    #[doc = "application/oebps-package+xml"]
     OebpsPackageXml,
+    #[doc = "application/ogg"]
     Ogg,
+    #[doc = "application/opc-nodeset+xml"]
     OpcNodesetXml,
+    #[doc = "application/oscore"]
     Oscore,
+    #[doc = "application/oxps"]
     Oxps,
+    #[doc = "application/p21"]
     P21,
+    #[doc = "application/p21+zip"]
     P21Zip,
+    #[doc = "application/p2p-overlay+xml"]
     P2POverlayXml,
+    #[doc = "application/parityfec"]
     Parityfec,
+    #[doc = "application/passport"]
     Passport,
+    #[doc = "application/patch-ops-error+xml"]
     PatchOpsErrorXml,
+    #[doc = "application/pdf"]
     Pdf,
+    #[doc = "application/PDX"]
     Pdx,
+    #[doc = "application/pem-certificate-chain"]
     PemCertificateChain,
+    #[doc = "application/pgp-encrypted"]
     PgpEncrypted,
+    #[doc = "application/pgp-keys"]
     PgpKeys,
+    #[doc = "application/pgp-signature"]
     PgpSignature,
+    #[doc = "application/pidf-diff+xml"]
     PidfDiffXml,
+    #[doc = "application/pidf+xml"]
     PidfXml,
+    #[doc = "application/pkcs10"]
     Pkcs10,
+    #[doc = "application/pkcs7-mime"]
     Pkcs7Mime,
+    #[doc = "application/pkcs7-signature"]
     Pkcs7Signature,
+    #[doc = "application/pkcs8"]
     Pkcs8,
+    #[doc = "application/pkcs8-encrypted"]
     Pkcs8Encrypted,
+    #[doc = "application/pkcs12"]
     Pkcs12,
+    #[doc = "application/pkix-attr-cert"]
     PkixAttrCert,
+    #[doc = "application/pkix-cert"]
     PkixCert,
+    #[doc = "application/pkix-crl"]
     PkixCrl,
+    #[doc = "application/pkix-pkipath"]
     PkixPkipath,
+    #[doc = "application/pkixcmp"]
     Pkixcmp,
+    #[doc = "application/pls+xml"]
     PlsXml,
+    #[doc = "application/poc-settings+xml"]
     PocSettingsXml,
+    #[doc = "application/postscript"]
     Postscript,
+    #[doc = "application/ppsp-tracker+json"]
     PpspTrackerJson,
+    #[doc = "application/problem+json"]
     ProblemJson,
+    #[doc = "application/problem+xml"]
     ProblemXml,
+    #[doc = "application/provenance+xml"]
     ProvenanceXml,
+    #[doc = "application/prs.alvestrand.titrax-sheet"]
     PrsAlvestrandTitraxSheet,
+    #[doc = "application/prs.cww"]
     PrsCww,
+    #[doc = "application/prs.cyn"]
     PrsCyn,
+    #[doc = "application/prs.hpub+zip"]
     PrsHpubZip,
+    #[doc = "application/prs.nprend"]
     PrsNprend,
+    #[doc = "application/prs.plucker"]
     PrsPlucker,
+    #[doc = "application/prs.rdf-xml-crypt"]
     PrsRdfXmlCrypt,
+    #[doc = "application/prs.xsf+xml"]
     PrsXsfXml,
+    #[doc = "application/pskc+xml"]
     PskcXml,
+    #[doc = "application/pvd+json"]
     PvdJson,
+    #[doc = "application/rdf+xml"]
     RdfXml,
+    #[doc = "application/route-apd+xml"]
     RouteApdXml,
+    #[doc = "application/route-s-tsid+xml"]
     RouteSTsidXml,
+    #[doc = "application/route-usd+xml"]
     RouteUsdXml,
+    #[doc = "application/QSIG"]
     Qsig,
+    #[doc = "application/raptorfec"]
     Raptorfec,
+    #[doc = "application/rdap+json"]
     RdapJson,
+    #[doc = "application/reginfo+xml"]
     ReginfoXml,
+    #[doc = "application/relax-ng-compact-syntax"]
     RelaxNgCompactSyntax,
+    #[doc = "application/remote-printing"]
     RemotePrinting,
+    #[doc = "application/reputon+json"]
     ReputonJson,
+    #[doc = "application/resource-lists-diff+xml"]
     ResourceListsDiffXml,
+    #[doc = "application/resource-lists+xml"]
     ResourceListsXml,
+    #[doc = "application/rfc+xml"]
     RfcXml,
+    #[doc = "application/riscos"]
     Riscos,
+    #[doc = "application/rlmi+xml"]
     RlmiXml,
+    #[doc = "application/rls-services+xml"]
     RlsServicesXml,
+    #[doc = "application/rpki-checklist"]
     RpkiChecklist,
+    #[doc = "application/rpki-ghostbusters"]
     RpkiGhostbusters,
+    #[doc = "application/rpki-manifest"]
     RpkiManifest,
+    #[doc = "application/rpki-publication"]
     RpkiPublication,
+    #[doc = "application/rpki-roa"]
     RpkiRoa,
+    #[doc = "application/rpki-updown"]
     RpkiUpdown,
+    #[doc = "application/rtf"]
     Rtf,
+    #[doc = "application/rtploopback"]
     Rtploopback,
+    #[doc = "application/rtx"]
     Rtx,
+    #[doc = "application/samlassertion+xml"]
     SamlassertionXml,
+    #[doc = "application/samlmetadata+xml"]
     SamlmetadataXml,
+    #[doc = "application/sarif-external-properties+json"]
     SarifExternalPropertiesJson,
+    #[doc = "application/sarif+json"]
     SarifJson,
+    #[doc = "application/sbe"]
     Sbe,
+    #[doc = "application/sbml+xml"]
     SbmlXml,
+    #[doc = "application/scaip+xml"]
     ScaipXml,
+    #[doc = "application/scim+json"]
     ScimJson,
+    #[doc = "application/scvp-cv-request"]
     ScvpCvRequest,
+    #[doc = "application/scvp-cv-response"]
     ScvpCvResponse,
+    #[doc = "application/scvp-vp-request"]
     ScvpVpRequest,
+    #[doc = "application/scvp-vp-response"]
     ScvpVpResponse,
+    #[doc = "application/sdp"]
     Sdp,
+    #[doc = "application/secevent+jwt"]
     SeceventJwt,
+    #[doc = "application/senml-etch+cbor"]
     SenmlEtchCbor,
+    #[doc = "application/senml-etch+json"]
     SenmlEtchJson,
+    #[doc = "application/senml-exi"]
     SenmlExi,
+    #[doc = "application/senml+cbor"]
     SenmlCbor,
+    #[doc = "application/senml+json"]
     SenmlJson,
+    #[doc = "application/senml+xml"]
     SenmlXml,
+    #[doc = "application/sensml-exi"]
     SensmlExi,
+    #[doc = "application/sensml+cbor"]
     SensmlCbor,
+    #[doc = "application/sensml+json"]
     SensmlJson,
+    #[doc = "application/sensml+xml"]
     SensmlXml,
+    #[doc = "application/sep-exi"]
     SepExi,
+    #[doc = "application/sep+xml"]
     SepXml,
+    #[doc = "application/session-info"]
     SessionInfo,
+    #[doc = "application/set-payment"]
     SetPayment,
+    #[doc = "application/set-payment-initiation"]
     SetPaymentInitiation,
+    #[doc = "application/set-registration"]
     SetRegistration,
+    #[doc = "application/set-registration-initiation"]
     SetRegistrationInitiation,
+    #[doc = "application/SGML"]
     Sgml,
+    #[doc = "application/sgml-open-catalog"]
     SgmlOpenCatalog,
+    #[doc = "application/shf+xml"]
     ShfXml,
+    #[doc = "application/sieve"]
     Sieve,
+    #[doc = "application/simple-filter+xml"]
     SimpleFilterXml,
+    #[doc = "application/simple-message-summary"]
     SimpleMessageSummary,
+    #[doc = "application/simpleSymbolContainer"]
     SimpleSymbolContainer,
+    #[doc = "application/sipc"]
     Sipc,
+    #[doc = "application/slate"]
     Slate,
+    #[doc = "application/smil+xml"]
     SmilXml,
+    #[doc = "application/smpte336m"]
     Smpte336M,
+    #[doc = "application/soap+fastinfoset"]
     SoapFastinfoset,
+    #[doc = "application/soap+xml"]
     SoapXml,
+    #[doc = "application/sparql-query"]
     SparqlQuery,
+    #[doc = "application/spdx+json"]
     SpdxJson,
+    #[doc = "application/sparql-results+xml"]
     SparqlResultsXml,
+    #[doc = "application/spirits-event+xml"]
     SpiritsEventXml,
+    #[doc = "application/sql"]
     Sql,
+    #[doc = "application/srgs"]
     Srgs,
+    #[doc = "application/srgs+xml"]
     SrgsXml,
+    #[doc = "application/sru+xml"]
     SruXml,
+    #[doc = "application/ssml+xml"]
     SsmlXml,
+    #[doc = "application/stix+json"]
     StixJson,
+    #[doc = "application/swid+cbor"]
     SwidCbor,
+    #[doc = "application/swid+xml"]
     SwidXml,
+    #[doc = "application/tamp-apex-update"]
     TampApexUpdate,
+    #[doc = "application/tamp-apex-update-confirm"]
     TampApexUpdateConfirm,
+    #[doc = "application/tamp-community-update"]
     TampCommunityUpdate,
+    #[doc = "application/tamp-community-update-confirm"]
     TampCommunityUpdateConfirm,
+    #[doc = "application/tamp-error"]
     TampError,
+    #[doc = "application/tamp-sequence-adjust"]
     TampSequenceAdjust,
+    #[doc = "application/tamp-sequence-adjust-confirm"]
     TampSequenceAdjustConfirm,
+    #[doc = "application/tamp-status-query"]
     TampStatusQuery,
+    #[doc = "application/tamp-status-response"]
     TampStatusResponse,
+    #[doc = "application/tamp-update"]
     TampUpdate,
+    #[doc = "application/tamp-update-confirm"]
     TampUpdateConfirm,
+    #[doc = "application/taxii+json"]
     TaxiiJson,
+    #[doc = "application/td+json"]
     TdJson,
+    #[doc = "application/tei+xml"]
     TeiXml,
+    #[doc = "application/TETRA_ISI"]
     TetraIsi,
+    #[doc = "application/thraud+xml"]
     ThraudXml,
+    #[doc = "application/timestamp-query"]
     TimestampQuery,
+    #[doc = "application/timestamp-reply"]
     TimestampReply,
+    #[doc = "application/timestamped-data"]
     TimestampedData,
+    #[doc = "application/tlsrpt+gzip"]
     TlsrptGzip,
+    #[doc = "application/tlsrpt+json"]
     TlsrptJson,
+    #[doc = "application/tm+json"]
     TmJson,
+    #[doc = "application/tnauthlist"]
     Tnauthlist,
+    #[doc = "application/token-introspection+jwt"]
     TokenIntrospectionJwt,
+    #[doc = "application/trickle-ice-sdpfrag"]
     TrickleIceSdpfrag,
+    #[doc = "application/trig"]
     Trig,
+    #[doc = "application/ttml+xml"]
     TtmlXml,
+    #[doc = "application/tve-trigger"]
     TveTrigger,
+    #[doc = "application/tzif"]
     Tzif,
+    #[doc = "application/tzif-leap"]
     TzifLeap,
+    #[doc = "application/ulpfec"]
     Ulpfec,
+    #[doc = "application/urc-grpsheet+xml"]
     UrcGrpsheetXml,
+    #[doc = "application/urc-ressheet+xml"]
     UrcRessheetXml,
+    #[doc = "application/urc-targetdesc+xml"]
     UrcTargetdescXml,
+    #[doc = "application/urc-uisocketdesc+xml"]
     UrcUisocketdescXml,
+    #[doc = "application/vcard+json"]
     VcardJson,
+    #[doc = "application/vcard+xml"]
     VcardXml,
+    #[doc = "application/vemmi"]
     Vemmi,
+    #[doc = "application/vnd.1000minds.decision-model+xml"]
     Vnd1000MindsDecisionModelXml,
+    #[doc = "application/vnd.3gpp.5gnas"]
     Vnd3Gpp5Gnas,
+    #[doc = "application/vnd.3gpp.access-transfer-events+xml"]
     Vnd3GppAccessTransferEventsXml,
+    #[doc = "application/vnd.3gpp.bsf+xml"]
     Vnd3GppBsfXml,
+    #[doc = "application/vnd.3gpp.GMOP+xml"]
     Vnd3GppGMOPXml,
+    #[doc = "application/vnd.3gpp.gtpc"]
     Vnd3GppGtpc,
+    #[doc = "application/vnd.3gpp.interworking-data"]
     Vnd3GppInterworkingData,
+    #[doc = "application/vnd.3gpp.lpp"]
     Vnd3GppLpp,
+    #[doc = "application/vnd.3gpp.mc-signalling-ear"]
     Vnd3GppMcSignallingEar,
+    #[doc = "application/vnd.3gpp.mcdata-affiliation-command+xml"]
     Vnd3GppMcdataAffiliationCommandXml,
+    #[doc = "application/vnd.3gpp.mcdata-info+xml"]
     Vnd3GppMcdataInfoXml,
+    #[doc = "application/vnd.3gpp.mcdata-msgstore-ctrl-request+xml"]
     Vnd3GppMcdataMsgstoreCtrlRequestXml,
+    #[doc = "application/vnd.3gpp.mcdata-payload"]
     Vnd3GppMcdataPayload,
+    #[doc = "application/vnd.3gpp.mcdata-regroup+xml"]
     Vnd3GppMcdataRegroupXml,
+    #[doc = "application/vnd.3gpp.mcdata-service-config+xml"]
     Vnd3GppMcdataServiceConfigXml,
+    #[doc = "application/vnd.3gpp.mcdata-signalling"]
     Vnd3GppMcdataSignalling,
+    #[doc = "application/vnd.3gpp.mcdata-ue-config+xml"]
     Vnd3GppMcdataUeConfigXml,
+    #[doc = "application/vnd.3gpp.mcdata-user-profile+xml"]
     Vnd3GppMcdataUserProfileXml,
+    #[doc = "application/vnd.3gpp.mcptt-affiliation-command+xml"]
     Vnd3GppMcpttAffiliationCommandXml,
+    #[doc = "application/vnd.3gpp.mcptt-floor-request+xml"]
     Vnd3GppMcpttFloorRequestXml,
+    #[doc = "application/vnd.3gpp.mcptt-info+xml"]
     Vnd3GppMcpttInfoXml,
+    #[doc = "application/vnd.3gpp.mcptt-location-info+xml"]
     Vnd3GppMcpttLocationInfoXml,
+    #[doc = "application/vnd.3gpp.mcptt-mbms-usage-info+xml"]
     Vnd3GppMcpttMbmsUsageInfoXml,
+    #[doc = "application/vnd.3gpp.mcptt-service-config+xml"]
     Vnd3GppMcpttServiceConfigXml,
+    #[doc = "application/vnd.3gpp.mcptt-signed+xml"]
     Vnd3GppMcpttSignedXml,
+    #[doc = "application/vnd.3gpp.mcptt-ue-config+xml"]
     Vnd3GppMcpttUeConfigXml,
+    #[doc = "application/vnd.3gpp.mcptt-ue-init-config+xml"]
     Vnd3GppMcpttUeInitConfigXml,
+    #[doc = "application/vnd.3gpp.mcptt-user-profile+xml"]
     Vnd3GppMcpttUserProfileXml,
+    #[doc = "application/vnd.3gpp.mcvideo-affiliation-command+xml"]
     Vnd3GppMcvideoAffiliationCommandXml,
+    #[doc = "application/vnd.3gpp.mcvideo-info+xml"]
     Vnd3GppMcvideoInfoXml,
+    #[doc = "application/vnd.3gpp.mcvideo-location-info+xml"]
     Vnd3GppMcvideoLocationInfoXml,
+    #[doc = "application/vnd.3gpp.mcvideo-mbms-usage-info+xml"]
     Vnd3GppMcvideoMbmsUsageInfoXml,
+    #[doc = "application/vnd.3gpp.mcvideo-service-config+xml"]
     Vnd3GppMcvideoServiceConfigXml,
+    #[doc = "application/vnd.3gpp.mcvideo-transmission-request+xml"]
     Vnd3GppMcvideoTransmissionRequestXml,
+    #[doc = "application/vnd.3gpp.mcvideo-ue-config+xml"]
     Vnd3GppMcvideoUeConfigXml,
+    #[doc = "application/vnd.3gpp.mcvideo-user-profile+xml"]
     Vnd3GppMcvideoUserProfileXml,
+    #[doc = "application/vnd.3gpp.mid-call+xml"]
     Vnd3GppMidCallXml,
+    #[doc = "application/vnd.3gpp.ngap"]
     Vnd3GppNgap,
+    #[doc = "application/vnd.3gpp.pfcp"]
     Vnd3GppPfcp,
+    #[doc = "application/vnd.3gpp.pic-bw-large"]
     Vnd3GppPicBwLarge,
+    #[doc = "application/vnd.3gpp.pic-bw-small"]
     Vnd3GppPicBwSmall,
+    #[doc = "application/vnd.3gpp.pic-bw-var"]
     Vnd3GppPicBwVar,
+    #[doc = "application/vnd.3gpp-prose-pc3a+xml"]
     Vnd3GppProsePc3AXml,
+    #[doc = "application/vnd.3gpp-prose-pc3ach+xml"]
     Vnd3GppProsePc3AchXml,
+    #[doc = "application/vnd.3gpp-prose-pc3ch+xml"]
     Vnd3GppProsePc3ChXml,
+    #[doc = "application/vnd.3gpp-prose-pc8+xml"]
     Vnd3GppProsePc8Xml,
+    #[doc = "application/vnd.3gpp-prose+xml"]
     Vnd3GppProseXml,
+    #[doc = "application/vnd.3gpp.s1ap"]
     Vnd3GppS1Ap,
+    #[doc = "application/vnd.3gpp.sms"]
     Vnd3GppSms,
+    #[doc = "application/vnd.3gpp.sms+xml"]
     Vnd3GppSmsXml,
+    #[doc = "application/vnd.3gpp.srvcc-ext+xml"]
     Vnd3GppSrvccExtXml,
+    #[doc = "application/vnd.3gpp.SRVCC-info+xml"]
     Vnd3GppSRVCCInfoXml,
+    #[doc = "application/vnd.3gpp.state-and-event-info+xml"]
     Vnd3GppStateAndEventInfoXml,
+    #[doc = "application/vnd.3gpp.ussd+xml"]
     Vnd3GppUssdXml,
+    #[doc = "application/vnd.3gpp-v2x-local-service-information"]
     Vnd3GppV2XLocalServiceInformation,
+    #[doc = "application/vnd.3gpp2.bcmcsinfo+xml"]
     Vnd3Gpp2BcmcsinfoXml,
+    #[doc = "application/vnd.3gpp2.sms"]
     Vnd3Gpp2Sms,
+    #[doc = "application/vnd.3gpp2.tcap"]
     Vnd3Gpp2Tcap,
+    #[doc = "application/vnd.3lightssoftware.imagescal"]
     Vnd3LightssoftwareImagescal,
+    #[doc = "application/vnd.3M.Post-it-Notes"]
     Vnd3MPostItNotes,
+    #[doc = "application/vnd.accpac.simply.aso"]
     VndAccpacSimplyAso,
+    #[doc = "application/vnd.accpac.simply.imp"]
     VndAccpacSimplyImp,
+    #[doc = "application/vnd.acucobol"]
     VndAcucobol,
+    #[doc = "application/vnd.acucorp"]
     VndAcucorp,
+    #[doc = "application/vnd.adobe.flash.movie"]
     VndAdobeFlashMovie,
+    #[doc = "application/vnd.adobe.formscentral.fcdt"]
     VndAdobeFormscentralFcdt,
+    #[doc = "application/vnd.adobe.fxp"]
     VndAdobeFxp,
+    #[doc = "application/vnd.adobe.partial-upload"]
     VndAdobePartialUpload,
+    #[doc = "application/vnd.adobe.xdp+xml"]
     VndAdobeXdpXml,
+    #[doc = "application/vnd.aether.imp"]
     VndAetherImp,
+    #[doc = "application/vnd.afpc.afplinedata"]
     VndAfpcAfplinedata,
+    #[doc = "application/vnd.afpc.afplinedata-pagedef"]
     VndAfpcAfplinedataPagedef,
+    #[doc = "application/vnd.afpc.cmoca-cmresource"]
     VndAfpcCmocaCmresource,
+    #[doc = "application/vnd.afpc.foca-charset"]
     VndAfpcFocaCharset,
+    #[doc = "application/vnd.afpc.foca-codedfont"]
     VndAfpcFocaCodedfont,
+    #[doc = "application/vnd.afpc.foca-codepage"]
     VndAfpcFocaCodepage,
+    #[doc = "application/vnd.afpc.modca"]
     VndAfpcModca,
+    #[doc = "application/vnd.afpc.modca-cmtable"]
     VndAfpcModcaCmtable,
+    #[doc = "application/vnd.afpc.modca-formdef"]
     VndAfpcModcaFormdef,
+    #[doc = "application/vnd.afpc.modca-mediummap"]
     VndAfpcModcaMediummap,
+    #[doc = "application/vnd.afpc.modca-objectcontainer"]
     VndAfpcModcaObjectcontainer,
+    #[doc = "application/vnd.afpc.modca-overlay"]
     VndAfpcModcaOverlay,
+    #[doc = "application/vnd.afpc.modca-pagesegment"]
     VndAfpcModcaPagesegment,
+    #[doc = "application/vnd.age"]
     VndAge,
+    #[doc = "application/vnd.ah-barcode"]
     VndAhBarcode,
+    #[doc = "application/vnd.ahead.space"]
     VndAheadSpace,
+    #[doc = "application/vnd.airzip.filesecure.azf"]
     VndAirzipFilesecureAzf,
+    #[doc = "application/vnd.airzip.filesecure.azs"]
     VndAirzipFilesecureAzs,
+    #[doc = "application/vnd.amadeus+json"]
     VndAmadeusJson,
+    #[doc = "application/vnd.amazon.mobi8-ebook"]
     VndAmazonMobi8Ebook,
+    #[doc = "application/vnd.americandynamics.acc"]
     VndAmericandynamicsAcc,
+    #[doc = "application/vnd.amiga.ami"]
     VndAmigaAmi,
+    #[doc = "application/vnd.amundsen.maze+xml"]
     VndAmundsenMazeXml,
+    #[doc = "application/vnd.android.ota"]
     VndAndroidOta,
+    #[doc = "application/vnd.anki"]
     VndAnki,
+    #[doc = "application/vnd.anser-web-certificate-issue-initiation"]
     VndAnserWebCertificateIssueInitiation,
+    #[doc = "application/vnd.antix.game-component"]
     VndAntixGameComponent,
+    #[doc = "application/vnd.apache.arrow.file"]
     VndApacheArrowFile,
+    #[doc = "application/vnd.apache.arrow.stream"]
     VndApacheArrowStream,
+    #[doc = "application/vnd.apache.thrift.binary"]
     VndApacheThriftBinary,
+    #[doc = "application/vnd.apache.thrift.compact"]
     VndApacheThriftCompact,
+    #[doc = "application/vnd.apache.thrift.json"]
     VndApacheThriftJson,
+    #[doc = "application/vnd.apexlang"]
     VndApexlang,
+    #[doc = "application/vnd.api+json"]
     VndApiJson,
+    #[doc = "application/vnd.aplextor.warrp+json"]
     VndAplextorWarrpJson,
+    #[doc = "application/vnd.apothekende.reservation+json"]
     VndApothekendeReservationJson,
+    #[doc = "application/vnd.apple.installer+xml"]
     VndAppleInstallerXml,
+    #[doc = "application/vnd.apple.keynote"]
     VndAppleKeynote,
+    #[doc = "application/vnd.apple.mpegurl"]
     VndAppleMpegurl,
+    #[doc = "application/vnd.apple.numbers"]
     VndAppleNumbers,
+    #[doc = "application/vnd.apple.pages"]
     VndApplePages,
+    #[doc = "application/vnd.aristanetworks.swi"]
     VndAristanetworksSwi,
+    #[doc = "application/vnd.artisan+json"]
     VndArtisanJson,
+    #[doc = "application/vnd.artsquare"]
     VndArtsquare,
+    #[doc = "application/vnd.astraea-software.iota"]
     VndAstraeaSoftwareIota,
+    #[doc = "application/vnd.audiograph"]
     VndAudiograph,
+    #[doc = "application/vnd.autopackage"]
     VndAutopackage,
+    #[doc = "application/vnd.avalon+json"]
     VndAvalonJson,
+    #[doc = "application/vnd.avistar+xml"]
     VndAvistarXml,
+    #[doc = "application/vnd.balsamiq.bmml+xml"]
     VndBalsamiqBmmlXml,
+    #[doc = "application/vnd.banana-accounting"]
     VndBananaAccounting,
+    #[doc = "application/vnd.bbf.usp.error"]
     VndBbfUspError,
+    #[doc = "application/vnd.bbf.usp.msg"]
     VndBbfUspMsg,
+    #[doc = "application/vnd.bbf.usp.msg+json"]
     VndBbfUspMsgJson,
+    #[doc = "application/vnd.balsamiq.bmpr"]
     VndBalsamiqBmpr,
+    #[doc = "application/vnd.bekitzur-stech+json"]
     VndBekitzurStechJson,
+    #[doc = "application/vnd.belightsoft.lhzd+zip"]
     VndBelightsoftLhzdZip,
+    #[doc = "application/vnd.belightsoft.lhzl+zip"]
     VndBelightsoftLhzlZip,
+    #[doc = "application/vnd.bint.med-content"]
     VndBintMedContent,
+    #[doc = "application/vnd.biopax.rdf+xml"]
     VndBiopaxRdfXml,
+    #[doc = "application/vnd.blink-idb-value-wrapper"]
     VndBlinkIdbValueWrapper,
+    #[doc = "application/vnd.blueice.multipass"]
     VndBlueiceMultipass,
+    #[doc = "application/vnd.bluetooth.ep.oob"]
     VndBluetoothEpOob,
+    #[doc = "application/vnd.bluetooth.le.oob"]
     VndBluetoothLeOob,
+    #[doc = "application/vnd.bmi"]
     VndBmi,
+    #[doc = "application/vnd.bpf"]
     VndBpf,
+    #[doc = "application/vnd.bpf3"]
     VndBpf3,
+    #[doc = "application/vnd.businessobjects"]
     VndBusinessobjects,
+    #[doc = "application/vnd.byu.uapi+json"]
     VndByuUapiJson,
+    #[doc = "application/vnd.cab-jscript"]
     VndCabJscript,
+    #[doc = "application/vnd.canon-cpdl"]
     VndCanonCpdl,
+    #[doc = "application/vnd.canon-lips"]
     VndCanonLips,
+    #[doc = "application/vnd.capasystems-pg+json"]
     VndCapasystemsPgJson,
+    #[doc = "application/vnd.cendio.thinlinc.clientconf"]
     VndCendioThinlincClientconf,
+    #[doc = "application/vnd.century-systems.tcp_stream"]
     VndCenturySystemsTcpStream,
+    #[doc = "application/vnd.chemdraw+xml"]
     VndChemdrawXml,
+    #[doc = "application/vnd.chess-pgn"]
     VndChessPgn,
+    #[doc = "application/vnd.chipnuts.karaoke-mmd"]
     VndChipnutsKaraokeMmd,
+    #[doc = "application/vnd.ciedi"]
     VndCiedi,
+    #[doc = "application/vnd.cinderella"]
     VndCinderella,
+    #[doc = "application/vnd.cirpack.isdn-ext"]
     VndCirpackIsdnExt,
+    #[doc = "application/vnd.citationstyles.style+xml"]
     VndCitationstylesStyleXml,
+    #[doc = "application/vnd.claymore"]
     VndClaymore,
+    #[doc = "application/vnd.cloanto.rp9"]
     VndCloantoRp9,
+    #[doc = "application/vnd.clonk.c4group"]
     VndClonkC4Group,
+    #[doc = "application/vnd.cluetrust.cartomobile-config"]
     VndCluetrustCartomobileConfig,
+    #[doc = "application/vnd.cluetrust.cartomobile-config-pkg"]
     VndCluetrustCartomobileConfigPkg,
+    #[doc = "application/vnd.cncf.helm.chart.content.v1.tar+gzip"]
     VndCncfHelmChartContentV1TarGzip,
+    #[doc = "application/vnd.cncf.helm.chart.provenance.v1.prov"]
     VndCncfHelmChartProvenanceV1Prov,
+    #[doc = "application/vnd.coffeescript"]
     VndCoffeescript,
+    #[doc = "application/vnd.collabio.xodocuments.document"]
     VndCollabioXodocumentsDocument,
+    #[doc = "application/vnd.collabio.xodocuments.document-template"]
     VndCollabioXodocumentsDocumentTemplate,
+    #[doc = "application/vnd.collabio.xodocuments.presentation"]
     VndCollabioXodocumentsPresentation,
+    #[doc = "application/vnd.collabio.xodocuments.presentation-template"]
     VndCollabioXodocumentsPresentationTemplate,
+    #[doc = "application/vnd.collabio.xodocuments.spreadsheet"]
     VndCollabioXodocumentsSpreadsheet,
+    #[doc = "application/vnd.collabio.xodocuments.spreadsheet-template"]
     VndCollabioXodocumentsSpreadsheetTemplate,
+    #[doc = "application/vnd.collection.doc+json"]
     VndCollectionDocJson,
+    #[doc = "application/vnd.collection+json"]
     VndCollectionJson,
+    #[doc = "application/vnd.collection.next+json"]
     VndCollectionNextJson,
+    #[doc = "application/vnd.comicbook-rar"]
     VndComicbookRar,
+    #[doc = "application/vnd.comicbook+zip"]
     VndComicbookZip,
+    #[doc = "application/vnd.commerce-battelle"]
     VndCommerceBattelle,
+    #[doc = "application/vnd.commonspace"]
     VndCommonspace,
+    #[doc = "application/vnd.coreos.ignition+json"]
     VndCoreosIgnitionJson,
+    #[doc = "application/vnd.cosmocaller"]
     VndCosmocaller,
+    #[doc = "application/vnd.contact.cmsg"]
     VndContactCmsg,
+    #[doc = "application/vnd.crick.clicker"]
     VndCrickClicker,
+    #[doc = "application/vnd.crick.clicker.keyboard"]
     VndCrickClickerKeyboard,
+    #[doc = "application/vnd.crick.clicker.palette"]
     VndCrickClickerPalette,
+    #[doc = "application/vnd.crick.clicker.template"]
     VndCrickClickerTemplate,
+    #[doc = "application/vnd.crick.clicker.wordbank"]
     VndCrickClickerWordbank,
+    #[doc = "application/vnd.criticaltools.wbs+xml"]
     VndCriticaltoolsWbsXml,
+    #[doc = "application/vnd.cryptii.pipe+json"]
     VndCryptiiPipeJson,
+    #[doc = "application/vnd.crypto-shade-file"]
     VndCryptoShadeFile,
+    #[doc = "application/vnd.cryptomator.encrypted"]
     VndCryptomatorEncrypted,
+    #[doc = "application/vnd.cryptomator.vault"]
     VndCryptomatorVault,
+    #[doc = "application/vnd.ctc-posml"]
     VndCtcPosml,
+    #[doc = "application/vnd.ctct.ws+xml"]
     VndCtctWsXml,
+    #[doc = "application/vnd.cups-pdf"]
     VndCupsPdf,
+    #[doc = "application/vnd.cups-postscript"]
     VndCupsPostscript,
+    #[doc = "application/vnd.cups-ppd"]
     VndCupsPpd,
+    #[doc = "application/vnd.cups-raster"]
     VndCupsRaster,
+    #[doc = "application/vnd.cups-raw"]
     VndCupsRaw,
+    #[doc = "application/vnd.curl"]
     VndCurl,
+    #[doc = "application/vnd.cyan.dean.root+xml"]
     VndCyanDeanRootXml,
+    #[doc = "application/vnd.cybank"]
     VndCybank,
+    #[doc = "application/vnd.cyclonedx+json"]
     VndCyclonedxJson,
+    #[doc = "application/vnd.cyclonedx+xml"]
     VndCyclonedxXml,
+    #[doc = "application/vnd.d2l.coursepackage1p0+zip"]
     VndD2LCoursepackage1P0Zip,
+    #[doc = "application/vnd.d3m-dataset"]
     VndD3MDataset,
+    #[doc = "application/vnd.d3m-problem"]
     VndD3MProblem,
+    #[doc = "application/vnd.dart"]
     VndDart,
+    #[doc = "application/vnd.data-vision.rdz"]
     VndDataVisionRdz,
+    #[doc = "application/vnd.datalog"]
     VndDatalog,
+    #[doc = "application/vnd.datapackage+json"]
     VndDatapackageJson,
+    #[doc = "application/vnd.dataresource+json"]
     VndDataresourceJson,
+    #[doc = "application/vnd.dbf"]
     VndDbf,
+    #[doc = "application/vnd.debian.binary-package"]
     VndDebianBinaryPackage,
+    #[doc = "application/vnd.dece.data"]
     VndDeceData,
+    #[doc = "application/vnd.dece.ttml+xml"]
     VndDeceTtmlXml,
+    #[doc = "application/vnd.dece.unspecified"]
     VndDeceUnspecified,
+    #[doc = "application/vnd.dece.zip"]
     VndDeceZip,
+    #[doc = "application/vnd.denovo.fcselayout-link"]
     VndDenovoFcselayoutLink,
+    #[doc = "application/vnd.desmume.movie"]
     VndDesmumeMovie,
+    #[doc = "application/vnd.dir-bi.plate-dl-nosuffix"]
     VndDirBiPlateDlNosuffix,
+    #[doc = "application/vnd.dm.delegation+xml"]
     VndDmDelegationXml,
+    #[doc = "application/vnd.dna"]
     VndDna,
+    #[doc = "application/vnd.document+json"]
     VndDocumentJson,
+    #[doc = "application/vnd.dolby.mobile.1"]
     VndDolbyMobile1,
+    #[doc = "application/vnd.dolby.mobile.2"]
     VndDolbyMobile2,
+    #[doc = "application/vnd.doremir.scorecloud-binary-document"]
     VndDoremirScorecloudBinaryDocument,
+    #[doc = "application/vnd.dpgraph"]
     VndDpgraph,
+    #[doc = "application/vnd.dreamfactory"]
     VndDreamfactory,
+    #[doc = "application/vnd.drive+json"]
     VndDriveJson,
+    #[doc = "application/vnd.dtg.local"]
     VndDtgLocal,
+    #[doc = "application/vnd.dtg.local.flash"]
     VndDtgLocalFlash,
+    #[doc = "application/vnd.dtg.local.html"]
     VndDtgLocalHtml,
+    #[doc = "application/vnd.dvb.ait"]
     VndDvbAit,
+    #[doc = "application/vnd.dvb.dvbisl+xml"]
     VndDvbDvbislXml,
+    #[doc = "application/vnd.dvb.dvbj"]
     VndDvbDvbj,
+    #[doc = "application/vnd.dvb.esgcontainer"]
     VndDvbEsgcontainer,
+    #[doc = "application/vnd.dvb.ipdcdftnotifaccess"]
     VndDvbIpdcdftnotifaccess,
+    #[doc = "application/vnd.dvb.ipdcesgaccess"]
     VndDvbIpdcesgaccess,
+    #[doc = "application/vnd.dvb.ipdcesgaccess2"]
     VndDvbIpdcesgaccess2,
+    #[doc = "application/vnd.dvb.ipdcesgpdd"]
     VndDvbIpdcesgpdd,
+    #[doc = "application/vnd.dvb.ipdcroaming"]
     VndDvbIpdcroaming,
+    #[doc = "application/vnd.dvb.iptv.alfec-base"]
     VndDvbIptvAlfecBase,
+    #[doc = "application/vnd.dvb.iptv.alfec-enhancement"]
     VndDvbIptvAlfecEnhancement,
+    #[doc = "application/vnd.dvb.notif-aggregate-root+xml"]
     VndDvbNotifAggregateRootXml,
+    #[doc = "application/vnd.dvb.notif-container+xml"]
     VndDvbNotifContainerXml,
+    #[doc = "application/vnd.dvb.notif-generic+xml"]
     VndDvbNotifGenericXml,
+    #[doc = "application/vnd.dvb.notif-ia-msglist+xml"]
     VndDvbNotifIaMsglistXml,
+    #[doc = "application/vnd.dvb.notif-ia-registration-request+xml"]
     VndDvbNotifIaRegistrationRequestXml,
+    #[doc = "application/vnd.dvb.notif-ia-registration-response+xml"]
     VndDvbNotifIaRegistrationResponseXml,
+    #[doc = "application/vnd.dvb.notif-init+xml"]
     VndDvbNotifInitXml,
+    #[doc = "application/vnd.dvb.pfr"]
     VndDvbPfr,
+    #[doc = "application/vnd.dvb.service"]
     VndDvbService,
+    #[doc = "application/vnd.dxr"]
     VndDxr,
+    #[doc = "application/vnd.dynageo"]
     VndDynageo,
+    #[doc = "application/vnd.dzr"]
     VndDzr,
+    #[doc = "application/vnd.easykaraoke.cdgdownload"]
     VndEasykaraokeCdgdownload,
+    #[doc = "application/vnd.ecip.rlp"]
     VndEcipRlp,
+    #[doc = "application/vnd.ecdis-update"]
     VndEcdisUpdate,
+    #[doc = "application/vnd.eclipse.ditto+json"]
     VndEclipseDittoJson,
+    #[doc = "application/vnd.ecowin.chart"]
     VndEcowinChart,
+    #[doc = "application/vnd.ecowin.filerequest"]
     VndEcowinFilerequest,
+    #[doc = "application/vnd.ecowin.fileupdate"]
     VndEcowinFileupdate,
+    #[doc = "application/vnd.ecowin.series"]
     VndEcowinSeries,
+    #[doc = "application/vnd.ecowin.seriesrequest"]
     VndEcowinSeriesrequest,
+    #[doc = "application/vnd.ecowin.seriesupdate"]
     VndEcowinSeriesupdate,
+    #[doc = "application/vnd.efi.img"]
     VndEfiImg,
+    #[doc = "application/vnd.efi.iso"]
     VndEfiIso,
+    #[doc = "application/vnd.emclient.accessrequest+xml"]
     VndEmclientAccessrequestXml,
+    #[doc = "application/vnd.enliven"]
     VndEnliven,
+    #[doc = "application/vnd.enphase.envoy"]
     VndEnphaseEnvoy,
+    #[doc = "application/vnd.eprints.data+xml"]
     VndEprintsDataXml,
+    #[doc = "application/vnd.epson.esf"]
     VndEpsonEsf,
+    #[doc = "application/vnd.epson.msf"]
     VndEpsonMsf,
+    #[doc = "application/vnd.epson.quickanime"]
     VndEpsonQuickanime,
+    #[doc = "application/vnd.epson.salt"]
     VndEpsonSalt,
+    #[doc = "application/vnd.epson.ssf"]
     VndEpsonSsf,
+    #[doc = "application/vnd.ericsson.quickcall"]
     VndEricssonQuickcall,
+    #[doc = "application/vnd.espass-espass+zip"]
     VndEspassEspassZip,
+    #[doc = "application/vnd.eszigno3+xml"]
     VndEszigno3Xml,
+    #[doc = "application/vnd.etsi.aoc+xml"]
     VndEtsiAocXml,
+    #[doc = "application/vnd.etsi.asic-s+zip"]
     VndEtsiAsicSZip,
+    #[doc = "application/vnd.etsi.asic-e+zip"]
     VndEtsiAsicEZip,
+    #[doc = "application/vnd.etsi.cug+xml"]
     VndEtsiCugXml,
+    #[doc = "application/vnd.etsi.iptvcommand+xml"]
     VndEtsiIptvcommandXml,
+    #[doc = "application/vnd.etsi.iptvdiscovery+xml"]
     VndEtsiIptvdiscoveryXml,
+    #[doc = "application/vnd.etsi.iptvprofile+xml"]
     VndEtsiIptvprofileXml,
+    #[doc = "application/vnd.etsi.iptvsad-bc+xml"]
     VndEtsiIptvsadBcXml,
+    #[doc = "application/vnd.etsi.iptvsad-cod+xml"]
     VndEtsiIptvsadCodXml,
+    #[doc = "application/vnd.etsi.iptvsad-npvr+xml"]
     VndEtsiIptvsadNpvrXml,
+    #[doc = "application/vnd.etsi.iptvservice+xml"]
     VndEtsiIptvserviceXml,
+    #[doc = "application/vnd.etsi.iptvsync+xml"]
     VndEtsiIptvsyncXml,
+    #[doc = "application/vnd.etsi.iptvueprofile+xml"]
     VndEtsiIptvueprofileXml,
+    #[doc = "application/vnd.etsi.mcid+xml"]
     VndEtsiMcidXml,
+    #[doc = "application/vnd.etsi.mheg5"]
     VndEtsiMheg5,
+    #[doc = "application/vnd.etsi.overload-control-policy-dataset+xml"]
     VndEtsiOverloadControlPolicyDatasetXml,
+    #[doc = "application/vnd.etsi.pstn+xml"]
     VndEtsiPstnXml,
+    #[doc = "application/vnd.etsi.sci+xml"]
     VndEtsiSciXml,
+    #[doc = "application/vnd.etsi.simservs+xml"]
     VndEtsiSimservsXml,
+    #[doc = "application/vnd.etsi.timestamp-token"]
     VndEtsiTimestampToken,
+    #[doc = "application/vnd.etsi.tsl+xml"]
     VndEtsiTslXml,
+    #[doc = "application/vnd.etsi.tsl.der"]
     VndEtsiTslDer,
+    #[doc = "application/vnd.eu.kasparian.car+json"]
     VndEuKasparianCarJson,
+    #[doc = "application/vnd.eudora.data"]
     VndEudoraData,
+    #[doc = "application/vnd.evolv.ecig.profile"]
     VndEvolvEcigProfile,
+    #[doc = "application/vnd.evolv.ecig.settings"]
     VndEvolvEcigSettings,
+    #[doc = "application/vnd.evolv.ecig.theme"]
     VndEvolvEcigTheme,
+    #[doc = "application/vnd.exstream-empower+zip"]
     VndExstreamEmpowerZip,
+    #[doc = "application/vnd.exstream-package"]
     VndExstreamPackage,
+    #[doc = "application/vnd.ezpix-album"]
     VndEzpixAlbum,
+    #[doc = "application/vnd.ezpix-package"]
     VndEzpixPackage,
+    #[doc = "application/vnd.f-secure.mobile"]
     VndFSecureMobile,
+    #[doc = "application/vnd.fastcopy-disk-image"]
     VndFastcopyDiskImage,
+    #[doc = "application/vnd.familysearch.gedcom+zip"]
     VndFamilysearchGedcomZip,
+    #[doc = "application/vnd.fdsn.mseed"]
     VndFdsnMseed,
+    #[doc = "application/vnd.fdsn.seed"]
     VndFdsnSeed,
+    #[doc = "application/vnd.ffsns"]
     VndFfsns,
+    #[doc = "application/vnd.ficlab.flb+zip"]
     VndFiclabFlbZip,
+    #[doc = "application/vnd.filmit.zfc"]
     VndFilmitZfc,
+    #[doc = "application/vnd.fints"]
     VndFints,
+    #[doc = "application/vnd.firemonkeys.cloudcell"]
     VndFiremonkeysCloudcell,
+    #[doc = "application/vnd.FloGraphIt"]
     VndFloGraphIt,
+    #[doc = "application/vnd.fluxtime.clip"]
     VndFluxtimeClip,
+    #[doc = "application/vnd.font-fontforge-sfd"]
     VndFontFontforgeSfd,
+    #[doc = "application/vnd.framemaker"]
     VndFramemaker,
+    #[doc = "application/vnd.fsc.weblaunch"]
     VndFscWeblaunch,
+    #[doc = "application/vnd.fujifilm.fb.docuworks"]
     VndFujifilmFbDocuworks,
+    #[doc = "application/vnd.fujifilm.fb.docuworks.binder"]
     VndFujifilmFbDocuworksBinder,
+    #[doc = "application/vnd.fujifilm.fb.docuworks.container"]
     VndFujifilmFbDocuworksContainer,
+    #[doc = "application/vnd.fujifilm.fb.jfi+xml"]
     VndFujifilmFbJfiXml,
+    #[doc = "application/vnd.fujitsu.oasys"]
     VndFujitsuOasys,
+    #[doc = "application/vnd.fujitsu.oasys2"]
     VndFujitsuOasys2,
+    #[doc = "application/vnd.fujitsu.oasys3"]
     VndFujitsuOasys3,
+    #[doc = "application/vnd.fujitsu.oasysgp"]
     VndFujitsuOasysgp,
+    #[doc = "application/vnd.fujitsu.oasysprs"]
     VndFujitsuOasysprs,
+    #[doc = "application/vnd.fujixerox.ART4"]
     VndFujixeroxART4,
+    #[doc = "application/vnd.fujixerox.ART-EX"]
     VndFujixeroxARTEX,
+    #[doc = "application/vnd.fujixerox.ddd"]
     VndFujixeroxDdd,
+    #[doc = "application/vnd.fujixerox.docuworks"]
     VndFujixeroxDocuworks,
+    #[doc = "application/vnd.fujixerox.docuworks.binder"]
     VndFujixeroxDocuworksBinder,
+    #[doc = "application/vnd.fujixerox.docuworks.container"]
     VndFujixeroxDocuworksContainer,
+    #[doc = "application/vnd.fujixerox.HBPL"]
     VndFujixeroxHBPL,
+    #[doc = "application/vnd.fut-misnet"]
     VndFutMisnet,
+    #[doc = "application/vnd.futoin+cbor"]
     VndFutoinCbor,
+    #[doc = "application/vnd.futoin+json"]
     VndFutoinJson,
+    #[doc = "application/vnd.fuzzysheet"]
     VndFuzzysheet,
+    #[doc = "application/vnd.genomatix.tuxedo"]
     VndGenomatixTuxedo,
+    #[doc = "application/vnd.genozip"]
     VndGenozip,
+    #[doc = "application/vnd.gentics.grd+json"]
     VndGenticsGrdJson,
+    #[doc = "application/vnd.gentoo.catmetadata+xml"]
     VndGentooCatmetadataXml,
+    #[doc = "application/vnd.gentoo.ebuild"]
     VndGentooEbuild,
+    #[doc = "application/vnd.gentoo.eclass"]
     VndGentooEclass,
+    #[doc = "application/vnd.gentoo.manifest"]
     VndGentooManifest,
+    #[doc = "application/vnd.gentoo.pkgmetadata+xml"]
     VndGentooPkgmetadataXml,
+    #[doc = "application/vnd.geogebra.file"]
     VndGeogebraFile,
+    #[doc = "application/vnd.geogebra.slides"]
     VndGeogebraSlides,
+    #[doc = "application/vnd.geogebra.tool"]
     VndGeogebraTool,
+    #[doc = "application/vnd.geometry-explorer"]
     VndGeometryExplorer,
+    #[doc = "application/vnd.geonext"]
     VndGeonext,
+    #[doc = "application/vnd.geoplan"]
     VndGeoplan,
+    #[doc = "application/vnd.geospace"]
     VndGeospace,
+    #[doc = "application/vnd.gerber"]
     VndGerber,
+    #[doc = "application/vnd.globalplatform.card-content-mgt"]
     VndGlobalplatformCardContentMgt,
+    #[doc = "application/vnd.globalplatform.card-content-mgt-response"]
     VndGlobalplatformCardContentMgtResponse,
+    #[doc = "application/vnd.gmx"]
     VndGmxDEPRECATED,
+    #[doc = "application/vnd.gnu.taler.exchange+json"]
     VndGnuTalerExchangeJson,
+    #[doc = "application/vnd.gnu.taler.merchant+json"]
     VndGnuTalerMerchantJson,
+    #[doc = "application/vnd.google-earth.kml+xml"]
     VndGoogleEarthKmlXml,
+    #[doc = "application/vnd.google-earth.kmz"]
     VndGoogleEarthKmz,
+    #[doc = "application/vnd.gov.sk.e-form+xml"]
     VndGovSkEFormXml,
+    #[doc = "application/vnd.gov.sk.e-form+zip"]
     VndGovSkEFormZip,
+    #[doc = "application/vnd.gov.sk.xmldatacontainer+xml"]
     VndGovSkXmldatacontainerXml,
+    #[doc = "application/vnd.grafeq"]
     VndGrafeq,
+    #[doc = "application/vnd.gridmp"]
     VndGridmp,
+    #[doc = "application/vnd.groove-account"]
     VndGrooveAccount,
+    #[doc = "application/vnd.groove-help"]
     VndGrooveHelp,
+    #[doc = "application/vnd.groove-identity-message"]
     VndGrooveIdentityMessage,
+    #[doc = "application/vnd.groove-injector"]
     VndGrooveInjector,
+    #[doc = "application/vnd.groove-tool-message"]
     VndGrooveToolMessage,
+    #[doc = "application/vnd.groove-tool-template"]
     VndGrooveToolTemplate,
+    #[doc = "application/vnd.groove-vcard"]
     VndGrooveVcard,
+    #[doc = "application/vnd.hal+json"]
     VndHalJson,
+    #[doc = "application/vnd.hal+xml"]
     VndHalXml,
+    #[doc = "application/vnd.HandHeld-Entertainment+xml"]
     VndHandHeldEntertainmentXml,
+    #[doc = "application/vnd.hbci"]
     VndHbci,
+    #[doc = "application/vnd.hc+json"]
     VndHcJson,
+    #[doc = "application/vnd.hcl-bireports"]
     VndHclBireports,
+    #[doc = "application/vnd.hdt"]
     VndHdt,
+    #[doc = "application/vnd.heroku+json"]
     VndHerokuJson,
+    #[doc = "application/vnd.hhe.lesson-player"]
     VndHheLessonPlayer,
+    #[doc = "application/vnd.hp-HPGL"]
     VndHpHPGL,
+    #[doc = "application/vnd.hp-hpid"]
     VndHpHpid,
+    #[doc = "application/vnd.hp-hps"]
     VndHpHps,
+    #[doc = "application/vnd.hp-jlyt"]
     VndHpJlyt,
+    #[doc = "application/vnd.hp-PCL"]
     VndHpPCL,
+    #[doc = "application/vnd.hp-PCLXL"]
     VndHpPCLXL,
+    #[doc = "application/vnd.httphone"]
     VndHttphone,
+    #[doc = "application/vnd.hydrostatix.sof-data"]
     VndHydrostatixSofData,
+    #[doc = "application/vnd.hyper-item+json"]
     VndHyperItemJson,
+    #[doc = "application/vnd.hyper+json"]
     VndHyperJson,
+    #[doc = "application/vnd.hyperdrive+json"]
     VndHyperdriveJson,
+    #[doc = "application/vnd.hzn-3d-crossword"]
     VndHzn3DCrossword,
+    #[doc = "application/vnd.ibm.electronic-media"]
     VndIbmElectronicMedia,
+    #[doc = "application/vnd.ibm.MiniPay"]
     VndIbmMiniPay,
+    #[doc = "application/vnd.ibm.rights-management"]
     VndIbmRightsManagement,
+    #[doc = "application/vnd.ibm.secure-container"]
     VndIbmSecureContainer,
+    #[doc = "application/vnd.iccprofile"]
     VndIccprofile,
+    #[doc = "application/vnd.ieee.1905"]
     VndIeee1905,
+    #[doc = "application/vnd.igloader"]
     VndIgloader,
+    #[doc = "application/vnd.imagemeter.folder+zip"]
     VndImagemeterFolderZip,
+    #[doc = "application/vnd.imagemeter.image+zip"]
     VndImagemeterImageZip,
+    #[doc = "application/vnd.immervision-ivp"]
     VndImmervisionIvp,
+    #[doc = "application/vnd.immervision-ivu"]
     VndImmervisionIvu,
+    #[doc = "application/vnd.ims.imsccv1p1"]
     VndImsImsccv1P1,
+    #[doc = "application/vnd.ims.imsccv1p2"]
     VndImsImsccv1P2,
+    #[doc = "application/vnd.ims.imsccv1p3"]
     VndImsImsccv1P3,
+    #[doc = "application/vnd.ims.lis.v2.result+json"]
     VndImsLisV2ResultJson,
+    #[doc = "application/vnd.ims.lti.v2.toolconsumerprofile+json"]
     VndImsLtiV2ToolconsumerprofileJson,
+    #[doc = "application/vnd.ims.lti.v2.toolproxy.id+json"]
     VndImsLtiV2ToolproxyIdJson,
+    #[doc = "application/vnd.ims.lti.v2.toolproxy+json"]
     VndImsLtiV2ToolproxyJson,
+    #[doc = "application/vnd.ims.lti.v2.toolsettings+json"]
     VndImsLtiV2ToolsettingsJson,
+    #[doc = "application/vnd.ims.lti.v2.toolsettings.simple+json"]
     VndImsLtiV2ToolsettingsSimpleJson,
+    #[doc = "application/vnd.informedcontrol.rms+xml"]
     VndInformedcontrolRmsXml,
+    #[doc = "application/vnd.infotech.project"]
     VndInfotechProject,
+    #[doc = "application/vnd.infotech.project+xml"]
     VndInfotechProjectXml,
+    #[doc = "application/vnd.innopath.wamp.notification"]
     VndInnopathWampNotification,
+    #[doc = "application/vnd.insors.igm"]
     VndInsorsIgm,
+    #[doc = "application/vnd.intercon.formnet"]
     VndInterconFormnet,
+    #[doc = "application/vnd.intergeo"]
     VndIntergeo,
+    #[doc = "application/vnd.intertrust.digibox"]
     VndIntertrustDigibox,
+    #[doc = "application/vnd.intertrust.nncp"]
     VndIntertrustNncp,
+    #[doc = "application/vnd.intu.qbo"]
     VndIntuQbo,
+    #[doc = "application/vnd.intu.qfx"]
     VndIntuQfx,
+    #[doc = "application/vnd.ipld.car"]
     VndIpldCar,
+    #[doc = "application/vnd.ipld.dag-cbor"]
     VndIpldDagCbor,
+    #[doc = "application/vnd.ipld.dag-json"]
     VndIpldDagJson,
+    #[doc = "application/vnd.ipld.raw"]
     VndIpldRaw,
+    #[doc = "application/vnd.iptc.g2.catalogitem+xml"]
     VndIptcG2CatalogitemXml,
+    #[doc = "application/vnd.iptc.g2.conceptitem+xml"]
     VndIptcG2ConceptitemXml,
+    #[doc = "application/vnd.iptc.g2.knowledgeitem+xml"]
     VndIptcG2KnowledgeitemXml,
+    #[doc = "application/vnd.iptc.g2.newsitem+xml"]
     VndIptcG2NewsitemXml,
+    #[doc = "application/vnd.iptc.g2.newsmessage+xml"]
     VndIptcG2NewsmessageXml,
+    #[doc = "application/vnd.iptc.g2.packageitem+xml"]
     VndIptcG2PackageitemXml,
+    #[doc = "application/vnd.iptc.g2.planningitem+xml"]
     VndIptcG2PlanningitemXml,
+    #[doc = "application/vnd.ipunplugged.rcprofile"]
     VndIpunpluggedRcprofile,
+    #[doc = "application/vnd.irepository.package+xml"]
     VndIrepositoryPackageXml,
+    #[doc = "application/vnd.is-xpr"]
     VndIsXpr,
+    #[doc = "application/vnd.isac.fcs"]
     VndIsacFcs,
+    #[doc = "application/vnd.jam"]
     VndJam,
+    #[doc = "application/vnd.iso11783-10+zip"]
     VndIso1178310Zip,
+    #[doc = "application/vnd.japannet-directory-service"]
     VndJapannetDirectoryService,
+    #[doc = "application/vnd.japannet-jpnstore-wakeup"]
     VndJapannetJpnstoreWakeup,
+    #[doc = "application/vnd.japannet-payment-wakeup"]
     VndJapannetPaymentWakeup,
+    #[doc = "application/vnd.japannet-registration"]
     VndJapannetRegistration,
+    #[doc = "application/vnd.japannet-registration-wakeup"]
     VndJapannetRegistrationWakeup,
+    #[doc = "application/vnd.japannet-setstore-wakeup"]
     VndJapannetSetstoreWakeup,
+    #[doc = "application/vnd.japannet-verification"]
     VndJapannetVerification,
+    #[doc = "application/vnd.japannet-verification-wakeup"]
     VndJapannetVerificationWakeup,
+    #[doc = "application/vnd.jcp.javame.midlet-rms"]
     VndJcpJavameMidletRms,
+    #[doc = "application/vnd.jisp"]
     VndJisp,
+    #[doc = "application/vnd.joost.joda-archive"]
     VndJoostJodaArchive,
+    #[doc = "application/vnd.jsk.isdn-ngn"]
     VndJskIsdnNgn,
+    #[doc = "application/vnd.kahootz"]
     VndKahootz,
+    #[doc = "application/vnd.kde.karbon"]
     VndKdeKarbon,
+    #[doc = "application/vnd.kde.kchart"]
     VndKdeKchart,
+    #[doc = "application/vnd.kde.kformula"]
     VndKdeKformula,
+    #[doc = "application/vnd.kde.kivio"]
     VndKdeKivio,
+    #[doc = "application/vnd.kde.kontour"]
     VndKdeKontour,
+    #[doc = "application/vnd.kde.kpresenter"]
     VndKdeKpresenter,
+    #[doc = "application/vnd.kde.kspread"]
     VndKdeKspread,
+    #[doc = "application/vnd.kde.kword"]
     VndKdeKword,
+    #[doc = "application/vnd.kenameaapp"]
     VndKenameaapp,
+    #[doc = "application/vnd.kidspiration"]
     VndKidspiration,
+    #[doc = "application/vnd.Kinar"]
     VndKinar,
+    #[doc = "application/vnd.koan"]
     VndKoan,
+    #[doc = "application/vnd.kodak-descriptor"]
     VndKodakDescriptor,
+    #[doc = "application/vnd.las"]
     VndLas,
+    #[doc = "application/vnd.las.las+json"]
     VndLasLasJson,
+    #[doc = "application/vnd.las.las+xml"]
     VndLasLasXml,
+    #[doc = "application/vnd.laszip"]
     VndLaszip,
+    #[doc = "application/vnd.leap+json"]
     VndLeapJson,
+    #[doc = "application/vnd.liberty-request+xml"]
     VndLibertyRequestXml,
+    #[doc = "application/vnd.llamagraphics.life-balance.desktop"]
     VndLlamagraphicsLifeBalanceDesktop,
+    #[doc = "application/vnd.llamagraphics.life-balance.exchange+xml"]
     VndLlamagraphicsLifeBalanceExchangeXml,
+    #[doc = "application/vnd.logipipe.circuit+zip"]
     VndLogipipeCircuitZip,
+    #[doc = "application/vnd.loom"]
     VndLoom,
+    #[doc = "application/vnd.lotus-1-2-3"]
     VndLotus123,
+    #[doc = "application/vnd.lotus-approach"]
     VndLotusApproach,
+    #[doc = "application/vnd.lotus-freelance"]
     VndLotusFreelance,
+    #[doc = "application/vnd.lotus-notes"]
     VndLotusNotes,
+    #[doc = "application/vnd.lotus-organizer"]
     VndLotusOrganizer,
+    #[doc = "application/vnd.lotus-screencam"]
     VndLotusScreencam,
+    #[doc = "application/vnd.lotus-wordpro"]
     VndLotusWordpro,
+    #[doc = "application/vnd.macports.portpkg"]
     VndMacportsPortpkg,
+    #[doc = "application/vnd.mapbox-vector-tile"]
     VndMapboxVectorTile,
+    #[doc = "application/vnd.marlin.drm.actiontoken+xml"]
     VndMarlinDrmActiontokenXml,
+    #[doc = "application/vnd.marlin.drm.conftoken+xml"]
     VndMarlinDrmConftokenXml,
+    #[doc = "application/vnd.marlin.drm.license+xml"]
     VndMarlinDrmLicenseXml,
+    #[doc = "application/vnd.marlin.drm.mdcf"]
     VndMarlinDrmMdcf,
+    #[doc = "application/vnd.mason+json"]
     VndMasonJson,
+    #[doc = "application/vnd.maxar.archive.3tz+zip"]
     VndMaxarArchive3TzZip,
+    #[doc = "application/vnd.maxmind.maxmind-db"]
     VndMaxmindMaxmindDb,
+    #[doc = "application/vnd.mcd"]
     VndMcd,
+    #[doc = "application/vnd.medcalcdata"]
     VndMedcalcdata,
+    #[doc = "application/vnd.mediastation.cdkey"]
     VndMediastationCdkey,
+    #[doc = "application/vnd.meridian-slingshot"]
     VndMeridianSlingshot,
+    #[doc = "application/vnd.MFER"]
     VndMFER,
+    #[doc = "application/vnd.mfmp"]
     VndMfmp,
+    #[doc = "application/vnd.micro+json"]
     VndMicroJson,
+    #[doc = "application/vnd.micrografx.flo"]
     VndMicrografxFlo,
+    #[doc = "application/vnd.micrografx.igx"]
     VndMicrografxIgx,
+    #[doc = "application/vnd.microsoft.portable-executable"]
     VndMicrosoftPortableExecutable,
+    #[doc = "application/vnd.microsoft.windows.thumbnail-cache"]
     VndMicrosoftWindowsThumbnailCache,
+    #[doc = "application/vnd.miele+json"]
     VndMieleJson,
+    #[doc = "application/vnd.mif"]
     VndMif,
+    #[doc = "application/vnd.minisoft-hp3000-save"]
     VndMinisoftHp3000Save,
+    #[doc = "application/vnd.mitsubishi.misty-guard.trustweb"]
     VndMitsubishiMistyGuardTrustweb,
+    #[doc = "application/vnd.Mobius.DAF"]
     VndMobiusDAF,
+    #[doc = "application/vnd.Mobius.DIS"]
     VndMobiusDIS,
+    #[doc = "application/vnd.Mobius.MBK"]
     VndMobiusMBK,
+    #[doc = "application/vnd.Mobius.MQY"]
     VndMobiusMQY,
+    #[doc = "application/vnd.Mobius.MSL"]
     VndMobiusMSL,
+    #[doc = "application/vnd.Mobius.PLC"]
     VndMobiusPLC,
+    #[doc = "application/vnd.Mobius.TXF"]
     VndMobiusTXF,
+    #[doc = "application/vnd.mophun.application"]
     VndMophunApplication,
+    #[doc = "application/vnd.mophun.certificate"]
     VndMophunCertificate,
+    #[doc = "application/vnd.motorola.flexsuite"]
     VndMotorolaFlexsuite,
+    #[doc = "application/vnd.motorola.flexsuite.adsi"]
     VndMotorolaFlexsuiteAdsi,
+    #[doc = "application/vnd.motorola.flexsuite.fis"]
     VndMotorolaFlexsuiteFis,
+    #[doc = "application/vnd.motorola.flexsuite.gotap"]
     VndMotorolaFlexsuiteGotap,
+    #[doc = "application/vnd.motorola.flexsuite.kmr"]
     VndMotorolaFlexsuiteKmr,
+    #[doc = "application/vnd.motorola.flexsuite.ttc"]
     VndMotorolaFlexsuiteTtc,
+    #[doc = "application/vnd.motorola.flexsuite.wem"]
     VndMotorolaFlexsuiteWem,
+    #[doc = "application/vnd.motorola.iprm"]
     VndMotorolaIprm,
+    #[doc = "application/vnd.mozilla.xul+xml"]
     VndMozillaXulXml,
+    #[doc = "application/vnd.ms-artgalry"]
     VndMsArtgalry,
+    #[doc = "application/vnd.ms-asf"]
     VndMsAsf,
+    #[doc = "application/vnd.ms-cab-compressed"]
     VndMsCabCompressed,
+    #[doc = "application/vnd.ms-3mfdocument"]
     VndMs3Mfdocument,
+    #[doc = "application/vnd.ms-excel"]
     VndMsExcel,
+    #[doc = "application/vnd.ms-excel.addin.macroEnabled.12"]
     VndMsExcelAddinMacroEnabled12,
+    #[doc = "application/vnd.ms-excel.sheet.binary.macroEnabled.12"]
     VndMsExcelSheetBinaryMacroEnabled12,
+    #[doc = "application/vnd.ms-excel.sheet.macroEnabled.12"]
     VndMsExcelSheetMacroEnabled12,
+    #[doc = "application/vnd.ms-excel.template.macroEnabled.12"]
     VndMsExcelTemplateMacroEnabled12,
+    #[doc = "application/vnd.ms-fontobject"]
     VndMsFontobject,
+    #[doc = "application/vnd.ms-htmlhelp"]
     VndMsHtmlhelp,
+    #[doc = "application/vnd.ms-ims"]
     VndMsIms,
+    #[doc = "application/vnd.ms-lrm"]
     VndMsLrm,
+    #[doc = "application/vnd.ms-office.activeX+xml"]
     VndMsOfficeActiveXXml,
+    #[doc = "application/vnd.ms-officetheme"]
     VndMsOfficetheme,
+    #[doc = "application/vnd.ms-playready.initiator+xml"]
     VndMsPlayreadyInitiatorXml,
+    #[doc = "application/vnd.ms-powerpoint"]
     VndMsPowerpoint,
+    #[doc = "application/vnd.ms-powerpoint.addin.macroEnabled.12"]
     VndMsPowerpointAddinMacroEnabled12,
+    #[doc = "application/vnd.ms-powerpoint.presentation.macroEnabled.12"]
     VndMsPowerpointPresentationMacroEnabled12,
+    #[doc = "application/vnd.ms-powerpoint.slide.macroEnabled.12"]
     VndMsPowerpointSlideMacroEnabled12,
+    #[doc = "application/vnd.ms-powerpoint.slideshow.macroEnabled.12"]
     VndMsPowerpointSlideshowMacroEnabled12,
+    #[doc = "application/vnd.ms-powerpoint.template.macroEnabled.12"]
     VndMsPowerpointTemplateMacroEnabled12,
+    #[doc = "application/vnd.ms-PrintDeviceCapabilities+xml"]
     VndMsPrintDeviceCapabilitiesXml,
+    #[doc = "application/vnd.ms-PrintSchemaTicket+xml"]
     VndMsPrintSchemaTicketXml,
+    #[doc = "application/vnd.ms-project"]
     VndMsProject,
+    #[doc = "application/vnd.ms-tnef"]
     VndMsTnef,
+    #[doc = "application/vnd.ms-windows.devicepairing"]
     VndMsWindowsDevicepairing,
+    #[doc = "application/vnd.ms-windows.nwprinting.oob"]
     VndMsWindowsNwprintingOob,
+    #[doc = "application/vnd.ms-windows.printerpairing"]
     VndMsWindowsPrinterpairing,
+    #[doc = "application/vnd.ms-windows.wsd.oob"]
     VndMsWindowsWsdOob,
+    #[doc = "application/vnd.ms-wmdrm.lic-chlg-req"]
     VndMsWmdrmLicChlgReq,
+    #[doc = "application/vnd.ms-wmdrm.lic-resp"]
     VndMsWmdrmLicResp,
+    #[doc = "application/vnd.ms-wmdrm.meter-chlg-req"]
     VndMsWmdrmMeterChlgReq,
+    #[doc = "application/vnd.ms-wmdrm.meter-resp"]
     VndMsWmdrmMeterResp,
+    #[doc = "application/vnd.ms-word.document.macroEnabled.12"]
     VndMsWordDocumentMacroEnabled12,
+    #[doc = "application/vnd.ms-word.template.macroEnabled.12"]
     VndMsWordTemplateMacroEnabled12,
+    #[doc = "application/vnd.ms-works"]
     VndMsWorks,
+    #[doc = "application/vnd.ms-wpl"]
     VndMsWpl,
+    #[doc = "application/vnd.ms-xpsdocument"]
     VndMsXpsdocument,
+    #[doc = "application/vnd.msa-disk-image"]
     VndMsaDiskImage,
+    #[doc = "application/vnd.mseq"]
     VndMseq,
+    #[doc = "application/vnd.msign"]
     VndMsign,
+    #[doc = "application/vnd.multiad.creator"]
     VndMultiadCreator,
+    #[doc = "application/vnd.multiad.creator.cif"]
     VndMultiadCreatorCif,
+    #[doc = "application/vnd.musician"]
     VndMusician,
+    #[doc = "application/vnd.music-niff"]
     VndMusicNiff,
+    #[doc = "application/vnd.muvee.style"]
     VndMuveeStyle,
+    #[doc = "application/vnd.mynfc"]
     VndMynfc,
+    #[doc = "application/vnd.nacamar.ybrid+json"]
     VndNacamarYbridJson,
+    #[doc = "application/vnd.ncd.control"]
     VndNcdControl,
+    #[doc = "application/vnd.ncd.reference"]
     VndNcdReference,
+    #[doc = "application/vnd.nearst.inv+json"]
     VndNearstInvJson,
+    #[doc = "application/vnd.nebumind.line"]
     VndNebumindLine,
+    #[doc = "application/vnd.nervana"]
     VndNervana,
+    #[doc = "application/vnd.netfpx"]
     VndNetfpx,
+    #[doc = "application/vnd.neurolanguage.nlu"]
     VndNeurolanguageNlu,
+    #[doc = "application/vnd.nimn"]
     VndNimn,
+    #[doc = "application/vnd.nintendo.snes.rom"]
     VndNintendoSnesRom,
+    #[doc = "application/vnd.nintendo.nitro.rom"]
     VndNintendoNitroRom,
+    #[doc = "application/vnd.nitf"]
     VndNitf,
+    #[doc = "application/vnd.noblenet-directory"]
     VndNoblenetDirectory,
+    #[doc = "application/vnd.noblenet-sealer"]
     VndNoblenetSealer,
+    #[doc = "application/vnd.noblenet-web"]
     VndNoblenetWeb,
+    #[doc = "application/vnd.nokia.catalogs"]
     VndNokiaCatalogs,
+    #[doc = "application/vnd.nokia.conml+wbxml"]
     VndNokiaConmlWbxml,
+    #[doc = "application/vnd.nokia.conml+xml"]
     VndNokiaConmlXml,
+    #[doc = "application/vnd.nokia.iptv.config+xml"]
     VndNokiaIptvConfigXml,
+    #[doc = "application/vnd.nokia.iSDS-radio-presets"]
     VndNokiaISDSRadioPresets,
+    #[doc = "application/vnd.nokia.landmark+wbxml"]
     VndNokiaLandmarkWbxml,
+    #[doc = "application/vnd.nokia.landmark+xml"]
     VndNokiaLandmarkXml,
+    #[doc = "application/vnd.nokia.landmarkcollection+xml"]
     VndNokiaLandmarkcollectionXml,
+    #[doc = "application/vnd.nokia.ncd"]
     VndNokiaNcd,
+    #[doc = "application/vnd.nokia.n-gage.ac+xml"]
     VndNokiaNGageAcXml,
+    #[doc = "application/vnd.nokia.n-gage.data"]
     VndNokiaNGageData,
+    #[doc = "application/vnd.nokia.pcd+wbxml"]
     VndNokiaPcdWbxml,
+    #[doc = "application/vnd.nokia.pcd+xml"]
     VndNokiaPcdXml,
+    #[doc = "application/vnd.nokia.radio-preset"]
     VndNokiaRadioPreset,
+    #[doc = "application/vnd.nokia.radio-presets"]
     VndNokiaRadioPresets,
+    #[doc = "application/vnd.novadigm.EDM"]
     VndNovadigmEDM,
+    #[doc = "application/vnd.novadigm.EDX"]
     VndNovadigmEDX,
+    #[doc = "application/vnd.novadigm.EXT"]
     VndNovadigmEXT,
+    #[doc = "application/vnd.ntt-local.content-share"]
     VndNttLocalContentShare,
+    #[doc = "application/vnd.ntt-local.file-transfer"]
     VndNttLocalFileTransfer,
+    #[doc = "application/vnd.ntt-local.ogw_remote-access"]
     VndNttLocalOgwRemoteAccess,
+    #[doc = "application/vnd.ntt-local.sip-ta_remote"]
     VndNttLocalSipTaRemote,
+    #[doc = "application/vnd.ntt-local.sip-ta_tcp_stream"]
     VndNttLocalSipTaTcpStream,
+    #[doc = "application/vnd.oasis.opendocument.base"]
     VndOasisOpendocumentBase,
+    #[doc = "application/vnd.oasis.opendocument.chart"]
     VndOasisOpendocumentChart,
+    #[doc = "application/vnd.oasis.opendocument.chart-template"]
     VndOasisOpendocumentChartTemplate,
+    #[doc = "application/vnd.oasis.opendocument.formula"]
     VndOasisOpendocumentFormula,
+    #[doc = "application/vnd.oasis.opendocument.formula-template"]
     VndOasisOpendocumentFormulaTemplate,
+    #[doc = "application/vnd.oasis.opendocument.graphics"]
     VndOasisOpendocumentGraphics,
+    #[doc = "application/vnd.oasis.opendocument.graphics-template"]
     VndOasisOpendocumentGraphicsTemplate,
+    #[doc = "application/vnd.oasis.opendocument.image"]
     VndOasisOpendocumentImage,
+    #[doc = "application/vnd.oasis.opendocument.image-template"]
     VndOasisOpendocumentImageTemplate,
+    #[doc = "application/vnd.oasis.opendocument.presentation"]
     VndOasisOpendocumentPresentation,
+    #[doc = "application/vnd.oasis.opendocument.presentation-template"]
     VndOasisOpendocumentPresentationTemplate,
+    #[doc = "application/vnd.oasis.opendocument.spreadsheet"]
     VndOasisOpendocumentSpreadsheet,
+    #[doc = "application/vnd.oasis.opendocument.spreadsheet-template"]
     VndOasisOpendocumentSpreadsheetTemplate,
+    #[doc = "application/vnd.oasis.opendocument.text"]
     VndOasisOpendocumentText,
+    #[doc = "application/vnd.oasis.opendocument.text-master"]
     VndOasisOpendocumentTextMaster,
+    #[doc = "application/vnd.oasis.opendocument.text-template"]
     VndOasisOpendocumentTextTemplate,
+    #[doc = "application/vnd.oasis.opendocument.text-web"]
     VndOasisOpendocumentTextWeb,
+    #[doc = "application/vnd.obn"]
     VndObn,
+    #[doc = "application/vnd.ocf+cbor"]
     VndOcfCbor,
+    #[doc = "application/vnd.oci.image.manifest.v1+json"]
     VndOciImageManifestV1Json,
+    #[doc = "application/vnd.oftn.l10n+json"]
     VndOftnL10NJson,
+    #[doc = "application/vnd.oipf.contentaccessdownload+xml"]
     VndOipfContentaccessdownloadXml,
+    #[doc = "application/vnd.oipf.contentaccessstreaming+xml"]
     VndOipfContentaccessstreamingXml,
+    #[doc = "application/vnd.oipf.cspg-hexbinary"]
     VndOipfCspgHexbinary,
+    #[doc = "application/vnd.oipf.dae.svg+xml"]
     VndOipfDaeSvgXml,
+    #[doc = "application/vnd.oipf.dae.xhtml+xml"]
     VndOipfDaeXhtmlXml,
+    #[doc = "application/vnd.oipf.mippvcontrolmessage+xml"]
     VndOipfMippvcontrolmessageXml,
+    #[doc = "application/vnd.oipf.pae.gem"]
     VndOipfPaeGem,
+    #[doc = "application/vnd.oipf.spdiscovery+xml"]
     VndOipfSpdiscoveryXml,
+    #[doc = "application/vnd.oipf.spdlist+xml"]
     VndOipfSpdlistXml,
+    #[doc = "application/vnd.oipf.ueprofile+xml"]
     VndOipfUeprofileXml,
+    #[doc = "application/vnd.oipf.userprofile+xml"]
     VndOipfUserprofileXml,
+    #[doc = "application/vnd.olpc-sugar"]
     VndOlpcSugar,
+    #[doc = "application/vnd.oma.bcast.associated-procedure-parameter+xml"]
     VndOmaBcastAssociatedProcedureParameterXml,
+    #[doc = "application/vnd.oma.bcast.drm-trigger+xml"]
     VndOmaBcastDrmTriggerXml,
+    #[doc = "application/vnd.oma.bcast.imd+xml"]
     VndOmaBcastImdXml,
+    #[doc = "application/vnd.oma.bcast.ltkm"]
     VndOmaBcastLtkm,
+    #[doc = "application/vnd.oma.bcast.notification+xml"]
     VndOmaBcastNotificationXml,
+    #[doc = "application/vnd.oma.bcast.provisioningtrigger"]
     VndOmaBcastProvisioningtrigger,
+    #[doc = "application/vnd.oma.bcast.sgboot"]
     VndOmaBcastSgboot,
+    #[doc = "application/vnd.oma.bcast.sgdd+xml"]
     VndOmaBcastSgddXml,
+    #[doc = "application/vnd.oma.bcast.sgdu"]
     VndOmaBcastSgdu,
+    #[doc = "application/vnd.oma.bcast.simple-symbol-container"]
     VndOmaBcastSimpleSymbolContainer,
+    #[doc = "application/vnd.oma.bcast.smartcard-trigger+xml"]
     VndOmaBcastSmartcardTriggerXml,
+    #[doc = "application/vnd.oma.bcast.sprov+xml"]
     VndOmaBcastSprovXml,
+    #[doc = "application/vnd.oma.bcast.stkm"]
     VndOmaBcastStkm,
+    #[doc = "application/vnd.oma.cab-address-book+xml"]
     VndOmaCabAddressBookXml,
+    #[doc = "application/vnd.oma.cab-feature-handler+xml"]
     VndOmaCabFeatureHandlerXml,
+    #[doc = "application/vnd.oma.cab-pcc+xml"]
     VndOmaCabPccXml,
+    #[doc = "application/vnd.oma.cab-subs-invite+xml"]
     VndOmaCabSubsInviteXml,
+    #[doc = "application/vnd.oma.cab-user-prefs+xml"]
     VndOmaCabUserPrefsXml,
+    #[doc = "application/vnd.oma.dcd"]
     VndOmaDcd,
+    #[doc = "application/vnd.oma.dcdc"]
     VndOmaDcdc,
+    #[doc = "application/vnd.oma.dd2+xml"]
     VndOmaDd2Xml,
+    #[doc = "application/vnd.oma.drm.risd+xml"]
     VndOmaDrmRisdXml,
+    #[doc = "application/vnd.oma.group-usage-list+xml"]
     VndOmaGroupUsageListXml,
+    #[doc = "application/vnd.oma.lwm2m+cbor"]
     VndOmaLwm2MCbor,
+    #[doc = "application/vnd.oma.lwm2m+json"]
     VndOmaLwm2MJson,
+    #[doc = "application/vnd.oma.lwm2m+tlv"]
     VndOmaLwm2MTlv,
+    #[doc = "application/vnd.oma.pal+xml"]
     VndOmaPalXml,
+    #[doc = "application/vnd.oma.poc.detailed-progress-report+xml"]
     VndOmaPocDetailedProgressReportXml,
+    #[doc = "application/vnd.oma.poc.final-report+xml"]
     VndOmaPocFinalReportXml,
+    #[doc = "application/vnd.oma.poc.groups+xml"]
     VndOmaPocGroupsXml,
+    #[doc = "application/vnd.oma.poc.invocation-descriptor+xml"]
     VndOmaPocInvocationDescriptorXml,
+    #[doc = "application/vnd.oma.poc.optimized-progress-report+xml"]
     VndOmaPocOptimizedProgressReportXml,
+    #[doc = "application/vnd.oma.push"]
     VndOmaPush,
+    #[doc = "application/vnd.oma.scidm.messages+xml"]
     VndOmaScidmMessagesXml,
+    #[doc = "application/vnd.oma.xcap-directory+xml"]
     VndOmaXcapDirectoryXml,
+    #[doc = "application/vnd.omads-email+xml"]
     VndOmadsEmailXml,
+    #[doc = "application/vnd.omads-file+xml"]
     VndOmadsFileXml,
+    #[doc = "application/vnd.omads-folder+xml"]
     VndOmadsFolderXml,
+    #[doc = "application/vnd.omaloc-supl-init"]
     VndOmalocSuplInit,
+    #[doc = "application/vnd.oma-scws-config"]
     VndOmaScwsConfig,
+    #[doc = "application/vnd.oma-scws-http-request"]
     VndOmaScwsHttpRequest,
+    #[doc = "application/vnd.oma-scws-http-response"]
     VndOmaScwsHttpResponse,
+    #[doc = "application/vnd.onepager"]
     VndOnepager,
+    #[doc = "application/vnd.onepagertamp"]
     VndOnepagertamp,
+    #[doc = "application/vnd.onepagertamx"]
     VndOnepagertamx,
+    #[doc = "application/vnd.onepagertat"]
     VndOnepagertat,
+    #[doc = "application/vnd.onepagertatp"]
     VndOnepagertatp,
+    #[doc = "application/vnd.onepagertatx"]
     VndOnepagertatx,
+    #[doc = "application/vnd.onvif.metadata"]
     VndOnvifMetadata,
+    #[doc = "application/vnd.openblox.game-binary"]
     VndOpenbloxGameBinary,
+    #[doc = "application/vnd.openblox.game+xml"]
     VndOpenbloxGameXml,
+    #[doc = "application/vnd.openeye.oeb"]
     VndOpeneyeOeb,
+    #[doc = "application/vnd.openstreetmap.data+xml"]
     VndOpenstreetmapDataXml,
+    #[doc = "application/vnd.opentimestamps.ots"]
     VndOpentimestampsOts,
+    #[doc = "application/vnd.openxmlformats-officedocument.custom-properties+xml"]
     VndOpenxmlformatsOfficedocumentCustomPropertiesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.customXmlProperties+xml"]
     VndOpenxmlformatsOfficedocumentCustomXmlPropertiesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawing+xml"]
     VndOpenxmlformatsOfficedocumentDrawingXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.chart+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlChartXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlChartshapesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramColorsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramData+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramDataXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramLayoutXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml"]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramStyleXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.extended-properties+xml"]
     VndOpenxmlformatsOfficedocumentExtendedPropertiesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlCommentAuthorsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.comments+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlCommentsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlHandoutMasterXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlNotesMasterXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlNotesSlideXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presentation"]
     VndOpenxmlformatsOfficedocumentPresentationmlPresentation,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlPresentationMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presProps+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlPresPropsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slide"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlide,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slide+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideLayoutXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideMasterXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideshow"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideshow,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideshowMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideUpdateInfoXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlTableStylesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.tags+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlTagsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.template"]
     VndOpenxmlformatsOfficedocumentPresentationmlTemplate,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlTemplateMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.presentationml.viewProps+xml"]
     VndOpenxmlformatsOfficedocumentPresentationmlViewPropsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlCalcChainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlChartsheetXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlCommentsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlConnectionsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlDialogsheetXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlExternalLinkXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotCacheDefinitionXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotCacheRecordsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotTableXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlQueryTableXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlRevisionHeadersXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlRevisionLogXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSharedStringsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheet,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheetMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheetMetadataXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlStylesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTableXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTableSingleCellsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.template"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTemplate,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTemplateMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlUserNamesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlVolatileDependenciesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlWorksheetXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.theme+xml"]
     VndOpenxmlformatsOfficedocumentThemeXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.themeOverride+xml"]
     VndOpenxmlformatsOfficedocumentThemeOverrideXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.vmlDrawing"]
     VndOpenxmlformatsOfficedocumentVmlDrawing,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlCommentsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocument,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocumentGlossaryXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocumentMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlEndnotesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFontTableXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFooterXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFootnotesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlNumberingXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlSettingsXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlStylesXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.template"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlTemplate,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlTemplateMainXml,
+    #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"]
     VndOpenxmlformatsOfficedocumentWordprocessingmlWebSettingsXml,
+    #[doc = "application/vnd.openxmlformats-package.core-properties+xml"]
     VndOpenxmlformatsPackageCorePropertiesXml,
+    #[doc = "application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml"]
     VndOpenxmlformatsPackageDigitalSignatureXmlsignatureXml,
+    #[doc = "application/vnd.openxmlformats-package.relationships+xml"]
     VndOpenxmlformatsPackageRelationshipsXml,
+    #[doc = "application/vnd.oracle.resource+json"]
     VndOracleResourceJson,
+    #[doc = "application/vnd.orange.indata"]
     VndOrangeIndata,
+    #[doc = "application/vnd.osa.netdeploy"]
     VndOsaNetdeploy,
+    #[doc = "application/vnd.osgeo.mapguide.package"]
     VndOsgeoMapguidePackage,
+    #[doc = "application/vnd.osgi.bundle"]
     VndOsgiBundle,
+    #[doc = "application/vnd.osgi.dp"]
     VndOsgiDp,
+    #[doc = "application/vnd.osgi.subsystem"]
     VndOsgiSubsystem,
+    #[doc = "application/vnd.otps.ct-kip+xml"]
     VndOtpsCtKipXml,
+    #[doc = "application/vnd.oxli.countgraph"]
     VndOxliCountgraph,
+    #[doc = "application/vnd.pagerduty+json"]
     VndPagerdutyJson,
+    #[doc = "application/vnd.palm"]
     VndPalm,
+    #[doc = "application/vnd.panoply"]
     VndPanoply,
+    #[doc = "application/vnd.paos.xml"]
     VndPaosXml,
+    #[doc = "application/vnd.patentdive"]
     VndPatentdive,
+    #[doc = "application/vnd.patientecommsdoc"]
     VndPatientecommsdoc,
+    #[doc = "application/vnd.pawaafile"]
     VndPawaafile,
+    #[doc = "application/vnd.pcos"]
     VndPcos,
+    #[doc = "application/vnd.pg.format"]
     VndPgFormat,
+    #[doc = "application/vnd.pg.osasli"]
     VndPgOsasli,
+    #[doc = "application/vnd.piaccess.application-licence"]
     VndPiaccessApplicationLicence,
+    #[doc = "application/vnd.picsel"]
     VndPicsel,
+    #[doc = "application/vnd.pmi.widget"]
     VndPmiWidget,
+    #[doc = "application/vnd.poc.group-advertisement+xml"]
     VndPocGroupAdvertisementXml,
+    #[doc = "application/vnd.pocketlearn"]
     VndPocketlearn,
+    #[doc = "application/vnd.powerbuilder6"]
     VndPowerbuilder6,
+    #[doc = "application/vnd.powerbuilder6-s"]
     VndPowerbuilder6S,
+    #[doc = "application/vnd.powerbuilder7"]
     VndPowerbuilder7,
+    #[doc = "application/vnd.powerbuilder75"]
     VndPowerbuilder75,
+    #[doc = "application/vnd.powerbuilder75-s"]
     VndPowerbuilder75S,
+    #[doc = "application/vnd.powerbuilder7-s"]
     VndPowerbuilder7S,
+    #[doc = "application/vnd.preminet"]
     VndPreminet,
+    #[doc = "application/vnd.previewsystems.box"]
     VndPreviewsystemsBox,
+    #[doc = "application/vnd.proteus.magazine"]
     VndProteusMagazine,
+    #[doc = "application/vnd.psfs"]
     VndPsfs,
+    #[doc = "application/vnd.publishare-delta-tree"]
     VndPublishareDeltaTree,
+    #[doc = "application/vnd.pvi.ptid1"]
     VndPviPtid1,
+    #[doc = "application/vnd.pwg-multiplexed"]
     VndPwgMultiplexed,
+    #[doc = "application/vnd.pwg-xhtml-print+xml"]
     VndPwgXhtmlPrintXml,
+    #[doc = "application/vnd.qualcomm.brew-app-res"]
     VndQualcommBrewAppRes,
+    #[doc = "application/vnd.quarantainenet"]
     VndQuarantainenet,
+    #[doc = "application/vnd.Quark.QuarkXPress"]
     VndQuarkQuarkXPress,
+    #[doc = "application/vnd.quobject-quoxdocument"]
     VndQuobjectQuoxdocument,
+    #[doc = "application/vnd.radisys.moml+xml"]
     VndRadisysMomlXml,
+    #[doc = "application/vnd.radisys.msml-audit-conf+xml"]
     VndRadisysMsmlAuditConfXml,
+    #[doc = "application/vnd.radisys.msml-audit-conn+xml"]
     VndRadisysMsmlAuditConnXml,
+    #[doc = "application/vnd.radisys.msml-audit-dialog+xml"]
     VndRadisysMsmlAuditDialogXml,
+    #[doc = "application/vnd.radisys.msml-audit-stream+xml"]
     VndRadisysMsmlAuditStreamXml,
+    #[doc = "application/vnd.radisys.msml-audit+xml"]
     VndRadisysMsmlAuditXml,
+    #[doc = "application/vnd.radisys.msml-conf+xml"]
     VndRadisysMsmlConfXml,
+    #[doc = "application/vnd.radisys.msml-dialog-base+xml"]
     VndRadisysMsmlDialogBaseXml,
+    #[doc = "application/vnd.radisys.msml-dialog-fax-detect+xml"]
     VndRadisysMsmlDialogFaxDetectXml,
+    #[doc = "application/vnd.radisys.msml-dialog-fax-sendrecv+xml"]
     VndRadisysMsmlDialogFaxSendrecvXml,
+    #[doc = "application/vnd.radisys.msml-dialog-group+xml"]
     VndRadisysMsmlDialogGroupXml,
+    #[doc = "application/vnd.radisys.msml-dialog-speech+xml"]
     VndRadisysMsmlDialogSpeechXml,
+    #[doc = "application/vnd.radisys.msml-dialog-transform+xml"]
     VndRadisysMsmlDialogTransformXml,
+    #[doc = "application/vnd.radisys.msml-dialog+xml"]
     VndRadisysMsmlDialogXml,
+    #[doc = "application/vnd.radisys.msml+xml"]
     VndRadisysMsmlXml,
+    #[doc = "application/vnd.rainstor.data"]
     VndRainstorData,
+    #[doc = "application/vnd.rapid"]
     VndRapid,
+    #[doc = "application/vnd.rar"]
     VndRar,
+    #[doc = "application/vnd.realvnc.bed"]
     VndRealvncBed,
+    #[doc = "application/vnd.recordare.musicxml"]
     VndRecordareMusicxml,
+    #[doc = "application/vnd.recordare.musicxml+xml"]
     VndRecordareMusicxmlXml,
+    #[doc = "application/vnd.RenLearn.rlprint"]
     VndRenLearnRlprint,
+    #[doc = "application/vnd.resilient.logic"]
     VndResilientLogic,
+    #[doc = "application/vnd.restful+json"]
     VndRestfulJson,
+    #[doc = "application/vnd.rig.cryptonote"]
     VndRigCryptonote,
+    #[doc = "application/vnd.route66.link66+xml"]
     VndRoute66Link66Xml,
+    #[doc = "application/vnd.rs-274x"]
     VndRs274X,
+    #[doc = "application/vnd.ruckus.download"]
     VndRuckusDownload,
+    #[doc = "application/vnd.s3sms"]
     VndS3Sms,
+    #[doc = "application/vnd.sailingtracker.track"]
     VndSailingtrackerTrack,
+    #[doc = "application/vnd.sar"]
     VndSar,
+    #[doc = "application/vnd.sbm.cid"]
     VndSbmCid,
+    #[doc = "application/vnd.sbm.mid2"]
     VndSbmMid2,
+    #[doc = "application/vnd.scribus"]
     VndScribus,
+    #[doc = "application/vnd.sealed.3df"]
     VndSealed3Df,
+    #[doc = "application/vnd.sealed.csf"]
     VndSealedCsf,
+    #[doc = "application/vnd.sealed.doc"]
     VndSealedDoc,
+    #[doc = "application/vnd.sealed.eml"]
     VndSealedEml,
+    #[doc = "application/vnd.sealed.mht"]
     VndSealedMht,
+    #[doc = "application/vnd.sealed.net"]
     VndSealedNet,
+    #[doc = "application/vnd.sealed.ppt"]
     VndSealedPpt,
+    #[doc = "application/vnd.sealed.tiff"]
     VndSealedTiff,
+    #[doc = "application/vnd.sealed.xls"]
     VndSealedXls,
+    #[doc = "application/vnd.sealedmedia.softseal.html"]
     VndSealedmediaSoftsealHtml,
+    #[doc = "application/vnd.sealedmedia.softseal.pdf"]
     VndSealedmediaSoftsealPdf,
+    #[doc = "application/vnd.seemail"]
     VndSeemail,
+    #[doc = "application/vnd.seis+json"]
     VndSeisJson,
+    #[doc = "application/vnd.sema"]
     VndSema,
+    #[doc = "application/vnd.semd"]
     VndSemd,
+    #[doc = "application/vnd.semf"]
     VndSemf,
+    #[doc = "application/vnd.shade-save-file"]
     VndShadeSaveFile,
+    #[doc = "application/vnd.shana.informed.formdata"]
     VndShanaInformedFormdata,
+    #[doc = "application/vnd.shana.informed.formtemplate"]
     VndShanaInformedFormtemplate,
+    #[doc = "application/vnd.shana.informed.interchange"]
     VndShanaInformedInterchange,
+    #[doc = "application/vnd.shana.informed.package"]
     VndShanaInformedPackage,
+    #[doc = "application/vnd.shootproof+json"]
     VndShootproofJson,
+    #[doc = "application/vnd.shopkick+json"]
     VndShopkickJson,
+    #[doc = "application/vnd.shp"]
     VndShp,
+    #[doc = "application/vnd.shx"]
     VndShx,
+    #[doc = "application/vnd.sigrok.session"]
     VndSigrokSession,
+    #[doc = "application/vnd.SimTech-MindMapper"]
     VndSimTechMindMapper,
+    #[doc = "application/vnd.siren+json"]
     VndSirenJson,
+    #[doc = "application/vnd.smaf"]
     VndSmaf,
+    #[doc = "application/vnd.smart.notebook"]
     VndSmartNotebook,
+    #[doc = "application/vnd.smart.teacher"]
     VndSmartTeacher,
+    #[doc = "application/vnd.snesdev-page-table"]
     VndSnesdevPageTable,
+    #[doc = "application/vnd.software602.filler.form+xml"]
     VndSoftware602FillerFormXml,
+    #[doc = "application/vnd.software602.filler.form-xml-zip"]
     VndSoftware602FillerFormXmlZip,
+    #[doc = "application/vnd.solent.sdkm+xml"]
     VndSolentSdkmXml,
+    #[doc = "application/vnd.spotfire.dxp"]
     VndSpotfireDxp,
+    #[doc = "application/vnd.spotfire.sfs"]
     VndSpotfireSfs,
+    #[doc = "application/vnd.sqlite3"]
     VndSqlite3,
+    #[doc = "application/vnd.sss-cod"]
     VndSssCod,
+    #[doc = "application/vnd.sss-dtf"]
     VndSssDtf,
+    #[doc = "application/vnd.sss-ntf"]
     VndSssNtf,
+    #[doc = "application/vnd.stepmania.package"]
     VndStepmaniaPackage,
+    #[doc = "application/vnd.stepmania.stepchart"]
     VndStepmaniaStepchart,
+    #[doc = "application/vnd.street-stream"]
     VndStreetStream,
+    #[doc = "application/vnd.sun.wadl+xml"]
     VndSunWadlXml,
+    #[doc = "application/vnd.sus-calendar"]
     VndSusCalendar,
+    #[doc = "application/vnd.svd"]
     VndSvd,
+    #[doc = "application/vnd.swiftview-ics"]
     VndSwiftviewIcs,
+    #[doc = "application/vnd.sybyl.mol2"]
     VndSybylMol2,
+    #[doc = "application/vnd.sycle+xml"]
     VndSycleXml,
+    #[doc = "application/vnd.syft+json"]
     VndSyftJson,
+    #[doc = "application/vnd.syncml.dm.notification"]
     VndSyncmlDmNotification,
+    #[doc = "application/vnd.syncml.dmddf+xml"]
     VndSyncmlDmddfXml,
+    #[doc = "application/vnd.syncml.dmtnds+wbxml"]
     VndSyncmlDmtndsWbxml,
+    #[doc = "application/vnd.syncml.dmtnds+xml"]
     VndSyncmlDmtndsXml,
+    #[doc = "application/vnd.syncml.dmddf+wbxml"]
     VndSyncmlDmddfWbxml,
+    #[doc = "application/vnd.syncml.dm+wbxml"]
     VndSyncmlDmWbxml,
+    #[doc = "application/vnd.syncml.dm+xml"]
     VndSyncmlDmXml,
+    #[doc = "application/vnd.syncml.ds.notification"]
     VndSyncmlDsNotification,
+    #[doc = "application/vnd.syncml+xml"]
     VndSyncmlXml,
+    #[doc = "application/vnd.tableschema+json"]
     VndTableschemaJson,
+    #[doc = "application/vnd.tao.intent-module-archive"]
     VndTaoIntentModuleArchive,
+    #[doc = "application/vnd.tcpdump.pcap"]
     VndTcpdumpPcap,
+    #[doc = "application/vnd.think-cell.ppttc+json"]
     VndThinkCellPpttcJson,
+    #[doc = "application/vnd.tml"]
     VndTml,
+    #[doc = "application/vnd.tmd.mediaflex.api+xml"]
     VndTmdMediaflexApiXml,
+    #[doc = "application/vnd.tmobile-livetv"]
     VndTmobileLivetv,
+    #[doc = "application/vnd.tri.onesource"]
     VndTriOnesource,
+    #[doc = "application/vnd.trid.tpt"]
     VndTridTpt,
+    #[doc = "application/vnd.triscape.mxs"]
     VndTriscapeMxs,
+    #[doc = "application/vnd.trueapp"]
     VndTrueapp,
+    #[doc = "application/vnd.truedoc"]
     VndTruedoc,
+    #[doc = "application/vnd.ubisoft.webplayer"]
     VndUbisoftWebplayer,
+    #[doc = "application/vnd.ufdl"]
     VndUfdl,
+    #[doc = "application/vnd.uiq.theme"]
     VndUiqTheme,
+    #[doc = "application/vnd.umajin"]
     VndUmajin,
+    #[doc = "application/vnd.unity"]
     VndUnity,
+    #[doc = "application/vnd.uoml+xml"]
     VndUomlXml,
+    #[doc = "application/vnd.uplanet.alert"]
     VndUplanetAlert,
+    #[doc = "application/vnd.uplanet.alert-wbxml"]
     VndUplanetAlertWbxml,
+    #[doc = "application/vnd.uplanet.bearer-choice"]
     VndUplanetBearerChoice,
+    #[doc = "application/vnd.uplanet.bearer-choice-wbxml"]
     VndUplanetBearerChoiceWbxml,
+    #[doc = "application/vnd.uplanet.cacheop"]
     VndUplanetCacheop,
+    #[doc = "application/vnd.uplanet.cacheop-wbxml"]
     VndUplanetCacheopWbxml,
+    #[doc = "application/vnd.uplanet.channel"]
     VndUplanetChannel,
+    #[doc = "application/vnd.uplanet.channel-wbxml"]
     VndUplanetChannelWbxml,
+    #[doc = "application/vnd.uplanet.list"]
     VndUplanetList,
+    #[doc = "application/vnd.uplanet.listcmd"]
     VndUplanetListcmd,
+    #[doc = "application/vnd.uplanet.listcmd-wbxml"]
     VndUplanetListcmdWbxml,
+    #[doc = "application/vnd.uplanet.list-wbxml"]
     VndUplanetListWbxml,
+    #[doc = "application/vnd.uri-map"]
     VndUriMap,
+    #[doc = "application/vnd.uplanet.signal"]
     VndUplanetSignal,
+    #[doc = "application/vnd.valve.source.material"]
     VndValveSourceMaterial,
+    #[doc = "application/vnd.vcx"]
     VndVcx,
+    #[doc = "application/vnd.vd-study"]
     VndVdStudy,
+    #[doc = "application/vnd.vectorworks"]
     VndVectorworks,
+    #[doc = "application/vnd.vel+json"]
     VndVelJson,
+    #[doc = "application/vnd.verimatrix.vcas"]
     VndVerimatrixVcas,
+    #[doc = "application/vnd.veritone.aion+json"]
     VndVeritoneAionJson,
+    #[doc = "application/vnd.veryant.thin"]
     VndVeryantThin,
+    #[doc = "application/vnd.ves.encrypted"]
     VndVesEncrypted,
+    #[doc = "application/vnd.vidsoft.vidconference"]
     VndVidsoftVidconference,
+    #[doc = "application/vnd.visio"]
     VndVisio,
+    #[doc = "application/vnd.visionary"]
     VndVisionary,
+    #[doc = "application/vnd.vividence.scriptfile"]
     VndVividenceScriptfile,
+    #[doc = "application/vnd.vsf"]
     VndVsf,
+    #[doc = "application/vnd.wap.sic"]
     VndWapSic,
+    #[doc = "application/vnd.wap.slc"]
     VndWapSlc,
+    #[doc = "application/vnd.wap.wbxml"]
     VndWapWbxml,
+    #[doc = "application/vnd.wap.wmlc"]
     VndWapWmlc,
+    #[doc = "application/vnd.wap.wmlscriptc"]
     VndWapWmlscriptc,
+    #[doc = "application/vnd.wasmflow.wafl"]
     VndWasmflowWafl,
+    #[doc = "application/vnd.webturbo"]
     VndWebturbo,
+    #[doc = "application/vnd.wfa.dpp"]
     VndWfaDpp,
+    #[doc = "application/vnd.wfa.p2p"]
     VndWfaP2P,
+    #[doc = "application/vnd.wfa.wsc"]
     VndWfaWsc,
+    #[doc = "application/vnd.windows.devicepairing"]
     VndWindowsDevicepairing,
+    #[doc = "application/vnd.wmc"]
     VndWmc,
+    #[doc = "application/vnd.wmf.bootstrap"]
     VndWmfBootstrap,
+    #[doc = "application/vnd.wolfram.mathematica"]
     VndWolframMathematica,
+    #[doc = "application/vnd.wolfram.mathematica.package"]
     VndWolframMathematicaPackage,
+    #[doc = "application/vnd.wolfram.player"]
     VndWolframPlayer,
+    #[doc = "application/vnd.wordperfect"]
     VndWordperfect,
+    #[doc = "application/vnd.wqd"]
     VndWqd,
+    #[doc = "application/vnd.wrq-hp3000-labelled"]
     VndWrqHp3000Labelled,
+    #[doc = "application/vnd.wt.stf"]
     VndWtStf,
+    #[doc = "application/vnd.wv.csp+xml"]
     VndWvCspXml,
+    #[doc = "application/vnd.wv.csp+wbxml"]
     VndWvCspWbxml,
+    #[doc = "application/vnd.wv.ssp+xml"]
     VndWvSspXml,
+    #[doc = "application/vnd.xacml+json"]
     VndXacmlJson,
+    #[doc = "application/vnd.xara"]
     VndXara,
+    #[doc = "application/vnd.xfdl"]
     VndXfdl,
+    #[doc = "application/vnd.xfdl.webform"]
     VndXfdlWebform,
+    #[doc = "application/vnd.xmi+xml"]
     VndXmiXml,
+    #[doc = "application/vnd.xmpie.cpkg"]
     VndXmpieCpkg,
+    #[doc = "application/vnd.xmpie.dpkg"]
     VndXmpieDpkg,
+    #[doc = "application/vnd.xmpie.plan"]
     VndXmpiePlan,
+    #[doc = "application/vnd.xmpie.ppkg"]
     VndXmpiePpkg,
+    #[doc = "application/vnd.xmpie.xlim"]
     VndXmpieXlim,
+    #[doc = "application/vnd.yamaha.hv-dic"]
     VndYamahaHvDic,
+    #[doc = "application/vnd.yamaha.hv-script"]
     VndYamahaHvScript,
+    #[doc = "application/vnd.yamaha.hv-voice"]
     VndYamahaHvVoice,
+    #[doc = "application/vnd.yamaha.openscoreformat.osfpvg+xml"]
     VndYamahaOpenscoreformatOsfpvgXml,
+    #[doc = "application/vnd.yamaha.openscoreformat"]
     VndYamahaOpenscoreformat,
+    #[doc = "application/vnd.yamaha.remote-setup"]
     VndYamahaRemoteSetup,
+    #[doc = "application/vnd.yamaha.smaf-audio"]
     VndYamahaSmafAudio,
+    #[doc = "application/vnd.yamaha.smaf-phrase"]
     VndYamahaSmafPhrase,
+    #[doc = "application/vnd.yamaha.through-ngn"]
     VndYamahaThroughNgn,
+    #[doc = "application/vnd.yamaha.tunnel-udpencap"]
     VndYamahaTunnelUdpencap,
+    #[doc = "application/vnd.yaoweme"]
     VndYaoweme,
+    #[doc = "application/vnd.yellowriver-custom-menu"]
     VndYellowriverCustomMenu,
+    #[doc = "application/vnd.zul"]
     VndZul,
+    #[doc = "application/vnd.zzazz.deck+xml"]
     VndZzazzDeckXml,
+    #[doc = "application/voicexml+xml"]
     VoicexmlXml,
+    #[doc = "application/voucher-cms+json"]
     VoucherCmsJson,
+    #[doc = "application/vq-rtcpxr"]
     VqRtcpxr,
+    #[doc = "application/wasm"]
     Wasm,
+    #[doc = "application/watcherinfo+xml"]
     WatcherinfoXml,
+    #[doc = "application/webpush-options+json"]
     WebpushOptionsJson,
+    #[doc = "application/whoispp-query"]
     WhoisppQuery,
+    #[doc = "application/whoispp-response"]
     WhoisppResponse,
+    #[doc = "application/widget"]
     Widget,
+    #[doc = "application/wita"]
     Wita,
+    #[doc = "application/wordperfect5.1"]
     Wordperfect51,
+    #[doc = "application/wsdl+xml"]
     WsdlXml,
+    #[doc = "application/wspolicy+xml"]
     WspolicyXml,
+    #[doc = "application/x-pki-message"]
     XPkiMessage,
+    #[doc = "application/x-www-form-urlencoded"]
     XWwwFormUrlencoded,
+    #[doc = "application/x-x509-ca-cert"]
     XX509CaCert,
+    #[doc = "application/x-x509-ca-ra-cert"]
     XX509CaRaCert,
+    #[doc = "application/x-x509-next-ca-cert"]
     XX509NextCaCert,
+    #[doc = "application/x400-bp"]
     X400Bp,
+    #[doc = "application/xacml+xml"]
     XacmlXml,
+    #[doc = "application/xcap-att+xml"]
     XcapAttXml,
+    #[doc = "application/xcap-caps+xml"]
     XcapCapsXml,
+    #[doc = "application/xcap-diff+xml"]
     XcapDiffXml,
+    #[doc = "application/xcap-el+xml"]
     XcapElXml,
+    #[doc = "application/xcap-error+xml"]
     XcapErrorXml,
+    #[doc = "application/xcap-ns+xml"]
     XcapNsXml,
+    #[doc = "application/xcon-conference-info-diff+xml"]
     XconConferenceInfoDiffXml,
+    #[doc = "application/xcon-conference-info+xml"]
     XconConferenceInfoXml,
+    #[doc = "application/xenc+xml"]
     XencXml,
+    #[doc = "application/xfdf"]
     Xfdf,
+    #[doc = "application/xhtml+xml"]
     XhtmlXml,
+    #[doc = "application/xliff+xml"]
     XliffXml,
+    #[doc = "application/xml"]
     Xml,
+    #[doc = "application/xml-dtd"]
     XmlDtd,
+    #[doc = "application/xml-external-parsed-entity"]
     XmlExternalParsedEntity,
+    #[doc = "application/xml-patch+xml"]
     XmlPatchXml,
+    #[doc = "application/xmpp+xml"]
     XmppXml,
+    #[doc = "application/xop+xml"]
     XopXml,
+    #[doc = "application/xslt+xml"]
     XsltXml,
+    #[doc = "application/xv+xml"]
     XvXml,
+    #[doc = "application/yang"]
     Yang,
+    #[doc = "application/yang-data+cbor"]
     YangDataCbor,
+    #[doc = "application/yang-data+json"]
     YangDataJson,
+    #[doc = "application/yang-data+xml"]
     YangDataXml,
+    #[doc = "application/yang-patch+json"]
     YangPatchJson,
+    #[doc = "application/yang-patch+xml"]
     YangPatchXml,
+    #[doc = "application/yin+xml"]
     YinXml,
+    #[doc = "application/zip"]
     Zip,
+    #[doc = "application/zlib"]
     Zlib,
+    #[doc = "application/zstd"]
     Zstd,
     Other(String),
 }

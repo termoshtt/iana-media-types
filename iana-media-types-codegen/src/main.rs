@@ -42,10 +42,14 @@ impl MediaType {
     fn enum_definition(&self) -> proc_macro2::TokenStream {
         let name = &self.name;
         let member_idents = &self.member_idents;
+        let member_templates = &self.member_templates;
         quote::quote! {
             #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
             pub enum #name {
-                #(#member_idents,)*
+                #(
+                #[doc = #member_templates]
+                #member_idents,
+                )*
                 Other(String),
             }
         }

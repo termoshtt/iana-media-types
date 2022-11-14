@@ -1,10 +1,16 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Font {
+    #[doc = "font/collection"]
     Collection,
+    #[doc = "font/otf"]
     Otf,
+    #[doc = "font/sfnt"]
     Sfnt,
+    #[doc = "font/ttf"]
     Ttf,
+    #[doc = "font/woff"]
     Woff,
+    #[doc = "font/woff2"]
     Woff2,
     Other(String),
 }

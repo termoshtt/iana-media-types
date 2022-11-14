@@ -1,162 +1,320 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Audio {
+    #[doc = "audio/1d-interleaved-parityfec"]
     _1DInterleavedParityfec,
+    #[doc = "audio/32kadpcm"]
     _32Kadpcm,
+    #[doc = "audio/3gpp"]
     _3Gpp,
+    #[doc = "audio/3gpp2"]
     _3Gpp2,
+    #[doc = "audio/aac"]
     Aac,
+    #[doc = "audio/ac3"]
     Ac3,
+    #[doc = "audio/AMR"]
     Amr,
+    #[doc = "audio/AMR-WB"]
     AmrWb,
+    #[doc = "audio/amr-wb+"]
     AmrWb_,
+    #[doc = "audio/aptx"]
     Aptx,
+    #[doc = "audio/asc"]
     Asc,
+    #[doc = "audio/ATRAC-ADVANCED-LOSSLESS"]
     AtracAdvancedLossless,
+    #[doc = "audio/ATRAC-X"]
     AtracX,
+    #[doc = "audio/ATRAC3"]
     Atrac3,
+    #[doc = "audio/basic"]
     Basic,
+    #[doc = "audio/BV16"]
     Bv16,
+    #[doc = "audio/BV32"]
     Bv32,
+    #[doc = "audio/clearmode"]
     Clearmode,
+    #[doc = "audio/CN"]
     Cn,
+    #[doc = "audio/DAT12"]
     Dat12,
+    #[doc = "audio/dls"]
     Dls,
+    #[doc = "audio/dsr-es201108"]
     DsrEs201108,
+    #[doc = "audio/dsr-es202050"]
     DsrEs202050,
+    #[doc = "audio/dsr-es202211"]
     DsrEs202211,
+    #[doc = "audio/dsr-es202212"]
     DsrEs202212,
+    #[doc = "audio/DV"]
     Dv,
+    #[doc = "audio/DVI4"]
     Dvi4,
+    #[doc = "audio/eac3"]
     Eac3,
+    #[doc = "audio/encaprtp"]
     Encaprtp,
+    #[doc = "audio/EVRC"]
     Evrc,
+    #[doc = "audio/EVRC-QCP"]
     EvrcQcp,
+    #[doc = "audio/EVRC0"]
     Evrc0,
+    #[doc = "audio/EVRC1"]
     Evrc1,
+    #[doc = "audio/EVRCB"]
     Evrcb,
+    #[doc = "audio/EVRCB0"]
     Evrcb0,
+    #[doc = "audio/EVRCB1"]
     Evrcb1,
+    #[doc = "audio/EVRCNW"]
     Evrcnw,
+    #[doc = "audio/EVRCNW0"]
     Evrcnw0,
+    #[doc = "audio/EVRCNW1"]
     Evrcnw1,
+    #[doc = "audio/EVRCWB"]
     Evrcwb,
+    #[doc = "audio/EVRCWB0"]
     Evrcwb0,
+    #[doc = "audio/EVRCWB1"]
     Evrcwb1,
+    #[doc = "audio/EVS"]
     Evs,
+    #[doc = "audio/example"]
     Example,
+    #[doc = "audio/flexfec"]
     Flexfec,
+    #[doc = "audio/fwdred"]
     Fwdred,
+    #[doc = "audio/G711-0"]
     G7110,
+    #[doc = "audio/G719"]
     G719,
+    #[doc = "audio/G7221"]
     G7221,
+    #[doc = "audio/G722"]
     G722,
+    #[doc = "audio/G723"]
     G723,
+    #[doc = "audio/G726-16"]
     G72616,
+    #[doc = "audio/G726-24"]
     G72624,
+    #[doc = "audio/G726-32"]
     G72632,
+    #[doc = "audio/G726-40"]
     G72640,
+    #[doc = "audio/G728"]
     G728,
+    #[doc = "audio/G729"]
     G729,
+    #[doc = "audio/G7291"]
     G7291,
+    #[doc = "audio/G729D"]
     G729D,
+    #[doc = "audio/G729E"]
     G729E,
+    #[doc = "audio/GSM"]
     Gsm,
+    #[doc = "audio/GSM-EFR"]
     GsmEfr,
+    #[doc = "audio/GSM-HR-08"]
     GsmHr08,
+    #[doc = "audio/iLBC"]
     Ilbc,
+    #[doc = "audio/ip-mr_v2.5"]
     IpMrV25,
+    #[doc = "audio/L8"]
     L8,
+    #[doc = "audio/L16"]
     L16,
+    #[doc = "audio/L20"]
     L20,
+    #[doc = "audio/L24"]
     L24,
+    #[doc = "audio/LPC"]
     Lpc,
+    #[doc = "audio/MELP"]
     Melp,
+    #[doc = "audio/MELP600"]
     Melp600,
+    #[doc = "audio/MELP1200"]
     Melp1200,
+    #[doc = "audio/MELP2400"]
     Melp2400,
+    #[doc = "audio/mhas"]
     Mhas,
+    #[doc = "audio/mobile-xmf"]
     MobileXmf,
+    #[doc = "audio/MPA"]
     Mpa,
+    #[doc = "audio/mp4"]
     Mp4,
+    #[doc = "audio/MP4A-LATM"]
     Mp4ALatm,
+    #[doc = "audio/mpa-robust"]
     MpaRobust,
+    #[doc = "audio/mpeg"]
     Mpeg,
+    #[doc = "audio/mpeg4-generic"]
     Mpeg4Generic,
+    #[doc = "audio/ogg"]
     Ogg,
+    #[doc = "audio/opus"]
     Opus,
+    #[doc = "audio/parityfec"]
     Parityfec,
+    #[doc = "audio/PCMA"]
     Pcma,
+    #[doc = "audio/PCMA-WB"]
     PcmaWb,
+    #[doc = "audio/PCMU"]
     Pcmu,
+    #[doc = "audio/PCMU-WB"]
     PcmuWb,
+    #[doc = "audio/prs.sid"]
     PrsSid,
+    #[doc = "audio/QCELP"]
     Qcelp,
+    #[doc = "audio/raptorfec"]
     Raptorfec,
+    #[doc = "audio/RED"]
     Red,
+    #[doc = "audio/rtp-enc-aescm128"]
     RtpEncAescm128,
+    #[doc = "audio/rtploopback"]
     Rtploopback,
+    #[doc = "audio/rtp-midi"]
     RtpMidi,
+    #[doc = "audio/rtx"]
     Rtx,
+    #[doc = "audio/scip"]
     Scip,
+    #[doc = "audio/SMV"]
     Smv,
+    #[doc = "audio/SMV0"]
     Smv0,
+    #[doc = "audio/SMV-QCP"]
     SmvQcp,
+    #[doc = "audio/sofa"]
     Sofa,
+    #[doc = "audio/sp-midi"]
     SpMidi,
+    #[doc = "audio/speex"]
     Speex,
+    #[doc = "audio/t140c"]
     T140C,
+    #[doc = "audio/t38"]
     T38,
+    #[doc = "audio/telephone-event"]
     TelephoneEvent,
+    #[doc = "audio/TETRA_ACELP"]
     TetraAcelp,
+    #[doc = "audio/TETRA_ACELP_BB"]
     TetraAcelpBb,
+    #[doc = "audio/tone"]
     Tone,
+    #[doc = "audio/TSVCIS"]
     Tsvcis,
+    #[doc = "audio/UEMCLIP"]
     Uemclip,
+    #[doc = "audio/ulpfec"]
     Ulpfec,
+    #[doc = "audio/usac"]
     Usac,
+    #[doc = "audio/VDVI"]
     Vdvi,
+    #[doc = "audio/VMR-WB"]
     VmrWb,
+    #[doc = "audio/vnd.3gpp.iufp"]
     Vnd3GppIufp,
+    #[doc = "audio/vnd.4SB"]
     Vnd4SB,
+    #[doc = "audio/vnd.audiokoz"]
     VndAudiokoz,
+    #[doc = "audio/vnd.CELP"]
     VndCELP,
+    #[doc = "audio/vnd.cisco.nse"]
     VndCiscoNse,
+    #[doc = "audio/vnd.cmles.radio-events"]
     VndCmlesRadioEvents,
+    #[doc = "audio/vnd.cns.anp1"]
     VndCnsAnp1,
+    #[doc = "audio/vnd.cns.inf1"]
     VndCnsInf1,
+    #[doc = "audio/vnd.dece.audio"]
     VndDeceAudio,
+    #[doc = "audio/vnd.digital-winds"]
     VndDigitalWinds,
+    #[doc = "audio/vnd.dlna.adts"]
     VndDlnaAdts,
+    #[doc = "audio/vnd.dolby.heaac.1"]
     VndDolbyHeaac1,
+    #[doc = "audio/vnd.dolby.heaac.2"]
     VndDolbyHeaac2,
+    #[doc = "audio/vnd.dolby.mlp"]
     VndDolbyMlp,
+    #[doc = "audio/vnd.dolby.mps"]
     VndDolbyMps,
+    #[doc = "audio/vnd.dolby.pl2"]
     VndDolbyPl2,
+    #[doc = "audio/vnd.dolby.pl2x"]
     VndDolbyPl2X,
+    #[doc = "audio/vnd.dolby.pl2z"]
     VndDolbyPl2Z,
+    #[doc = "audio/vnd.dolby.pulse.1"]
     VndDolbyPulse1,
+    #[doc = "audio/vnd.dra"]
     VndDra,
+    #[doc = "audio/vnd.dts"]
     VndDts,
+    #[doc = "audio/vnd.dts.hd"]
     VndDtsHd,
+    #[doc = "audio/vnd.dts.uhd"]
     VndDtsUhd,
+    #[doc = "audio/vnd.dvb.file"]
     VndDvbFile,
+    #[doc = "audio/vnd.everad.plj"]
     VndEveradPlj,
+    #[doc = "audio/vnd.hns.audio"]
     VndHnsAudio,
+    #[doc = "audio/vnd.lucent.voice"]
     VndLucentVoice,
+    #[doc = "audio/vnd.ms-playready.media.pya"]
     VndMsPlayreadyMediaPya,
+    #[doc = "audio/vnd.nokia.mobile-xmf"]
     VndNokiaMobileXmf,
+    #[doc = "audio/vnd.nortel.vbk"]
     VndNortelVbk,
+    #[doc = "audio/vnd.nuera.ecelp4800"]
     VndNueraEcelp4800,
+    #[doc = "audio/vnd.nuera.ecelp7470"]
     VndNueraEcelp7470,
+    #[doc = "audio/vnd.nuera.ecelp9600"]
     VndNueraEcelp9600,
+    #[doc = "audio/vnd.octel.sbc"]
     VndOctelSbc,
+    #[doc = "audio/vnd.presonus.multitrack"]
     VndPresonusMultitrack,
+    #[doc = "audio/vnd.qcelp"]
     VndQcelpDEPRECATEDInFavorOfAudioQcelp,
+    #[doc = "audio/vnd.rhetorex.32kadpcm"]
     VndRhetorex32Kadpcm,
+    #[doc = "audio/vnd.rip"]
     VndRip,
+    #[doc = "audio/vnd.sealedmedia.softseal.mpeg"]
     VndSealedmediaSoftsealMpeg,
+    #[doc = "audio/vnd.vmx.cvsd"]
     VndVmxCvsd,
+    #[doc = "audio/vorbis"]
     Vorbis,
+    #[doc = "audio/vorbis-config"]
     VorbisConfig,
     Other(String),
 }

@@ -1,20 +1,36 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Message {
+    #[doc = "message/bhttp"]
     Bhttp,
+    #[doc = "message/CPIM"]
     Cpim,
+    #[doc = "message/delivery-status"]
     DeliveryStatus,
+    #[doc = "message/disposition-notification"]
     DispositionNotification,
+    #[doc = "message/example"]
     Example,
+    #[doc = "message/feedback-report"]
     FeedbackReport,
+    #[doc = "message/global"]
     Global,
+    #[doc = "message/global-delivery-status"]
     GlobalDeliveryStatus,
+    #[doc = "message/global-disposition-notification"]
     GlobalDispositionNotification,
+    #[doc = "message/global-headers"]
     GlobalHeaders,
+    #[doc = "message/http"]
     Http,
+    #[doc = "message/imdn+xml"]
     ImdnXml,
+    #[doc = "message/sip"]
     Sip,
+    #[doc = "message/sipfrag"]
     Sipfrag,
+    #[doc = "message/tracking-status"]
     TrackingStatus,
+    #[doc = "message/vnd.wfa.wsc"]
     VndWfaWsc,
     Other(String),
 }

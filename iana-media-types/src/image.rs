@@ -1,79 +1,154 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Image {
+    #[doc = "image/aces"]
     Aces,
+    #[doc = "image/avci"]
     Avci,
+    #[doc = "image/avcs"]
     Avcs,
+    #[doc = "image/avif"]
     Avif,
+    #[doc = "image/bmp"]
     Bmp,
+    #[doc = "image/cgm"]
     Cgm,
+    #[doc = "image/dicom-rle"]
     DicomRle,
+    #[doc = "image/dpx"]
     Dpx,
+    #[doc = "image/emf"]
     Emf,
+    #[doc = "image/example"]
     Example,
+    #[doc = "image/fits"]
     Fits,
+    #[doc = "image/g3fax"]
     G3Fax,
+    #[doc = "image/heic"]
     Heic,
+    #[doc = "image/heic-sequence"]
     HeicSequence,
+    #[doc = "image/heif"]
     Heif,
+    #[doc = "image/heif-sequence"]
     HeifSequence,
+    #[doc = "image/hej2k"]
     Hej2K,
+    #[doc = "image/hsj2"]
     Hsj2,
+    #[doc = "image/jls"]
     Jls,
+    #[doc = "image/jp2"]
     Jp2,
+    #[doc = "image/jph"]
     Jph,
+    #[doc = "image/jphc"]
     Jphc,
+    #[doc = "image/jpm"]
     Jpm,
+    #[doc = "image/jpx"]
     Jpx,
+    #[doc = "image/jxr"]
     Jxr,
+    #[doc = "image/jxrA"]
     JxrA,
+    #[doc = "image/jxrS"]
     JxrS,
+    #[doc = "image/jxs"]
     Jxs,
+    #[doc = "image/jxsc"]
     Jxsc,
+    #[doc = "image/jxsi"]
     Jxsi,
+    #[doc = "image/jxss"]
     Jxss,
+    #[doc = "image/ktx"]
     Ktx,
+    #[doc = "image/ktx2"]
     Ktx2,
+    #[doc = "image/naplps"]
     Naplps,
+    #[doc = "image/png"]
     Png,
+    #[doc = "image/prs.btif"]
     PrsBtif,
+    #[doc = "image/prs.pti"]
     PrsPti,
+    #[doc = "image/pwg-raster"]
     PwgRaster,
+    #[doc = "image/svg+xml"]
     SvgXml,
+    #[doc = "image/t38"]
     T38,
+    #[doc = "image/tiff"]
     Tiff,
+    #[doc = "image/tiff-fx"]
     TiffFx,
+    #[doc = "image/vnd.adobe.photoshop"]
     VndAdobePhotoshop,
+    #[doc = "image/vnd.airzip.accelerator.azv"]
     VndAirzipAcceleratorAzv,
+    #[doc = "image/vnd.cns.inf2"]
     VndCnsInf2,
+    #[doc = "image/vnd.dece.graphic"]
     VndDeceGraphic,
+    #[doc = "image/vnd.djvu"]
     VndDjvu,
+    #[doc = "image/vnd.dwg"]
     VndDwg,
+    #[doc = "image/vnd.dxf"]
     VndDxf,
+    #[doc = "image/vnd.dvb.subtitle"]
     VndDvbSubtitle,
+    #[doc = "image/vnd.fastbidsheet"]
     VndFastbidsheet,
+    #[doc = "image/vnd.fpx"]
     VndFpx,
+    #[doc = "image/vnd.fst"]
     VndFst,
+    #[doc = "image/vnd.fujixerox.edmics-mmr"]
     VndFujixeroxEdmicsMmr,
+    #[doc = "image/vnd.fujixerox.edmics-rlc"]
     VndFujixeroxEdmicsRlc,
+    #[doc = "image/vnd.globalgraphics.pgb"]
     VndGlobalgraphicsPgb,
+    #[doc = "image/vnd.microsoft.icon"]
     VndMicrosoftIcon,
+    #[doc = "image/vnd.mix"]
     VndMix,
+    #[doc = "image/vnd.ms-modi"]
     VndMsModi,
+    #[doc = "image/vnd.mozilla.apng"]
     VndMozillaApng,
+    #[doc = "image/vnd.net-fpx"]
     VndNetFpx,
+    #[doc = "image/vnd.pco.b16"]
     VndPcoB16,
+    #[doc = "image/vnd.radiance"]
     VndRadiance,
+    #[doc = "image/vnd.sealed.png"]
     VndSealedPng,
+    #[doc = "image/vnd.sealedmedia.softseal.gif"]
     VndSealedmediaSoftsealGif,
+    #[doc = "image/vnd.sealedmedia.softseal.jpg"]
     VndSealedmediaSoftsealJpg,
+    #[doc = "image/vnd.svf"]
     VndSvf,
+    #[doc = "image/vnd.tencent.tap"]
     VndTencentTap,
+    #[doc = "image/vnd.valve.source.texture"]
     VndValveSourceTexture,
+    #[doc = "image/vnd.wap.wbmp"]
     VndWapWbmp,
+    #[doc = "image/vnd.xiff"]
     VndXiff,
+    #[doc = "image/vnd.zbrush.pcx"]
     VndZbrushPcx,
+    #[doc = "image/wmf"]
     Wmf,
+    #[doc = "image/emf"]
     XEmfDEPRECATEDInFavorOfImageEmf,
+    #[doc = "image/wmf"]
     XWmfDEPRECATEDInFavorOfImageWmf,
     Other(String),
 }

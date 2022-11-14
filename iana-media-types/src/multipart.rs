@@ -1,17 +1,30 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Multipart {
+    #[doc = "multipart/appledouble"]
     Appledouble,
+    #[doc = "multipart/byteranges"]
     Byteranges,
+    #[doc = "multipart/encrypted"]
     Encrypted,
+    #[doc = "multipart/example"]
     Example,
+    #[doc = "multipart/form-data"]
     FormData,
+    #[doc = "multipart/header-set"]
     HeaderSet,
+    #[doc = "multipart/multilingual"]
     Multilingual,
+    #[doc = "multipart/related"]
     Related,
+    #[doc = "multipart/report"]
     Report,
+    #[doc = "multipart/signed"]
     Signed,
+    #[doc = "multipart/vnd.bint.med-plus"]
     VndBintMedPlus,
+    #[doc = "multipart/voice-message"]
     VoiceMessage,
+    #[doc = "multipart/x-mixed-replace"]
     XMixedReplace,
     Other(String),
 }

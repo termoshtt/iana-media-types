@@ -1,40 +1,76 @@
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Model {
+    #[doc = "model/3mf"]
     _3Mf,
+    #[doc = "model/e57"]
     E57,
+    #[doc = "model/example"]
     Example,
+    #[doc = "model/gltf-binary"]
     GltfBinary,
+    #[doc = "model/gltf+json"]
     GltfJson,
+    #[doc = "model/iges"]
     Iges,
+    #[doc = "model/mtl"]
     Mtl,
+    #[doc = "model/obj"]
     Obj,
+    #[doc = "model/prc"]
     Prc,
+    #[doc = "model/step"]
     Step,
+    #[doc = "model/step+xml"]
     StepXml,
+    #[doc = "model/step+zip"]
     StepZip,
+    #[doc = "model/step-xml+zip"]
     StepXmlZip,
+    #[doc = "model/stl"]
     Stl,
+    #[doc = "model/u3d"]
     U3D,
+    #[doc = "model/vnd.collada+xml"]
     VndColladaXml,
+    #[doc = "model/vnd.dwf"]
     VndDwf,
+    #[doc = "model/vnd.flatland.3dml"]
     VndFlatland3Dml,
+    #[doc = "model/vnd.gdl"]
     VndGdl,
+    #[doc = "model/vnd.gs-gdl"]
     VndGsGdl,
+    #[doc = "model/vnd.gtw"]
     VndGtw,
+    #[doc = "model/vnd.moml+xml"]
     VndMomlXml,
+    #[doc = "model/vnd.mts"]
     VndMts,
+    #[doc = "model/vnd.opengex"]
     VndOpengex,
+    #[doc = "model/vnd.parasolid.transmit.binary"]
     VndParasolidTransmitBinary,
+    #[doc = "model/vnd.parasolid.transmit.text"]
     VndParasolidTransmitText,
+    #[doc = "model/vnd.pytha.pyox"]
     VndPythaPyox,
+    #[doc = "model/vnd.rosette.annotated-data-model"]
     VndRosetteAnnotatedDataModel,
+    #[doc = "model/vnd.sap.vds"]
     VndSapVds,
+    #[doc = "model/vnd.usda"]
     VndUsda,
+    #[doc = "model/vnd.usdz+zip"]
     VndUsdzZip,
+    #[doc = "model/vnd.valve.source.compiled-map"]
     VndValveSourceCompiledMap,
+    #[doc = "model/vnd.vtu"]
     VndVtu,
+    #[doc = "model/x3d-vrml"]
     X3DVrml,
+    #[doc = "model/x3d+fastinfoset"]
     X3DFastinfoset,
+    #[doc = "model/x3d+xml"]
     X3DXml,
     Other(String),
 }
