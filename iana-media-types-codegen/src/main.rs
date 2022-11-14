@@ -93,7 +93,7 @@ impl MediaType {
 
 fn as_ident(name: &str) -> syn::Ident {
     let mut escaped = name.replace(['.', '+'], "-").to_pascal_case();
-    if escaped.starts_with(|c: char| c.is_digit(10)) {
+    if escaped.starts_with(|c: char| c.is_ascii_digit()) {
         escaped = format!("_{}", escaped);
     }
     if name.ends_with('+') {
