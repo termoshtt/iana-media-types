@@ -26,7 +26,6 @@ pub enum Multipart {
     VoiceMessage,
     #[doc = "multipart/x-mixed-replace"]
     XMixedReplace,
-    Other(String),
 }
 impl ::std::fmt::Display for Multipart {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
@@ -44,28 +43,28 @@ impl ::std::fmt::Display for Multipart {
             Multipart::VndBintMedPlus => write!(f, "multipart/vnd.bint.med-plus")?,
             Multipart::VoiceMessage => write!(f, "multipart/voice-message")?,
             Multipart::XMixedReplace => write!(f, "multipart/x-mixed-replace")?,
-            Multipart::Other(template) => write!(f, "{}", template)?,
         }
         Ok(())
     }
 }
-impl From<&str> for Multipart {
-    fn from(input: &str) -> Self {
+impl ::std::str::FromStr for Multipart {
+    type Err = ();
+    fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
-            "multipart/appledouble" => Multipart::Appledouble,
-            "multipart/byteranges" => Multipart::Byteranges,
-            "multipart/encrypted" => Multipart::Encrypted,
-            "multipart/example" => Multipart::Example,
-            "multipart/form-data" => Multipart::FormData,
-            "multipart/header-set" => Multipart::HeaderSet,
-            "multipart/multilingual" => Multipart::Multilingual,
-            "multipart/related" => Multipart::Related,
-            "multipart/report" => Multipart::Report,
-            "multipart/signed" => Multipart::Signed,
-            "multipart/vnd.bint.med-plus" => Multipart::VndBintMedPlus,
-            "multipart/voice-message" => Multipart::VoiceMessage,
-            "multipart/x-mixed-replace" => Multipart::XMixedReplace,
-            _ => Multipart::Other(input.to_string()),
+            "multipart/appledouble" => Ok(Multipart::Appledouble),
+            "multipart/byteranges" => Ok(Multipart::Byteranges),
+            "multipart/encrypted" => Ok(Multipart::Encrypted),
+            "multipart/example" => Ok(Multipart::Example),
+            "multipart/form-data" => Ok(Multipart::FormData),
+            "multipart/header-set" => Ok(Multipart::HeaderSet),
+            "multipart/multilingual" => Ok(Multipart::Multilingual),
+            "multipart/related" => Ok(Multipart::Related),
+            "multipart/report" => Ok(Multipart::Report),
+            "multipart/signed" => Ok(Multipart::Signed),
+            "multipart/vnd.bint.med-plus" => Ok(Multipart::VndBintMedPlus),
+            "multipart/voice-message" => Ok(Multipart::VoiceMessage),
+            "multipart/x-mixed-replace" => Ok(Multipart::XMixedReplace),
+            _ => Err(()),
         }
     }
 }

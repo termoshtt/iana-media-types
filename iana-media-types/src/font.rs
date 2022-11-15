@@ -12,7 +12,6 @@ pub enum Font {
     Woff,
     #[doc = "font/woff2"]
     Woff2,
-    Other(String),
 }
 impl ::std::fmt::Display for Font {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
@@ -23,21 +22,21 @@ impl ::std::fmt::Display for Font {
             Font::Ttf => write!(f, "font/ttf")?,
             Font::Woff => write!(f, "font/woff")?,
             Font::Woff2 => write!(f, "font/woff2")?,
-            Font::Other(template) => write!(f, "{}", template)?,
         }
         Ok(())
     }
 }
-impl From<&str> for Font {
-    fn from(input: &str) -> Self {
+impl ::std::str::FromStr for Font {
+    type Err = ();
+    fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
-            "font/collection" => Font::Collection,
-            "font/otf" => Font::Otf,
-            "font/sfnt" => Font::Sfnt,
-            "font/ttf" => Font::Ttf,
-            "font/woff" => Font::Woff,
-            "font/woff2" => Font::Woff2,
-            _ => Font::Other(input.to_string()),
+            "font/collection" => Ok(Font::Collection),
+            "font/otf" => Ok(Font::Otf),
+            "font/sfnt" => Ok(Font::Sfnt),
+            "font/ttf" => Ok(Font::Ttf),
+            "font/woff" => Ok(Font::Woff),
+            "font/woff2" => Ok(Font::Woff2),
+            _ => Err(()),
         }
     }
 }

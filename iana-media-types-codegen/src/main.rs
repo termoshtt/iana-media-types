@@ -50,7 +50,6 @@ impl MediaType {
                 #[doc = #member_templates]
                 #member_idents,
                 )*
-                Other(String),
             }
         }
     }
@@ -64,7 +63,6 @@ impl MediaType {
                 fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
                     match self {
                         #(#name::#member_idents => write!(f, #member_templates)?,)*
-                        #name::Other(template) => write!(f, "{}", template)?,
                     }
                     Ok(())
                 }
@@ -77,13 +75,14 @@ impl MediaType {
         let member_idents = &self.member_idents;
         let member_templates = &self.member_templates;
         quote::quote! {
-            impl From<&str> for #name {
-                fn from(input: &str) -> Self {
+            impl ::std::str::FromStr for #name {
+                type Err = ();
+                fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
                     match input {
                         #(
-                        #member_templates => #name::#member_idents,
+                        #member_templates => Ok(#name::#member_idents),
                         )*
-                        _ => #name::Other(input.to_string()),
+                        _ => Err(()),
                     }
                 }
             }
