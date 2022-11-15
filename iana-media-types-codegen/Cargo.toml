@@ -3,7 +3,11 @@ name = "iana-media-types-codegen"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+description = "Media types generator based on IANA metadata"
+documentation = "https://docs.rs/iana-media-types"
+repository = "https://github.com/termoshtt/iana-media-types"
+readme = "../README.md"
 
 [dependencies]
 Inflector = "0.11.4"
