@@ -1,318 +1,485 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Audio {
     #[doc = "audio/1d-interleaved-parityfec"]
+    #[serde(rename = "audio/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "audio/32kadpcm"]
+    #[serde(rename = "audio/32kadpcm")]
     _32Kadpcm,
     #[doc = "audio/3gpp"]
+    #[serde(rename = "audio/3gpp")]
     _3Gpp,
     #[doc = "audio/3gpp2"]
+    #[serde(rename = "audio/3gpp2")]
     _3Gpp2,
     #[doc = "audio/aac"]
+    #[serde(rename = "audio/aac")]
     Aac,
     #[doc = "audio/ac3"]
+    #[serde(rename = "audio/ac3")]
     Ac3,
     #[doc = "audio/AMR"]
+    #[serde(rename = "audio/AMR")]
     Amr,
     #[doc = "audio/AMR-WB"]
+    #[serde(rename = "audio/AMR-WB")]
     AmrWb,
     #[doc = "audio/amr-wb+"]
+    #[serde(rename = "audio/amr-wb+")]
     AmrWb_,
     #[doc = "audio/aptx"]
+    #[serde(rename = "audio/aptx")]
     Aptx,
     #[doc = "audio/asc"]
+    #[serde(rename = "audio/asc")]
     Asc,
     #[doc = "audio/ATRAC-ADVANCED-LOSSLESS"]
+    #[serde(rename = "audio/ATRAC-ADVANCED-LOSSLESS")]
     AtracAdvancedLossless,
     #[doc = "audio/ATRAC-X"]
+    #[serde(rename = "audio/ATRAC-X")]
     AtracX,
     #[doc = "audio/ATRAC3"]
+    #[serde(rename = "audio/ATRAC3")]
     Atrac3,
     #[doc = "audio/basic"]
+    #[serde(rename = "audio/basic")]
     Basic,
     #[doc = "audio/BV16"]
+    #[serde(rename = "audio/BV16")]
     Bv16,
     #[doc = "audio/BV32"]
+    #[serde(rename = "audio/BV32")]
     Bv32,
     #[doc = "audio/clearmode"]
+    #[serde(rename = "audio/clearmode")]
     Clearmode,
     #[doc = "audio/CN"]
+    #[serde(rename = "audio/CN")]
     Cn,
     #[doc = "audio/DAT12"]
+    #[serde(rename = "audio/DAT12")]
     Dat12,
     #[doc = "audio/dls"]
+    #[serde(rename = "audio/dls")]
     Dls,
     #[doc = "audio/dsr-es201108"]
+    #[serde(rename = "audio/dsr-es201108")]
     DsrEs201108,
     #[doc = "audio/dsr-es202050"]
+    #[serde(rename = "audio/dsr-es202050")]
     DsrEs202050,
     #[doc = "audio/dsr-es202211"]
+    #[serde(rename = "audio/dsr-es202211")]
     DsrEs202211,
     #[doc = "audio/dsr-es202212"]
+    #[serde(rename = "audio/dsr-es202212")]
     DsrEs202212,
     #[doc = "audio/DV"]
+    #[serde(rename = "audio/DV")]
     Dv,
     #[doc = "audio/DVI4"]
+    #[serde(rename = "audio/DVI4")]
     Dvi4,
     #[doc = "audio/eac3"]
+    #[serde(rename = "audio/eac3")]
     Eac3,
     #[doc = "audio/encaprtp"]
+    #[serde(rename = "audio/encaprtp")]
     Encaprtp,
     #[doc = "audio/EVRC"]
+    #[serde(rename = "audio/EVRC")]
     Evrc,
     #[doc = "audio/EVRC-QCP"]
+    #[serde(rename = "audio/EVRC-QCP")]
     EvrcQcp,
     #[doc = "audio/EVRC0"]
+    #[serde(rename = "audio/EVRC0")]
     Evrc0,
     #[doc = "audio/EVRC1"]
+    #[serde(rename = "audio/EVRC1")]
     Evrc1,
     #[doc = "audio/EVRCB"]
+    #[serde(rename = "audio/EVRCB")]
     Evrcb,
     #[doc = "audio/EVRCB0"]
+    #[serde(rename = "audio/EVRCB0")]
     Evrcb0,
     #[doc = "audio/EVRCB1"]
+    #[serde(rename = "audio/EVRCB1")]
     Evrcb1,
     #[doc = "audio/EVRCNW"]
+    #[serde(rename = "audio/EVRCNW")]
     Evrcnw,
     #[doc = "audio/EVRCNW0"]
+    #[serde(rename = "audio/EVRCNW0")]
     Evrcnw0,
     #[doc = "audio/EVRCNW1"]
+    #[serde(rename = "audio/EVRCNW1")]
     Evrcnw1,
     #[doc = "audio/EVRCWB"]
+    #[serde(rename = "audio/EVRCWB")]
     Evrcwb,
     #[doc = "audio/EVRCWB0"]
+    #[serde(rename = "audio/EVRCWB0")]
     Evrcwb0,
     #[doc = "audio/EVRCWB1"]
+    #[serde(rename = "audio/EVRCWB1")]
     Evrcwb1,
     #[doc = "audio/EVS"]
+    #[serde(rename = "audio/EVS")]
     Evs,
     #[doc = "audio/example"]
+    #[serde(rename = "audio/example")]
     Example,
     #[doc = "audio/flexfec"]
+    #[serde(rename = "audio/flexfec")]
     Flexfec,
     #[doc = "audio/fwdred"]
+    #[serde(rename = "audio/fwdred")]
     Fwdred,
     #[doc = "audio/G711-0"]
+    #[serde(rename = "audio/G711-0")]
     G7110,
     #[doc = "audio/G719"]
+    #[serde(rename = "audio/G719")]
     G719,
     #[doc = "audio/G7221"]
+    #[serde(rename = "audio/G7221")]
     G7221,
     #[doc = "audio/G722"]
+    #[serde(rename = "audio/G722")]
     G722,
     #[doc = "audio/G723"]
+    #[serde(rename = "audio/G723")]
     G723,
     #[doc = "audio/G726-16"]
+    #[serde(rename = "audio/G726-16")]
     G72616,
     #[doc = "audio/G726-24"]
+    #[serde(rename = "audio/G726-24")]
     G72624,
     #[doc = "audio/G726-32"]
+    #[serde(rename = "audio/G726-32")]
     G72632,
     #[doc = "audio/G726-40"]
+    #[serde(rename = "audio/G726-40")]
     G72640,
     #[doc = "audio/G728"]
+    #[serde(rename = "audio/G728")]
     G728,
     #[doc = "audio/G729"]
+    #[serde(rename = "audio/G729")]
     G729,
     #[doc = "audio/G7291"]
+    #[serde(rename = "audio/G7291")]
     G7291,
     #[doc = "audio/G729D"]
+    #[serde(rename = "audio/G729D")]
     G729D,
     #[doc = "audio/G729E"]
+    #[serde(rename = "audio/G729E")]
     G729E,
     #[doc = "audio/GSM"]
+    #[serde(rename = "audio/GSM")]
     Gsm,
     #[doc = "audio/GSM-EFR"]
+    #[serde(rename = "audio/GSM-EFR")]
     GsmEfr,
     #[doc = "audio/GSM-HR-08"]
+    #[serde(rename = "audio/GSM-HR-08")]
     GsmHr08,
     #[doc = "audio/iLBC"]
+    #[serde(rename = "audio/iLBC")]
     Ilbc,
     #[doc = "audio/ip-mr_v2.5"]
+    #[serde(rename = "audio/ip-mr_v2.5")]
     IpMrV25,
     #[doc = "audio/L8"]
+    #[serde(rename = "audio/L8")]
     L8,
     #[doc = "audio/L16"]
+    #[serde(rename = "audio/L16")]
     L16,
     #[doc = "audio/L20"]
+    #[serde(rename = "audio/L20")]
     L20,
     #[doc = "audio/L24"]
+    #[serde(rename = "audio/L24")]
     L24,
     #[doc = "audio/LPC"]
+    #[serde(rename = "audio/LPC")]
     Lpc,
     #[doc = "audio/MELP"]
+    #[serde(rename = "audio/MELP")]
     Melp,
     #[doc = "audio/MELP600"]
+    #[serde(rename = "audio/MELP600")]
     Melp600,
     #[doc = "audio/MELP1200"]
+    #[serde(rename = "audio/MELP1200")]
     Melp1200,
     #[doc = "audio/MELP2400"]
+    #[serde(rename = "audio/MELP2400")]
     Melp2400,
     #[doc = "audio/mhas"]
+    #[serde(rename = "audio/mhas")]
     Mhas,
     #[doc = "audio/mobile-xmf"]
+    #[serde(rename = "audio/mobile-xmf")]
     MobileXmf,
     #[doc = "audio/MPA"]
+    #[serde(rename = "audio/MPA")]
     Mpa,
     #[doc = "audio/mp4"]
+    #[serde(rename = "audio/mp4")]
     Mp4,
     #[doc = "audio/MP4A-LATM"]
+    #[serde(rename = "audio/MP4A-LATM")]
     Mp4ALatm,
     #[doc = "audio/mpa-robust"]
+    #[serde(rename = "audio/mpa-robust")]
     MpaRobust,
     #[doc = "audio/mpeg"]
+    #[serde(rename = "audio/mpeg")]
     Mpeg,
     #[doc = "audio/mpeg4-generic"]
+    #[serde(rename = "audio/mpeg4-generic")]
     Mpeg4Generic,
     #[doc = "audio/ogg"]
+    #[serde(rename = "audio/ogg")]
     Ogg,
     #[doc = "audio/opus"]
+    #[serde(rename = "audio/opus")]
     Opus,
     #[doc = "audio/parityfec"]
+    #[serde(rename = "audio/parityfec")]
     Parityfec,
     #[doc = "audio/PCMA"]
+    #[serde(rename = "audio/PCMA")]
     Pcma,
     #[doc = "audio/PCMA-WB"]
+    #[serde(rename = "audio/PCMA-WB")]
     PcmaWb,
     #[doc = "audio/PCMU"]
+    #[serde(rename = "audio/PCMU")]
     Pcmu,
     #[doc = "audio/PCMU-WB"]
+    #[serde(rename = "audio/PCMU-WB")]
     PcmuWb,
     #[doc = "audio/prs.sid"]
+    #[serde(rename = "audio/prs.sid")]
     PrsSid,
     #[doc = "audio/QCELP"]
+    #[serde(rename = "audio/QCELP")]
     Qcelp,
     #[doc = "audio/raptorfec"]
+    #[serde(rename = "audio/raptorfec")]
     Raptorfec,
     #[doc = "audio/RED"]
+    #[serde(rename = "audio/RED")]
     Red,
     #[doc = "audio/rtp-enc-aescm128"]
+    #[serde(rename = "audio/rtp-enc-aescm128")]
     RtpEncAescm128,
     #[doc = "audio/rtploopback"]
+    #[serde(rename = "audio/rtploopback")]
     Rtploopback,
     #[doc = "audio/rtp-midi"]
+    #[serde(rename = "audio/rtp-midi")]
     RtpMidi,
     #[doc = "audio/rtx"]
+    #[serde(rename = "audio/rtx")]
     Rtx,
     #[doc = "audio/scip"]
+    #[serde(rename = "audio/scip")]
     Scip,
     #[doc = "audio/SMV"]
+    #[serde(rename = "audio/SMV")]
     Smv,
     #[doc = "audio/SMV0"]
+    #[serde(rename = "audio/SMV0")]
     Smv0,
     #[doc = "audio/SMV-QCP"]
+    #[serde(rename = "audio/SMV-QCP")]
     SmvQcp,
     #[doc = "audio/sofa"]
+    #[serde(rename = "audio/sofa")]
     Sofa,
     #[doc = "audio/sp-midi"]
+    #[serde(rename = "audio/sp-midi")]
     SpMidi,
     #[doc = "audio/speex"]
+    #[serde(rename = "audio/speex")]
     Speex,
     #[doc = "audio/t140c"]
+    #[serde(rename = "audio/t140c")]
     T140C,
     #[doc = "audio/t38"]
+    #[serde(rename = "audio/t38")]
     T38,
     #[doc = "audio/telephone-event"]
+    #[serde(rename = "audio/telephone-event")]
     TelephoneEvent,
     #[doc = "audio/TETRA_ACELP"]
+    #[serde(rename = "audio/TETRA_ACELP")]
     TetraAcelp,
     #[doc = "audio/TETRA_ACELP_BB"]
+    #[serde(rename = "audio/TETRA_ACELP_BB")]
     TetraAcelpBb,
     #[doc = "audio/tone"]
+    #[serde(rename = "audio/tone")]
     Tone,
     #[doc = "audio/TSVCIS"]
+    #[serde(rename = "audio/TSVCIS")]
     Tsvcis,
     #[doc = "audio/UEMCLIP"]
+    #[serde(rename = "audio/UEMCLIP")]
     Uemclip,
     #[doc = "audio/ulpfec"]
+    #[serde(rename = "audio/ulpfec")]
     Ulpfec,
     #[doc = "audio/usac"]
+    #[serde(rename = "audio/usac")]
     Usac,
     #[doc = "audio/VDVI"]
+    #[serde(rename = "audio/VDVI")]
     Vdvi,
     #[doc = "audio/VMR-WB"]
+    #[serde(rename = "audio/VMR-WB")]
     VmrWb,
     #[doc = "audio/vnd.3gpp.iufp"]
+    #[serde(rename = "audio/vnd.3gpp.iufp")]
     Vnd3GppIufp,
     #[doc = "audio/vnd.4SB"]
+    #[serde(rename = "audio/vnd.4SB")]
     Vnd4SB,
     #[doc = "audio/vnd.audiokoz"]
+    #[serde(rename = "audio/vnd.audiokoz")]
     VndAudiokoz,
     #[doc = "audio/vnd.CELP"]
+    #[serde(rename = "audio/vnd.CELP")]
     VndCELP,
     #[doc = "audio/vnd.cisco.nse"]
+    #[serde(rename = "audio/vnd.cisco.nse")]
     VndCiscoNse,
     #[doc = "audio/vnd.cmles.radio-events"]
+    #[serde(rename = "audio/vnd.cmles.radio-events")]
     VndCmlesRadioEvents,
     #[doc = "audio/vnd.cns.anp1"]
+    #[serde(rename = "audio/vnd.cns.anp1")]
     VndCnsAnp1,
     #[doc = "audio/vnd.cns.inf1"]
+    #[serde(rename = "audio/vnd.cns.inf1")]
     VndCnsInf1,
     #[doc = "audio/vnd.dece.audio"]
+    #[serde(rename = "audio/vnd.dece.audio")]
     VndDeceAudio,
     #[doc = "audio/vnd.digital-winds"]
+    #[serde(rename = "audio/vnd.digital-winds")]
     VndDigitalWinds,
     #[doc = "audio/vnd.dlna.adts"]
+    #[serde(rename = "audio/vnd.dlna.adts")]
     VndDlnaAdts,
     #[doc = "audio/vnd.dolby.heaac.1"]
+    #[serde(rename = "audio/vnd.dolby.heaac.1")]
     VndDolbyHeaac1,
     #[doc = "audio/vnd.dolby.heaac.2"]
+    #[serde(rename = "audio/vnd.dolby.heaac.2")]
     VndDolbyHeaac2,
     #[doc = "audio/vnd.dolby.mlp"]
+    #[serde(rename = "audio/vnd.dolby.mlp")]
     VndDolbyMlp,
     #[doc = "audio/vnd.dolby.mps"]
+    #[serde(rename = "audio/vnd.dolby.mps")]
     VndDolbyMps,
     #[doc = "audio/vnd.dolby.pl2"]
+    #[serde(rename = "audio/vnd.dolby.pl2")]
     VndDolbyPl2,
     #[doc = "audio/vnd.dolby.pl2x"]
+    #[serde(rename = "audio/vnd.dolby.pl2x")]
     VndDolbyPl2X,
     #[doc = "audio/vnd.dolby.pl2z"]
+    #[serde(rename = "audio/vnd.dolby.pl2z")]
     VndDolbyPl2Z,
     #[doc = "audio/vnd.dolby.pulse.1"]
+    #[serde(rename = "audio/vnd.dolby.pulse.1")]
     VndDolbyPulse1,
     #[doc = "audio/vnd.dra"]
+    #[serde(rename = "audio/vnd.dra")]
     VndDra,
     #[doc = "audio/vnd.dts"]
+    #[serde(rename = "audio/vnd.dts")]
     VndDts,
     #[doc = "audio/vnd.dts.hd"]
+    #[serde(rename = "audio/vnd.dts.hd")]
     VndDtsHd,
     #[doc = "audio/vnd.dts.uhd"]
+    #[serde(rename = "audio/vnd.dts.uhd")]
     VndDtsUhd,
     #[doc = "audio/vnd.dvb.file"]
+    #[serde(rename = "audio/vnd.dvb.file")]
     VndDvbFile,
     #[doc = "audio/vnd.everad.plj"]
+    #[serde(rename = "audio/vnd.everad.plj")]
     VndEveradPlj,
     #[doc = "audio/vnd.hns.audio"]
+    #[serde(rename = "audio/vnd.hns.audio")]
     VndHnsAudio,
     #[doc = "audio/vnd.lucent.voice"]
+    #[serde(rename = "audio/vnd.lucent.voice")]
     VndLucentVoice,
     #[doc = "audio/vnd.ms-playready.media.pya"]
+    #[serde(rename = "audio/vnd.ms-playready.media.pya")]
     VndMsPlayreadyMediaPya,
     #[doc = "audio/vnd.nokia.mobile-xmf"]
+    #[serde(rename = "audio/vnd.nokia.mobile-xmf")]
     VndNokiaMobileXmf,
     #[doc = "audio/vnd.nortel.vbk"]
+    #[serde(rename = "audio/vnd.nortel.vbk")]
     VndNortelVbk,
     #[doc = "audio/vnd.nuera.ecelp4800"]
+    #[serde(rename = "audio/vnd.nuera.ecelp4800")]
     VndNueraEcelp4800,
     #[doc = "audio/vnd.nuera.ecelp7470"]
+    #[serde(rename = "audio/vnd.nuera.ecelp7470")]
     VndNueraEcelp7470,
     #[doc = "audio/vnd.nuera.ecelp9600"]
+    #[serde(rename = "audio/vnd.nuera.ecelp9600")]
     VndNueraEcelp9600,
     #[doc = "audio/vnd.octel.sbc"]
+    #[serde(rename = "audio/vnd.octel.sbc")]
     VndOctelSbc,
     #[doc = "audio/vnd.presonus.multitrack"]
+    #[serde(rename = "audio/vnd.presonus.multitrack")]
     VndPresonusMultitrack,
     #[doc = "audio/vnd.rhetorex.32kadpcm"]
+    #[serde(rename = "audio/vnd.rhetorex.32kadpcm")]
     VndRhetorex32Kadpcm,
     #[doc = "audio/vnd.rip"]
+    #[serde(rename = "audio/vnd.rip")]
     VndRip,
     #[doc = "audio/vnd.sealedmedia.softseal.mpeg"]
+    #[serde(rename = "audio/vnd.sealedmedia.softseal.mpeg")]
     VndSealedmediaSoftsealMpeg,
     #[doc = "audio/vnd.vmx.cvsd"]
+    #[serde(rename = "audio/vnd.vmx.cvsd")]
     VndVmxCvsd,
     #[doc = "audio/vorbis"]
+    #[serde(rename = "audio/vorbis")]
     Vorbis,
     #[doc = "audio/vorbis-config"]
+    #[serde(rename = "audio/vorbis-config")]
     VorbisConfig,
 }
 impl ::std::fmt::Display for Audio {
