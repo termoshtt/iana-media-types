@@ -94,3 +94,26 @@ impl From<&str> for MediaType {
         Self::Other(input.to_string())
     }
 }
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn serde_serialize() {
+        let application = Application::Json;
+        assert_eq!(
+            serde_json::to_string(&application).unwrap(),
+            r#""application/json""#
+        );
+    }
+
+    #[test]
+    fn serde_deserialize() {
+        let application: Application = serde_json::from_str(r#""application/json""#).unwrap();
+        assert_eq!(application, Application::Json,);
+
+        // should fail for unknown media type
+        assert!(serde_json::from_str::<Application>(r#""application/jssson""#).is_err())
+    }
+}
