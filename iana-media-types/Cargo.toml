@@ -10,6 +10,7 @@ repository = "https://github.com/termoshtt/iana-media-types"
 readme = "../README.md"
 
 [dependencies]
+derive_more = "0.99.17"
 serde = { version = "1.0", features = ["derive"] }
 
 [dev-dependencies]
