@@ -1,176 +1,272 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Text {
     #[doc = "text/1d-interleaved-parityfec"]
+    #[serde(rename = "text/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "text/cache-manifest"]
+    #[serde(rename = "text/cache-manifest")]
     CacheManifest,
     #[doc = "text/calendar"]
+    #[serde(rename = "text/calendar")]
     Calendar,
     #[doc = "text/cql"]
+    #[serde(rename = "text/cql")]
     Cql,
     #[doc = "text/cql-expression"]
+    #[serde(rename = "text/cql-expression")]
     CqlExpression,
     #[doc = "text/cql-identifier"]
+    #[serde(rename = "text/cql-identifier")]
     CqlIdentifier,
     #[doc = "text/css"]
+    #[serde(rename = "text/css")]
     Css,
     #[doc = "text/csv"]
+    #[serde(rename = "text/csv")]
     Csv,
     #[doc = "text/csv-schema"]
+    #[serde(rename = "text/csv-schema")]
     CsvSchema,
     #[doc = "text/dns"]
+    #[serde(rename = "text/dns")]
     Dns,
     #[doc = "text/encaprtp"]
+    #[serde(rename = "text/encaprtp")]
     Encaprtp,
     #[doc = "text/example"]
+    #[serde(rename = "text/example")]
     Example,
     #[doc = "text/fhirpath"]
+    #[serde(rename = "text/fhirpath")]
     Fhirpath,
     #[doc = "text/flexfec"]
+    #[serde(rename = "text/flexfec")]
     Flexfec,
     #[doc = "text/fwdred"]
+    #[serde(rename = "text/fwdred")]
     Fwdred,
     #[doc = "text/gff3"]
+    #[serde(rename = "text/gff3")]
     Gff3,
     #[doc = "text/grammar-ref-list"]
+    #[serde(rename = "text/grammar-ref-list")]
     GrammarRefList,
     #[doc = "text/hl7v2"]
+    #[serde(rename = "text/hl7v2")]
     Hl7V2,
     #[doc = "text/html"]
+    #[serde(rename = "text/html")]
     Html,
     #[doc = "text/javascript"]
+    #[serde(rename = "text/javascript")]
     Javascript,
     #[doc = "text/jcr-cnd"]
+    #[serde(rename = "text/jcr-cnd")]
     JcrCnd,
     #[doc = "text/markdown"]
+    #[serde(rename = "text/markdown")]
     Markdown,
     #[doc = "text/mizar"]
+    #[serde(rename = "text/mizar")]
     Mizar,
     #[doc = "text/n3"]
+    #[serde(rename = "text/n3")]
     N3,
     #[doc = "text/parameters"]
+    #[serde(rename = "text/parameters")]
     Parameters,
     #[doc = "text/parityfec"]
+    #[serde(rename = "text/parityfec")]
     Parityfec,
     #[doc = "text/provenance-notation"]
+    #[serde(rename = "text/provenance-notation")]
     ProvenanceNotation,
     #[doc = "text/prs.fallenstein.rst"]
+    #[serde(rename = "text/prs.fallenstein.rst")]
     PrsFallensteinRst,
     #[doc = "text/prs.lines.tag"]
+    #[serde(rename = "text/prs.lines.tag")]
     PrsLinesTag,
     #[doc = "text/prs.prop.logic"]
+    #[serde(rename = "text/prs.prop.logic")]
     PrsPropLogic,
     #[doc = "text/raptorfec"]
+    #[serde(rename = "text/raptorfec")]
     Raptorfec,
     #[doc = "text/RED"]
+    #[serde(rename = "text/RED")]
     Red,
     #[doc = "text/rfc822-headers"]
+    #[serde(rename = "text/rfc822-headers")]
     Rfc822Headers,
     #[doc = "text/rtf"]
+    #[serde(rename = "text/rtf")]
     Rtf,
     #[doc = "text/rtp-enc-aescm128"]
+    #[serde(rename = "text/rtp-enc-aescm128")]
     RtpEncAescm128,
     #[doc = "text/rtploopback"]
+    #[serde(rename = "text/rtploopback")]
     Rtploopback,
     #[doc = "text/rtx"]
+    #[serde(rename = "text/rtx")]
     Rtx,
     #[doc = "text/SGML"]
+    #[serde(rename = "text/SGML")]
     Sgml,
     #[doc = "text/shaclc"]
+    #[serde(rename = "text/shaclc")]
     Shaclc,
     #[doc = "text/shex"]
+    #[serde(rename = "text/shex")]
     Shex,
     #[doc = "text/spdx"]
+    #[serde(rename = "text/spdx")]
     Spdx,
     #[doc = "text/strings"]
+    #[serde(rename = "text/strings")]
     Strings,
     #[doc = "text/t140"]
+    #[serde(rename = "text/t140")]
     T140,
     #[doc = "text/tab-separated-values"]
+    #[serde(rename = "text/tab-separated-values")]
     TabSeparatedValues,
     #[doc = "text/troff"]
+    #[serde(rename = "text/troff")]
     Troff,
     #[doc = "text/turtle"]
+    #[serde(rename = "text/turtle")]
     Turtle,
     #[doc = "text/ulpfec"]
+    #[serde(rename = "text/ulpfec")]
     Ulpfec,
     #[doc = "text/uri-list"]
+    #[serde(rename = "text/uri-list")]
     UriList,
     #[doc = "text/vcard"]
+    #[serde(rename = "text/vcard")]
     Vcard,
     #[doc = "text/vnd.a"]
+    #[serde(rename = "text/vnd.a")]
     VndA,
     #[doc = "text/vnd.abc"]
+    #[serde(rename = "text/vnd.abc")]
     VndAbc,
     #[doc = "text/vnd.ascii-art"]
+    #[serde(rename = "text/vnd.ascii-art")]
     VndAsciiArt,
     #[doc = "text/vnd.curl"]
+    #[serde(rename = "text/vnd.curl")]
     VndCurl,
     #[doc = "text/vnd.debian.copyright"]
+    #[serde(rename = "text/vnd.debian.copyright")]
     VndDebianCopyright,
     #[doc = "text/vnd.DMClientScript"]
+    #[serde(rename = "text/vnd.DMClientScript")]
     VndDMClientScript,
     #[doc = "text/vnd.dvb.subtitle"]
+    #[serde(rename = "text/vnd.dvb.subtitle")]
     VndDvbSubtitle,
     #[doc = "text/vnd.esmertec.theme-descriptor"]
+    #[serde(rename = "text/vnd.esmertec.theme-descriptor")]
     VndEsmertecThemeDescriptor,
     #[doc = "text/vnd.exchangeable"]
+    #[serde(rename = "text/vnd.exchangeable")]
     VndExchangeable,
     #[doc = "text/vnd.familysearch.gedcom"]
+    #[serde(rename = "text/vnd.familysearch.gedcom")]
     VndFamilysearchGedcom,
     #[doc = "text/vnd.ficlab.flt"]
+    #[serde(rename = "text/vnd.ficlab.flt")]
     VndFiclabFlt,
     #[doc = "text/vnd.fly"]
+    #[serde(rename = "text/vnd.fly")]
     VndFly,
     #[doc = "text/vnd.fmi.flexstor"]
+    #[serde(rename = "text/vnd.fmi.flexstor")]
     VndFmiFlexstor,
     #[doc = "text/vnd.gml"]
+    #[serde(rename = "text/vnd.gml")]
     VndGml,
     #[doc = "text/vnd.graphviz"]
+    #[serde(rename = "text/vnd.graphviz")]
     VndGraphviz,
     #[doc = "text/vnd.hans"]
+    #[serde(rename = "text/vnd.hans")]
     VndHans,
     #[doc = "text/vnd.hgl"]
+    #[serde(rename = "text/vnd.hgl")]
     VndHgl,
     #[doc = "text/vnd.in3d.3dml"]
+    #[serde(rename = "text/vnd.in3d.3dml")]
     VndIn3D3Dml,
     #[doc = "text/vnd.in3d.spot"]
+    #[serde(rename = "text/vnd.in3d.spot")]
     VndIn3DSpot,
     #[doc = "text/vnd.IPTC.NewsML"]
+    #[serde(rename = "text/vnd.IPTC.NewsML")]
     VndIPTCNewsML,
     #[doc = "text/vnd.IPTC.NITF"]
+    #[serde(rename = "text/vnd.IPTC.NITF")]
     VndIPTCNITF,
     #[doc = "text/vnd.latex-z"]
+    #[serde(rename = "text/vnd.latex-z")]
     VndLatexZ,
     #[doc = "text/vnd.motorola.reflex"]
+    #[serde(rename = "text/vnd.motorola.reflex")]
     VndMotorolaReflex,
     #[doc = "text/vnd.ms-mediapackage"]
+    #[serde(rename = "text/vnd.ms-mediapackage")]
     VndMsMediapackage,
     #[doc = "text/vnd.net2phone.commcenter.command"]
+    #[serde(rename = "text/vnd.net2phone.commcenter.command")]
     VndNet2PhoneCommcenterCommand,
     #[doc = "text/vnd.radisys.msml-basic-layout"]
+    #[serde(rename = "text/vnd.radisys.msml-basic-layout")]
     VndRadisysMsmlBasicLayout,
     #[doc = "text/vnd.senx.warpscript"]
+    #[serde(rename = "text/vnd.senx.warpscript")]
     VndSenxWarpscript,
     #[doc = "text/vnd.sun.j2me.app-descriptor"]
+    #[serde(rename = "text/vnd.sun.j2me.app-descriptor")]
     VndSunJ2MeAppDescriptor,
     #[doc = "text/vnd.sosi"]
+    #[serde(rename = "text/vnd.sosi")]
     VndSosi,
     #[doc = "text/vnd.trolltech.linguist"]
+    #[serde(rename = "text/vnd.trolltech.linguist")]
     VndTrolltechLinguist,
     #[doc = "text/vnd.wap.si"]
+    #[serde(rename = "text/vnd.wap.si")]
     VndWapSi,
     #[doc = "text/vnd.wap.sl"]
+    #[serde(rename = "text/vnd.wap.sl")]
     VndWapSl,
     #[doc = "text/vnd.wap.wml"]
+    #[serde(rename = "text/vnd.wap.wml")]
     VndWapWml,
     #[doc = "text/vnd.wap.wmlscript"]
+    #[serde(rename = "text/vnd.wap.wmlscript")]
     VndWapWmlscript,
     #[doc = "text/vtt"]
+    #[serde(rename = "text/vtt")]
     Vtt,
     #[doc = "text/xml"]
+    #[serde(rename = "text/xml")]
     Xml,
     #[doc = "text/xml-external-parsed-entity"]
+    #[serde(rename = "text/xml-external-parsed-entity")]
     XmlExternalParsedEntity,
 }
 impl ::std::fmt::Display for Text {

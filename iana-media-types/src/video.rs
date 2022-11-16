@@ -1,180 +1,278 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Video {
     #[doc = "video/1d-interleaved-parityfec"]
+    #[serde(rename = "video/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "video/3gpp"]
+    #[serde(rename = "video/3gpp")]
     _3Gpp,
     #[doc = "video/3gpp2"]
+    #[serde(rename = "video/3gpp2")]
     _3Gpp2,
     #[doc = "video/3gpp-tt"]
+    #[serde(rename = "video/3gpp-tt")]
     _3GppTt,
     #[doc = "video/AV1"]
+    #[serde(rename = "video/AV1")]
     Av1,
     #[doc = "video/BMPEG"]
+    #[serde(rename = "video/BMPEG")]
     Bmpeg,
     #[doc = "video/BT656"]
+    #[serde(rename = "video/BT656")]
     Bt656,
     #[doc = "video/CelB"]
+    #[serde(rename = "video/CelB")]
     CelB,
     #[doc = "video/DV"]
+    #[serde(rename = "video/DV")]
     Dv,
     #[doc = "video/encaprtp"]
+    #[serde(rename = "video/encaprtp")]
     Encaprtp,
     #[doc = "video/example"]
+    #[serde(rename = "video/example")]
     Example,
     #[doc = "video/FFV1"]
+    #[serde(rename = "video/FFV1")]
     Ffv1,
     #[doc = "video/flexfec"]
+    #[serde(rename = "video/flexfec")]
     Flexfec,
     #[doc = "video/H261"]
+    #[serde(rename = "video/H261")]
     H261,
     #[doc = "video/H263"]
+    #[serde(rename = "video/H263")]
     H263,
     #[doc = "video/H263-1998"]
+    #[serde(rename = "video/H263-1998")]
     H2631998,
     #[doc = "video/H263-2000"]
+    #[serde(rename = "video/H263-2000")]
     H2632000,
     #[doc = "video/H264"]
+    #[serde(rename = "video/H264")]
     H264,
     #[doc = "video/H264-RCDO"]
+    #[serde(rename = "video/H264-RCDO")]
     H264Rcdo,
     #[doc = "video/H264-SVC"]
+    #[serde(rename = "video/H264-SVC")]
     H264Svc,
     #[doc = "video/H265"]
+    #[serde(rename = "video/H265")]
     H265,
     #[doc = "video/H266"]
+    #[serde(rename = "video/H266")]
     H266,
     #[doc = "video/iso.segment"]
+    #[serde(rename = "video/iso.segment")]
     IsoSegment,
     #[doc = "video/JPEG"]
+    #[serde(rename = "video/JPEG")]
     Jpeg,
     #[doc = "video/jpeg2000"]
+    #[serde(rename = "video/jpeg2000")]
     Jpeg2000,
     #[doc = "video/jxsv"]
+    #[serde(rename = "video/jxsv")]
     Jxsv,
     #[doc = "video/mj2"]
+    #[serde(rename = "video/mj2")]
     Mj2,
     #[doc = "video/MP1S"]
+    #[serde(rename = "video/MP1S")]
     Mp1S,
     #[doc = "video/MP2P"]
+    #[serde(rename = "video/MP2P")]
     Mp2P,
     #[doc = "video/MP2T"]
+    #[serde(rename = "video/MP2T")]
     Mp2T,
     #[doc = "video/mp4"]
+    #[serde(rename = "video/mp4")]
     Mp4,
     #[doc = "video/MP4V-ES"]
+    #[serde(rename = "video/MP4V-ES")]
     Mp4VEs,
     #[doc = "video/MPV"]
+    #[serde(rename = "video/MPV")]
     Mpv,
     #[doc = "video/mpeg4-generic"]
+    #[serde(rename = "video/mpeg4-generic")]
     Mpeg4Generic,
     #[doc = "video/nv"]
+    #[serde(rename = "video/nv")]
     Nv,
     #[doc = "video/ogg"]
+    #[serde(rename = "video/ogg")]
     Ogg,
     #[doc = "video/parityfec"]
+    #[serde(rename = "video/parityfec")]
     Parityfec,
     #[doc = "video/pointer"]
+    #[serde(rename = "video/pointer")]
     Pointer,
     #[doc = "video/quicktime"]
+    #[serde(rename = "video/quicktime")]
     Quicktime,
     #[doc = "video/raptorfec"]
+    #[serde(rename = "video/raptorfec")]
     Raptorfec,
     #[doc = "video/raw"]
+    #[serde(rename = "video/raw")]
     Raw,
     #[doc = "video/rtp-enc-aescm128"]
+    #[serde(rename = "video/rtp-enc-aescm128")]
     RtpEncAescm128,
     #[doc = "video/rtploopback"]
+    #[serde(rename = "video/rtploopback")]
     Rtploopback,
     #[doc = "video/rtx"]
+    #[serde(rename = "video/rtx")]
     Rtx,
     #[doc = "video/scip"]
+    #[serde(rename = "video/scip")]
     Scip,
     #[doc = "video/smpte291"]
+    #[serde(rename = "video/smpte291")]
     Smpte291,
     #[doc = "video/SMPTE292M"]
+    #[serde(rename = "video/SMPTE292M")]
     Smpte292M,
     #[doc = "video/ulpfec"]
+    #[serde(rename = "video/ulpfec")]
     Ulpfec,
     #[doc = "video/vc1"]
+    #[serde(rename = "video/vc1")]
     Vc1,
     #[doc = "video/vc2"]
+    #[serde(rename = "video/vc2")]
     Vc2,
     #[doc = "video/vnd.CCTV"]
+    #[serde(rename = "video/vnd.CCTV")]
     VndCCTV,
     #[doc = "video/vnd.dece.hd"]
+    #[serde(rename = "video/vnd.dece.hd")]
     VndDeceHd,
     #[doc = "video/vnd.dece.mobile"]
+    #[serde(rename = "video/vnd.dece.mobile")]
     VndDeceMobile,
     #[doc = "video/vnd.dece.mp4"]
+    #[serde(rename = "video/vnd.dece.mp4")]
     VndDeceMp4,
     #[doc = "video/vnd.dece.pd"]
+    #[serde(rename = "video/vnd.dece.pd")]
     VndDecePd,
     #[doc = "video/vnd.dece.sd"]
+    #[serde(rename = "video/vnd.dece.sd")]
     VndDeceSd,
     #[doc = "video/vnd.dece.video"]
+    #[serde(rename = "video/vnd.dece.video")]
     VndDeceVideo,
     #[doc = "video/vnd.directv.mpeg"]
+    #[serde(rename = "video/vnd.directv.mpeg")]
     VndDirectvMpeg,
     #[doc = "video/vnd.directv.mpeg-tts"]
+    #[serde(rename = "video/vnd.directv.mpeg-tts")]
     VndDirectvMpegTts,
     #[doc = "video/vnd.dlna.mpeg-tts"]
+    #[serde(rename = "video/vnd.dlna.mpeg-tts")]
     VndDlnaMpegTts,
     #[doc = "video/vnd.dvb.file"]
+    #[serde(rename = "video/vnd.dvb.file")]
     VndDvbFile,
     #[doc = "video/vnd.fvt"]
+    #[serde(rename = "video/vnd.fvt")]
     VndFvt,
     #[doc = "video/vnd.hns.video"]
+    #[serde(rename = "video/vnd.hns.video")]
     VndHnsVideo,
     #[doc = "video/vnd.iptvforum.1dparityfec-1010"]
+    #[serde(rename = "video/vnd.iptvforum.1dparityfec-1010")]
     VndIptvforum1Dparityfec1010,
     #[doc = "video/vnd.iptvforum.1dparityfec-2005"]
+    #[serde(rename = "video/vnd.iptvforum.1dparityfec-2005")]
     VndIptvforum1Dparityfec2005,
     #[doc = "video/vnd.iptvforum.2dparityfec-1010"]
+    #[serde(rename = "video/vnd.iptvforum.2dparityfec-1010")]
     VndIptvforum2Dparityfec1010,
     #[doc = "video/vnd.iptvforum.2dparityfec-2005"]
+    #[serde(rename = "video/vnd.iptvforum.2dparityfec-2005")]
     VndIptvforum2Dparityfec2005,
     #[doc = "video/vnd.iptvforum.ttsavc"]
+    #[serde(rename = "video/vnd.iptvforum.ttsavc")]
     VndIptvforumTtsavc,
     #[doc = "video/vnd.iptvforum.ttsmpeg2"]
+    #[serde(rename = "video/vnd.iptvforum.ttsmpeg2")]
     VndIptvforumTtsmpeg2,
     #[doc = "video/vnd.motorola.video"]
+    #[serde(rename = "video/vnd.motorola.video")]
     VndMotorolaVideo,
     #[doc = "video/vnd.motorola.videop"]
+    #[serde(rename = "video/vnd.motorola.videop")]
     VndMotorolaVideop,
     #[doc = "video/vnd.mpegurl"]
+    #[serde(rename = "video/vnd.mpegurl")]
     VndMpegurl,
     #[doc = "video/vnd.ms-playready.media.pyv"]
+    #[serde(rename = "video/vnd.ms-playready.media.pyv")]
     VndMsPlayreadyMediaPyv,
     #[doc = "video/vnd.nokia.interleaved-multimedia"]
+    #[serde(rename = "video/vnd.nokia.interleaved-multimedia")]
     VndNokiaInterleavedMultimedia,
     #[doc = "video/vnd.nokia.mp4vr"]
+    #[serde(rename = "video/vnd.nokia.mp4vr")]
     VndNokiaMp4Vr,
     #[doc = "video/vnd.nokia.videovoip"]
+    #[serde(rename = "video/vnd.nokia.videovoip")]
     VndNokiaVideovoip,
     #[doc = "video/vnd.objectvideo"]
+    #[serde(rename = "video/vnd.objectvideo")]
     VndObjectvideo,
     #[doc = "video/vnd.radgamettools.bink"]
+    #[serde(rename = "video/vnd.radgamettools.bink")]
     VndRadgamettoolsBink,
     #[doc = "video/vnd.radgamettools.smacker"]
+    #[serde(rename = "video/vnd.radgamettools.smacker")]
     VndRadgamettoolsSmacker,
     #[doc = "video/vnd.sealed.mpeg1"]
+    #[serde(rename = "video/vnd.sealed.mpeg1")]
     VndSealedMpeg1,
     #[doc = "video/vnd.sealed.mpeg4"]
+    #[serde(rename = "video/vnd.sealed.mpeg4")]
     VndSealedMpeg4,
     #[doc = "video/vnd.sealed.swf"]
+    #[serde(rename = "video/vnd.sealed.swf")]
     VndSealedSwf,
     #[doc = "video/vnd.sealedmedia.softseal.mov"]
+    #[serde(rename = "video/vnd.sealedmedia.softseal.mov")]
     VndSealedmediaSoftsealMov,
     #[doc = "video/vnd.uvvu.mp4"]
+    #[serde(rename = "video/vnd.uvvu.mp4")]
     VndUvvuMp4,
     #[doc = "video/vnd.youtube.yt"]
+    #[serde(rename = "video/vnd.youtube.yt")]
     VndYoutubeYt,
     #[doc = "video/vnd.vivo"]
+    #[serde(rename = "video/vnd.vivo")]
     VndVivo,
     #[doc = "video/VP8"]
+    #[serde(rename = "video/VP8")]
     Vp8,
     #[doc = "video/VP9"]
+    #[serde(rename = "video/VP9")]
     Vp9,
 }
 impl ::std::fmt::Display for Video {

@@ -1,36 +1,62 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Message {
     #[doc = "message/bhttp"]
+    #[serde(rename = "message/bhttp")]
     Bhttp,
     #[doc = "message/CPIM"]
+    #[serde(rename = "message/CPIM")]
     Cpim,
     #[doc = "message/delivery-status"]
+    #[serde(rename = "message/delivery-status")]
     DeliveryStatus,
     #[doc = "message/disposition-notification"]
+    #[serde(rename = "message/disposition-notification")]
     DispositionNotification,
     #[doc = "message/example"]
+    #[serde(rename = "message/example")]
     Example,
     #[doc = "message/feedback-report"]
+    #[serde(rename = "message/feedback-report")]
     FeedbackReport,
     #[doc = "message/global"]
+    #[serde(rename = "message/global")]
     Global,
     #[doc = "message/global-delivery-status"]
+    #[serde(rename = "message/global-delivery-status")]
     GlobalDeliveryStatus,
     #[doc = "message/global-disposition-notification"]
+    #[serde(rename = "message/global-disposition-notification")]
     GlobalDispositionNotification,
     #[doc = "message/global-headers"]
+    #[serde(rename = "message/global-headers")]
     GlobalHeaders,
     #[doc = "message/http"]
+    #[serde(rename = "message/http")]
     Http,
     #[doc = "message/imdn+xml"]
+    #[serde(rename = "message/imdn+xml")]
     ImdnXml,
     #[doc = "message/sip"]
+    #[serde(rename = "message/sip")]
     Sip,
     #[doc = "message/sipfrag"]
+    #[serde(rename = "message/sipfrag")]
     Sipfrag,
     #[doc = "message/tracking-status"]
+    #[serde(rename = "message/tracking-status")]
     TrackingStatus,
     #[doc = "message/vnd.wfa.wsc"]
+    #[serde(rename = "message/vnd.wfa.wsc")]
     VndWfaWsc,
 }
 impl ::std::fmt::Display for Message {

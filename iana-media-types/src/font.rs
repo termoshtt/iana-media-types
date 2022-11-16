@@ -1,16 +1,32 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Font {
     #[doc = "font/collection"]
+    #[serde(rename = "font/collection")]
     Collection,
     #[doc = "font/otf"]
+    #[serde(rename = "font/otf")]
     Otf,
     #[doc = "font/sfnt"]
+    #[serde(rename = "font/sfnt")]
     Sfnt,
     #[doc = "font/ttf"]
+    #[serde(rename = "font/ttf")]
     Ttf,
     #[doc = "font/woff"]
+    #[serde(rename = "font/woff")]
     Woff,
     #[doc = "font/woff2"]
+    #[serde(rename = "font/woff2")]
     Woff2,
 }
 impl ::std::fmt::Display for Font {

@@ -44,10 +44,14 @@ impl MediaType {
         let member_idents = &self.member_idents;
         let member_templates = &self.member_templates;
         quote::quote! {
-            #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+            #[derive(
+                Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash,
+                ::serde::Serialize, ::serde::Deserialize
+            )]
             pub enum #name {
                 #(
                 #[doc = #member_templates]
+                #[serde(rename = #member_templates)]
                 #member_idents,
                 )*
             }

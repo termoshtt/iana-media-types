@@ -1,30 +1,53 @@
-#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
+#[derive(
+    Debug,
+    Clone,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    :: serde :: Serialize,
+    :: serde :: Deserialize,
+)]
 pub enum Multipart {
     #[doc = "multipart/appledouble"]
+    #[serde(rename = "multipart/appledouble")]
     Appledouble,
     #[doc = "multipart/byteranges"]
+    #[serde(rename = "multipart/byteranges")]
     Byteranges,
     #[doc = "multipart/encrypted"]
+    #[serde(rename = "multipart/encrypted")]
     Encrypted,
     #[doc = "multipart/example"]
+    #[serde(rename = "multipart/example")]
     Example,
     #[doc = "multipart/form-data"]
+    #[serde(rename = "multipart/form-data")]
     FormData,
     #[doc = "multipart/header-set"]
+    #[serde(rename = "multipart/header-set")]
     HeaderSet,
     #[doc = "multipart/multilingual"]
+    #[serde(rename = "multipart/multilingual")]
     Multilingual,
     #[doc = "multipart/related"]
+    #[serde(rename = "multipart/related")]
     Related,
     #[doc = "multipart/report"]
+    #[serde(rename = "multipart/report")]
     Report,
     #[doc = "multipart/signed"]
+    #[serde(rename = "multipart/signed")]
     Signed,
     #[doc = "multipart/vnd.bint.med-plus"]
+    #[serde(rename = "multipart/vnd.bint.med-plus")]
     VndBintMedPlus,
     #[doc = "multipart/voice-message"]
+    #[serde(rename = "multipart/voice-message")]
     VoiceMessage,
     #[doc = "multipart/x-mixed-replace"]
+    #[serde(rename = "multipart/x-mixed-replace")]
     XMixedReplace,
 }
 impl ::std::fmt::Display for Multipart {
