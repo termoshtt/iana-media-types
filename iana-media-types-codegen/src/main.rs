@@ -1,19 +1,21 @@
 use anyhow::Result;
 use inflector::Inflector;
-use std::{fmt, fs, path::PathBuf, process::Command};
+use std::{collections::HashMap, fmt, fs, path::PathBuf, process::Command};
 
 #[derive(Debug, Clone)]
 struct MediaType {
     name: syn::Ident,
     member_idents: Vec<syn::Ident>,
     member_templates: Vec<String>,
+    member_extensions: Vec<Vec<String>>,
 }
 
 impl MediaType {
-    fn new(name: syn::Ident, url: &str) -> Result<Self> {
+    fn new(name: syn::Ident, url: &str, extensions_map: &ExtensionsMap) -> Result<Self> {
         let csv = ureq::get(url).call()?.into_string()?;
         let mut member_idents = Vec::new();
         let mut member_templates = Vec::new();
+        let mut member_extensions = Vec::new();
         for line in csv
             .lines()
             .skip(1 /* CSV header */)
@@ -22,12 +24,23 @@ impl MediaType {
             let mut iter = line.split(',');
             match (iter.next(), iter.next()) {
                 (Some(name), Some(ty)) => {
-                    let ty = ty.trim();
-                    if ty.is_empty() {
+                    member_idents.push(as_ident(name));
+
+                    let mime_type = ty.trim();
+                    if mime_type.is_empty() {
                         continue;
                     }
-                    member_idents.push(as_ident(name));
-                    member_templates.push(ty.to_string());
+
+                    let mut extensions_vec = Vec::new();
+                    if let Some(extenstions) = extensions_map.get(mime_type) {
+                        extensions_vec = extenstions
+                            .into_iter()
+                            .map(|extension_str| extension_str.to_string())
+                            .collect();
+                    }
+
+                    member_templates.push(mime_type.to_string());
+                    member_extensions.push(extensions_vec)
                 }
                 _ => continue,
             }
@@ -36,6 +49,7 @@ impl MediaType {
             name,
             member_idents,
             member_templates,
+            member_extensions,
         })
     }
 
@@ -43,6 +57,7 @@ impl MediaType {
         let name = &self.name;
         let member_idents = &self.member_idents;
         let member_templates = &self.member_templates;
+        let member_extensions = &self.member_extensions;
         quote::quote! {
             #[derive(
                 Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash,
@@ -52,6 +67,9 @@ impl MediaType {
                 #(
                 #[doc = #member_templates]
                 #[serde(rename = #member_templates)]
+                #(
+                #[serde(alias = #member_extensions)]
+                )*
                 #member_idents,
                 )*
             }
@@ -78,13 +96,14 @@ impl MediaType {
         let name = &self.name;
         let member_idents = &self.member_idents;
         let member_templates = &self.member_templates;
+        let member_extensions = &self.member_extensions;
         quote::quote! {
             impl ::std::str::FromStr for #name {
                 type Err = ();
                 fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
                     match input {
                         #(
-                        #member_templates => Ok(#name::#member_idents),
+                        #member_templates #(| #member_extensions)* => Ok(#name::#member_idents),
                         )*
                         _ => Err(()),
                     }
@@ -119,6 +138,11 @@ fn main() -> Result<()> {
         .join("../iana-media-types")
         .canonicalize()?;
 
+    let etc_mime_types_string = ureq::get("https://pagure.io/mailcap/raw/master/f/mime.types")
+        .call()?
+        .into_string()?;
+    let extentions_map = expentions_map(&etc_mime_types_string)?;
+
     for (name, ident) in [
         ("application", "Application"),
         ("audio", "Audio"),
@@ -132,10 +156,32 @@ fn main() -> Result<()> {
     ] {
         let path = root.join(format!("src/{}.rs", name));
         let url = format!("https://www.iana.org/assignments/media-types/{}.csv", name);
-        let media_type = MediaType::new(quote::format_ident!("{}", ident), &url)?;
+        let media_type = MediaType::new(quote::format_ident!("{}", ident), &url, &extentions_map)?;
         fs::write(path, format!("{}", media_type))?;
     }
 
     Command::new("cargo").arg("fmt").current_dir(root).spawn()?;
     Ok(())
+}
+
+type ExtensionsMap<'a> = HashMap<&'a str, Vec<&'a str>>;
+
+fn expentions_map<'a>(etc_mime_types_string: &str) -> Result<ExtensionsMap<'_>> {
+    let mut extensions_map: ExtensionsMap = HashMap::new();
+    let delimeters = [' ', '\t'];
+
+    etc_mime_types_string
+        .lines()
+        .filter(|line| !line.starts_with('#') && line.contains(delimeters))
+        .map(|line| {
+            line.split(delimeters)
+                .filter(|str| !str.is_empty())
+                .collect::<Vec<&str>>()
+        })
+        .for_each(|line| {
+            let mut iter = line.into_iter();
+            extensions_map.insert(iter.next().expect("MIMI type"), iter.collect());
+        });
+
+    Ok(extensions_map)
 }

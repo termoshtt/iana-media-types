@@ -12,60 +12,62 @@
 pub enum Multipart {
     #[doc = "multipart/appledouble"]
     #[serde(rename = "multipart/appledouble")]
-    Appledouble,
+    Alternative,
     #[doc = "multipart/byteranges"]
     #[serde(rename = "multipart/byteranges")]
-    Byteranges,
+    Appledouble,
     #[doc = "multipart/encrypted"]
     #[serde(rename = "multipart/encrypted")]
-    Encrypted,
+    Byteranges,
     #[doc = "multipart/example"]
     #[serde(rename = "multipart/example")]
-    Example,
+    Digest,
     #[doc = "multipart/form-data"]
     #[serde(rename = "multipart/form-data")]
-    FormData,
+    Encrypted,
     #[doc = "multipart/header-set"]
     #[serde(rename = "multipart/header-set")]
-    HeaderSet,
+    Example,
     #[doc = "multipart/multilingual"]
     #[serde(rename = "multipart/multilingual")]
-    Multilingual,
+    FormData,
     #[doc = "multipart/related"]
     #[serde(rename = "multipart/related")]
-    Related,
+    HeaderSet,
     #[doc = "multipart/report"]
     #[serde(rename = "multipart/report")]
-    Report,
+    Mixed,
     #[doc = "multipart/signed"]
     #[serde(rename = "multipart/signed")]
-    Signed,
+    Multilingual,
     #[doc = "multipart/vnd.bint.med-plus"]
     #[serde(rename = "multipart/vnd.bint.med-plus")]
-    VndBintMedPlus,
+    #[serde(alias = "bmed")]
+    Parallel,
     #[doc = "multipart/voice-message"]
     #[serde(rename = "multipart/voice-message")]
-    VoiceMessage,
+    #[serde(alias = "vpm")]
+    Related,
     #[doc = "multipart/x-mixed-replace"]
     #[serde(rename = "multipart/x-mixed-replace")]
-    XMixedReplace,
+    Report,
 }
 impl ::std::fmt::Display for Multipart {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         match self {
-            Multipart::Appledouble => write!(f, "multipart/appledouble")?,
-            Multipart::Byteranges => write!(f, "multipart/byteranges")?,
-            Multipart::Encrypted => write!(f, "multipart/encrypted")?,
-            Multipart::Example => write!(f, "multipart/example")?,
-            Multipart::FormData => write!(f, "multipart/form-data")?,
-            Multipart::HeaderSet => write!(f, "multipart/header-set")?,
-            Multipart::Multilingual => write!(f, "multipart/multilingual")?,
-            Multipart::Related => write!(f, "multipart/related")?,
-            Multipart::Report => write!(f, "multipart/report")?,
-            Multipart::Signed => write!(f, "multipart/signed")?,
-            Multipart::VndBintMedPlus => write!(f, "multipart/vnd.bint.med-plus")?,
-            Multipart::VoiceMessage => write!(f, "multipart/voice-message")?,
-            Multipart::XMixedReplace => write!(f, "multipart/x-mixed-replace")?,
+            Multipart::Alternative => write!(f, "multipart/appledouble")?,
+            Multipart::Appledouble => write!(f, "multipart/byteranges")?,
+            Multipart::Byteranges => write!(f, "multipart/encrypted")?,
+            Multipart::Digest => write!(f, "multipart/example")?,
+            Multipart::Encrypted => write!(f, "multipart/form-data")?,
+            Multipart::Example => write!(f, "multipart/header-set")?,
+            Multipart::FormData => write!(f, "multipart/multilingual")?,
+            Multipart::HeaderSet => write!(f, "multipart/related")?,
+            Multipart::Mixed => write!(f, "multipart/report")?,
+            Multipart::Multilingual => write!(f, "multipart/signed")?,
+            Multipart::Parallel => write!(f, "multipart/vnd.bint.med-plus")?,
+            Multipart::Related => write!(f, "multipart/voice-message")?,
+            Multipart::Report => write!(f, "multipart/x-mixed-replace")?,
         }
         Ok(())
     }
@@ -74,19 +76,19 @@ impl ::std::str::FromStr for Multipart {
     type Err = ();
     fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
-            "multipart/appledouble" => Ok(Multipart::Appledouble),
-            "multipart/byteranges" => Ok(Multipart::Byteranges),
-            "multipart/encrypted" => Ok(Multipart::Encrypted),
-            "multipart/example" => Ok(Multipart::Example),
-            "multipart/form-data" => Ok(Multipart::FormData),
-            "multipart/header-set" => Ok(Multipart::HeaderSet),
-            "multipart/multilingual" => Ok(Multipart::Multilingual),
-            "multipart/related" => Ok(Multipart::Related),
-            "multipart/report" => Ok(Multipart::Report),
-            "multipart/signed" => Ok(Multipart::Signed),
-            "multipart/vnd.bint.med-plus" => Ok(Multipart::VndBintMedPlus),
-            "multipart/voice-message" => Ok(Multipart::VoiceMessage),
-            "multipart/x-mixed-replace" => Ok(Multipart::XMixedReplace),
+            "multipart/appledouble" => Ok(Multipart::Alternative),
+            "multipart/byteranges" => Ok(Multipart::Appledouble),
+            "multipart/encrypted" => Ok(Multipart::Byteranges),
+            "multipart/example" => Ok(Multipart::Digest),
+            "multipart/form-data" => Ok(Multipart::Encrypted),
+            "multipart/header-set" => Ok(Multipart::Example),
+            "multipart/multilingual" => Ok(Multipart::FormData),
+            "multipart/related" => Ok(Multipart::HeaderSet),
+            "multipart/report" => Ok(Multipart::Mixed),
+            "multipart/signed" => Ok(Multipart::Multilingual),
+            "multipart/vnd.bint.med-plus" | "bmed" => Ok(Multipart::Parallel),
+            "multipart/voice-message" | "vpm" => Ok(Multipart::Related),
+            "multipart/x-mixed-replace" => Ok(Multipart::Report),
             _ => Err(()),
         }
     }

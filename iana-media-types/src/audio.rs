@@ -15,6 +15,7 @@ pub enum Audio {
     _1DInterleavedParityfec,
     #[doc = "audio/32kadpcm"]
     #[serde(rename = "audio/32kadpcm")]
+    #[serde(alias = "726")]
     _32Kadpcm,
     #[doc = "audio/3gpp"]
     #[serde(rename = "audio/3gpp")]
@@ -24,15 +25,21 @@ pub enum Audio {
     _3Gpp2,
     #[doc = "audio/aac"]
     #[serde(rename = "audio/aac")]
+    #[serde(alias = "adts")]
+    #[serde(alias = "aac")]
+    #[serde(alias = "ass")]
     Aac,
     #[doc = "audio/ac3"]
     #[serde(rename = "audio/ac3")]
+    #[serde(alias = "ac3")]
     Ac3,
     #[doc = "audio/AMR"]
     #[serde(rename = "audio/AMR")]
+    #[serde(alias = "amr")]
     Amr,
     #[doc = "audio/AMR-WB"]
     #[serde(rename = "audio/AMR-WB")]
+    #[serde(alias = "awb")]
     AmrWb,
     #[doc = "audio/amr-wb+"]
     #[serde(rename = "audio/amr-wb+")]
@@ -42,18 +49,26 @@ pub enum Audio {
     Aptx,
     #[doc = "audio/asc"]
     #[serde(rename = "audio/asc")]
+    #[serde(alias = "acn")]
     Asc,
     #[doc = "audio/ATRAC-ADVANCED-LOSSLESS"]
     #[serde(rename = "audio/ATRAC-ADVANCED-LOSSLESS")]
+    #[serde(alias = "aal")]
     AtracAdvancedLossless,
     #[doc = "audio/ATRAC-X"]
     #[serde(rename = "audio/ATRAC-X")]
+    #[serde(alias = "atx")]
     AtracX,
     #[doc = "audio/ATRAC3"]
     #[serde(rename = "audio/ATRAC3")]
+    #[serde(alias = "at3")]
+    #[serde(alias = "aa3")]
+    #[serde(alias = "omg")]
     Atrac3,
     #[doc = "audio/basic"]
     #[serde(rename = "audio/basic")]
+    #[serde(alias = "au")]
+    #[serde(alias = "snd")]
     Basic,
     #[doc = "audio/BV16"]
     #[serde(rename = "audio/BV16")]
@@ -72,6 +87,7 @@ pub enum Audio {
     Dat12,
     #[doc = "audio/dls"]
     #[serde(rename = "audio/dls")]
+    #[serde(alias = "dls")]
     Dls,
     #[doc = "audio/dsr-es201108"]
     #[serde(rename = "audio/dsr-es201108")]
@@ -99,6 +115,7 @@ pub enum Audio {
     Encaprtp,
     #[doc = "audio/EVRC"]
     #[serde(rename = "audio/EVRC")]
+    #[serde(alias = "evc")]
     Evrc,
     #[doc = "audio/EVRC-QCP"]
     #[serde(rename = "audio/EVRC-QCP")]
@@ -111,6 +128,7 @@ pub enum Audio {
     Evrc1,
     #[doc = "audio/EVRCB"]
     #[serde(rename = "audio/EVRCB")]
+    #[serde(alias = "evb")]
     Evrcb,
     #[doc = "audio/EVRCB0"]
     #[serde(rename = "audio/EVRCB0")]
@@ -120,6 +138,7 @@ pub enum Audio {
     Evrcb1,
     #[doc = "audio/EVRCNW"]
     #[serde(rename = "audio/EVRCNW")]
+    #[serde(alias = "enw")]
     Evrcnw,
     #[doc = "audio/EVRCNW0"]
     #[serde(rename = "audio/EVRCNW0")]
@@ -129,6 +148,7 @@ pub enum Audio {
     Evrcnw1,
     #[doc = "audio/EVRCWB"]
     #[serde(rename = "audio/EVRCWB")]
+    #[serde(alias = "evw")]
     Evrcwb,
     #[doc = "audio/EVRCWB0"]
     #[serde(rename = "audio/EVRCWB0")]
@@ -201,6 +221,7 @@ pub enum Audio {
     GsmHr08,
     #[doc = "audio/iLBC"]
     #[serde(rename = "audio/iLBC")]
+    #[serde(alias = "lbc")]
     Ilbc,
     #[doc = "audio/ip-mr_v2.5"]
     #[serde(rename = "audio/ip-mr_v2.5")]
@@ -210,6 +231,7 @@ pub enum Audio {
     L8,
     #[doc = "audio/L16"]
     #[serde(rename = "audio/L16")]
+    #[serde(alias = "l16")]
     L16,
     #[doc = "audio/L20"]
     #[serde(rename = "audio/L20")]
@@ -234,15 +256,18 @@ pub enum Audio {
     Melp2400,
     #[doc = "audio/mhas"]
     #[serde(rename = "audio/mhas")]
+    #[serde(alias = "mhas")]
     Mhas,
     #[doc = "audio/mobile-xmf"]
     #[serde(rename = "audio/mobile-xmf")]
+    #[serde(alias = "mxmf")]
     MobileXmf,
     #[doc = "audio/MPA"]
     #[serde(rename = "audio/MPA")]
     Mpa,
     #[doc = "audio/mp4"]
     #[serde(rename = "audio/mp4")]
+    #[serde(alias = "m4a")]
     Mp4,
     #[doc = "audio/MP4A-LATM"]
     #[serde(rename = "audio/MP4A-LATM")]
@@ -252,12 +277,20 @@ pub enum Audio {
     MpaRobust,
     #[doc = "audio/mpeg"]
     #[serde(rename = "audio/mpeg")]
+    #[serde(alias = "mp3")]
+    #[serde(alias = "mpga")]
+    #[serde(alias = "mp1")]
+    #[serde(alias = "mp2")]
     Mpeg,
     #[doc = "audio/mpeg4-generic"]
     #[serde(rename = "audio/mpeg4-generic")]
     Mpeg4Generic,
     #[doc = "audio/ogg"]
     #[serde(rename = "audio/ogg")]
+    #[serde(alias = "oga")]
+    #[serde(alias = "ogg")]
+    #[serde(alias = "opus")]
+    #[serde(alias = "spx")]
     Ogg,
     #[doc = "audio/opus"]
     #[serde(rename = "audio/opus")]
@@ -279,9 +312,12 @@ pub enum Audio {
     PcmuWb,
     #[doc = "audio/prs.sid"]
     #[serde(rename = "audio/prs.sid")]
+    #[serde(alias = "sid")]
+    #[serde(alias = "psid")]
     PrsSid,
     #[doc = "audio/QCELP"]
     #[serde(rename = "audio/QCELP")]
+    #[serde(alias = "qcp")]
     Qcelp,
     #[doc = "audio/raptorfec"]
     #[serde(rename = "audio/raptorfec")]
@@ -306,6 +342,7 @@ pub enum Audio {
     Scip,
     #[doc = "audio/SMV"]
     #[serde(rename = "audio/SMV")]
+    #[serde(alias = "smv")]
     Smv,
     #[doc = "audio/SMV0"]
     #[serde(rename = "audio/SMV0")]
@@ -315,6 +352,7 @@ pub enum Audio {
     SmvQcp,
     #[doc = "audio/sofa"]
     #[serde(rename = "audio/sofa")]
+    #[serde(alias = "sofa")]
     Sofa,
     #[doc = "audio/sp-midi"]
     #[serde(rename = "audio/sp-midi")]
@@ -351,6 +389,8 @@ pub enum Audio {
     Ulpfec,
     #[doc = "audio/usac"]
     #[serde(rename = "audio/usac")]
+    #[serde(alias = "loas")]
+    #[serde(alias = "xhe")]
     Usac,
     #[doc = "audio/VDVI"]
     #[serde(rename = "audio/VDVI")]
@@ -366,6 +406,7 @@ pub enum Audio {
     Vnd4SB,
     #[doc = "audio/vnd.audiokoz"]
     #[serde(rename = "audio/vnd.audiokoz")]
+    #[serde(alias = "koz")]
     VndAudiokoz,
     #[doc = "audio/vnd.CELP"]
     #[serde(rename = "audio/vnd.CELP")]
@@ -384,9 +425,12 @@ pub enum Audio {
     VndCnsInf1,
     #[doc = "audio/vnd.dece.audio"]
     #[serde(rename = "audio/vnd.dece.audio")]
+    #[serde(alias = "uva")]
+    #[serde(alias = "uvva")]
     VndDeceAudio,
     #[doc = "audio/vnd.digital-winds"]
     #[serde(rename = "audio/vnd.digital-winds")]
+    #[serde(alias = "eol")]
     VndDigitalWinds,
     #[doc = "audio/vnd.dlna.adts"]
     #[serde(rename = "audio/vnd.dlna.adts")]
@@ -399,6 +443,7 @@ pub enum Audio {
     VndDolbyHeaac2,
     #[doc = "audio/vnd.dolby.mlp"]
     #[serde(rename = "audio/vnd.dolby.mlp")]
+    #[serde(alias = "mlp")]
     VndDolbyMlp,
     #[doc = "audio/vnd.dolby.mps"]
     #[serde(rename = "audio/vnd.dolby.mps")]
@@ -420,9 +465,11 @@ pub enum Audio {
     VndDra,
     #[doc = "audio/vnd.dts"]
     #[serde(rename = "audio/vnd.dts")]
+    #[serde(alias = "dts")]
     VndDts,
     #[doc = "audio/vnd.dts.hd"]
     #[serde(rename = "audio/vnd.dts.hd")]
+    #[serde(alias = "dtshd")]
     VndDtsHd,
     #[doc = "audio/vnd.dts.uhd"]
     #[serde(rename = "audio/vnd.dts.uhd")]
@@ -432,45 +479,57 @@ pub enum Audio {
     VndDvbFile,
     #[doc = "audio/vnd.everad.plj"]
     #[serde(rename = "audio/vnd.everad.plj")]
+    #[serde(alias = "plj")]
     VndEveradPlj,
     #[doc = "audio/vnd.hns.audio"]
     #[serde(rename = "audio/vnd.hns.audio")]
     VndHnsAudio,
     #[doc = "audio/vnd.lucent.voice"]
     #[serde(rename = "audio/vnd.lucent.voice")]
+    #[serde(alias = "lvp")]
     VndLucentVoice,
     #[doc = "audio/vnd.ms-playready.media.pya"]
     #[serde(rename = "audio/vnd.ms-playready.media.pya")]
+    #[serde(alias = "pya")]
     VndMsPlayreadyMediaPya,
     #[doc = "audio/vnd.nokia.mobile-xmf"]
     #[serde(rename = "audio/vnd.nokia.mobile-xmf")]
     VndNokiaMobileXmf,
     #[doc = "audio/vnd.nortel.vbk"]
     #[serde(rename = "audio/vnd.nortel.vbk")]
+    #[serde(alias = "vbk")]
     VndNortelVbk,
     #[doc = "audio/vnd.nuera.ecelp4800"]
     #[serde(rename = "audio/vnd.nuera.ecelp4800")]
+    #[serde(alias = "ecelp4800")]
     VndNueraEcelp4800,
     #[doc = "audio/vnd.nuera.ecelp7470"]
     #[serde(rename = "audio/vnd.nuera.ecelp7470")]
+    #[serde(alias = "ecelp7470")]
     VndNueraEcelp7470,
     #[doc = "audio/vnd.nuera.ecelp9600"]
     #[serde(rename = "audio/vnd.nuera.ecelp9600")]
+    #[serde(alias = "ecelp9600")]
     VndNueraEcelp9600,
     #[doc = "audio/vnd.octel.sbc"]
     #[serde(rename = "audio/vnd.octel.sbc")]
     VndOctelSbc,
     #[doc = "audio/vnd.presonus.multitrack"]
     #[serde(rename = "audio/vnd.presonus.multitrack")]
+    #[serde(alias = "multitrack")]
     VndPresonusMultitrack,
     #[doc = "audio/vnd.rhetorex.32kadpcm"]
     #[serde(rename = "audio/vnd.rhetorex.32kadpcm")]
     VndRhetorex32Kadpcm,
     #[doc = "audio/vnd.rip"]
     #[serde(rename = "audio/vnd.rip")]
+    #[serde(alias = "rip")]
     VndRip,
     #[doc = "audio/vnd.sealedmedia.softseal.mpeg"]
     #[serde(rename = "audio/vnd.sealedmedia.softseal.mpeg")]
+    #[serde(alias = "smp3")]
+    #[serde(alias = "smp")]
+    #[serde(alias = "s1m")]
     VndSealedmediaSoftsealMpeg,
     #[doc = "audio/vnd.vmx.cvsd"]
     #[serde(rename = "audio/vnd.vmx.cvsd")]
@@ -651,26 +710,26 @@ impl ::std::str::FromStr for Audio {
     fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
             "audio/1d-interleaved-parityfec" => Ok(Audio::_1DInterleavedParityfec),
-            "audio/32kadpcm" => Ok(Audio::_32Kadpcm),
+            "audio/32kadpcm" | "726" => Ok(Audio::_32Kadpcm),
             "audio/3gpp" => Ok(Audio::_3Gpp),
             "audio/3gpp2" => Ok(Audio::_3Gpp2),
-            "audio/aac" => Ok(Audio::Aac),
-            "audio/ac3" => Ok(Audio::Ac3),
-            "audio/AMR" => Ok(Audio::Amr),
-            "audio/AMR-WB" => Ok(Audio::AmrWb),
+            "audio/aac" | "adts" | "aac" | "ass" => Ok(Audio::Aac),
+            "audio/ac3" | "ac3" => Ok(Audio::Ac3),
+            "audio/AMR" | "amr" => Ok(Audio::Amr),
+            "audio/AMR-WB" | "awb" => Ok(Audio::AmrWb),
             "audio/amr-wb+" => Ok(Audio::AmrWb_),
             "audio/aptx" => Ok(Audio::Aptx),
-            "audio/asc" => Ok(Audio::Asc),
-            "audio/ATRAC-ADVANCED-LOSSLESS" => Ok(Audio::AtracAdvancedLossless),
-            "audio/ATRAC-X" => Ok(Audio::AtracX),
-            "audio/ATRAC3" => Ok(Audio::Atrac3),
-            "audio/basic" => Ok(Audio::Basic),
+            "audio/asc" | "acn" => Ok(Audio::Asc),
+            "audio/ATRAC-ADVANCED-LOSSLESS" | "aal" => Ok(Audio::AtracAdvancedLossless),
+            "audio/ATRAC-X" | "atx" => Ok(Audio::AtracX),
+            "audio/ATRAC3" | "at3" | "aa3" | "omg" => Ok(Audio::Atrac3),
+            "audio/basic" | "au" | "snd" => Ok(Audio::Basic),
             "audio/BV16" => Ok(Audio::Bv16),
             "audio/BV32" => Ok(Audio::Bv32),
             "audio/clearmode" => Ok(Audio::Clearmode),
             "audio/CN" => Ok(Audio::Cn),
             "audio/DAT12" => Ok(Audio::Dat12),
-            "audio/dls" => Ok(Audio::Dls),
+            "audio/dls" | "dls" => Ok(Audio::Dls),
             "audio/dsr-es201108" => Ok(Audio::DsrEs201108),
             "audio/dsr-es202050" => Ok(Audio::DsrEs202050),
             "audio/dsr-es202211" => Ok(Audio::DsrEs202211),
@@ -679,17 +738,17 @@ impl ::std::str::FromStr for Audio {
             "audio/DVI4" => Ok(Audio::Dvi4),
             "audio/eac3" => Ok(Audio::Eac3),
             "audio/encaprtp" => Ok(Audio::Encaprtp),
-            "audio/EVRC" => Ok(Audio::Evrc),
+            "audio/EVRC" | "evc" => Ok(Audio::Evrc),
             "audio/EVRC-QCP" => Ok(Audio::EvrcQcp),
             "audio/EVRC0" => Ok(Audio::Evrc0),
             "audio/EVRC1" => Ok(Audio::Evrc1),
-            "audio/EVRCB" => Ok(Audio::Evrcb),
+            "audio/EVRCB" | "evb" => Ok(Audio::Evrcb),
             "audio/EVRCB0" => Ok(Audio::Evrcb0),
             "audio/EVRCB1" => Ok(Audio::Evrcb1),
-            "audio/EVRCNW" => Ok(Audio::Evrcnw),
+            "audio/EVRCNW" | "enw" => Ok(Audio::Evrcnw),
             "audio/EVRCNW0" => Ok(Audio::Evrcnw0),
             "audio/EVRCNW1" => Ok(Audio::Evrcnw1),
-            "audio/EVRCWB" => Ok(Audio::Evrcwb),
+            "audio/EVRCWB" | "evw" => Ok(Audio::Evrcwb),
             "audio/EVRCWB0" => Ok(Audio::Evrcwb0),
             "audio/EVRCWB1" => Ok(Audio::Evrcwb1),
             "audio/EVS" => Ok(Audio::Evs),
@@ -713,10 +772,10 @@ impl ::std::str::FromStr for Audio {
             "audio/GSM" => Ok(Audio::Gsm),
             "audio/GSM-EFR" => Ok(Audio::GsmEfr),
             "audio/GSM-HR-08" => Ok(Audio::GsmHr08),
-            "audio/iLBC" => Ok(Audio::Ilbc),
+            "audio/iLBC" | "lbc" => Ok(Audio::Ilbc),
             "audio/ip-mr_v2.5" => Ok(Audio::IpMrV25),
             "audio/L8" => Ok(Audio::L8),
-            "audio/L16" => Ok(Audio::L16),
+            "audio/L16" | "l16" => Ok(Audio::L16),
             "audio/L20" => Ok(Audio::L20),
             "audio/L24" => Ok(Audio::L24),
             "audio/LPC" => Ok(Audio::Lpc),
@@ -724,23 +783,23 @@ impl ::std::str::FromStr for Audio {
             "audio/MELP600" => Ok(Audio::Melp600),
             "audio/MELP1200" => Ok(Audio::Melp1200),
             "audio/MELP2400" => Ok(Audio::Melp2400),
-            "audio/mhas" => Ok(Audio::Mhas),
-            "audio/mobile-xmf" => Ok(Audio::MobileXmf),
+            "audio/mhas" | "mhas" => Ok(Audio::Mhas),
+            "audio/mobile-xmf" | "mxmf" => Ok(Audio::MobileXmf),
             "audio/MPA" => Ok(Audio::Mpa),
-            "audio/mp4" => Ok(Audio::Mp4),
+            "audio/mp4" | "m4a" => Ok(Audio::Mp4),
             "audio/MP4A-LATM" => Ok(Audio::Mp4ALatm),
             "audio/mpa-robust" => Ok(Audio::MpaRobust),
-            "audio/mpeg" => Ok(Audio::Mpeg),
+            "audio/mpeg" | "mp3" | "mpga" | "mp1" | "mp2" => Ok(Audio::Mpeg),
             "audio/mpeg4-generic" => Ok(Audio::Mpeg4Generic),
-            "audio/ogg" => Ok(Audio::Ogg),
+            "audio/ogg" | "oga" | "ogg" | "opus" | "spx" => Ok(Audio::Ogg),
             "audio/opus" => Ok(Audio::Opus),
             "audio/parityfec" => Ok(Audio::Parityfec),
             "audio/PCMA" => Ok(Audio::Pcma),
             "audio/PCMA-WB" => Ok(Audio::PcmaWb),
             "audio/PCMU" => Ok(Audio::Pcmu),
             "audio/PCMU-WB" => Ok(Audio::PcmuWb),
-            "audio/prs.sid" => Ok(Audio::PrsSid),
-            "audio/QCELP" => Ok(Audio::Qcelp),
+            "audio/prs.sid" | "sid" | "psid" => Ok(Audio::PrsSid),
+            "audio/QCELP" | "qcp" => Ok(Audio::Qcelp),
             "audio/raptorfec" => Ok(Audio::Raptorfec),
             "audio/RED" => Ok(Audio::Red),
             "audio/rtp-enc-aescm128" => Ok(Audio::RtpEncAescm128),
@@ -748,10 +807,10 @@ impl ::std::str::FromStr for Audio {
             "audio/rtp-midi" => Ok(Audio::RtpMidi),
             "audio/rtx" => Ok(Audio::Rtx),
             "audio/scip" => Ok(Audio::Scip),
-            "audio/SMV" => Ok(Audio::Smv),
+            "audio/SMV" | "smv" => Ok(Audio::Smv),
             "audio/SMV0" => Ok(Audio::Smv0),
             "audio/SMV-QCP" => Ok(Audio::SmvQcp),
-            "audio/sofa" => Ok(Audio::Sofa),
+            "audio/sofa" | "sofa" => Ok(Audio::Sofa),
             "audio/sp-midi" => Ok(Audio::SpMidi),
             "audio/speex" => Ok(Audio::Speex),
             "audio/t140c" => Ok(Audio::T140C),
@@ -763,47 +822,49 @@ impl ::std::str::FromStr for Audio {
             "audio/TSVCIS" => Ok(Audio::Tsvcis),
             "audio/UEMCLIP" => Ok(Audio::Uemclip),
             "audio/ulpfec" => Ok(Audio::Ulpfec),
-            "audio/usac" => Ok(Audio::Usac),
+            "audio/usac" | "loas" | "xhe" => Ok(Audio::Usac),
             "audio/VDVI" => Ok(Audio::Vdvi),
             "audio/VMR-WB" => Ok(Audio::VmrWb),
             "audio/vnd.3gpp.iufp" => Ok(Audio::Vnd3GppIufp),
             "audio/vnd.4SB" => Ok(Audio::Vnd4SB),
-            "audio/vnd.audiokoz" => Ok(Audio::VndAudiokoz),
+            "audio/vnd.audiokoz" | "koz" => Ok(Audio::VndAudiokoz),
             "audio/vnd.CELP" => Ok(Audio::VndCELP),
             "audio/vnd.cisco.nse" => Ok(Audio::VndCiscoNse),
             "audio/vnd.cmles.radio-events" => Ok(Audio::VndCmlesRadioEvents),
             "audio/vnd.cns.anp1" => Ok(Audio::VndCnsAnp1),
             "audio/vnd.cns.inf1" => Ok(Audio::VndCnsInf1),
-            "audio/vnd.dece.audio" => Ok(Audio::VndDeceAudio),
-            "audio/vnd.digital-winds" => Ok(Audio::VndDigitalWinds),
+            "audio/vnd.dece.audio" | "uva" | "uvva" => Ok(Audio::VndDeceAudio),
+            "audio/vnd.digital-winds" | "eol" => Ok(Audio::VndDigitalWinds),
             "audio/vnd.dlna.adts" => Ok(Audio::VndDlnaAdts),
             "audio/vnd.dolby.heaac.1" => Ok(Audio::VndDolbyHeaac1),
             "audio/vnd.dolby.heaac.2" => Ok(Audio::VndDolbyHeaac2),
-            "audio/vnd.dolby.mlp" => Ok(Audio::VndDolbyMlp),
+            "audio/vnd.dolby.mlp" | "mlp" => Ok(Audio::VndDolbyMlp),
             "audio/vnd.dolby.mps" => Ok(Audio::VndDolbyMps),
             "audio/vnd.dolby.pl2" => Ok(Audio::VndDolbyPl2),
             "audio/vnd.dolby.pl2x" => Ok(Audio::VndDolbyPl2X),
             "audio/vnd.dolby.pl2z" => Ok(Audio::VndDolbyPl2Z),
             "audio/vnd.dolby.pulse.1" => Ok(Audio::VndDolbyPulse1),
             "audio/vnd.dra" => Ok(Audio::VndDra),
-            "audio/vnd.dts" => Ok(Audio::VndDts),
-            "audio/vnd.dts.hd" => Ok(Audio::VndDtsHd),
+            "audio/vnd.dts" | "dts" => Ok(Audio::VndDts),
+            "audio/vnd.dts.hd" | "dtshd" => Ok(Audio::VndDtsHd),
             "audio/vnd.dts.uhd" => Ok(Audio::VndDtsUhd),
             "audio/vnd.dvb.file" => Ok(Audio::VndDvbFile),
-            "audio/vnd.everad.plj" => Ok(Audio::VndEveradPlj),
+            "audio/vnd.everad.plj" | "plj" => Ok(Audio::VndEveradPlj),
             "audio/vnd.hns.audio" => Ok(Audio::VndHnsAudio),
-            "audio/vnd.lucent.voice" => Ok(Audio::VndLucentVoice),
-            "audio/vnd.ms-playready.media.pya" => Ok(Audio::VndMsPlayreadyMediaPya),
+            "audio/vnd.lucent.voice" | "lvp" => Ok(Audio::VndLucentVoice),
+            "audio/vnd.ms-playready.media.pya" | "pya" => Ok(Audio::VndMsPlayreadyMediaPya),
             "audio/vnd.nokia.mobile-xmf" => Ok(Audio::VndNokiaMobileXmf),
-            "audio/vnd.nortel.vbk" => Ok(Audio::VndNortelVbk),
-            "audio/vnd.nuera.ecelp4800" => Ok(Audio::VndNueraEcelp4800),
-            "audio/vnd.nuera.ecelp7470" => Ok(Audio::VndNueraEcelp7470),
-            "audio/vnd.nuera.ecelp9600" => Ok(Audio::VndNueraEcelp9600),
+            "audio/vnd.nortel.vbk" | "vbk" => Ok(Audio::VndNortelVbk),
+            "audio/vnd.nuera.ecelp4800" | "ecelp4800" => Ok(Audio::VndNueraEcelp4800),
+            "audio/vnd.nuera.ecelp7470" | "ecelp7470" => Ok(Audio::VndNueraEcelp7470),
+            "audio/vnd.nuera.ecelp9600" | "ecelp9600" => Ok(Audio::VndNueraEcelp9600),
             "audio/vnd.octel.sbc" => Ok(Audio::VndOctelSbc),
-            "audio/vnd.presonus.multitrack" => Ok(Audio::VndPresonusMultitrack),
+            "audio/vnd.presonus.multitrack" | "multitrack" => Ok(Audio::VndPresonusMultitrack),
             "audio/vnd.rhetorex.32kadpcm" => Ok(Audio::VndRhetorex32Kadpcm),
-            "audio/vnd.rip" => Ok(Audio::VndRip),
-            "audio/vnd.sealedmedia.softseal.mpeg" => Ok(Audio::VndSealedmediaSoftsealMpeg),
+            "audio/vnd.rip" | "rip" => Ok(Audio::VndRip),
+            "audio/vnd.sealedmedia.softseal.mpeg" | "smp3" | "smp" | "s1m" => {
+                Ok(Audio::VndSealedmediaSoftsealMpeg)
+            }
             "audio/vnd.vmx.cvsd" => Ok(Audio::VndVmxCvsd),
             "audio/vorbis" => Ok(Audio::Vorbis),
             "audio/vorbis-config" => Ok(Audio::VorbisConfig),
