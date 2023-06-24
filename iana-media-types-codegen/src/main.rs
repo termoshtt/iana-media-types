@@ -26,20 +26,20 @@ impl MediaType {
                 (Some(name), Some(ty)) => {
                     member_idents.push(as_ident(name));
 
-                    let mime_type = ty.trim().to_string();
+                    let mime_type = ty.trim();
                     if mime_type.is_empty() {
                         continue;
                     }
 
                     let mut extensions_vec = Vec::new();
-                    if let Some(extenstions) = extensions_map.get(mime_type.as_str()) {
+                    if let Some(extenstions) = extensions_map.get(mime_type) {
                         extensions_vec = extenstions
                             .into_iter()
                             .map(|extension_str| extension_str.to_string())
                             .collect();
                     }
 
-                    member_templates.push(mime_type);
+                    member_templates.push(mime_type.to_string());
                     member_extensions.push(extensions_vec)
                 }
                 _ => continue,
