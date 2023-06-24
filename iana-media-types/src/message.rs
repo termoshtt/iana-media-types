@@ -11,65 +11,65 @@
 )]
 pub enum Message {
     #[doc = "message/bhttp"]
-    #[serde(alias = "message/bhttp")]
+    #[serde(rename = "message/bhttp")]
     Bhttp,
     #[doc = "message/CPIM"]
-    #[serde(alias = "message/CPIM")]
+    #[serde(rename = "message/CPIM")]
     Cpim,
     #[doc = "message/delivery-status"]
-    #[serde(alias = "message/delivery-status")]
+    #[serde(rename = "message/delivery-status")]
     DeliveryStatus,
     #[doc = "message/disposition-notification"]
-    #[serde(alias = "message/disposition-notification")]
+    #[serde(rename = "message/disposition-notification")]
     DispositionNotification,
     #[doc = "message/example"]
-    #[serde(alias = "message/example")]
+    #[serde(rename = "message/example")]
     Example,
     #[doc = "message/feedback-report"]
-    #[serde(alias = "message/feedback-report")]
+    #[serde(rename = "message/feedback-report")]
     ExternalBody,
     #[doc = "message/global"]
-    #[serde(alias = "message/global")]
+    #[serde(rename = "message/global")]
     #[serde(alias = "u8msg")]
     FeedbackReport,
     #[doc = "message/global-delivery-status"]
-    #[serde(alias = "message/global-delivery-status")]
+    #[serde(rename = "message/global-delivery-status")]
     #[serde(alias = "u8dsn")]
     Global,
     #[doc = "message/global-disposition-notification"]
-    #[serde(alias = "message/global-disposition-notification")]
+    #[serde(rename = "message/global-disposition-notification")]
     #[serde(alias = "u8mdn")]
     GlobalDeliveryStatus,
     #[doc = "message/global-headers"]
-    #[serde(alias = "message/global-headers")]
+    #[serde(rename = "message/global-headers")]
     #[serde(alias = "u8hdr")]
     GlobalDispositionNotification,
     #[doc = "message/http"]
-    #[serde(alias = "message/http")]
+    #[serde(rename = "message/http")]
     GlobalHeaders,
     #[doc = "message/imdn+xml"]
-    #[serde(alias = "message/imdn+xml")]
+    #[serde(rename = "message/imdn+xml")]
     Http,
     #[doc = "message/mls"]
-    #[serde(alias = "message/mls")]
+    #[serde(rename = "message/mls")]
     ImdnXml,
     #[doc = "message/ohttp-req"]
-    #[serde(alias = "message/ohttp-req")]
+    #[serde(rename = "message/ohttp-req")]
     Mls,
     #[doc = "message/ohttp-res"]
-    #[serde(alias = "message/ohttp-res")]
+    #[serde(rename = "message/ohttp-res")]
     OhttpReq,
     #[doc = "message/sip"]
-    #[serde(alias = "message/sip")]
+    #[serde(rename = "message/sip")]
     OhttpRes,
     #[doc = "message/sipfrag"]
-    #[serde(alias = "message/sipfrag")]
+    #[serde(rename = "message/sipfrag")]
     Partial,
     #[doc = "message/tracking-status"]
-    #[serde(alias = "message/tracking-status")]
+    #[serde(rename = "message/tracking-status")]
     Rfc822,
     #[doc = "message/vnd.wfa.wsc"]
-    #[serde(alias = "message/vnd.wfa.wsc")]
+    #[serde(rename = "message/vnd.wfa.wsc")]
     Sip,
 }
 impl ::std::fmt::Display for Message {

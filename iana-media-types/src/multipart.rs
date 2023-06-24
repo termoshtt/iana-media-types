@@ -11,45 +11,45 @@
 )]
 pub enum Multipart {
     #[doc = "multipart/appledouble"]
-    #[serde(alias = "multipart/appledouble")]
+    #[serde(rename = "multipart/appledouble")]
     Alternative,
     #[doc = "multipart/byteranges"]
-    #[serde(alias = "multipart/byteranges")]
+    #[serde(rename = "multipart/byteranges")]
     Appledouble,
     #[doc = "multipart/encrypted"]
-    #[serde(alias = "multipart/encrypted")]
+    #[serde(rename = "multipart/encrypted")]
     Byteranges,
     #[doc = "multipart/example"]
-    #[serde(alias = "multipart/example")]
+    #[serde(rename = "multipart/example")]
     Digest,
     #[doc = "multipart/form-data"]
-    #[serde(alias = "multipart/form-data")]
+    #[serde(rename = "multipart/form-data")]
     Encrypted,
     #[doc = "multipart/header-set"]
-    #[serde(alias = "multipart/header-set")]
+    #[serde(rename = "multipart/header-set")]
     Example,
     #[doc = "multipart/multilingual"]
-    #[serde(alias = "multipart/multilingual")]
+    #[serde(rename = "multipart/multilingual")]
     FormData,
     #[doc = "multipart/related"]
-    #[serde(alias = "multipart/related")]
+    #[serde(rename = "multipart/related")]
     HeaderSet,
     #[doc = "multipart/report"]
-    #[serde(alias = "multipart/report")]
+    #[serde(rename = "multipart/report")]
     Mixed,
     #[doc = "multipart/signed"]
-    #[serde(alias = "multipart/signed")]
+    #[serde(rename = "multipart/signed")]
     Multilingual,
     #[doc = "multipart/vnd.bint.med-plus"]
-    #[serde(alias = "multipart/vnd.bint.med-plus")]
+    #[serde(rename = "multipart/vnd.bint.med-plus")]
     #[serde(alias = "bmed")]
     Parallel,
     #[doc = "multipart/voice-message"]
-    #[serde(alias = "multipart/voice-message")]
+    #[serde(rename = "multipart/voice-message")]
     #[serde(alias = "vpm")]
     Related,
     #[doc = "multipart/x-mixed-replace"]
-    #[serde(alias = "multipart/x-mixed-replace")]
+    #[serde(rename = "multipart/x-mixed-replace")]
     Report,
 }
 impl ::std::fmt::Display for Multipart {

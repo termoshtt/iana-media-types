@@ -66,7 +66,7 @@ impl MediaType {
             pub enum #name {
                 #(
                 #[doc = #member_templates]
-                #[serde(alias = #member_templates)]
+                #[serde(rename = #member_templates)]
                 #(
                 #[serde(alias = #member_extensions)]
                 )*

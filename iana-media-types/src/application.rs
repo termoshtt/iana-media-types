@@ -11,931 +11,931 @@
 )]
 pub enum Application {
     #[doc = "application/1d-interleaved-parityfec"]
-    #[serde(alias = "application/1d-interleaved-parityfec")]
+    #[serde(rename = "application/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "application/3gpdash-qoe-report+xml"]
-    #[serde(alias = "application/3gpdash-qoe-report+xml")]
+    #[serde(rename = "application/3gpdash-qoe-report+xml")]
     _3GpdashQoeReportXml,
     #[doc = "application/3gppHal+json"]
-    #[serde(alias = "application/3gppHal+json")]
+    #[serde(rename = "application/3gppHal+json")]
     _3GppHalJson,
     #[doc = "application/3gppHalForms+json"]
-    #[serde(alias = "application/3gppHalForms+json")]
+    #[serde(rename = "application/3gppHalForms+json")]
     _3GppHalFormsJson,
     #[doc = "application/3gpp-ims+xml"]
-    #[serde(alias = "application/3gpp-ims+xml")]
+    #[serde(rename = "application/3gpp-ims+xml")]
     _3GppImsXml,
     #[doc = "application/A2L"]
-    #[serde(alias = "application/A2L")]
+    #[serde(rename = "application/A2L")]
     #[serde(alias = "a2l")]
     A2L,
     #[doc = "application/ace+cbor"]
-    #[serde(alias = "application/ace+cbor")]
+    #[serde(rename = "application/ace+cbor")]
     AceCbor,
     #[doc = "application/ace+json"]
-    #[serde(alias = "application/ace+json")]
+    #[serde(rename = "application/ace+json")]
     AceJson,
     #[doc = "application/activemessage"]
-    #[serde(alias = "application/activemessage")]
+    #[serde(rename = "application/activemessage")]
     Activemessage,
     #[doc = "application/activity+json"]
-    #[serde(alias = "application/activity+json")]
+    #[serde(rename = "application/activity+json")]
     ActivityJson,
     #[doc = "application/aif+cbor"]
-    #[serde(alias = "application/aif+cbor")]
+    #[serde(rename = "application/aif+cbor")]
     AifCbor,
     #[doc = "application/aif+json"]
-    #[serde(alias = "application/aif+json")]
+    #[serde(rename = "application/aif+json")]
     AifJson,
     #[doc = "application/alto-cdni+json"]
-    #[serde(alias = "application/alto-cdni+json")]
+    #[serde(rename = "application/alto-cdni+json")]
     AltoCdniJson,
     #[doc = "application/alto-cdnifilter+json"]
-    #[serde(alias = "application/alto-cdnifilter+json")]
+    #[serde(rename = "application/alto-cdnifilter+json")]
     AltoCdnifilterJson,
     #[doc = "application/alto-costmap+json"]
-    #[serde(alias = "application/alto-costmap+json")]
+    #[serde(rename = "application/alto-costmap+json")]
     AltoCostmapJson,
     #[doc = "application/alto-costmapfilter+json"]
-    #[serde(alias = "application/alto-costmapfilter+json")]
+    #[serde(rename = "application/alto-costmapfilter+json")]
     AltoCostmapfilterJson,
     #[doc = "application/alto-directory+json"]
-    #[serde(alias = "application/alto-directory+json")]
+    #[serde(rename = "application/alto-directory+json")]
     AltoDirectoryJson,
     #[doc = "application/alto-endpointprop+json"]
-    #[serde(alias = "application/alto-endpointprop+json")]
+    #[serde(rename = "application/alto-endpointprop+json")]
     AltoEndpointpropJson,
     #[doc = "application/alto-endpointpropparams+json"]
-    #[serde(alias = "application/alto-endpointpropparams+json")]
+    #[serde(rename = "application/alto-endpointpropparams+json")]
     AltoEndpointpropparamsJson,
     #[doc = "application/alto-endpointcost+json"]
-    #[serde(alias = "application/alto-endpointcost+json")]
+    #[serde(rename = "application/alto-endpointcost+json")]
     AltoEndpointcostJson,
     #[doc = "application/alto-endpointcostparams+json"]
-    #[serde(alias = "application/alto-endpointcostparams+json")]
+    #[serde(rename = "application/alto-endpointcostparams+json")]
     AltoEndpointcostparamsJson,
     #[doc = "application/alto-error+json"]
-    #[serde(alias = "application/alto-error+json")]
+    #[serde(rename = "application/alto-error+json")]
     AltoErrorJson,
     #[doc = "application/alto-networkmapfilter+json"]
-    #[serde(alias = "application/alto-networkmapfilter+json")]
+    #[serde(rename = "application/alto-networkmapfilter+json")]
     AltoNetworkmapfilterJson,
     #[doc = "application/alto-networkmap+json"]
-    #[serde(alias = "application/alto-networkmap+json")]
+    #[serde(rename = "application/alto-networkmap+json")]
     AltoNetworkmapJson,
     #[doc = "application/alto-propmap+json"]
-    #[serde(alias = "application/alto-propmap+json")]
+    #[serde(rename = "application/alto-propmap+json")]
     AltoPropmapJson,
     #[doc = "application/alto-propmapparams+json"]
-    #[serde(alias = "application/alto-propmapparams+json")]
+    #[serde(rename = "application/alto-propmapparams+json")]
     AltoPropmapparamsJson,
     #[doc = "application/alto-updatestreamcontrol+json"]
-    #[serde(alias = "application/alto-updatestreamcontrol+json")]
+    #[serde(rename = "application/alto-updatestreamcontrol+json")]
     AltoUpdatestreamcontrolJson,
     #[doc = "application/alto-updatestreamparams+json"]
-    #[serde(alias = "application/alto-updatestreamparams+json")]
+    #[serde(rename = "application/alto-updatestreamparams+json")]
     AltoUpdatestreamparamsJson,
     #[doc = "application/AML"]
-    #[serde(alias = "application/AML")]
+    #[serde(rename = "application/AML")]
     #[serde(alias = "aml")]
     Aml,
     #[doc = "application/andrew-inset"]
-    #[serde(alias = "application/andrew-inset")]
+    #[serde(rename = "application/andrew-inset")]
     #[serde(alias = "ez")]
     AndrewInset,
     #[doc = "application/applefile"]
-    #[serde(alias = "application/applefile")]
+    #[serde(rename = "application/applefile")]
     Applefile,
     #[doc = "application/at+jwt"]
-    #[serde(alias = "application/at+jwt")]
+    #[serde(rename = "application/at+jwt")]
     AtJwt,
     #[doc = "application/ATF"]
-    #[serde(alias = "application/ATF")]
+    #[serde(rename = "application/ATF")]
     #[serde(alias = "atf")]
     Atf,
     #[doc = "application/ATFX"]
-    #[serde(alias = "application/ATFX")]
+    #[serde(rename = "application/ATFX")]
     #[serde(alias = "atfx")]
     Atfx,
     #[doc = "application/atom+xml"]
-    #[serde(alias = "application/atom+xml")]
+    #[serde(rename = "application/atom+xml")]
     #[serde(alias = "atom")]
     AtomXml,
     #[doc = "application/atomcat+xml"]
-    #[serde(alias = "application/atomcat+xml")]
+    #[serde(rename = "application/atomcat+xml")]
     #[serde(alias = "atomcat")]
     AtomcatXml,
     #[doc = "application/atomdeleted+xml"]
-    #[serde(alias = "application/atomdeleted+xml")]
+    #[serde(rename = "application/atomdeleted+xml")]
     #[serde(alias = "atomdeleted")]
     AtomdeletedXml,
     #[doc = "application/atomicmail"]
-    #[serde(alias = "application/atomicmail")]
+    #[serde(rename = "application/atomicmail")]
     Atomicmail,
     #[doc = "application/atomsvc+xml"]
-    #[serde(alias = "application/atomsvc+xml")]
+    #[serde(rename = "application/atomsvc+xml")]
     #[serde(alias = "atomsvc")]
     AtomsvcXml,
     #[doc = "application/atsc-dwd+xml"]
-    #[serde(alias = "application/atsc-dwd+xml")]
+    #[serde(rename = "application/atsc-dwd+xml")]
     #[serde(alias = "dwd")]
     AtscDwdXml,
     #[doc = "application/atsc-dynamic-event-message"]
-    #[serde(alias = "application/atsc-dynamic-event-message")]
+    #[serde(rename = "application/atsc-dynamic-event-message")]
     AtscDynamicEventMessage,
     #[doc = "application/atsc-held+xml"]
-    #[serde(alias = "application/atsc-held+xml")]
+    #[serde(rename = "application/atsc-held+xml")]
     #[serde(alias = "held")]
     AtscHeldXml,
     #[doc = "application/atsc-rdt+json"]
-    #[serde(alias = "application/atsc-rdt+json")]
+    #[serde(rename = "application/atsc-rdt+json")]
     AtscRdtJson,
     #[doc = "application/atsc-rsat+xml"]
-    #[serde(alias = "application/atsc-rsat+xml")]
+    #[serde(rename = "application/atsc-rsat+xml")]
     #[serde(alias = "rsat")]
     AtscRsatXml,
     #[doc = "application/ATXML"]
-    #[serde(alias = "application/ATXML")]
+    #[serde(rename = "application/ATXML")]
     #[serde(alias = "atxml")]
     Atxml,
     #[doc = "application/auth-policy+xml"]
-    #[serde(alias = "application/auth-policy+xml")]
+    #[serde(rename = "application/auth-policy+xml")]
     #[serde(alias = "apxml")]
     AuthPolicyXml,
     #[doc = "application/automationml-aml+xml"]
-    #[serde(alias = "application/automationml-aml+xml")]
+    #[serde(rename = "application/automationml-aml+xml")]
     AutomationmlAmlXml,
     #[doc = "application/automationml-amlx+zip"]
-    #[serde(alias = "application/automationml-amlx+zip")]
+    #[serde(rename = "application/automationml-amlx+zip")]
     #[serde(alias = "amlx")]
     AutomationmlAmlxZip,
     #[doc = "application/bacnet-xdd+zip"]
-    #[serde(alias = "application/bacnet-xdd+zip")]
+    #[serde(rename = "application/bacnet-xdd+zip")]
     #[serde(alias = "xdd")]
     BacnetXddZip,
     #[doc = "application/batch-SMTP"]
-    #[serde(alias = "application/batch-SMTP")]
+    #[serde(rename = "application/batch-SMTP")]
     BatchSMTP,
     #[doc = "application/beep+xml"]
-    #[serde(alias = "application/beep+xml")]
+    #[serde(rename = "application/beep+xml")]
     BeepXml,
     #[doc = "application/calendar+json"]
-    #[serde(alias = "application/calendar+json")]
+    #[serde(rename = "application/calendar+json")]
     CalendarJson,
     #[doc = "application/calendar+xml"]
-    #[serde(alias = "application/calendar+xml")]
+    #[serde(rename = "application/calendar+xml")]
     #[serde(alias = "xcs")]
     CalendarXml,
     #[doc = "application/call-completion"]
-    #[serde(alias = "application/call-completion")]
+    #[serde(rename = "application/call-completion")]
     CallCompletion,
     #[doc = "application/CALS-1840"]
-    #[serde(alias = "application/CALS-1840")]
+    #[serde(rename = "application/CALS-1840")]
     Cals1840,
     #[doc = "application/captive+json"]
-    #[serde(alias = "application/captive+json")]
+    #[serde(rename = "application/captive+json")]
     CaptiveJson,
     #[doc = "application/cbor"]
-    #[serde(alias = "application/cbor")]
+    #[serde(rename = "application/cbor")]
     #[serde(alias = "cbor")]
     Cbor,
     #[doc = "application/cbor-seq"]
-    #[serde(alias = "application/cbor-seq")]
+    #[serde(rename = "application/cbor-seq")]
     CborSeq,
     #[doc = "application/cccex"]
-    #[serde(alias = "application/cccex")]
+    #[serde(rename = "application/cccex")]
     #[serde(alias = "c3ex")]
     Cccex,
     #[doc = "application/ccmp+xml"]
-    #[serde(alias = "application/ccmp+xml")]
+    #[serde(rename = "application/ccmp+xml")]
     #[serde(alias = "ccmp")]
     CcmpXml,
     #[doc = "application/ccxml+xml"]
-    #[serde(alias = "application/ccxml+xml")]
+    #[serde(rename = "application/ccxml+xml")]
     #[serde(alias = "ccxml")]
     CcxmlXml,
     #[doc = "application/cda+xml"]
-    #[serde(alias = "application/cda+xml")]
+    #[serde(rename = "application/cda+xml")]
     CdaXml,
     #[doc = "application/CDFX+XML"]
-    #[serde(alias = "application/CDFX+XML")]
+    #[serde(rename = "application/CDFX+XML")]
     #[serde(alias = "cdfx")]
     CdfxXml,
     #[doc = "application/cdmi-capability"]
-    #[serde(alias = "application/cdmi-capability")]
+    #[serde(rename = "application/cdmi-capability")]
     #[serde(alias = "cdmia")]
     CdmiCapability,
     #[doc = "application/cdmi-container"]
-    #[serde(alias = "application/cdmi-container")]
+    #[serde(rename = "application/cdmi-container")]
     #[serde(alias = "cdmic")]
     CdmiContainer,
     #[doc = "application/cdmi-domain"]
-    #[serde(alias = "application/cdmi-domain")]
+    #[serde(rename = "application/cdmi-domain")]
     #[serde(alias = "cdmid")]
     CdmiDomain,
     #[doc = "application/cdmi-object"]
-    #[serde(alias = "application/cdmi-object")]
+    #[serde(rename = "application/cdmi-object")]
     #[serde(alias = "cdmio")]
     CdmiObject,
     #[doc = "application/cdmi-queue"]
-    #[serde(alias = "application/cdmi-queue")]
+    #[serde(rename = "application/cdmi-queue")]
     #[serde(alias = "cdmiq")]
     CdmiQueue,
     #[doc = "application/cdni"]
-    #[serde(alias = "application/cdni")]
+    #[serde(rename = "application/cdni")]
     Cdni,
     #[doc = "application/CEA"]
-    #[serde(alias = "application/CEA")]
+    #[serde(rename = "application/CEA")]
     #[serde(alias = "cea")]
     Cea,
     #[doc = "application/cea-2018+xml"]
-    #[serde(alias = "application/cea-2018+xml")]
+    #[serde(rename = "application/cea-2018+xml")]
     Cea2018Xml,
     #[doc = "application/cellml+xml"]
-    #[serde(alias = "application/cellml+xml")]
+    #[serde(rename = "application/cellml+xml")]
     #[serde(alias = "cellml")]
     #[serde(alias = "cml")]
     CellmlXml,
     #[doc = "application/cfw"]
-    #[serde(alias = "application/cfw")]
+    #[serde(rename = "application/cfw")]
     Cfw,
     #[doc = "application/city+json"]
-    #[serde(alias = "application/city+json")]
+    #[serde(rename = "application/city+json")]
     CityJson,
     #[doc = "application/clr"]
-    #[serde(alias = "application/clr")]
+    #[serde(rename = "application/clr")]
     #[serde(alias = "1clr")]
     Clr,
     #[doc = "application/clue_info+xml"]
-    #[serde(alias = "application/clue_info+xml")]
+    #[serde(rename = "application/clue_info+xml")]
     #[serde(alias = "clue")]
     ClueInfoXml,
     #[doc = "application/clue+xml"]
-    #[serde(alias = "application/clue+xml")]
+    #[serde(rename = "application/clue+xml")]
     ClueXml,
     #[doc = "application/cms"]
-    #[serde(alias = "application/cms")]
+    #[serde(rename = "application/cms")]
     #[serde(alias = "cmsc")]
     Cms,
     #[doc = "application/cnrp+xml"]
-    #[serde(alias = "application/cnrp+xml")]
+    #[serde(rename = "application/cnrp+xml")]
     CnrpXml,
     #[doc = "application/coap-group+json"]
-    #[serde(alias = "application/coap-group+json")]
+    #[serde(rename = "application/coap-group+json")]
     CoapGroupJson,
     #[doc = "application/coap-payload"]
-    #[serde(alias = "application/coap-payload")]
+    #[serde(rename = "application/coap-payload")]
     CoapPayload,
     #[doc = "application/commonground"]
-    #[serde(alias = "application/commonground")]
+    #[serde(rename = "application/commonground")]
     Commonground,
     #[doc = "application/concise-problem-details+cbor"]
-    #[serde(alias = "application/concise-problem-details+cbor")]
+    #[serde(rename = "application/concise-problem-details+cbor")]
     ConciseProblemDetailsCbor,
     #[doc = "application/conference-info+xml"]
-    #[serde(alias = "application/conference-info+xml")]
+    #[serde(rename = "application/conference-info+xml")]
     ConferenceInfoXml,
     #[doc = "application/cpl+xml"]
-    #[serde(alias = "application/cpl+xml")]
+    #[serde(rename = "application/cpl+xml")]
     #[serde(alias = "cpl")]
     CplXml,
     #[doc = "application/cose"]
-    #[serde(alias = "application/cose")]
+    #[serde(rename = "application/cose")]
     Cose,
     #[doc = "application/cose-key"]
-    #[serde(alias = "application/cose-key")]
+    #[serde(rename = "application/cose-key")]
     CoseKey,
     #[doc = "application/cose-key-set"]
-    #[serde(alias = "application/cose-key-set")]
+    #[serde(rename = "application/cose-key-set")]
     CoseKeySet,
     #[doc = "application/cose-x509"]
-    #[serde(alias = "application/cose-x509")]
+    #[serde(rename = "application/cose-x509")]
     CoseX509,
     #[doc = "application/csrattrs"]
-    #[serde(alias = "application/csrattrs")]
+    #[serde(rename = "application/csrattrs")]
     #[serde(alias = "csrattrs")]
     Csrattrs,
     #[doc = "application/csta+xml"]
-    #[serde(alias = "application/csta+xml")]
+    #[serde(rename = "application/csta+xml")]
     CstaXml,
     #[doc = "application/CSTAdata+xml"]
-    #[serde(alias = "application/CSTAdata+xml")]
+    #[serde(rename = "application/CSTAdata+xml")]
     CstadataXml,
     #[doc = "application/csvm+json"]
-    #[serde(alias = "application/csvm+json")]
+    #[serde(rename = "application/csvm+json")]
     CsvmJson,
     #[doc = "application/cwl"]
-    #[serde(alias = "application/cwl")]
+    #[serde(rename = "application/cwl")]
     #[serde(alias = "cwl")]
     Cwl,
     #[doc = "application/cwl+json"]
-    #[serde(alias = "application/cwl+json")]
+    #[serde(rename = "application/cwl+json")]
     #[serde(alias = "cwl.json")]
     CwlJson,
     #[doc = "application/cwt"]
-    #[serde(alias = "application/cwt")]
+    #[serde(rename = "application/cwt")]
     Cwt,
     #[doc = "application/cybercash"]
-    #[serde(alias = "application/cybercash")]
+    #[serde(rename = "application/cybercash")]
     Cybercash,
     #[doc = "application/dash+xml"]
-    #[serde(alias = "application/dash+xml")]
+    #[serde(rename = "application/dash+xml")]
     #[serde(alias = "mpd")]
     DashXml,
     #[doc = "application/dash-patch+xml"]
-    #[serde(alias = "application/dash-patch+xml")]
+    #[serde(rename = "application/dash-patch+xml")]
     DashPatchXml,
     #[doc = "application/dashdelta"]
-    #[serde(alias = "application/dashdelta")]
+    #[serde(rename = "application/dashdelta")]
     #[serde(alias = "mpdd")]
     Dashdelta,
     #[doc = "application/davmount+xml"]
-    #[serde(alias = "application/davmount+xml")]
+    #[serde(rename = "application/davmount+xml")]
     #[serde(alias = "davmount")]
     DavmountXml,
     #[doc = "application/dca-rft"]
-    #[serde(alias = "application/dca-rft")]
+    #[serde(rename = "application/dca-rft")]
     DcaRft,
     #[doc = "application/DCD"]
-    #[serde(alias = "application/DCD")]
+    #[serde(rename = "application/DCD")]
     #[serde(alias = "dcd")]
     Dcd,
     #[doc = "application/dec-dx"]
-    #[serde(alias = "application/dec-dx")]
+    #[serde(rename = "application/dec-dx")]
     DecDx,
     #[doc = "application/dialog-info+xml"]
-    #[serde(alias = "application/dialog-info+xml")]
+    #[serde(rename = "application/dialog-info+xml")]
     DialogInfoXml,
     #[doc = "application/dicom"]
-    #[serde(alias = "application/dicom")]
+    #[serde(rename = "application/dicom")]
     #[serde(alias = "dcm")]
     Dicom,
     #[doc = "application/dicom+json"]
-    #[serde(alias = "application/dicom+json")]
+    #[serde(rename = "application/dicom+json")]
     DicomJson,
     #[doc = "application/dicom+xml"]
-    #[serde(alias = "application/dicom+xml")]
+    #[serde(rename = "application/dicom+xml")]
     DicomXml,
     #[doc = "application/DII"]
-    #[serde(alias = "application/DII")]
+    #[serde(rename = "application/DII")]
     #[serde(alias = "dii")]
     Dii,
     #[doc = "application/DIT"]
-    #[serde(alias = "application/DIT")]
+    #[serde(rename = "application/DIT")]
     #[serde(alias = "dit")]
     Dit,
     #[doc = "application/dns"]
-    #[serde(alias = "application/dns")]
+    #[serde(rename = "application/dns")]
     Dns,
     #[doc = "application/dns+json"]
-    #[serde(alias = "application/dns+json")]
+    #[serde(rename = "application/dns+json")]
     DnsJson,
     #[doc = "application/dns-message"]
-    #[serde(alias = "application/dns-message")]
+    #[serde(rename = "application/dns-message")]
     DnsMessage,
     #[doc = "application/dots+cbor"]
-    #[serde(alias = "application/dots+cbor")]
+    #[serde(rename = "application/dots+cbor")]
     DotsCbor,
     #[doc = "application/dpop+jwt"]
-    #[serde(alias = "application/dpop+jwt")]
+    #[serde(rename = "application/dpop+jwt")]
     DpopJwt,
     #[doc = "application/dskpp+xml"]
-    #[serde(alias = "application/dskpp+xml")]
+    #[serde(rename = "application/dskpp+xml")]
     #[serde(alias = "xmls")]
     DskppXml,
     #[doc = "application/dssc+der"]
-    #[serde(alias = "application/dssc+der")]
+    #[serde(rename = "application/dssc+der")]
     #[serde(alias = "dssc")]
     DsscDer,
     #[doc = "application/dssc+xml"]
-    #[serde(alias = "application/dssc+xml")]
+    #[serde(rename = "application/dssc+xml")]
     #[serde(alias = "xdssc")]
     DsscXml,
     #[doc = "application/dvcs"]
-    #[serde(alias = "application/dvcs")]
+    #[serde(rename = "application/dvcs")]
     #[serde(alias = "dvc")]
     Dvcs,
     #[doc = "application/EDI-consent"]
-    #[serde(alias = "application/EDI-consent")]
+    #[serde(rename = "application/EDI-consent")]
     EdiConsent,
     #[doc = "application/EDIFACT"]
-    #[serde(alias = "application/EDIFACT")]
+    #[serde(rename = "application/EDIFACT")]
     Edifact,
     #[doc = "application/EDI-X12"]
-    #[serde(alias = "application/EDI-X12")]
+    #[serde(rename = "application/EDI-X12")]
     EdiX12,
     #[doc = "application/efi"]
-    #[serde(alias = "application/efi")]
+    #[serde(rename = "application/efi")]
     #[serde(alias = "efi")]
     Efi,
     #[doc = "application/elm+json"]
-    #[serde(alias = "application/elm+json")]
+    #[serde(rename = "application/elm+json")]
     ElmJson,
     #[doc = "application/elm+xml"]
-    #[serde(alias = "application/elm+xml")]
+    #[serde(rename = "application/elm+xml")]
     ElmXml,
     #[doc = "application/EmergencyCallData.cap+xml"]
-    #[serde(alias = "application/EmergencyCallData.cap+xml")]
+    #[serde(rename = "application/EmergencyCallData.cap+xml")]
     EmergencyCallDataCapXml,
     #[doc = "application/EmergencyCallData.Comment+xml"]
-    #[serde(alias = "application/EmergencyCallData.Comment+xml")]
+    #[serde(rename = "application/EmergencyCallData.Comment+xml")]
     EmergencyCallDataCommentXml,
     #[doc = "application/EmergencyCallData.Control+xml"]
-    #[serde(alias = "application/EmergencyCallData.Control+xml")]
+    #[serde(rename = "application/EmergencyCallData.Control+xml")]
     EmergencyCallDataControlXml,
     #[doc = "application/EmergencyCallData.DeviceInfo+xml"]
-    #[serde(alias = "application/EmergencyCallData.DeviceInfo+xml")]
+    #[serde(rename = "application/EmergencyCallData.DeviceInfo+xml")]
     EmergencyCallDataDeviceInfoXml,
     #[doc = "application/EmergencyCallData.eCall.MSD"]
-    #[serde(alias = "application/EmergencyCallData.eCall.MSD")]
+    #[serde(rename = "application/EmergencyCallData.eCall.MSD")]
     EmergencyCallDataECallMSD,
     #[doc = "application/EmergencyCallData.LegacyESN+json"]
-    #[serde(alias = "application/EmergencyCallData.LegacyESN+json")]
+    #[serde(rename = "application/EmergencyCallData.LegacyESN+json")]
     EmergencyCallDataLegacyESNJson,
     #[doc = "application/EmergencyCallData.ProviderInfo+xml"]
-    #[serde(alias = "application/EmergencyCallData.ProviderInfo+xml")]
+    #[serde(rename = "application/EmergencyCallData.ProviderInfo+xml")]
     EmergencyCallDataProviderInfoXml,
     #[doc = "application/EmergencyCallData.ServiceInfo+xml"]
-    #[serde(alias = "application/EmergencyCallData.ServiceInfo+xml")]
+    #[serde(rename = "application/EmergencyCallData.ServiceInfo+xml")]
     EmergencyCallDataServiceInfoXml,
     #[doc = "application/EmergencyCallData.SubscriberInfo+xml"]
-    #[serde(alias = "application/EmergencyCallData.SubscriberInfo+xml")]
+    #[serde(rename = "application/EmergencyCallData.SubscriberInfo+xml")]
     EmergencyCallDataSubscriberInfoXml,
     #[doc = "application/EmergencyCallData.VEDS+xml"]
-    #[serde(alias = "application/EmergencyCallData.VEDS+xml")]
+    #[serde(rename = "application/EmergencyCallData.VEDS+xml")]
     EmergencyCallDataVEDSXml,
     #[doc = "application/emma+xml"]
-    #[serde(alias = "application/emma+xml")]
+    #[serde(rename = "application/emma+xml")]
     #[serde(alias = "emma")]
     EmmaXml,
     #[doc = "application/emotionml+xml"]
-    #[serde(alias = "application/emotionml+xml")]
+    #[serde(rename = "application/emotionml+xml")]
     #[serde(alias = "emotionml")]
     EmotionmlXml,
     #[doc = "application/encaprtp"]
-    #[serde(alias = "application/encaprtp")]
+    #[serde(rename = "application/encaprtp")]
     Encaprtp,
     #[doc = "application/epp+xml"]
-    #[serde(alias = "application/epp+xml")]
+    #[serde(rename = "application/epp+xml")]
     EppXml,
     #[doc = "application/epub+zip"]
-    #[serde(alias = "application/epub+zip")]
+    #[serde(rename = "application/epub+zip")]
     #[serde(alias = "epub")]
     EpubZip,
     #[doc = "application/eshop"]
-    #[serde(alias = "application/eshop")]
+    #[serde(rename = "application/eshop")]
     Eshop,
     #[doc = "application/example"]
-    #[serde(alias = "application/example")]
+    #[serde(rename = "application/example")]
     Example,
     #[doc = "application/exi"]
-    #[serde(alias = "application/exi")]
+    #[serde(rename = "application/exi")]
     #[serde(alias = "exi")]
     Exi,
     #[doc = "application/expect-ct-report+json"]
-    #[serde(alias = "application/expect-ct-report+json")]
+    #[serde(rename = "application/expect-ct-report+json")]
     ExpectCtReportJson,
     #[doc = "application/express"]
-    #[serde(alias = "application/express")]
+    #[serde(rename = "application/express")]
     #[serde(alias = "exp")]
     Express,
     #[doc = "application/fastinfoset"]
-    #[serde(alias = "application/fastinfoset")]
+    #[serde(rename = "application/fastinfoset")]
     #[serde(alias = "finf")]
     Fastinfoset,
     #[doc = "application/fastsoap"]
-    #[serde(alias = "application/fastsoap")]
+    #[serde(rename = "application/fastsoap")]
     Fastsoap,
     #[doc = "application/fdf"]
-    #[serde(alias = "application/fdf")]
+    #[serde(rename = "application/fdf")]
     Fdf,
     #[doc = "application/fdt+xml"]
-    #[serde(alias = "application/fdt+xml")]
+    #[serde(rename = "application/fdt+xml")]
     #[serde(alias = "fdt")]
     FdtXml,
     #[doc = "application/fhir+json"]
-    #[serde(alias = "application/fhir+json")]
+    #[serde(rename = "application/fhir+json")]
     FhirJson,
     #[doc = "application/fhir+xml"]
-    #[serde(alias = "application/fhir+xml")]
+    #[serde(rename = "application/fhir+xml")]
     FhirXml,
     #[doc = "application/fits"]
-    #[serde(alias = "application/fits")]
+    #[serde(rename = "application/fits")]
     Fits,
     #[doc = "application/flexfec"]
-    #[serde(alias = "application/flexfec")]
+    #[serde(rename = "application/flexfec")]
     Flexfec,
     #[doc = "application/font-tdpfr"]
-    #[serde(alias = "application/font-tdpfr")]
+    #[serde(rename = "application/font-tdpfr")]
     #[serde(alias = "pfr")]
     FontTdpfr,
     #[doc = "application/framework-attributes+xml"]
-    #[serde(alias = "application/framework-attributes+xml")]
+    #[serde(rename = "application/framework-attributes+xml")]
     FrameworkAttributesXml,
     #[doc = "application/geo+json"]
-    #[serde(alias = "application/geo+json")]
+    #[serde(rename = "application/geo+json")]
     #[serde(alias = "geojson")]
     GeoJson,
     #[doc = "application/geo+json-seq"]
-    #[serde(alias = "application/geo+json-seq")]
+    #[serde(rename = "application/geo+json-seq")]
     GeoJsonSeq,
     #[doc = "application/geopackage+sqlite3"]
-    #[serde(alias = "application/geopackage+sqlite3")]
+    #[serde(rename = "application/geopackage+sqlite3")]
     #[serde(alias = "gpkg")]
     GeopackageSqlite3,
     #[doc = "application/geoxacml+xml"]
-    #[serde(alias = "application/geoxacml+xml")]
+    #[serde(rename = "application/geoxacml+xml")]
     GeoxacmlXml,
     #[doc = "application/gltf-buffer"]
-    #[serde(alias = "application/gltf-buffer")]
+    #[serde(rename = "application/gltf-buffer")]
     #[serde(alias = "glbin")]
     #[serde(alias = "glbuf")]
     GltfBuffer,
     #[doc = "application/gml+xml"]
-    #[serde(alias = "application/gml+xml")]
+    #[serde(rename = "application/gml+xml")]
     #[serde(alias = "gml")]
     GmlXml,
     #[doc = "application/gzip"]
-    #[serde(alias = "application/gzip")]
+    #[serde(rename = "application/gzip")]
     #[serde(alias = "gz")]
     #[serde(alias = "tgz")]
     Gzip,
     #[doc = "application/H224"]
-    #[serde(alias = "application/H224")]
+    #[serde(rename = "application/H224")]
     H224,
     #[doc = "application/held+xml"]
-    #[serde(alias = "application/held+xml")]
+    #[serde(rename = "application/held+xml")]
     HeldXml,
     #[doc = "application/hl7v2+xml"]
-    #[serde(alias = "application/hl7v2+xml")]
+    #[serde(rename = "application/hl7v2+xml")]
     Hl7V2Xml,
     #[doc = "application/http"]
-    #[serde(alias = "application/http")]
+    #[serde(rename = "application/http")]
     Http,
     #[doc = "application/hyperstudio"]
-    #[serde(alias = "application/hyperstudio")]
+    #[serde(rename = "application/hyperstudio")]
     #[serde(alias = "stk")]
     Hyperstudio,
     #[doc = "application/ibe-key-request+xml"]
-    #[serde(alias = "application/ibe-key-request+xml")]
+    #[serde(rename = "application/ibe-key-request+xml")]
     IbeKeyRequestXml,
     #[doc = "application/ibe-pkg-reply+xml"]
-    #[serde(alias = "application/ibe-pkg-reply+xml")]
+    #[serde(rename = "application/ibe-pkg-reply+xml")]
     IbePkgReplyXml,
     #[doc = "application/ibe-pp-data"]
-    #[serde(alias = "application/ibe-pp-data")]
+    #[serde(rename = "application/ibe-pp-data")]
     IbePpData,
     #[doc = "application/iges"]
-    #[serde(alias = "application/iges")]
+    #[serde(rename = "application/iges")]
     Iges,
     #[doc = "application/im-iscomposing+xml"]
-    #[serde(alias = "application/im-iscomposing+xml")]
+    #[serde(rename = "application/im-iscomposing+xml")]
     ImIscomposingXml,
     #[doc = "application/index"]
-    #[serde(alias = "application/index")]
+    #[serde(rename = "application/index")]
     Index,
     #[doc = "application/index.cmd"]
-    #[serde(alias = "application/index.cmd")]
+    #[serde(rename = "application/index.cmd")]
     IndexCmd,
     #[doc = "application/index.obj"]
-    #[serde(alias = "application/index.obj")]
+    #[serde(rename = "application/index.obj")]
     IndexObj,
     #[doc = "application/index.response"]
-    #[serde(alias = "application/index.response")]
+    #[serde(rename = "application/index.response")]
     IndexResponse,
     #[doc = "application/index.vnd"]
-    #[serde(alias = "application/index.vnd")]
+    #[serde(rename = "application/index.vnd")]
     IndexVnd,
     #[doc = "application/inkml+xml"]
-    #[serde(alias = "application/inkml+xml")]
+    #[serde(rename = "application/inkml+xml")]
     #[serde(alias = "ink")]
     #[serde(alias = "inkml")]
     InkmlXml,
     #[doc = "application/IOTP"]
-    #[serde(alias = "application/IOTP")]
+    #[serde(rename = "application/IOTP")]
     Iotp,
     #[doc = "application/ipfix"]
-    #[serde(alias = "application/ipfix")]
+    #[serde(rename = "application/ipfix")]
     #[serde(alias = "ipfix")]
     Ipfix,
     #[doc = "application/ipp"]
-    #[serde(alias = "application/ipp")]
+    #[serde(rename = "application/ipp")]
     Ipp,
     #[doc = "application/ISUP"]
-    #[serde(alias = "application/ISUP")]
+    #[serde(rename = "application/ISUP")]
     Isup,
     #[doc = "application/its+xml"]
-    #[serde(alias = "application/its+xml")]
+    #[serde(rename = "application/its+xml")]
     #[serde(alias = "its")]
     ItsXml,
     #[doc = "application/java-archive"]
-    #[serde(alias = "application/java-archive")]
+    #[serde(rename = "application/java-archive")]
     #[serde(alias = "jar")]
     JavaArchive,
     #[doc = "application/jf2feed+json"]
-    #[serde(alias = "application/jf2feed+json")]
+    #[serde(rename = "application/jf2feed+json")]
     Jf2FeedJson,
     #[doc = "application/jose"]
-    #[serde(alias = "application/jose")]
+    #[serde(rename = "application/jose")]
     Jose,
     #[doc = "application/jose+json"]
-    #[serde(alias = "application/jose+json")]
+    #[serde(rename = "application/jose+json")]
     JoseJson,
     #[doc = "application/jrd+json"]
-    #[serde(alias = "application/jrd+json")]
+    #[serde(rename = "application/jrd+json")]
     #[serde(alias = "jrd")]
     JrdJson,
     #[doc = "application/jscalendar+json"]
-    #[serde(alias = "application/jscalendar+json")]
+    #[serde(rename = "application/jscalendar+json")]
     JscalendarJson,
     #[doc = "application/json"]
-    #[serde(alias = "application/json")]
+    #[serde(rename = "application/json")]
     #[serde(alias = "json")]
     Json,
     #[doc = "application/json-patch+json"]
-    #[serde(alias = "application/json-patch+json")]
+    #[serde(rename = "application/json-patch+json")]
     #[serde(alias = "json-patch")]
     JsonPatchJson,
     #[doc = "application/json-seq"]
-    #[serde(alias = "application/json-seq")]
+    #[serde(rename = "application/json-seq")]
     JsonSeq,
     #[doc = "application/jwk+json"]
-    #[serde(alias = "application/jwk+json")]
+    #[serde(rename = "application/jwk+json")]
     JwkJson,
     #[doc = "application/jwk-set+json"]
-    #[serde(alias = "application/jwk-set+json")]
+    #[serde(rename = "application/jwk-set+json")]
     JwkSetJson,
     #[doc = "application/jwt"]
-    #[serde(alias = "application/jwt")]
+    #[serde(rename = "application/jwt")]
     Jwt,
     #[doc = "application/kpml-request+xml"]
-    #[serde(alias = "application/kpml-request+xml")]
+    #[serde(rename = "application/kpml-request+xml")]
     KpmlRequestXml,
     #[doc = "application/kpml-response+xml"]
-    #[serde(alias = "application/kpml-response+xml")]
+    #[serde(rename = "application/kpml-response+xml")]
     KpmlResponseXml,
     #[doc = "application/ld+json"]
-    #[serde(alias = "application/ld+json")]
+    #[serde(rename = "application/ld+json")]
     #[serde(alias = "jsonld")]
     LdJson,
     #[doc = "application/lgr+xml"]
-    #[serde(alias = "application/lgr+xml")]
+    #[serde(rename = "application/lgr+xml")]
     #[serde(alias = "lgr")]
     LgrXml,
     #[doc = "application/link-format"]
-    #[serde(alias = "application/link-format")]
+    #[serde(rename = "application/link-format")]
     #[serde(alias = "wlnk")]
     LinkFormat,
     #[doc = "application/linkset"]
-    #[serde(alias = "application/linkset")]
+    #[serde(rename = "application/linkset")]
     Linkset,
     #[doc = "application/linkset+json"]
-    #[serde(alias = "application/linkset+json")]
+    #[serde(rename = "application/linkset+json")]
     LinksetJson,
     #[doc = "application/load-control+xml"]
-    #[serde(alias = "application/load-control+xml")]
+    #[serde(rename = "application/load-control+xml")]
     LoadControlXml,
     #[doc = "application/logout+jwt"]
-    #[serde(alias = "application/logout+jwt")]
+    #[serde(rename = "application/logout+jwt")]
     LogoutJwt,
     #[doc = "application/lost+xml"]
-    #[serde(alias = "application/lost+xml")]
+    #[serde(rename = "application/lost+xml")]
     #[serde(alias = "lostxml")]
     LostXml,
     #[doc = "application/lostsync+xml"]
-    #[serde(alias = "application/lostsync+xml")]
+    #[serde(rename = "application/lostsync+xml")]
     #[serde(alias = "lostsyncxml")]
     LostsyncXml,
     #[doc = "application/lpf+zip"]
-    #[serde(alias = "application/lpf+zip")]
+    #[serde(rename = "application/lpf+zip")]
     #[serde(alias = "lpf")]
     LpfZip,
     #[doc = "application/LXF"]
-    #[serde(alias = "application/LXF")]
+    #[serde(rename = "application/LXF")]
     #[serde(alias = "lxf")]
     Lxf,
     #[doc = "application/mac-binhex40"]
-    #[serde(alias = "application/mac-binhex40")]
+    #[serde(rename = "application/mac-binhex40")]
     #[serde(alias = "hqx")]
     MacBinhex40,
     #[doc = "application/macwriteii"]
-    #[serde(alias = "application/macwriteii")]
+    #[serde(rename = "application/macwriteii")]
     Macwriteii,
     #[doc = "application/mads+xml"]
-    #[serde(alias = "application/mads+xml")]
+    #[serde(rename = "application/mads+xml")]
     #[serde(alias = "mads")]
     MadsXml,
     #[doc = "application/manifest+json"]
-    #[serde(alias = "application/manifest+json")]
+    #[serde(rename = "application/manifest+json")]
     #[serde(alias = "webmanifest")]
     ManifestJson,
     #[doc = "application/marc"]
-    #[serde(alias = "application/marc")]
+    #[serde(rename = "application/marc")]
     #[serde(alias = "mrc")]
     Marc,
     #[doc = "application/marcxml+xml"]
-    #[serde(alias = "application/marcxml+xml")]
+    #[serde(rename = "application/marcxml+xml")]
     #[serde(alias = "mrcx")]
     MarcxmlXml,
     #[doc = "application/mathematica"]
-    #[serde(alias = "application/mathematica")]
+    #[serde(rename = "application/mathematica")]
     #[serde(alias = "nb")]
     #[serde(alias = "ma")]
     #[serde(alias = "mb")]
     Mathematica,
     #[doc = "application/mathml+xml"]
-    #[serde(alias = "application/mathml+xml")]
+    #[serde(rename = "application/mathml+xml")]
     #[serde(alias = "mml")]
     MathmlXml,
     #[doc = "application/mathml-content+xml"]
-    #[serde(alias = "application/mathml-content+xml")]
+    #[serde(rename = "application/mathml-content+xml")]
     MathmlContentXml,
     #[doc = "application/mathml-presentation+xml"]
-    #[serde(alias = "application/mathml-presentation+xml")]
+    #[serde(rename = "application/mathml-presentation+xml")]
     MathmlPresentationXml,
     #[doc = "application/mbms-associated-procedure-description+xml"]
-    #[serde(alias = "application/mbms-associated-procedure-description+xml")]
+    #[serde(rename = "application/mbms-associated-procedure-description+xml")]
     MbmsAssociatedProcedureDescriptionXml,
     #[doc = "application/mbms-deregister+xml"]
-    #[serde(alias = "application/mbms-deregister+xml")]
+    #[serde(rename = "application/mbms-deregister+xml")]
     MbmsDeregisterXml,
     #[doc = "application/mbms-envelope+xml"]
-    #[serde(alias = "application/mbms-envelope+xml")]
+    #[serde(rename = "application/mbms-envelope+xml")]
     MbmsEnvelopeXml,
     #[doc = "application/mbms-msk-response+xml"]
-    #[serde(alias = "application/mbms-msk-response+xml")]
+    #[serde(rename = "application/mbms-msk-response+xml")]
     MbmsMskResponseXml,
     #[doc = "application/mbms-msk+xml"]
-    #[serde(alias = "application/mbms-msk+xml")]
+    #[serde(rename = "application/mbms-msk+xml")]
     MbmsMskXml,
     #[doc = "application/mbms-protection-description+xml"]
-    #[serde(alias = "application/mbms-protection-description+xml")]
+    #[serde(rename = "application/mbms-protection-description+xml")]
     MbmsProtectionDescriptionXml,
     #[doc = "application/mbms-reception-report+xml"]
-    #[serde(alias = "application/mbms-reception-report+xml")]
+    #[serde(rename = "application/mbms-reception-report+xml")]
     MbmsReceptionReportXml,
     #[doc = "application/mbms-register-response+xml"]
-    #[serde(alias = "application/mbms-register-response+xml")]
+    #[serde(rename = "application/mbms-register-response+xml")]
     MbmsRegisterResponseXml,
     #[doc = "application/mbms-register+xml"]
-    #[serde(alias = "application/mbms-register+xml")]
+    #[serde(rename = "application/mbms-register+xml")]
     MbmsRegisterXml,
     #[doc = "application/mbms-schedule+xml"]
-    #[serde(alias = "application/mbms-schedule+xml")]
+    #[serde(rename = "application/mbms-schedule+xml")]
     MbmsScheduleXml,
     #[doc = "application/mbms-user-service-description+xml"]
-    #[serde(alias = "application/mbms-user-service-description+xml")]
+    #[serde(rename = "application/mbms-user-service-description+xml")]
     MbmsUserServiceDescriptionXml,
     #[doc = "application/mbox"]
-    #[serde(alias = "application/mbox")]
+    #[serde(rename = "application/mbox")]
     #[serde(alias = "mbox")]
     Mbox,
     #[doc = "application/media_control+xml"]
-    #[serde(alias = "application/media_control+xml")]
+    #[serde(rename = "application/media_control+xml")]
     MediaControlXml,
     #[doc = "application/media-policy-dataset+xml"]
-    #[serde(alias = "application/media-policy-dataset+xml")]
+    #[serde(rename = "application/media-policy-dataset+xml")]
     MediaPolicyDatasetXml,
     #[doc = "application/mediaservercontrol+xml"]
-    #[serde(alias = "application/mediaservercontrol+xml")]
+    #[serde(rename = "application/mediaservercontrol+xml")]
     MediaservercontrolXml,
     #[doc = "application/merge-patch+json"]
-    #[serde(alias = "application/merge-patch+json")]
+    #[serde(rename = "application/merge-patch+json")]
     MergePatchJson,
     #[doc = "application/metalink4+xml"]
-    #[serde(alias = "application/metalink4+xml")]
+    #[serde(rename = "application/metalink4+xml")]
     #[serde(alias = "meta4")]
     Metalink4Xml,
     #[doc = "application/mets+xml"]
-    #[serde(alias = "application/mets+xml")]
+    #[serde(rename = "application/mets+xml")]
     #[serde(alias = "mets")]
     MetsXml,
     #[doc = "application/MF4"]
-    #[serde(alias = "application/MF4")]
+    #[serde(rename = "application/MF4")]
     #[serde(alias = "mf4")]
     Mf4,
     #[doc = "application/mikey"]
-    #[serde(alias = "application/mikey")]
+    #[serde(rename = "application/mikey")]
     Mikey,
     #[doc = "application/mipc"]
-    #[serde(alias = "application/mipc")]
+    #[serde(rename = "application/mipc")]
     #[serde(alias = "h5")]
     Mipc,
     #[doc = "application/missing-blocks+cbor-seq"]
-    #[serde(alias = "application/missing-blocks+cbor-seq")]
+    #[serde(rename = "application/missing-blocks+cbor-seq")]
     MissingBlocksCborSeq,
     #[doc = "application/mmt-aei+xml"]
-    #[serde(alias = "application/mmt-aei+xml")]
+    #[serde(rename = "application/mmt-aei+xml")]
     #[serde(alias = "maei")]
     MmtAeiXml,
     #[doc = "application/mmt-usd+xml"]
-    #[serde(alias = "application/mmt-usd+xml")]
+    #[serde(rename = "application/mmt-usd+xml")]
     #[serde(alias = "musd")]
     MmtUsdXml,
     #[doc = "application/mods+xml"]
-    #[serde(alias = "application/mods+xml")]
+    #[serde(rename = "application/mods+xml")]
     #[serde(alias = "mods")]
     ModsXml,
     #[doc = "application/moss-keys"]
-    #[serde(alias = "application/moss-keys")]
+    #[serde(rename = "application/moss-keys")]
     MossKeys,
     #[doc = "application/moss-signature"]
-    #[serde(alias = "application/moss-signature")]
+    #[serde(rename = "application/moss-signature")]
     MossSignature,
     #[doc = "application/mosskey-data"]
-    #[serde(alias = "application/mosskey-data")]
+    #[serde(rename = "application/mosskey-data")]
     MosskeyData,
     #[doc = "application/mosskey-request"]
-    #[serde(alias = "application/mosskey-request")]
+    #[serde(rename = "application/mosskey-request")]
     MosskeyRequest,
     #[doc = "application/mp21"]
-    #[serde(alias = "application/mp21")]
+    #[serde(rename = "application/mp21")]
     #[serde(alias = "m21")]
     #[serde(alias = "mp21")]
     Mp21,
     #[doc = "application/mp4"]
-    #[serde(alias = "application/mp4")]
+    #[serde(rename = "application/mp4")]
     Mp4,
     #[doc = "application/mpeg4-generic"]
-    #[serde(alias = "application/mpeg4-generic")]
+    #[serde(rename = "application/mpeg4-generic")]
     Mpeg4Generic,
     #[doc = "application/mpeg4-iod"]
-    #[serde(alias = "application/mpeg4-iod")]
+    #[serde(rename = "application/mpeg4-iod")]
     Mpeg4Iod,
     #[doc = "application/mpeg4-iod-xmt"]
-    #[serde(alias = "application/mpeg4-iod-xmt")]
+    #[serde(rename = "application/mpeg4-iod-xmt")]
     Mpeg4IodXmt,
     #[doc = "application/mrb-consumer+xml"]
-    #[serde(alias = "application/mrb-consumer+xml")]
+    #[serde(rename = "application/mrb-consumer+xml")]
     MrbConsumerXml,
     #[doc = "application/mrb-publish+xml"]
-    #[serde(alias = "application/mrb-publish+xml")]
+    #[serde(rename = "application/mrb-publish+xml")]
     MrbPublishXml,
     #[doc = "application/msc-ivr+xml"]
-    #[serde(alias = "application/msc-ivr+xml")]
+    #[serde(rename = "application/msc-ivr+xml")]
     MscIvrXml,
     #[doc = "application/msc-mixer+xml"]
-    #[serde(alias = "application/msc-mixer+xml")]
+    #[serde(rename = "application/msc-mixer+xml")]
     MscMixerXml,
     #[doc = "application/msword"]
-    #[serde(alias = "application/msword")]
+    #[serde(rename = "application/msword")]
     #[serde(alias = "doc")]
     Msword,
     #[doc = "application/mud+json"]
-    #[serde(alias = "application/mud+json")]
+    #[serde(rename = "application/mud+json")]
     MudJson,
     #[doc = "application/multipart-core"]
-    #[serde(alias = "application/multipart-core")]
+    #[serde(rename = "application/multipart-core")]
     MultipartCore,
     #[doc = "application/mxf"]
-    #[serde(alias = "application/mxf")]
+    #[serde(rename = "application/mxf")]
     #[serde(alias = "mxf")]
     Mxf,
     #[doc = "application/n-quads"]
-    #[serde(alias = "application/n-quads")]
+    #[serde(rename = "application/n-quads")]
     #[serde(alias = "nq")]
     NQuads,
     #[doc = "application/n-triples"]
-    #[serde(alias = "application/n-triples")]
+    #[serde(rename = "application/n-triples")]
     #[serde(alias = "nt")]
     NTriples,
     #[doc = "application/nasdata"]
-    #[serde(alias = "application/nasdata")]
+    #[serde(rename = "application/nasdata")]
     Nasdata,
     #[doc = "application/news-checkgroups"]
-    #[serde(alias = "application/news-checkgroups")]
+    #[serde(rename = "application/news-checkgroups")]
     NewsCheckgroups,
     #[doc = "application/news-groupinfo"]
-    #[serde(alias = "application/news-groupinfo")]
+    #[serde(rename = "application/news-groupinfo")]
     NewsGroupinfo,
     #[doc = "application/news-transmission"]
-    #[serde(alias = "application/news-transmission")]
+    #[serde(rename = "application/news-transmission")]
     NewsTransmission,
     #[doc = "application/nlsml+xml"]
-    #[serde(alias = "application/nlsml+xml")]
+    #[serde(rename = "application/nlsml+xml")]
     NlsmlXml,
     #[doc = "application/node"]
-    #[serde(alias = "application/node")]
+    #[serde(rename = "application/node")]
     Node,
     #[doc = "application/nss"]
-    #[serde(alias = "application/nss")]
+    #[serde(rename = "application/nss")]
     Nss,
     #[doc = "application/oauth-authz-req+jwt"]
-    #[serde(alias = "application/oauth-authz-req+jwt")]
+    #[serde(rename = "application/oauth-authz-req+jwt")]
     OauthAuthzReqJwt,
     #[doc = "application/oblivious-dns-message"]
-    #[serde(alias = "application/oblivious-dns-message")]
+    #[serde(rename = "application/oblivious-dns-message")]
     ObliviousDnsMessage,
     #[doc = "application/ocsp-request"]
-    #[serde(alias = "application/ocsp-request")]
+    #[serde(rename = "application/ocsp-request")]
     #[serde(alias = "orq")]
     OcspRequest,
     #[doc = "application/ocsp-response"]
-    #[serde(alias = "application/ocsp-response")]
+    #[serde(rename = "application/ocsp-response")]
     #[serde(alias = "ors")]
     OcspResponse,
     #[doc = "application/octet-stream"]
-    #[serde(alias = "application/octet-stream")]
+    #[serde(rename = "application/octet-stream")]
     #[serde(alias = "bin")]
     #[serde(alias = "lha")]
     #[serde(alias = "lzh")]
@@ -947,39 +947,39 @@ pub enum Application {
     #[serde(alias = "iso")]
     OctetStream,
     #[doc = "application/ODA"]
-    #[serde(alias = "application/ODA")]
+    #[serde(rename = "application/ODA")]
     #[serde(alias = "oda")]
     Oda,
     #[doc = "application/odm+xml"]
-    #[serde(alias = "application/odm+xml")]
+    #[serde(rename = "application/odm+xml")]
     OdmXml,
     #[doc = "application/ODX"]
-    #[serde(alias = "application/ODX")]
+    #[serde(rename = "application/ODX")]
     #[serde(alias = "odx")]
     Odx,
     #[doc = "application/oebps-package+xml"]
-    #[serde(alias = "application/oebps-package+xml")]
+    #[serde(rename = "application/oebps-package+xml")]
     #[serde(alias = "opf")]
     OebpsPackageXml,
     #[doc = "application/ogg"]
-    #[serde(alias = "application/ogg")]
+    #[serde(rename = "application/ogg")]
     #[serde(alias = "ogx")]
     Ogg,
     #[doc = "application/ohttp-keys"]
-    #[serde(alias = "application/ohttp-keys")]
+    #[serde(rename = "application/ohttp-keys")]
     OhttpKeys,
     #[doc = "application/opc-nodeset+xml"]
-    #[serde(alias = "application/opc-nodeset+xml")]
+    #[serde(rename = "application/opc-nodeset+xml")]
     OpcNodesetXml,
     #[doc = "application/oscore"]
-    #[serde(alias = "application/oscore")]
+    #[serde(rename = "application/oscore")]
     Oscore,
     #[doc = "application/oxps"]
-    #[serde(alias = "application/oxps")]
+    #[serde(rename = "application/oxps")]
     #[serde(alias = "oxps")]
     Oxps,
     #[doc = "application/p21"]
-    #[serde(alias = "application/p21")]
+    #[serde(rename = "application/p21")]
     #[serde(alias = "p21")]
     #[serde(alias = "stp")]
     #[serde(alias = "step")]
@@ -988,1188 +988,1188 @@ pub enum Application {
     #[serde(alias = "ifc")]
     P21,
     #[doc = "application/p21+zip"]
-    #[serde(alias = "application/p21+zip")]
+    #[serde(rename = "application/p21+zip")]
     #[serde(alias = "stpz")]
     P21Zip,
     #[doc = "application/p2p-overlay+xml"]
-    #[serde(alias = "application/p2p-overlay+xml")]
+    #[serde(rename = "application/p2p-overlay+xml")]
     #[serde(alias = "relo")]
     P2POverlayXml,
     #[doc = "application/parityfec"]
-    #[serde(alias = "application/parityfec")]
+    #[serde(rename = "application/parityfec")]
     Parityfec,
     #[doc = "application/passport"]
-    #[serde(alias = "application/passport")]
+    #[serde(rename = "application/passport")]
     Passport,
     #[doc = "application/patch-ops-error+xml"]
-    #[serde(alias = "application/patch-ops-error+xml")]
+    #[serde(rename = "application/patch-ops-error+xml")]
     PatchOpsErrorXml,
     #[doc = "application/pdf"]
-    #[serde(alias = "application/pdf")]
+    #[serde(rename = "application/pdf")]
     #[serde(alias = "pdf")]
     Pdf,
     #[doc = "application/PDX"]
-    #[serde(alias = "application/PDX")]
+    #[serde(rename = "application/PDX")]
     #[serde(alias = "pdx")]
     Pdx,
     #[doc = "application/pem-certificate-chain"]
-    #[serde(alias = "application/pem-certificate-chain")]
+    #[serde(rename = "application/pem-certificate-chain")]
     #[serde(alias = "pem")]
     PemCertificateChain,
     #[doc = "application/pgp-encrypted"]
-    #[serde(alias = "application/pgp-encrypted")]
+    #[serde(rename = "application/pgp-encrypted")]
     #[serde(alias = "pgp")]
     PgpEncrypted,
     #[doc = "application/pgp-keys"]
-    #[serde(alias = "application/pgp-keys")]
+    #[serde(rename = "application/pgp-keys")]
     PgpKeys,
     #[doc = "application/pgp-signature"]
-    #[serde(alias = "application/pgp-signature")]
+    #[serde(rename = "application/pgp-signature")]
     #[serde(alias = "sig")]
     PgpSignature,
     #[doc = "application/pidf-diff+xml"]
-    #[serde(alias = "application/pidf-diff+xml")]
+    #[serde(rename = "application/pidf-diff+xml")]
     PidfDiffXml,
     #[doc = "application/pidf+xml"]
-    #[serde(alias = "application/pidf+xml")]
+    #[serde(rename = "application/pidf+xml")]
     PidfXml,
     #[doc = "application/pkcs10"]
-    #[serde(alias = "application/pkcs10")]
+    #[serde(rename = "application/pkcs10")]
     #[serde(alias = "p10")]
     Pkcs10,
     #[doc = "application/pkcs7-mime"]
-    #[serde(alias = "application/pkcs7-mime")]
+    #[serde(rename = "application/pkcs7-mime")]
     #[serde(alias = "p7m")]
     #[serde(alias = "p7c")]
     Pkcs7Mime,
     #[doc = "application/pkcs7-signature"]
-    #[serde(alias = "application/pkcs7-signature")]
+    #[serde(rename = "application/pkcs7-signature")]
     #[serde(alias = "p7s")]
     Pkcs7Signature,
     #[doc = "application/pkcs8"]
-    #[serde(alias = "application/pkcs8")]
+    #[serde(rename = "application/pkcs8")]
     #[serde(alias = "p8")]
     Pkcs8,
     #[doc = "application/pkcs8-encrypted"]
-    #[serde(alias = "application/pkcs8-encrypted")]
+    #[serde(rename = "application/pkcs8-encrypted")]
     #[serde(alias = "p8e")]
     Pkcs8Encrypted,
     #[doc = "application/pkcs12"]
-    #[serde(alias = "application/pkcs12")]
+    #[serde(rename = "application/pkcs12")]
     #[serde(alias = "p12")]
     #[serde(alias = "pfx")]
     Pkcs12,
     #[doc = "application/pkix-attr-cert"]
-    #[serde(alias = "application/pkix-attr-cert")]
+    #[serde(rename = "application/pkix-attr-cert")]
     PkixAttrCert,
     #[doc = "application/pkix-cert"]
-    #[serde(alias = "application/pkix-cert")]
+    #[serde(rename = "application/pkix-cert")]
     #[serde(alias = "cer")]
     PkixCert,
     #[doc = "application/pkix-crl"]
-    #[serde(alias = "application/pkix-crl")]
+    #[serde(rename = "application/pkix-crl")]
     #[serde(alias = "crl")]
     PkixCrl,
     #[doc = "application/pkix-pkipath"]
-    #[serde(alias = "application/pkix-pkipath")]
+    #[serde(rename = "application/pkix-pkipath")]
     #[serde(alias = "pkipath")]
     PkixPkipath,
     #[doc = "application/pkixcmp"]
-    #[serde(alias = "application/pkixcmp")]
+    #[serde(rename = "application/pkixcmp")]
     #[serde(alias = "pki")]
     Pkixcmp,
     #[doc = "application/pls+xml"]
-    #[serde(alias = "application/pls+xml")]
+    #[serde(rename = "application/pls+xml")]
     #[serde(alias = "pls")]
     PlsXml,
     #[doc = "application/poc-settings+xml"]
-    #[serde(alias = "application/poc-settings+xml")]
+    #[serde(rename = "application/poc-settings+xml")]
     PocSettingsXml,
     #[doc = "application/postscript"]
-    #[serde(alias = "application/postscript")]
+    #[serde(rename = "application/postscript")]
     #[serde(alias = "ps")]
     #[serde(alias = "eps")]
     #[serde(alias = "ai")]
     Postscript,
     #[doc = "application/ppsp-tracker+json"]
-    #[serde(alias = "application/ppsp-tracker+json")]
+    #[serde(rename = "application/ppsp-tracker+json")]
     PpspTrackerJson,
     #[doc = "application/problem+json"]
-    #[serde(alias = "application/problem+json")]
+    #[serde(rename = "application/problem+json")]
     ProblemJson,
     #[doc = "application/problem+xml"]
-    #[serde(alias = "application/problem+xml")]
+    #[serde(rename = "application/problem+xml")]
     ProblemXml,
     #[doc = "application/provenance+xml"]
-    #[serde(alias = "application/provenance+xml")]
+    #[serde(rename = "application/provenance+xml")]
     #[serde(alias = "provx")]
     ProvenanceXml,
     #[doc = "application/prs.alvestrand.titrax-sheet"]
-    #[serde(alias = "application/prs.alvestrand.titrax-sheet")]
+    #[serde(rename = "application/prs.alvestrand.titrax-sheet")]
     PrsAlvestrandTitraxSheet,
     #[doc = "application/prs.cww"]
-    #[serde(alias = "application/prs.cww")]
+    #[serde(rename = "application/prs.cww")]
     #[serde(alias = "cw")]
     #[serde(alias = "cww")]
     PrsCww,
     #[doc = "application/prs.cyn"]
-    #[serde(alias = "application/prs.cyn")]
+    #[serde(rename = "application/prs.cyn")]
     PrsCyn,
     #[doc = "application/prs.hpub+zip"]
-    #[serde(alias = "application/prs.hpub+zip")]
+    #[serde(rename = "application/prs.hpub+zip")]
     #[serde(alias = "hpub")]
     PrsHpubZip,
     #[doc = "application/prs.implied-document+xml"]
-    #[serde(alias = "application/prs.implied-document+xml")]
+    #[serde(rename = "application/prs.implied-document+xml")]
     PrsImpliedDocumentXml,
     #[doc = "application/prs.implied-executable"]
-    #[serde(alias = "application/prs.implied-executable")]
+    #[serde(rename = "application/prs.implied-executable")]
     PrsImpliedExecutable,
     #[doc = "application/prs.implied-structure"]
-    #[serde(alias = "application/prs.implied-structure")]
+    #[serde(rename = "application/prs.implied-structure")]
     PrsImpliedStructure,
     #[doc = "application/prs.nprend"]
-    #[serde(alias = "application/prs.nprend")]
+    #[serde(rename = "application/prs.nprend")]
     #[serde(alias = "rnd")]
     #[serde(alias = "rct")]
     PrsNprend,
     #[doc = "application/prs.plucker"]
-    #[serde(alias = "application/prs.plucker")]
+    #[serde(rename = "application/prs.plucker")]
     PrsPlucker,
     #[doc = "application/prs.rdf-xml-crypt"]
-    #[serde(alias = "application/prs.rdf-xml-crypt")]
+    #[serde(rename = "application/prs.rdf-xml-crypt")]
     #[serde(alias = "rdf-crypt")]
     PrsRdfXmlCrypt,
     #[doc = "application/prs.xsf+xml"]
-    #[serde(alias = "application/prs.xsf+xml")]
+    #[serde(rename = "application/prs.xsf+xml")]
     #[serde(alias = "xsf")]
     PrsXsfXml,
     #[doc = "application/pskc+xml"]
-    #[serde(alias = "application/pskc+xml")]
+    #[serde(rename = "application/pskc+xml")]
     #[serde(alias = "pskcxml")]
     PskcXml,
     #[doc = "application/pvd+json"]
-    #[serde(alias = "application/pvd+json")]
+    #[serde(rename = "application/pvd+json")]
     PvdJson,
     #[doc = "application/rdf+xml"]
-    #[serde(alias = "application/rdf+xml")]
+    #[serde(rename = "application/rdf+xml")]
     #[serde(alias = "rdf")]
     RdfXml,
     #[doc = "application/route-apd+xml"]
-    #[serde(alias = "application/route-apd+xml")]
+    #[serde(rename = "application/route-apd+xml")]
     #[serde(alias = "rapd")]
     RouteApdXml,
     #[doc = "application/route-s-tsid+xml"]
-    #[serde(alias = "application/route-s-tsid+xml")]
+    #[serde(rename = "application/route-s-tsid+xml")]
     #[serde(alias = "sls")]
     RouteSTsidXml,
     #[doc = "application/route-usd+xml"]
-    #[serde(alias = "application/route-usd+xml")]
+    #[serde(rename = "application/route-usd+xml")]
     #[serde(alias = "rusd")]
     RouteUsdXml,
     #[doc = "application/QSIG"]
-    #[serde(alias = "application/QSIG")]
+    #[serde(rename = "application/QSIG")]
     Qsig,
     #[doc = "application/raptorfec"]
-    #[serde(alias = "application/raptorfec")]
+    #[serde(rename = "application/raptorfec")]
     Raptorfec,
     #[doc = "application/rdap+json"]
-    #[serde(alias = "application/rdap+json")]
+    #[serde(rename = "application/rdap+json")]
     RdapJson,
     #[doc = "application/reginfo+xml"]
-    #[serde(alias = "application/reginfo+xml")]
+    #[serde(rename = "application/reginfo+xml")]
     #[serde(alias = "rif")]
     ReginfoXml,
     #[doc = "application/relax-ng-compact-syntax"]
-    #[serde(alias = "application/relax-ng-compact-syntax")]
+    #[serde(rename = "application/relax-ng-compact-syntax")]
     #[serde(alias = "rnc")]
     RelaxNgCompactSyntax,
     #[doc = "application/reputon+json"]
-    #[serde(alias = "application/reputon+json")]
+    #[serde(rename = "application/reputon+json")]
     ReputonJson,
     #[doc = "application/resource-lists-diff+xml"]
-    #[serde(alias = "application/resource-lists-diff+xml")]
+    #[serde(rename = "application/resource-lists-diff+xml")]
     #[serde(alias = "rld")]
     ResourceListsDiffXml,
     #[doc = "application/resource-lists+xml"]
-    #[serde(alias = "application/resource-lists+xml")]
+    #[serde(rename = "application/resource-lists+xml")]
     #[serde(alias = "rl")]
     ResourceListsXml,
     #[doc = "application/rfc+xml"]
-    #[serde(alias = "application/rfc+xml")]
+    #[serde(rename = "application/rfc+xml")]
     #[serde(alias = "rfcxml")]
     RfcXml,
     #[doc = "application/riscos"]
-    #[serde(alias = "application/riscos")]
+    #[serde(rename = "application/riscos")]
     Riscos,
     #[doc = "application/rlmi+xml"]
-    #[serde(alias = "application/rlmi+xml")]
+    #[serde(rename = "application/rlmi+xml")]
     RlmiXml,
     #[doc = "application/rls-services+xml"]
-    #[serde(alias = "application/rls-services+xml")]
+    #[serde(rename = "application/rls-services+xml")]
     #[serde(alias = "rs")]
     RlsServicesXml,
     #[doc = "application/rpki-checklist"]
-    #[serde(alias = "application/rpki-checklist")]
+    #[serde(rename = "application/rpki-checklist")]
     RpkiChecklist,
     #[doc = "application/rpki-ghostbusters"]
-    #[serde(alias = "application/rpki-ghostbusters")]
+    #[serde(rename = "application/rpki-ghostbusters")]
     #[serde(alias = "gbr")]
     RpkiGhostbusters,
     #[doc = "application/rpki-manifest"]
-    #[serde(alias = "application/rpki-manifest")]
+    #[serde(rename = "application/rpki-manifest")]
     #[serde(alias = "mft")]
     RpkiManifest,
     #[doc = "application/rpki-publication"]
-    #[serde(alias = "application/rpki-publication")]
+    #[serde(rename = "application/rpki-publication")]
     RpkiPublication,
     #[doc = "application/rpki-roa"]
-    #[serde(alias = "application/rpki-roa")]
+    #[serde(rename = "application/rpki-roa")]
     #[serde(alias = "roa")]
     RpkiRoa,
     #[doc = "application/rpki-updown"]
-    #[serde(alias = "application/rpki-updown")]
+    #[serde(rename = "application/rpki-updown")]
     RpkiUpdown,
     #[doc = "application/rtf"]
-    #[serde(alias = "application/rtf")]
+    #[serde(rename = "application/rtf")]
     #[serde(alias = "rtf")]
     Rtf,
     #[doc = "application/rtploopback"]
-    #[serde(alias = "application/rtploopback")]
+    #[serde(rename = "application/rtploopback")]
     Rtploopback,
     #[doc = "application/rtx"]
-    #[serde(alias = "application/rtx")]
+    #[serde(rename = "application/rtx")]
     Rtx,
     #[doc = "application/samlassertion+xml"]
-    #[serde(alias = "application/samlassertion+xml")]
+    #[serde(rename = "application/samlassertion+xml")]
     SamlassertionXml,
     #[doc = "application/samlmetadata+xml"]
-    #[serde(alias = "application/samlmetadata+xml")]
+    #[serde(rename = "application/samlmetadata+xml")]
     SamlmetadataXml,
     #[doc = "application/sarif-external-properties+json"]
-    #[serde(alias = "application/sarif-external-properties+json")]
+    #[serde(rename = "application/sarif-external-properties+json")]
     #[serde(alias = "sarif-external-properties")]
     #[serde(alias = "sarif-external-properties.json")]
     SarifExternalPropertiesJson,
     #[doc = "application/sarif+json"]
-    #[serde(alias = "application/sarif+json")]
+    #[serde(rename = "application/sarif+json")]
     #[serde(alias = "sarif")]
     #[serde(alias = "sarif.json")]
     SarifJson,
     #[doc = "application/sbe"]
-    #[serde(alias = "application/sbe")]
+    #[serde(rename = "application/sbe")]
     Sbe,
     #[doc = "application/sbml+xml"]
-    #[serde(alias = "application/sbml+xml")]
+    #[serde(rename = "application/sbml+xml")]
     SbmlXml,
     #[doc = "application/scaip+xml"]
-    #[serde(alias = "application/scaip+xml")]
+    #[serde(rename = "application/scaip+xml")]
     ScaipXml,
     #[doc = "application/scim+json"]
-    #[serde(alias = "application/scim+json")]
+    #[serde(rename = "application/scim+json")]
     #[serde(alias = "scim")]
     ScimJson,
     #[doc = "application/scvp-cv-request"]
-    #[serde(alias = "application/scvp-cv-request")]
+    #[serde(rename = "application/scvp-cv-request")]
     #[serde(alias = "scq")]
     ScvpCvRequest,
     #[doc = "application/scvp-cv-response"]
-    #[serde(alias = "application/scvp-cv-response")]
+    #[serde(rename = "application/scvp-cv-response")]
     #[serde(alias = "scs")]
     ScvpCvResponse,
     #[doc = "application/scvp-vp-request"]
-    #[serde(alias = "application/scvp-vp-request")]
+    #[serde(rename = "application/scvp-vp-request")]
     #[serde(alias = "spq")]
     ScvpVpRequest,
     #[doc = "application/scvp-vp-response"]
-    #[serde(alias = "application/scvp-vp-response")]
+    #[serde(rename = "application/scvp-vp-response")]
     #[serde(alias = "spp")]
     ScvpVpResponse,
     #[doc = "application/sdp"]
-    #[serde(alias = "application/sdp")]
+    #[serde(rename = "application/sdp")]
     #[serde(alias = "sdp")]
     Sdp,
     #[doc = "application/secevent+jwt"]
-    #[serde(alias = "application/secevent+jwt")]
+    #[serde(rename = "application/secevent+jwt")]
     SeceventJwt,
     #[doc = "application/senml-etch+cbor"]
-    #[serde(alias = "application/senml-etch+cbor")]
+    #[serde(rename = "application/senml-etch+cbor")]
     #[serde(alias = "senml-etchc")]
     SenmlEtchCbor,
     #[doc = "application/senml-etch+json"]
-    #[serde(alias = "application/senml-etch+json")]
+    #[serde(rename = "application/senml-etch+json")]
     #[serde(alias = "senml-etchj")]
     SenmlEtchJson,
     #[doc = "application/senml-exi"]
-    #[serde(alias = "application/senml-exi")]
+    #[serde(rename = "application/senml-exi")]
     #[serde(alias = "senmle")]
     SenmlExi,
     #[doc = "application/senml+cbor"]
-    #[serde(alias = "application/senml+cbor")]
+    #[serde(rename = "application/senml+cbor")]
     #[serde(alias = "senmlc")]
     SenmlCbor,
     #[doc = "application/senml+json"]
-    #[serde(alias = "application/senml+json")]
+    #[serde(rename = "application/senml+json")]
     #[serde(alias = "senml")]
     SenmlJson,
     #[doc = "application/senml+xml"]
-    #[serde(alias = "application/senml+xml")]
+    #[serde(rename = "application/senml+xml")]
     #[serde(alias = "senmlx")]
     SenmlXml,
     #[doc = "application/sensml-exi"]
-    #[serde(alias = "application/sensml-exi")]
+    #[serde(rename = "application/sensml-exi")]
     #[serde(alias = "sensmle")]
     SensmlExi,
     #[doc = "application/sensml+cbor"]
-    #[serde(alias = "application/sensml+cbor")]
+    #[serde(rename = "application/sensml+cbor")]
     #[serde(alias = "sensmlc")]
     SensmlCbor,
     #[doc = "application/sensml+json"]
-    #[serde(alias = "application/sensml+json")]
+    #[serde(rename = "application/sensml+json")]
     #[serde(alias = "sensml")]
     SensmlJson,
     #[doc = "application/sensml+xml"]
-    #[serde(alias = "application/sensml+xml")]
+    #[serde(rename = "application/sensml+xml")]
     #[serde(alias = "sensmlx")]
     SensmlXml,
     #[doc = "application/sep-exi"]
-    #[serde(alias = "application/sep-exi")]
+    #[serde(rename = "application/sep-exi")]
     SepExi,
     #[doc = "application/sep+xml"]
-    #[serde(alias = "application/sep+xml")]
+    #[serde(rename = "application/sep+xml")]
     SepXml,
     #[doc = "application/session-info"]
-    #[serde(alias = "application/session-info")]
+    #[serde(rename = "application/session-info")]
     SessionInfo,
     #[doc = "application/set-payment"]
-    #[serde(alias = "application/set-payment")]
+    #[serde(rename = "application/set-payment")]
     SetPayment,
     #[doc = "application/set-payment-initiation"]
-    #[serde(alias = "application/set-payment-initiation")]
+    #[serde(rename = "application/set-payment-initiation")]
     SetPaymentInitiation,
     #[doc = "application/set-registration"]
-    #[serde(alias = "application/set-registration")]
+    #[serde(rename = "application/set-registration")]
     SetRegistration,
     #[doc = "application/set-registration-initiation"]
-    #[serde(alias = "application/set-registration-initiation")]
+    #[serde(rename = "application/set-registration-initiation")]
     SetRegistrationInitiation,
     #[doc = "application/SGML"]
-    #[serde(alias = "application/SGML")]
+    #[serde(rename = "application/SGML")]
     Sgml,
     #[doc = "application/sgml-open-catalog"]
-    #[serde(alias = "application/sgml-open-catalog")]
+    #[serde(rename = "application/sgml-open-catalog")]
     #[serde(alias = "soc")]
     SgmlOpenCatalog,
     #[doc = "application/shf+xml"]
-    #[serde(alias = "application/shf+xml")]
+    #[serde(rename = "application/shf+xml")]
     #[serde(alias = "shf")]
     ShfXml,
     #[doc = "application/sieve"]
-    #[serde(alias = "application/sieve")]
+    #[serde(rename = "application/sieve")]
     #[serde(alias = "siv")]
     #[serde(alias = "sieve")]
     Sieve,
     #[doc = "application/simple-filter+xml"]
-    #[serde(alias = "application/simple-filter+xml")]
+    #[serde(rename = "application/simple-filter+xml")]
     #[serde(alias = "cl")]
     SimpleFilterXml,
     #[doc = "application/simple-message-summary"]
-    #[serde(alias = "application/simple-message-summary")]
+    #[serde(rename = "application/simple-message-summary")]
     SimpleMessageSummary,
     #[doc = "application/simpleSymbolContainer"]
-    #[serde(alias = "application/simpleSymbolContainer")]
+    #[serde(rename = "application/simpleSymbolContainer")]
     SimpleSymbolContainer,
     #[doc = "application/sipc"]
-    #[serde(alias = "application/sipc")]
+    #[serde(rename = "application/sipc")]
     Sipc,
     #[doc = "application/slate"]
-    #[serde(alias = "application/slate")]
+    #[serde(rename = "application/slate")]
     Slate,
     #[doc = "application/smil+xml"]
-    #[serde(alias = "application/smil+xml")]
+    #[serde(rename = "application/smil+xml")]
     #[serde(alias = "smil")]
     #[serde(alias = "smi")]
     #[serde(alias = "sml")]
     SmilXml,
     #[doc = "application/smpte336m"]
-    #[serde(alias = "application/smpte336m")]
+    #[serde(rename = "application/smpte336m")]
     Smpte336M,
     #[doc = "application/soap+fastinfoset"]
-    #[serde(alias = "application/soap+fastinfoset")]
+    #[serde(rename = "application/soap+fastinfoset")]
     SoapFastinfoset,
     #[doc = "application/soap+xml"]
-    #[serde(alias = "application/soap+xml")]
+    #[serde(rename = "application/soap+xml")]
     SoapXml,
     #[doc = "application/sparql-query"]
-    #[serde(alias = "application/sparql-query")]
+    #[serde(rename = "application/sparql-query")]
     #[serde(alias = "rq")]
     SparqlQuery,
     #[doc = "application/spdx+json"]
-    #[serde(alias = "application/spdx+json")]
+    #[serde(rename = "application/spdx+json")]
     #[serde(alias = "spdx.json")]
     SpdxJson,
     #[doc = "application/sparql-results+xml"]
-    #[serde(alias = "application/sparql-results+xml")]
+    #[serde(rename = "application/sparql-results+xml")]
     #[serde(alias = "srx")]
     SparqlResultsXml,
     #[doc = "application/spirits-event+xml"]
-    #[serde(alias = "application/spirits-event+xml")]
+    #[serde(rename = "application/spirits-event+xml")]
     SpiritsEventXml,
     #[doc = "application/sql"]
-    #[serde(alias = "application/sql")]
+    #[serde(rename = "application/sql")]
     #[serde(alias = "sql")]
     Sql,
     #[doc = "application/srgs"]
-    #[serde(alias = "application/srgs")]
+    #[serde(rename = "application/srgs")]
     #[serde(alias = "gram")]
     Srgs,
     #[doc = "application/srgs+xml"]
-    #[serde(alias = "application/srgs+xml")]
+    #[serde(rename = "application/srgs+xml")]
     #[serde(alias = "grxml")]
     SrgsXml,
     #[doc = "application/sru+xml"]
-    #[serde(alias = "application/sru+xml")]
+    #[serde(rename = "application/sru+xml")]
     #[serde(alias = "sru")]
     SruXml,
     #[doc = "application/ssml+xml"]
-    #[serde(alias = "application/ssml+xml")]
+    #[serde(rename = "application/ssml+xml")]
     #[serde(alias = "ssml")]
     SsmlXml,
     #[doc = "application/stix+json"]
-    #[serde(alias = "application/stix+json")]
+    #[serde(rename = "application/stix+json")]
     #[serde(alias = "stix")]
     StixJson,
     #[doc = "application/swid+cbor"]
-    #[serde(alias = "application/swid+cbor")]
+    #[serde(rename = "application/swid+cbor")]
     #[serde(alias = "coswid")]
     SwidCbor,
     #[doc = "application/swid+xml"]
-    #[serde(alias = "application/swid+xml")]
+    #[serde(rename = "application/swid+xml")]
     #[serde(alias = "swidtag")]
     SwidXml,
     #[doc = "application/tamp-apex-update"]
-    #[serde(alias = "application/tamp-apex-update")]
+    #[serde(rename = "application/tamp-apex-update")]
     #[serde(alias = "tau")]
     TampApexUpdate,
     #[doc = "application/tamp-apex-update-confirm"]
-    #[serde(alias = "application/tamp-apex-update-confirm")]
+    #[serde(rename = "application/tamp-apex-update-confirm")]
     #[serde(alias = "auc")]
     TampApexUpdateConfirm,
     #[doc = "application/tamp-community-update"]
-    #[serde(alias = "application/tamp-community-update")]
+    #[serde(rename = "application/tamp-community-update")]
     #[serde(alias = "tcu")]
     TampCommunityUpdate,
     #[doc = "application/tamp-community-update-confirm"]
-    #[serde(alias = "application/tamp-community-update-confirm")]
+    #[serde(rename = "application/tamp-community-update-confirm")]
     #[serde(alias = "cuc")]
     TampCommunityUpdateConfirm,
     #[doc = "application/tamp-error"]
-    #[serde(alias = "application/tamp-error")]
+    #[serde(rename = "application/tamp-error")]
     #[serde(alias = "ter")]
     TampError,
     #[doc = "application/tamp-sequence-adjust"]
-    #[serde(alias = "application/tamp-sequence-adjust")]
+    #[serde(rename = "application/tamp-sequence-adjust")]
     #[serde(alias = "tsa")]
     TampSequenceAdjust,
     #[doc = "application/tamp-sequence-adjust-confirm"]
-    #[serde(alias = "application/tamp-sequence-adjust-confirm")]
+    #[serde(rename = "application/tamp-sequence-adjust-confirm")]
     #[serde(alias = "sac")]
     TampSequenceAdjustConfirm,
     #[doc = "application/tamp-status-query"]
-    #[serde(alias = "application/tamp-status-query")]
+    #[serde(rename = "application/tamp-status-query")]
     TampStatusQuery,
     #[doc = "application/tamp-status-response"]
-    #[serde(alias = "application/tamp-status-response")]
+    #[serde(rename = "application/tamp-status-response")]
     TampStatusResponse,
     #[doc = "application/tamp-update"]
-    #[serde(alias = "application/tamp-update")]
+    #[serde(rename = "application/tamp-update")]
     #[serde(alias = "tur")]
     TampUpdate,
     #[doc = "application/tamp-update-confirm"]
-    #[serde(alias = "application/tamp-update-confirm")]
+    #[serde(rename = "application/tamp-update-confirm")]
     #[serde(alias = "tuc")]
     TampUpdateConfirm,
     #[doc = "application/taxii+json"]
-    #[serde(alias = "application/taxii+json")]
+    #[serde(rename = "application/taxii+json")]
     TaxiiJson,
     #[doc = "application/td+json"]
-    #[serde(alias = "application/td+json")]
+    #[serde(rename = "application/td+json")]
     #[serde(alias = "jsontd")]
     TdJson,
     #[doc = "application/tei+xml"]
-    #[serde(alias = "application/tei+xml")]
+    #[serde(rename = "application/tei+xml")]
     #[serde(alias = "tei")]
     #[serde(alias = "teiCorpus")]
     #[serde(alias = "odd")]
     TeiXml,
     #[doc = "application/TETRA_ISI"]
-    #[serde(alias = "application/TETRA_ISI")]
+    #[serde(rename = "application/TETRA_ISI")]
     TetraIsi,
     #[doc = "application/thraud+xml"]
-    #[serde(alias = "application/thraud+xml")]
+    #[serde(rename = "application/thraud+xml")]
     #[serde(alias = "tfi")]
     ThraudXml,
     #[doc = "application/timestamp-query"]
-    #[serde(alias = "application/timestamp-query")]
+    #[serde(rename = "application/timestamp-query")]
     #[serde(alias = "tsq")]
     TimestampQuery,
     #[doc = "application/timestamp-reply"]
-    #[serde(alias = "application/timestamp-reply")]
+    #[serde(rename = "application/timestamp-reply")]
     #[serde(alias = "tsr")]
     TimestampReply,
     #[doc = "application/timestamped-data"]
-    #[serde(alias = "application/timestamped-data")]
+    #[serde(rename = "application/timestamped-data")]
     #[serde(alias = "tsd")]
     TimestampedData,
     #[doc = "application/tlsrpt+gzip"]
-    #[serde(alias = "application/tlsrpt+gzip")]
+    #[serde(rename = "application/tlsrpt+gzip")]
     TlsrptGzip,
     #[doc = "application/tlsrpt+json"]
-    #[serde(alias = "application/tlsrpt+json")]
+    #[serde(rename = "application/tlsrpt+json")]
     TlsrptJson,
     #[doc = "application/tm+json"]
-    #[serde(alias = "application/tm+json")]
+    #[serde(rename = "application/tm+json")]
     #[serde(alias = "jsontm")]
     #[serde(alias = "tm.json")]
     #[serde(alias = "tm.jsonld")]
     TmJson,
     #[doc = "application/tnauthlist"]
-    #[serde(alias = "application/tnauthlist")]
+    #[serde(rename = "application/tnauthlist")]
     Tnauthlist,
     #[doc = "application/token-introspection+jwt"]
-    #[serde(alias = "application/token-introspection+jwt")]
+    #[serde(rename = "application/token-introspection+jwt")]
     TokenIntrospectionJwt,
     #[doc = "application/trickle-ice-sdpfrag"]
-    #[serde(alias = "application/trickle-ice-sdpfrag")]
+    #[serde(rename = "application/trickle-ice-sdpfrag")]
     TrickleIceSdpfrag,
     #[doc = "application/trig"]
-    #[serde(alias = "application/trig")]
+    #[serde(rename = "application/trig")]
     #[serde(alias = "trig")]
     Trig,
     #[doc = "application/ttml+xml"]
-    #[serde(alias = "application/ttml+xml")]
+    #[serde(rename = "application/ttml+xml")]
     #[serde(alias = "ttml")]
     TtmlXml,
     #[doc = "application/tve-trigger"]
-    #[serde(alias = "application/tve-trigger")]
+    #[serde(rename = "application/tve-trigger")]
     TveTrigger,
     #[doc = "application/tzif"]
-    #[serde(alias = "application/tzif")]
+    #[serde(rename = "application/tzif")]
     Tzif,
     #[doc = "application/tzif-leap"]
-    #[serde(alias = "application/tzif-leap")]
+    #[serde(rename = "application/tzif-leap")]
     TzifLeap,
     #[doc = "application/ulpfec"]
-    #[serde(alias = "application/ulpfec")]
+    #[serde(rename = "application/ulpfec")]
     Ulpfec,
     #[doc = "application/urc-grpsheet+xml"]
-    #[serde(alias = "application/urc-grpsheet+xml")]
+    #[serde(rename = "application/urc-grpsheet+xml")]
     #[serde(alias = "gsheet")]
     UrcGrpsheetXml,
     #[doc = "application/urc-ressheet+xml"]
-    #[serde(alias = "application/urc-ressheet+xml")]
+    #[serde(rename = "application/urc-ressheet+xml")]
     #[serde(alias = "rsheet")]
     UrcRessheetXml,
     #[doc = "application/urc-targetdesc+xml"]
-    #[serde(alias = "application/urc-targetdesc+xml")]
+    #[serde(rename = "application/urc-targetdesc+xml")]
     #[serde(alias = "td")]
     UrcTargetdescXml,
     #[doc = "application/urc-uisocketdesc+xml"]
-    #[serde(alias = "application/urc-uisocketdesc+xml")]
+    #[serde(rename = "application/urc-uisocketdesc+xml")]
     #[serde(alias = "uis")]
     UrcUisocketdescXml,
     #[doc = "application/vcard+json"]
-    #[serde(alias = "application/vcard+json")]
+    #[serde(rename = "application/vcard+json")]
     VcardJson,
     #[doc = "application/vcard+xml"]
-    #[serde(alias = "application/vcard+xml")]
+    #[serde(rename = "application/vcard+xml")]
     VcardXml,
     #[doc = "application/vemmi"]
-    #[serde(alias = "application/vemmi")]
+    #[serde(rename = "application/vemmi")]
     Vemmi,
     #[doc = "application/vnd.1000minds.decision-model+xml"]
-    #[serde(alias = "application/vnd.1000minds.decision-model+xml")]
+    #[serde(rename = "application/vnd.1000minds.decision-model+xml")]
     #[serde(alias = "1km")]
     Vnd1000MindsDecisionModelXml,
     #[doc = "application/vnd.1ob"]
-    #[serde(alias = "application/vnd.1ob")]
+    #[serde(rename = "application/vnd.1ob")]
     #[serde(alias = "ob")]
     Vnd1Ob,
     #[doc = "application/vnd.3gpp.5gnas"]
-    #[serde(alias = "application/vnd.3gpp.5gnas")]
+    #[serde(rename = "application/vnd.3gpp.5gnas")]
     Vnd3Gpp5Gnas,
     #[doc = "application/vnd.3gpp.access-transfer-events+xml"]
-    #[serde(alias = "application/vnd.3gpp.access-transfer-events+xml")]
+    #[serde(rename = "application/vnd.3gpp.access-transfer-events+xml")]
     Vnd3GppAccessTransferEventsXml,
     #[doc = "application/vnd.3gpp.bsf+xml"]
-    #[serde(alias = "application/vnd.3gpp.bsf+xml")]
+    #[serde(rename = "application/vnd.3gpp.bsf+xml")]
     Vnd3GppBsfXml,
     #[doc = "application/vnd.3gpp.crs+xml"]
-    #[serde(alias = "application/vnd.3gpp.crs+xml")]
+    #[serde(rename = "application/vnd.3gpp.crs+xml")]
     Vnd3GppCrsXml,
     #[doc = "application/vnd.3gpp.current-location-discovery+xml"]
-    #[serde(alias = "application/vnd.3gpp.current-location-discovery+xml")]
+    #[serde(rename = "application/vnd.3gpp.current-location-discovery+xml")]
     Vnd3GppCurrentLocationDiscoveryXml,
     #[doc = "application/vnd.3gpp.GMOP+xml"]
-    #[serde(alias = "application/vnd.3gpp.GMOP+xml")]
+    #[serde(rename = "application/vnd.3gpp.GMOP+xml")]
     Vnd3GppGMOPXml,
     #[doc = "application/vnd.3gpp.gtpc"]
-    #[serde(alias = "application/vnd.3gpp.gtpc")]
+    #[serde(rename = "application/vnd.3gpp.gtpc")]
     Vnd3GppGtpc,
     #[doc = "application/vnd.3gpp.interworking-data"]
-    #[serde(alias = "application/vnd.3gpp.interworking-data")]
+    #[serde(rename = "application/vnd.3gpp.interworking-data")]
     Vnd3GppInterworkingData,
     #[doc = "application/vnd.3gpp.lpp"]
-    #[serde(alias = "application/vnd.3gpp.lpp")]
+    #[serde(rename = "application/vnd.3gpp.lpp")]
     Vnd3GppLpp,
     #[doc = "application/vnd.3gpp.mc-signalling-ear"]
-    #[serde(alias = "application/vnd.3gpp.mc-signalling-ear")]
+    #[serde(rename = "application/vnd.3gpp.mc-signalling-ear")]
     Vnd3GppMcSignallingEar,
     #[doc = "application/vnd.3gpp.mcdata-affiliation-command+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-affiliation-command+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-affiliation-command+xml")]
     Vnd3GppMcdataAffiliationCommandXml,
     #[doc = "application/vnd.3gpp.mcdata-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-info+xml")]
     Vnd3GppMcdataInfoXml,
     #[doc = "application/vnd.3gpp.mcdata-msgstore-ctrl-request+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-msgstore-ctrl-request+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-msgstore-ctrl-request+xml")]
     Vnd3GppMcdataMsgstoreCtrlRequestXml,
     #[doc = "application/vnd.3gpp.mcdata-payload"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-payload")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-payload")]
     Vnd3GppMcdataPayload,
     #[doc = "application/vnd.3gpp.mcdata-regroup+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-regroup+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-regroup+xml")]
     Vnd3GppMcdataRegroupXml,
     #[doc = "application/vnd.3gpp.mcdata-service-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-service-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-service-config+xml")]
     Vnd3GppMcdataServiceConfigXml,
     #[doc = "application/vnd.3gpp.mcdata-signalling"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-signalling")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-signalling")]
     Vnd3GppMcdataSignalling,
     #[doc = "application/vnd.3gpp.mcdata-ue-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-ue-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-ue-config+xml")]
     Vnd3GppMcdataUeConfigXml,
     #[doc = "application/vnd.3gpp.mcdata-user-profile+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcdata-user-profile+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcdata-user-profile+xml")]
     Vnd3GppMcdataUserProfileXml,
     #[doc = "application/vnd.3gpp.mcptt-affiliation-command+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-affiliation-command+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-affiliation-command+xml")]
     Vnd3GppMcpttAffiliationCommandXml,
     #[doc = "application/vnd.3gpp.mcptt-floor-request+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-floor-request+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-floor-request+xml")]
     Vnd3GppMcpttFloorRequestXml,
     #[doc = "application/vnd.3gpp.mcptt-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-info+xml")]
     Vnd3GppMcpttInfoXml,
     #[doc = "application/vnd.3gpp.mcptt-location-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-location-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-location-info+xml")]
     Vnd3GppMcpttLocationInfoXml,
     #[doc = "application/vnd.3gpp.mcptt-mbms-usage-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-mbms-usage-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-mbms-usage-info+xml")]
     Vnd3GppMcpttMbmsUsageInfoXml,
     #[doc = "application/vnd.3gpp.mcptt-regroup+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-regroup+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-regroup+xml")]
     Vnd3GppMcpttRegroupXml,
     #[doc = "application/vnd.3gpp.mcptt-service-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-service-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-service-config+xml")]
     Vnd3GppMcpttServiceConfigXml,
     #[doc = "application/vnd.3gpp.mcptt-signed+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-signed+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-signed+xml")]
     Vnd3GppMcpttSignedXml,
     #[doc = "application/vnd.3gpp.mcptt-ue-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-ue-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-ue-config+xml")]
     Vnd3GppMcpttUeConfigXml,
     #[doc = "application/vnd.3gpp.mcptt-ue-init-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-ue-init-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-ue-init-config+xml")]
     Vnd3GppMcpttUeInitConfigXml,
     #[doc = "application/vnd.3gpp.mcptt-user-profile+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcptt-user-profile+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcptt-user-profile+xml")]
     Vnd3GppMcpttUserProfileXml,
     #[doc = "application/vnd.3gpp.mcvideo-affiliation-command+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-affiliation-command+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-affiliation-command+xml")]
     Vnd3GppMcvideoAffiliationCommandXml,
     #[doc = "application/vnd.3gpp.mcvideo-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-info+xml")]
     Vnd3GppMcvideoInfoXml,
     #[doc = "application/vnd.3gpp.mcvideo-location-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-location-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-location-info+xml")]
     Vnd3GppMcvideoLocationInfoXml,
     #[doc = "application/vnd.3gpp.mcvideo-mbms-usage-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-mbms-usage-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-mbms-usage-info+xml")]
     Vnd3GppMcvideoMbmsUsageInfoXml,
     #[doc = "application/vnd.3gpp.mcvideo-regroup+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-regroup+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-regroup+xml")]
     Vnd3GppMcvideoRegroupXml,
     #[doc = "application/vnd.3gpp.mcvideo-service-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-service-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-service-config+xml")]
     Vnd3GppMcvideoServiceConfigXml,
     #[doc = "application/vnd.3gpp.mcvideo-transmission-request+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-transmission-request+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-transmission-request+xml")]
     Vnd3GppMcvideoTransmissionRequestXml,
     #[doc = "application/vnd.3gpp.mcvideo-ue-config+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-ue-config+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-ue-config+xml")]
     Vnd3GppMcvideoUeConfigXml,
     #[doc = "application/vnd.3gpp.mcvideo-user-profile+xml"]
-    #[serde(alias = "application/vnd.3gpp.mcvideo-user-profile+xml")]
+    #[serde(rename = "application/vnd.3gpp.mcvideo-user-profile+xml")]
     Vnd3GppMcvideoUserProfileXml,
     #[doc = "application/vnd.3gpp.mid-call+xml"]
-    #[serde(alias = "application/vnd.3gpp.mid-call+xml")]
+    #[serde(rename = "application/vnd.3gpp.mid-call+xml")]
     Vnd3GppMidCallXml,
     #[doc = "application/vnd.3gpp.ngap"]
-    #[serde(alias = "application/vnd.3gpp.ngap")]
+    #[serde(rename = "application/vnd.3gpp.ngap")]
     Vnd3GppNgap,
     #[doc = "application/vnd.3gpp.pfcp"]
-    #[serde(alias = "application/vnd.3gpp.pfcp")]
+    #[serde(rename = "application/vnd.3gpp.pfcp")]
     Vnd3GppPfcp,
     #[doc = "application/vnd.3gpp.pic-bw-large"]
-    #[serde(alias = "application/vnd.3gpp.pic-bw-large")]
+    #[serde(rename = "application/vnd.3gpp.pic-bw-large")]
     #[serde(alias = "plb")]
     Vnd3GppPicBwLarge,
     #[doc = "application/vnd.3gpp.pic-bw-small"]
-    #[serde(alias = "application/vnd.3gpp.pic-bw-small")]
+    #[serde(rename = "application/vnd.3gpp.pic-bw-small")]
     #[serde(alias = "psb")]
     Vnd3GppPicBwSmall,
     #[doc = "application/vnd.3gpp.pic-bw-var"]
-    #[serde(alias = "application/vnd.3gpp.pic-bw-var")]
+    #[serde(rename = "application/vnd.3gpp.pic-bw-var")]
     #[serde(alias = "pvb")]
     Vnd3GppPicBwVar,
     #[doc = "application/vnd.3gpp-prose-pc3a+xml"]
-    #[serde(alias = "application/vnd.3gpp-prose-pc3a+xml")]
+    #[serde(rename = "application/vnd.3gpp-prose-pc3a+xml")]
     Vnd3GppProsePc3AXml,
     #[doc = "application/vnd.3gpp-prose-pc3ach+xml"]
-    #[serde(alias = "application/vnd.3gpp-prose-pc3ach+xml")]
+    #[serde(rename = "application/vnd.3gpp-prose-pc3ach+xml")]
     Vnd3GppProsePc3AchXml,
     #[doc = "application/vnd.3gpp-prose-pc3ch+xml"]
-    #[serde(alias = "application/vnd.3gpp-prose-pc3ch+xml")]
+    #[serde(rename = "application/vnd.3gpp-prose-pc3ch+xml")]
     Vnd3GppProsePc3ChXml,
     #[doc = "application/vnd.3gpp-prose-pc8+xml"]
-    #[serde(alias = "application/vnd.3gpp-prose-pc8+xml")]
+    #[serde(rename = "application/vnd.3gpp-prose-pc8+xml")]
     Vnd3GppProsePc8Xml,
     #[doc = "application/vnd.3gpp-prose+xml"]
-    #[serde(alias = "application/vnd.3gpp-prose+xml")]
+    #[serde(rename = "application/vnd.3gpp-prose+xml")]
     Vnd3GppProseXml,
     #[doc = "application/vnd.3gpp.s1ap"]
-    #[serde(alias = "application/vnd.3gpp.s1ap")]
+    #[serde(rename = "application/vnd.3gpp.s1ap")]
     Vnd3GppS1Ap,
     #[doc = "application/vnd.3gpp.seal-group-doc+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-group-doc+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-group-doc+xml")]
     Vnd3GppSealGroupDocXml,
     #[doc = "application/vnd.3gpp.seal-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-info+xml")]
     Vnd3GppSealInfoXml,
     #[doc = "application/vnd.3gpp.seal-location-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-location-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-location-info+xml")]
     Vnd3GppSealLocationInfoXml,
     #[doc = "application/vnd.3gpp.seal-mbms-usage-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-mbms-usage-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-mbms-usage-info+xml")]
     Vnd3GppSealMbmsUsageInfoXml,
     #[doc = "application/vnd.3gpp.seal-network-QoS-management-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-network-QoS-management-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-network-QoS-management-info+xml")]
     Vnd3GppSealNetworkQoSManagementInfoXml,
     #[doc = "application/vnd.3gpp.seal-ue-config-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-ue-config-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-ue-config-info+xml")]
     Vnd3GppSealUeConfigInfoXml,
     #[doc = "application/vnd.3gpp.seal-unicast-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-unicast-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-unicast-info+xml")]
     Vnd3GppSealUnicastInfoXml,
     #[doc = "application/vnd.3gpp.seal-user-profile-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.seal-user-profile-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.seal-user-profile-info+xml")]
     Vnd3GppSealUserProfileInfoXml,
     #[doc = "application/vnd.3gpp.sms"]
-    #[serde(alias = "application/vnd.3gpp.sms")]
+    #[serde(rename = "application/vnd.3gpp.sms")]
     Vnd3GppSms,
     #[doc = "application/vnd.3gpp.sms+xml"]
-    #[serde(alias = "application/vnd.3gpp.sms+xml")]
+    #[serde(rename = "application/vnd.3gpp.sms+xml")]
     Vnd3GppSmsXml,
     #[doc = "application/vnd.3gpp.srvcc-ext+xml"]
-    #[serde(alias = "application/vnd.3gpp.srvcc-ext+xml")]
+    #[serde(rename = "application/vnd.3gpp.srvcc-ext+xml")]
     Vnd3GppSrvccExtXml,
     #[doc = "application/vnd.3gpp.SRVCC-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.SRVCC-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.SRVCC-info+xml")]
     Vnd3GppSRVCCInfoXml,
     #[doc = "application/vnd.3gpp.state-and-event-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.state-and-event-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.state-and-event-info+xml")]
     Vnd3GppStateAndEventInfoXml,
     #[doc = "application/vnd.3gpp.ussd+xml"]
-    #[serde(alias = "application/vnd.3gpp.ussd+xml")]
+    #[serde(rename = "application/vnd.3gpp.ussd+xml")]
     Vnd3GppUssdXml,
     #[doc = "application/vnd.3gpp.vae-info+xml"]
-    #[serde(alias = "application/vnd.3gpp.vae-info+xml")]
+    #[serde(rename = "application/vnd.3gpp.vae-info+xml")]
     Vnd3GppVaeInfoXml,
     #[doc = "application/vnd.3gpp-v2x-local-service-information"]
-    #[serde(alias = "application/vnd.3gpp-v2x-local-service-information")]
+    #[serde(rename = "application/vnd.3gpp-v2x-local-service-information")]
     Vnd3GppV2XLocalServiceInformation,
     #[doc = "application/vnd.3gpp2.bcmcsinfo+xml"]
-    #[serde(alias = "application/vnd.3gpp2.bcmcsinfo+xml")]
+    #[serde(rename = "application/vnd.3gpp2.bcmcsinfo+xml")]
     Vnd3Gpp2BcmcsinfoXml,
     #[doc = "application/vnd.3gpp2.sms"]
-    #[serde(alias = "application/vnd.3gpp2.sms")]
+    #[serde(rename = "application/vnd.3gpp2.sms")]
     #[serde(alias = "sms")]
     Vnd3Gpp2Sms,
     #[doc = "application/vnd.3gpp2.tcap"]
-    #[serde(alias = "application/vnd.3gpp2.tcap")]
+    #[serde(rename = "application/vnd.3gpp2.tcap")]
     #[serde(alias = "tcap")]
     Vnd3Gpp2Tcap,
     #[doc = "application/vnd.3gpp.v2x"]
-    #[serde(alias = "application/vnd.3gpp.v2x")]
+    #[serde(rename = "application/vnd.3gpp.v2x")]
     Vnd3GppV2X,
     #[doc = "application/vnd.3lightssoftware.imagescal"]
-    #[serde(alias = "application/vnd.3lightssoftware.imagescal")]
+    #[serde(rename = "application/vnd.3lightssoftware.imagescal")]
     #[serde(alias = "imgcal")]
     Vnd3LightssoftwareImagescal,
     #[doc = "application/vnd.3M.Post-it-Notes"]
-    #[serde(alias = "application/vnd.3M.Post-it-Notes")]
+    #[serde(rename = "application/vnd.3M.Post-it-Notes")]
     #[serde(alias = "pwn")]
     Vnd3MPostItNotes,
     #[doc = "application/vnd.accpac.simply.aso"]
-    #[serde(alias = "application/vnd.accpac.simply.aso")]
+    #[serde(rename = "application/vnd.accpac.simply.aso")]
     #[serde(alias = "aso")]
     VndAccpacSimplyAso,
     #[doc = "application/vnd.accpac.simply.imp"]
-    #[serde(alias = "application/vnd.accpac.simply.imp")]
+    #[serde(rename = "application/vnd.accpac.simply.imp")]
     #[serde(alias = "imp")]
     VndAccpacSimplyImp,
     #[doc = "application/vnd.acm.addressxfer+json"]
-    #[serde(alias = "application/vnd.acm.addressxfer+json")]
+    #[serde(rename = "application/vnd.acm.addressxfer+json")]
     VndAcmAddressxferJson,
     #[doc = "application/vnd.acucobol"]
-    #[serde(alias = "application/vnd.acucobol")]
+    #[serde(rename = "application/vnd.acucobol")]
     #[serde(alias = "acu")]
     VndAcucobol,
     #[doc = "application/vnd.acucorp"]
-    #[serde(alias = "application/vnd.acucorp")]
+    #[serde(rename = "application/vnd.acucorp")]
     #[serde(alias = "atc")]
     #[serde(alias = "acutc")]
     VndAcucorp,
     #[doc = "application/vnd.adobe.flash.movie"]
-    #[serde(alias = "application/vnd.adobe.flash.movie")]
+    #[serde(rename = "application/vnd.adobe.flash.movie")]
     #[serde(alias = "swf")]
     VndAdobeFlashMovie,
     #[doc = "application/vnd.adobe.formscentral.fcdt"]
-    #[serde(alias = "application/vnd.adobe.formscentral.fcdt")]
+    #[serde(rename = "application/vnd.adobe.formscentral.fcdt")]
     #[serde(alias = "fcdt")]
     VndAdobeFormscentralFcdt,
     #[doc = "application/vnd.adobe.fxp"]
-    #[serde(alias = "application/vnd.adobe.fxp")]
+    #[serde(rename = "application/vnd.adobe.fxp")]
     #[serde(alias = "fxp")]
     #[serde(alias = "fxpl")]
     VndAdobeFxp,
     #[doc = "application/vnd.adobe.partial-upload"]
-    #[serde(alias = "application/vnd.adobe.partial-upload")]
+    #[serde(rename = "application/vnd.adobe.partial-upload")]
     VndAdobePartialUpload,
     #[doc = "application/vnd.adobe.xdp+xml"]
-    #[serde(alias = "application/vnd.adobe.xdp+xml")]
+    #[serde(rename = "application/vnd.adobe.xdp+xml")]
     #[serde(alias = "xdp")]
     VndAdobeXdpXml,
     #[doc = "application/vnd.aether.imp"]
-    #[serde(alias = "application/vnd.aether.imp")]
+    #[serde(rename = "application/vnd.aether.imp")]
     VndAetherImp,
     #[doc = "application/vnd.afpc.afplinedata"]
-    #[serde(alias = "application/vnd.afpc.afplinedata")]
+    #[serde(rename = "application/vnd.afpc.afplinedata")]
     VndAfpcAfplinedata,
     #[doc = "application/vnd.afpc.afplinedata-pagedef"]
-    #[serde(alias = "application/vnd.afpc.afplinedata-pagedef")]
+    #[serde(rename = "application/vnd.afpc.afplinedata-pagedef")]
     VndAfpcAfplinedataPagedef,
     #[doc = "application/vnd.afpc.cmoca-cmresource"]
-    #[serde(alias = "application/vnd.afpc.cmoca-cmresource")]
+    #[serde(rename = "application/vnd.afpc.cmoca-cmresource")]
     VndAfpcCmocaCmresource,
     #[doc = "application/vnd.afpc.foca-charset"]
-    #[serde(alias = "application/vnd.afpc.foca-charset")]
+    #[serde(rename = "application/vnd.afpc.foca-charset")]
     VndAfpcFocaCharset,
     #[doc = "application/vnd.afpc.foca-codedfont"]
-    #[serde(alias = "application/vnd.afpc.foca-codedfont")]
+    #[serde(rename = "application/vnd.afpc.foca-codedfont")]
     VndAfpcFocaCodedfont,
     #[doc = "application/vnd.afpc.foca-codepage"]
-    #[serde(alias = "application/vnd.afpc.foca-codepage")]
+    #[serde(rename = "application/vnd.afpc.foca-codepage")]
     VndAfpcFocaCodepage,
     #[doc = "application/vnd.afpc.modca"]
-    #[serde(alias = "application/vnd.afpc.modca")]
+    #[serde(rename = "application/vnd.afpc.modca")]
     #[serde(alias = "list3820")]
     #[serde(alias = "listafp")]
     #[serde(alias = "afp")]
     #[serde(alias = "pseg3820")]
     VndAfpcModca,
     #[doc = "application/vnd.afpc.modca-cmtable"]
-    #[serde(alias = "application/vnd.afpc.modca-cmtable")]
+    #[serde(rename = "application/vnd.afpc.modca-cmtable")]
     VndAfpcModcaCmtable,
     #[doc = "application/vnd.afpc.modca-formdef"]
-    #[serde(alias = "application/vnd.afpc.modca-formdef")]
+    #[serde(rename = "application/vnd.afpc.modca-formdef")]
     VndAfpcModcaFormdef,
     #[doc = "application/vnd.afpc.modca-mediummap"]
-    #[serde(alias = "application/vnd.afpc.modca-mediummap")]
+    #[serde(rename = "application/vnd.afpc.modca-mediummap")]
     VndAfpcModcaMediummap,
     #[doc = "application/vnd.afpc.modca-objectcontainer"]
-    #[serde(alias = "application/vnd.afpc.modca-objectcontainer")]
+    #[serde(rename = "application/vnd.afpc.modca-objectcontainer")]
     VndAfpcModcaObjectcontainer,
     #[doc = "application/vnd.afpc.modca-overlay"]
-    #[serde(alias = "application/vnd.afpc.modca-overlay")]
+    #[serde(rename = "application/vnd.afpc.modca-overlay")]
     #[serde(alias = "ovl")]
     VndAfpcModcaOverlay,
     #[doc = "application/vnd.afpc.modca-pagesegment"]
-    #[serde(alias = "application/vnd.afpc.modca-pagesegment")]
+    #[serde(rename = "application/vnd.afpc.modca-pagesegment")]
     #[serde(alias = "psg")]
     VndAfpcModcaPagesegment,
     #[doc = "application/vnd.age"]
-    #[serde(alias = "application/vnd.age")]
+    #[serde(rename = "application/vnd.age")]
     #[serde(alias = "age")]
     VndAge,
     #[doc = "application/vnd.ah-barcode"]
-    #[serde(alias = "application/vnd.ah-barcode")]
+    #[serde(rename = "application/vnd.ah-barcode")]
     VndAhBarcode,
     #[doc = "application/vnd.ahead.space"]
-    #[serde(alias = "application/vnd.ahead.space")]
+    #[serde(rename = "application/vnd.ahead.space")]
     #[serde(alias = "ahead")]
     VndAheadSpace,
     #[doc = "application/vnd.airzip.filesecure.azf"]
-    #[serde(alias = "application/vnd.airzip.filesecure.azf")]
+    #[serde(rename = "application/vnd.airzip.filesecure.azf")]
     #[serde(alias = "azf")]
     VndAirzipFilesecureAzf,
     #[doc = "application/vnd.airzip.filesecure.azs"]
-    #[serde(alias = "application/vnd.airzip.filesecure.azs")]
+    #[serde(rename = "application/vnd.airzip.filesecure.azs")]
     #[serde(alias = "azs")]
     VndAirzipFilesecureAzs,
     #[doc = "application/vnd.amadeus+json"]
-    #[serde(alias = "application/vnd.amadeus+json")]
+    #[serde(rename = "application/vnd.amadeus+json")]
     VndAmadeusJson,
     #[doc = "application/vnd.amazon.mobi8-ebook"]
-    #[serde(alias = "application/vnd.amazon.mobi8-ebook")]
+    #[serde(rename = "application/vnd.amazon.mobi8-ebook")]
     #[serde(alias = "azw3")]
     VndAmazonMobi8Ebook,
     #[doc = "application/vnd.americandynamics.acc"]
-    #[serde(alias = "application/vnd.americandynamics.acc")]
+    #[serde(rename = "application/vnd.americandynamics.acc")]
     #[serde(alias = "acc")]
     VndAmericandynamicsAcc,
     #[doc = "application/vnd.amiga.ami"]
-    #[serde(alias = "application/vnd.amiga.ami")]
+    #[serde(rename = "application/vnd.amiga.ami")]
     #[serde(alias = "ami")]
     VndAmigaAmi,
     #[doc = "application/vnd.amundsen.maze+xml"]
-    #[serde(alias = "application/vnd.amundsen.maze+xml")]
+    #[serde(rename = "application/vnd.amundsen.maze+xml")]
     VndAmundsenMazeXml,
     #[doc = "application/vnd.android.ota"]
-    #[serde(alias = "application/vnd.android.ota")]
+    #[serde(rename = "application/vnd.android.ota")]
     #[serde(alias = "ota")]
     VndAndroidOta,
     #[doc = "application/vnd.anki"]
-    #[serde(alias = "application/vnd.anki")]
+    #[serde(rename = "application/vnd.anki")]
     #[serde(alias = "apkg")]
     VndAnki,
     #[doc = "application/vnd.anser-web-certificate-issue-initiation"]
-    #[serde(alias = "application/vnd.anser-web-certificate-issue-initiation")]
+    #[serde(rename = "application/vnd.anser-web-certificate-issue-initiation")]
     #[serde(alias = "cii")]
     VndAnserWebCertificateIssueInitiation,
     #[doc = "application/vnd.antix.game-component"]
-    #[serde(alias = "application/vnd.antix.game-component")]
+    #[serde(rename = "application/vnd.antix.game-component")]
     VndAntixGameComponent,
     #[doc = "application/vnd.apache.arrow.file"]
-    #[serde(alias = "application/vnd.apache.arrow.file")]
+    #[serde(rename = "application/vnd.apache.arrow.file")]
     #[serde(alias = "arrow")]
     VndApacheArrowFile,
     #[doc = "application/vnd.apache.arrow.stream"]
-    #[serde(alias = "application/vnd.apache.arrow.stream")]
+    #[serde(rename = "application/vnd.apache.arrow.stream")]
     #[serde(alias = "arrows")]
     VndApacheArrowStream,
     #[doc = "application/vnd.apache.thrift.binary"]
-    #[serde(alias = "application/vnd.apache.thrift.binary")]
+    #[serde(rename = "application/vnd.apache.thrift.binary")]
     VndApacheThriftBinary,
     #[doc = "application/vnd.apache.thrift.compact"]
-    #[serde(alias = "application/vnd.apache.thrift.compact")]
+    #[serde(rename = "application/vnd.apache.thrift.compact")]
     VndApacheThriftCompact,
     #[doc = "application/vnd.apache.thrift.json"]
-    #[serde(alias = "application/vnd.apache.thrift.json")]
+    #[serde(rename = "application/vnd.apache.thrift.json")]
     VndApacheThriftJson,
     #[doc = "application/vnd.apexlang"]
-    #[serde(alias = "application/vnd.apexlang")]
+    #[serde(rename = "application/vnd.apexlang")]
     #[serde(alias = "apexland")]
     #[serde(alias = "apex")]
     #[serde(alias = "axdl")]
     VndApexlang,
     #[doc = "application/vnd.api+json"]
-    #[serde(alias = "application/vnd.api+json")]
+    #[serde(rename = "application/vnd.api+json")]
     VndApiJson,
     #[doc = "application/vnd.aplextor.warrp+json"]
-    #[serde(alias = "application/vnd.aplextor.warrp+json")]
+    #[serde(rename = "application/vnd.aplextor.warrp+json")]
     VndAplextorWarrpJson,
     #[doc = "application/vnd.apothekende.reservation+json"]
-    #[serde(alias = "application/vnd.apothekende.reservation+json")]
+    #[serde(rename = "application/vnd.apothekende.reservation+json")]
     VndApothekendeReservationJson,
     #[doc = "application/vnd.apple.installer+xml"]
-    #[serde(alias = "application/vnd.apple.installer+xml")]
+    #[serde(rename = "application/vnd.apple.installer+xml")]
     #[serde(alias = "dist")]
     #[serde(alias = "distz")]
     #[serde(alias = "pkg")]
     #[serde(alias = "mpkg")]
     VndAppleInstallerXml,
     #[doc = "application/vnd.apple.keynote"]
-    #[serde(alias = "application/vnd.apple.keynote")]
+    #[serde(rename = "application/vnd.apple.keynote")]
     #[serde(alias = "keynote")]
     VndAppleKeynote,
     #[doc = "application/vnd.apple.mpegurl"]
-    #[serde(alias = "application/vnd.apple.mpegurl")]
+    #[serde(rename = "application/vnd.apple.mpegurl")]
     #[serde(alias = "m3u8")]
     VndAppleMpegurl,
     #[doc = "application/vnd.apple.numbers"]
-    #[serde(alias = "application/vnd.apple.numbers")]
+    #[serde(rename = "application/vnd.apple.numbers")]
     #[serde(alias = "numbers")]
     VndAppleNumbers,
     #[doc = "application/vnd.apple.pages"]
-    #[serde(alias = "application/vnd.apple.pages")]
+    #[serde(rename = "application/vnd.apple.pages")]
     #[serde(alias = "pages")]
     VndApplePages,
     #[doc = "application/vnd.aristanetworks.swi"]
-    #[serde(alias = "application/vnd.aristanetworks.swi")]
+    #[serde(rename = "application/vnd.aristanetworks.swi")]
     #[serde(alias = "swi")]
     VndAristanetworksSwi,
     #[doc = "application/vnd.artisan+json"]
-    #[serde(alias = "application/vnd.artisan+json")]
+    #[serde(rename = "application/vnd.artisan+json")]
     #[serde(alias = "artisan")]
     VndArtisanJson,
     #[doc = "application/vnd.artsquare"]
-    #[serde(alias = "application/vnd.artsquare")]
+    #[serde(rename = "application/vnd.artsquare")]
     VndArtsquare,
     #[doc = "application/vnd.astraea-software.iota"]
-    #[serde(alias = "application/vnd.astraea-software.iota")]
+    #[serde(rename = "application/vnd.astraea-software.iota")]
     #[serde(alias = "iota")]
     VndAstraeaSoftwareIota,
     #[doc = "application/vnd.audiograph"]
-    #[serde(alias = "application/vnd.audiograph")]
+    #[serde(rename = "application/vnd.audiograph")]
     #[serde(alias = "aep")]
     VndAudiograph,
     #[doc = "application/vnd.autopackage"]
-    #[serde(alias = "application/vnd.autopackage")]
+    #[serde(rename = "application/vnd.autopackage")]
     #[serde(alias = "package")]
     VndAutopackage,
     #[doc = "application/vnd.avalon+json"]
-    #[serde(alias = "application/vnd.avalon+json")]
+    #[serde(rename = "application/vnd.avalon+json")]
     VndAvalonJson,
     #[doc = "application/vnd.avistar+xml"]
-    #[serde(alias = "application/vnd.avistar+xml")]
+    #[serde(rename = "application/vnd.avistar+xml")]
     VndAvistarXml,
     #[doc = "application/vnd.balsamiq.bmml+xml"]
-    #[serde(alias = "application/vnd.balsamiq.bmml+xml")]
+    #[serde(rename = "application/vnd.balsamiq.bmml+xml")]
     #[serde(alias = "bmml")]
     VndBalsamiqBmmlXml,
     #[doc = "application/vnd.banana-accounting"]
-    #[serde(alias = "application/vnd.banana-accounting")]
+    #[serde(rename = "application/vnd.banana-accounting")]
     #[serde(alias = "ac2")]
     VndBananaAccounting,
     #[doc = "application/vnd.bbf.usp.error"]
-    #[serde(alias = "application/vnd.bbf.usp.error")]
+    #[serde(rename = "application/vnd.bbf.usp.error")]
     VndBbfUspError,
     #[doc = "application/vnd.bbf.usp.msg"]
-    #[serde(alias = "application/vnd.bbf.usp.msg")]
+    #[serde(rename = "application/vnd.bbf.usp.msg")]
     VndBbfUspMsg,
     #[doc = "application/vnd.bbf.usp.msg+json"]
-    #[serde(alias = "application/vnd.bbf.usp.msg+json")]
+    #[serde(rename = "application/vnd.bbf.usp.msg+json")]
     VndBbfUspMsgJson,
     #[doc = "application/vnd.balsamiq.bmpr"]
-    #[serde(alias = "application/vnd.balsamiq.bmpr")]
+    #[serde(rename = "application/vnd.balsamiq.bmpr")]
     #[serde(alias = "bmpr")]
     VndBalsamiqBmpr,
     #[doc = "application/vnd.bekitzur-stech+json"]
-    #[serde(alias = "application/vnd.bekitzur-stech+json")]
+    #[serde(rename = "application/vnd.bekitzur-stech+json")]
     VndBekitzurStechJson,
     #[doc = "application/vnd.belightsoft.lhzd+zip"]
-    #[serde(alias = "application/vnd.belightsoft.lhzd+zip")]
+    #[serde(rename = "application/vnd.belightsoft.lhzd+zip")]
     #[serde(alias = "lhzd")]
     VndBelightsoftLhzdZip,
     #[doc = "application/vnd.belightsoft.lhzl+zip"]
-    #[serde(alias = "application/vnd.belightsoft.lhzl+zip")]
+    #[serde(rename = "application/vnd.belightsoft.lhzl+zip")]
     #[serde(alias = "lhzl")]
     VndBelightsoftLhzlZip,
     #[doc = "application/vnd.bint.med-content"]
-    #[serde(alias = "application/vnd.bint.med-content")]
+    #[serde(rename = "application/vnd.bint.med-content")]
     VndBintMedContent,
     #[doc = "application/vnd.biopax.rdf+xml"]
-    #[serde(alias = "application/vnd.biopax.rdf+xml")]
+    #[serde(rename = "application/vnd.biopax.rdf+xml")]
     VndBiopaxRdfXml,
     #[doc = "application/vnd.blink-idb-value-wrapper"]
-    #[serde(alias = "application/vnd.blink-idb-value-wrapper")]
+    #[serde(rename = "application/vnd.blink-idb-value-wrapper")]
     VndBlinkIdbValueWrapper,
     #[doc = "application/vnd.blueice.multipass"]
-    #[serde(alias = "application/vnd.blueice.multipass")]
+    #[serde(rename = "application/vnd.blueice.multipass")]
     #[serde(alias = "mpm")]
     VndBlueiceMultipass,
     #[doc = "application/vnd.bluetooth.ep.oob"]
-    #[serde(alias = "application/vnd.bluetooth.ep.oob")]
+    #[serde(rename = "application/vnd.bluetooth.ep.oob")]
     #[serde(alias = "ep")]
     VndBluetoothEpOob,
     #[doc = "application/vnd.bluetooth.le.oob"]
-    #[serde(alias = "application/vnd.bluetooth.le.oob")]
+    #[serde(rename = "application/vnd.bluetooth.le.oob")]
     #[serde(alias = "le")]
     VndBluetoothLeOob,
     #[doc = "application/vnd.bmi"]
-    #[serde(alias = "application/vnd.bmi")]
+    #[serde(rename = "application/vnd.bmi")]
     #[serde(alias = "bmi")]
     VndBmi,
     #[doc = "application/vnd.bpf"]
-    #[serde(alias = "application/vnd.bpf")]
+    #[serde(rename = "application/vnd.bpf")]
     VndBpf,
     #[doc = "application/vnd.bpf3"]
-    #[serde(alias = "application/vnd.bpf3")]
+    #[serde(rename = "application/vnd.bpf3")]
     VndBpf3,
     #[doc = "application/vnd.businessobjects"]
-    #[serde(alias = "application/vnd.businessobjects")]
+    #[serde(rename = "application/vnd.businessobjects")]
     #[serde(alias = "rep")]
     VndBusinessobjects,
     #[doc = "application/vnd.byu.uapi+json"]
-    #[serde(alias = "application/vnd.byu.uapi+json")]
+    #[serde(rename = "application/vnd.byu.uapi+json")]
     VndByuUapiJson,
     #[doc = "application/vnd.cab-jscript"]
-    #[serde(alias = "application/vnd.cab-jscript")]
+    #[serde(rename = "application/vnd.cab-jscript")]
     VndCabJscript,
     #[doc = "application/vnd.canon-cpdl"]
-    #[serde(alias = "application/vnd.canon-cpdl")]
+    #[serde(rename = "application/vnd.canon-cpdl")]
     VndCanonCpdl,
     #[doc = "application/vnd.canon-lips"]
-    #[serde(alias = "application/vnd.canon-lips")]
+    #[serde(rename = "application/vnd.canon-lips")]
     VndCanonLips,
     #[doc = "application/vnd.capasystems-pg+json"]
-    #[serde(alias = "application/vnd.capasystems-pg+json")]
+    #[serde(rename = "application/vnd.capasystems-pg+json")]
     VndCapasystemsPgJson,
     #[doc = "application/vnd.cendio.thinlinc.clientconf"]
-    #[serde(alias = "application/vnd.cendio.thinlinc.clientconf")]
+    #[serde(rename = "application/vnd.cendio.thinlinc.clientconf")]
     #[serde(alias = "tlclient")]
     VndCendioThinlincClientconf,
     #[doc = "application/vnd.century-systems.tcp_stream"]
-    #[serde(alias = "application/vnd.century-systems.tcp_stream")]
+    #[serde(rename = "application/vnd.century-systems.tcp_stream")]
     VndCenturySystemsTcpStream,
     #[doc = "application/vnd.chemdraw+xml"]
-    #[serde(alias = "application/vnd.chemdraw+xml")]
+    #[serde(rename = "application/vnd.chemdraw+xml")]
     #[serde(alias = "cdxml")]
     VndChemdrawXml,
     #[doc = "application/vnd.chess-pgn"]
-    #[serde(alias = "application/vnd.chess-pgn")]
+    #[serde(rename = "application/vnd.chess-pgn")]
     #[serde(alias = "pgn")]
     VndChessPgn,
     #[doc = "application/vnd.chipnuts.karaoke-mmd"]
-    #[serde(alias = "application/vnd.chipnuts.karaoke-mmd")]
+    #[serde(rename = "application/vnd.chipnuts.karaoke-mmd")]
     #[serde(alias = "mmd")]
     VndChipnutsKaraokeMmd,
     #[doc = "application/vnd.ciedi"]
-    #[serde(alias = "application/vnd.ciedi")]
+    #[serde(rename = "application/vnd.ciedi")]
     VndCiedi,
     #[doc = "application/vnd.cinderella"]
-    #[serde(alias = "application/vnd.cinderella")]
+    #[serde(rename = "application/vnd.cinderella")]
     #[serde(alias = "cdy")]
     VndCinderella,
     #[doc = "application/vnd.cirpack.isdn-ext"]
-    #[serde(alias = "application/vnd.cirpack.isdn-ext")]
+    #[serde(rename = "application/vnd.cirpack.isdn-ext")]
     VndCirpackIsdnExt,
     #[doc = "application/vnd.citationstyles.style+xml"]
-    #[serde(alias = "application/vnd.citationstyles.style+xml")]
+    #[serde(rename = "application/vnd.citationstyles.style+xml")]
     #[serde(alias = "csl")]
     VndCitationstylesStyleXml,
     #[doc = "application/vnd.claymore"]
-    #[serde(alias = "application/vnd.claymore")]
+    #[serde(rename = "application/vnd.claymore")]
     #[serde(alias = "cla")]
     VndClaymore,
     #[doc = "application/vnd.cloanto.rp9"]
-    #[serde(alias = "application/vnd.cloanto.rp9")]
+    #[serde(rename = "application/vnd.cloanto.rp9")]
     #[serde(alias = "rp9")]
     VndCloantoRp9,
     #[doc = "application/vnd.clonk.c4group"]
-    #[serde(alias = "application/vnd.clonk.c4group")]
+    #[serde(rename = "application/vnd.clonk.c4group")]
     #[serde(alias = "c4g")]
     #[serde(alias = "c4d")]
     #[serde(alias = "c4f")]
@@ -2177,69 +2177,69 @@ pub enum Application {
     #[serde(alias = "c4u")]
     VndClonkC4Group,
     #[doc = "application/vnd.cluetrust.cartomobile-config"]
-    #[serde(alias = "application/vnd.cluetrust.cartomobile-config")]
+    #[serde(rename = "application/vnd.cluetrust.cartomobile-config")]
     #[serde(alias = "c11amc")]
     VndCluetrustCartomobileConfig,
     #[doc = "application/vnd.cluetrust.cartomobile-config-pkg"]
-    #[serde(alias = "application/vnd.cluetrust.cartomobile-config-pkg")]
+    #[serde(rename = "application/vnd.cluetrust.cartomobile-config-pkg")]
     #[serde(alias = "c11amz")]
     VndCluetrustCartomobileConfigPkg,
     #[doc = "application/vnd.cncf.helm.chart.content.v1.tar+gzip"]
-    #[serde(alias = "application/vnd.cncf.helm.chart.content.v1.tar+gzip")]
+    #[serde(rename = "application/vnd.cncf.helm.chart.content.v1.tar+gzip")]
     VndCncfHelmChartContentV1TarGzip,
     #[doc = "application/vnd.cncf.helm.chart.provenance.v1.prov"]
-    #[serde(alias = "application/vnd.cncf.helm.chart.provenance.v1.prov")]
+    #[serde(rename = "application/vnd.cncf.helm.chart.provenance.v1.prov")]
     VndCncfHelmChartProvenanceV1Prov,
     #[doc = "application/vnd.cncf.helm.config.v1+json"]
-    #[serde(alias = "application/vnd.cncf.helm.config.v1+json")]
+    #[serde(rename = "application/vnd.cncf.helm.config.v1+json")]
     VndCncfHelmConfigV1Json,
     #[doc = "application/vnd.coffeescript"]
-    #[serde(alias = "application/vnd.coffeescript")]
+    #[serde(rename = "application/vnd.coffeescript")]
     #[serde(alias = "coffee")]
     VndCoffeescript,
     #[doc = "application/vnd.collabio.xodocuments.document"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.document")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.document")]
     #[serde(alias = "xodt")]
     VndCollabioXodocumentsDocument,
     #[doc = "application/vnd.collabio.xodocuments.document-template"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.document-template")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.document-template")]
     #[serde(alias = "xott")]
     VndCollabioXodocumentsDocumentTemplate,
     #[doc = "application/vnd.collabio.xodocuments.presentation"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.presentation")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.presentation")]
     #[serde(alias = "xodp")]
     VndCollabioXodocumentsPresentation,
     #[doc = "application/vnd.collabio.xodocuments.presentation-template"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.presentation-template")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.presentation-template")]
     #[serde(alias = "xotp")]
     VndCollabioXodocumentsPresentationTemplate,
     #[doc = "application/vnd.collabio.xodocuments.spreadsheet"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.spreadsheet")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.spreadsheet")]
     #[serde(alias = "xods")]
     VndCollabioXodocumentsSpreadsheet,
     #[doc = "application/vnd.collabio.xodocuments.spreadsheet-template"]
-    #[serde(alias = "application/vnd.collabio.xodocuments.spreadsheet-template")]
+    #[serde(rename = "application/vnd.collabio.xodocuments.spreadsheet-template")]
     #[serde(alias = "xots")]
     VndCollabioXodocumentsSpreadsheetTemplate,
     #[doc = "application/vnd.collection.doc+json"]
-    #[serde(alias = "application/vnd.collection.doc+json")]
+    #[serde(rename = "application/vnd.collection.doc+json")]
     VndCollectionDocJson,
     #[doc = "application/vnd.collection+json"]
-    #[serde(alias = "application/vnd.collection+json")]
+    #[serde(rename = "application/vnd.collection+json")]
     VndCollectionJson,
     #[doc = "application/vnd.collection.next+json"]
-    #[serde(alias = "application/vnd.collection.next+json")]
+    #[serde(rename = "application/vnd.collection.next+json")]
     VndCollectionNextJson,
     #[doc = "application/vnd.comicbook-rar"]
-    #[serde(alias = "application/vnd.comicbook-rar")]
+    #[serde(rename = "application/vnd.comicbook-rar")]
     #[serde(alias = "cbr")]
     VndComicbookRar,
     #[doc = "application/vnd.comicbook+zip"]
-    #[serde(alias = "application/vnd.comicbook+zip")]
+    #[serde(rename = "application/vnd.comicbook+zip")]
     #[serde(alias = "cbz")]
     VndComicbookZip,
     #[doc = "application/vnd.commerce-battelle"]
-    #[serde(alias = "application/vnd.commerce-battelle")]
+    #[serde(rename = "application/vnd.commerce-battelle")]
     #[serde(alias = "ica")]
     #[serde(alias = "icf")]
     #[serde(alias = "icd")]
@@ -2254,759 +2254,759 @@ pub enum Application {
     #[serde(alias = "ic8")]
     VndCommerceBattelle,
     #[doc = "application/vnd.commonspace"]
-    #[serde(alias = "application/vnd.commonspace")]
+    #[serde(rename = "application/vnd.commonspace")]
     #[serde(alias = "csp")]
     #[serde(alias = "cst")]
     VndCommonspace,
     #[doc = "application/vnd.coreos.ignition+json"]
-    #[serde(alias = "application/vnd.coreos.ignition+json")]
+    #[serde(rename = "application/vnd.coreos.ignition+json")]
     #[serde(alias = "ign")]
     #[serde(alias = "ignition")]
     VndCoreosIgnitionJson,
     #[doc = "application/vnd.cosmocaller"]
-    #[serde(alias = "application/vnd.cosmocaller")]
+    #[serde(rename = "application/vnd.cosmocaller")]
     #[serde(alias = "cmc")]
     VndCosmocaller,
     #[doc = "application/vnd.contact.cmsg"]
-    #[serde(alias = "application/vnd.contact.cmsg")]
+    #[serde(rename = "application/vnd.contact.cmsg")]
     #[serde(alias = "cdbcmsg")]
     VndContactCmsg,
     #[doc = "application/vnd.crick.clicker"]
-    #[serde(alias = "application/vnd.crick.clicker")]
+    #[serde(rename = "application/vnd.crick.clicker")]
     #[serde(alias = "clkx")]
     VndCrickClicker,
     #[doc = "application/vnd.crick.clicker.keyboard"]
-    #[serde(alias = "application/vnd.crick.clicker.keyboard")]
+    #[serde(rename = "application/vnd.crick.clicker.keyboard")]
     #[serde(alias = "clkk")]
     VndCrickClickerKeyboard,
     #[doc = "application/vnd.crick.clicker.palette"]
-    #[serde(alias = "application/vnd.crick.clicker.palette")]
+    #[serde(rename = "application/vnd.crick.clicker.palette")]
     #[serde(alias = "clkp")]
     VndCrickClickerPalette,
     #[doc = "application/vnd.crick.clicker.template"]
-    #[serde(alias = "application/vnd.crick.clicker.template")]
+    #[serde(rename = "application/vnd.crick.clicker.template")]
     #[serde(alias = "clkt")]
     VndCrickClickerTemplate,
     #[doc = "application/vnd.crick.clicker.wordbank"]
-    #[serde(alias = "application/vnd.crick.clicker.wordbank")]
+    #[serde(rename = "application/vnd.crick.clicker.wordbank")]
     #[serde(alias = "clkw")]
     VndCrickClickerWordbank,
     #[doc = "application/vnd.criticaltools.wbs+xml"]
-    #[serde(alias = "application/vnd.criticaltools.wbs+xml")]
+    #[serde(rename = "application/vnd.criticaltools.wbs+xml")]
     #[serde(alias = "wbs")]
     VndCriticaltoolsWbsXml,
     #[doc = "application/vnd.cryptii.pipe+json"]
-    #[serde(alias = "application/vnd.cryptii.pipe+json")]
+    #[serde(rename = "application/vnd.cryptii.pipe+json")]
     VndCryptiiPipeJson,
     #[doc = "application/vnd.crypto-shade-file"]
-    #[serde(alias = "application/vnd.crypto-shade-file")]
+    #[serde(rename = "application/vnd.crypto-shade-file")]
     #[serde(alias = "ssvc")]
     VndCryptoShadeFile,
     #[doc = "application/vnd.cryptomator.encrypted"]
-    #[serde(alias = "application/vnd.cryptomator.encrypted")]
+    #[serde(rename = "application/vnd.cryptomator.encrypted")]
     #[serde(alias = "c9r")]
     #[serde(alias = "c9s")]
     VndCryptomatorEncrypted,
     #[doc = "application/vnd.cryptomator.vault"]
-    #[serde(alias = "application/vnd.cryptomator.vault")]
+    #[serde(rename = "application/vnd.cryptomator.vault")]
     #[serde(alias = "cryptomator")]
     VndCryptomatorVault,
     #[doc = "application/vnd.ctc-posml"]
-    #[serde(alias = "application/vnd.ctc-posml")]
+    #[serde(rename = "application/vnd.ctc-posml")]
     #[serde(alias = "pml")]
     VndCtcPosml,
     #[doc = "application/vnd.ctct.ws+xml"]
-    #[serde(alias = "application/vnd.ctct.ws+xml")]
+    #[serde(rename = "application/vnd.ctct.ws+xml")]
     VndCtctWsXml,
     #[doc = "application/vnd.cups-pdf"]
-    #[serde(alias = "application/vnd.cups-pdf")]
+    #[serde(rename = "application/vnd.cups-pdf")]
     VndCupsPdf,
     #[doc = "application/vnd.cups-postscript"]
-    #[serde(alias = "application/vnd.cups-postscript")]
+    #[serde(rename = "application/vnd.cups-postscript")]
     VndCupsPostscript,
     #[doc = "application/vnd.cups-ppd"]
-    #[serde(alias = "application/vnd.cups-ppd")]
+    #[serde(rename = "application/vnd.cups-ppd")]
     #[serde(alias = "ppd")]
     VndCupsPpd,
     #[doc = "application/vnd.cups-raster"]
-    #[serde(alias = "application/vnd.cups-raster")]
+    #[serde(rename = "application/vnd.cups-raster")]
     VndCupsRaster,
     #[doc = "application/vnd.cups-raw"]
-    #[serde(alias = "application/vnd.cups-raw")]
+    #[serde(rename = "application/vnd.cups-raw")]
     VndCupsRaw,
     #[doc = "application/vnd.curl"]
-    #[serde(alias = "application/vnd.curl")]
+    #[serde(rename = "application/vnd.curl")]
     #[serde(alias = "curl")]
     VndCurl,
     #[doc = "application/vnd.cyan.dean.root+xml"]
-    #[serde(alias = "application/vnd.cyan.dean.root+xml")]
+    #[serde(rename = "application/vnd.cyan.dean.root+xml")]
     VndCyanDeanRootXml,
     #[doc = "application/vnd.cybank"]
-    #[serde(alias = "application/vnd.cybank")]
+    #[serde(rename = "application/vnd.cybank")]
     VndCybank,
     #[doc = "application/vnd.cyclonedx+json"]
-    #[serde(alias = "application/vnd.cyclonedx+json")]
+    #[serde(rename = "application/vnd.cyclonedx+json")]
     VndCyclonedxJson,
     #[doc = "application/vnd.cyclonedx+xml"]
-    #[serde(alias = "application/vnd.cyclonedx+xml")]
+    #[serde(rename = "application/vnd.cyclonedx+xml")]
     VndCyclonedxXml,
     #[doc = "application/vnd.d2l.coursepackage1p0+zip"]
-    #[serde(alias = "application/vnd.d2l.coursepackage1p0+zip")]
+    #[serde(rename = "application/vnd.d2l.coursepackage1p0+zip")]
     VndD2LCoursepackage1P0Zip,
     #[doc = "application/vnd.d3m-dataset"]
-    #[serde(alias = "application/vnd.d3m-dataset")]
+    #[serde(rename = "application/vnd.d3m-dataset")]
     VndD3MDataset,
     #[doc = "application/vnd.d3m-problem"]
-    #[serde(alias = "application/vnd.d3m-problem")]
+    #[serde(rename = "application/vnd.d3m-problem")]
     VndD3MProblem,
     #[doc = "application/vnd.dart"]
-    #[serde(alias = "application/vnd.dart")]
+    #[serde(rename = "application/vnd.dart")]
     #[serde(alias = "dart")]
     VndDart,
     #[doc = "application/vnd.data-vision.rdz"]
-    #[serde(alias = "application/vnd.data-vision.rdz")]
+    #[serde(rename = "application/vnd.data-vision.rdz")]
     #[serde(alias = "rdz")]
     VndDataVisionRdz,
     #[doc = "application/vnd.datalog"]
-    #[serde(alias = "application/vnd.datalog")]
+    #[serde(rename = "application/vnd.datalog")]
     #[serde(alias = "dl")]
     VndDatalog,
     #[doc = "application/vnd.datapackage+json"]
-    #[serde(alias = "application/vnd.datapackage+json")]
+    #[serde(rename = "application/vnd.datapackage+json")]
     VndDatapackageJson,
     #[doc = "application/vnd.dataresource+json"]
-    #[serde(alias = "application/vnd.dataresource+json")]
+    #[serde(rename = "application/vnd.dataresource+json")]
     VndDataresourceJson,
     #[doc = "application/vnd.dbf"]
-    #[serde(alias = "application/vnd.dbf")]
+    #[serde(rename = "application/vnd.dbf")]
     #[serde(alias = "dbf")]
     VndDbf,
     #[doc = "application/vnd.debian.binary-package"]
-    #[serde(alias = "application/vnd.debian.binary-package")]
+    #[serde(rename = "application/vnd.debian.binary-package")]
     #[serde(alias = "deb")]
     #[serde(alias = "udeb")]
     VndDebianBinaryPackage,
     #[doc = "application/vnd.dece.data"]
-    #[serde(alias = "application/vnd.dece.data")]
+    #[serde(rename = "application/vnd.dece.data")]
     #[serde(alias = "uvf")]
     #[serde(alias = "uvvf")]
     #[serde(alias = "uvd")]
     #[serde(alias = "uvvd")]
     VndDeceData,
     #[doc = "application/vnd.dece.ttml+xml"]
-    #[serde(alias = "application/vnd.dece.ttml+xml")]
+    #[serde(rename = "application/vnd.dece.ttml+xml")]
     #[serde(alias = "uvt")]
     #[serde(alias = "uvvt")]
     VndDeceTtmlXml,
     #[doc = "application/vnd.dece.unspecified"]
-    #[serde(alias = "application/vnd.dece.unspecified")]
+    #[serde(rename = "application/vnd.dece.unspecified")]
     #[serde(alias = "uvx")]
     #[serde(alias = "uvvx")]
     VndDeceUnspecified,
     #[doc = "application/vnd.dece.zip"]
-    #[serde(alias = "application/vnd.dece.zip")]
+    #[serde(rename = "application/vnd.dece.zip")]
     #[serde(alias = "uvz")]
     #[serde(alias = "uvvz")]
     VndDeceZip,
     #[doc = "application/vnd.denovo.fcselayout-link"]
-    #[serde(alias = "application/vnd.denovo.fcselayout-link")]
+    #[serde(rename = "application/vnd.denovo.fcselayout-link")]
     #[serde(alias = "fe_launch")]
     VndDenovoFcselayoutLink,
     #[doc = "application/vnd.desmume.movie"]
-    #[serde(alias = "application/vnd.desmume.movie")]
+    #[serde(rename = "application/vnd.desmume.movie")]
     #[serde(alias = "dsm")]
     VndDesmumeMovie,
     #[doc = "application/vnd.dir-bi.plate-dl-nosuffix"]
-    #[serde(alias = "application/vnd.dir-bi.plate-dl-nosuffix")]
+    #[serde(rename = "application/vnd.dir-bi.plate-dl-nosuffix")]
     VndDirBiPlateDlNosuffix,
     #[doc = "application/vnd.dm.delegation+xml"]
-    #[serde(alias = "application/vnd.dm.delegation+xml")]
+    #[serde(rename = "application/vnd.dm.delegation+xml")]
     VndDmDelegationXml,
     #[doc = "application/vnd.dna"]
-    #[serde(alias = "application/vnd.dna")]
+    #[serde(rename = "application/vnd.dna")]
     #[serde(alias = "dna")]
     VndDna,
     #[doc = "application/vnd.document+json"]
-    #[serde(alias = "application/vnd.document+json")]
+    #[serde(rename = "application/vnd.document+json")]
     #[serde(alias = "docjson")]
     VndDocumentJson,
     #[doc = "application/vnd.dolby.mobile.1"]
-    #[serde(alias = "application/vnd.dolby.mobile.1")]
+    #[serde(rename = "application/vnd.dolby.mobile.1")]
     VndDolbyMobile1,
     #[doc = "application/vnd.dolby.mobile.2"]
-    #[serde(alias = "application/vnd.dolby.mobile.2")]
+    #[serde(rename = "application/vnd.dolby.mobile.2")]
     VndDolbyMobile2,
     #[doc = "application/vnd.doremir.scorecloud-binary-document"]
-    #[serde(alias = "application/vnd.doremir.scorecloud-binary-document")]
+    #[serde(rename = "application/vnd.doremir.scorecloud-binary-document")]
     #[serde(alias = "scld")]
     VndDoremirScorecloudBinaryDocument,
     #[doc = "application/vnd.dpgraph"]
-    #[serde(alias = "application/vnd.dpgraph")]
+    #[serde(rename = "application/vnd.dpgraph")]
     #[serde(alias = "dpg")]
     #[serde(alias = "mwc")]
     #[serde(alias = "dpgraph")]
     VndDpgraph,
     #[doc = "application/vnd.dreamfactory"]
-    #[serde(alias = "application/vnd.dreamfactory")]
+    #[serde(rename = "application/vnd.dreamfactory")]
     #[serde(alias = "dfac")]
     VndDreamfactory,
     #[doc = "application/vnd.drive+json"]
-    #[serde(alias = "application/vnd.drive+json")]
+    #[serde(rename = "application/vnd.drive+json")]
     VndDriveJson,
     #[doc = "application/vnd.dtg.local"]
-    #[serde(alias = "application/vnd.dtg.local")]
+    #[serde(rename = "application/vnd.dtg.local")]
     VndDtgLocal,
     #[doc = "application/vnd.dtg.local.flash"]
-    #[serde(alias = "application/vnd.dtg.local.flash")]
+    #[serde(rename = "application/vnd.dtg.local.flash")]
     #[serde(alias = "fla")]
     VndDtgLocalFlash,
     #[doc = "application/vnd.dtg.local.html"]
-    #[serde(alias = "application/vnd.dtg.local.html")]
+    #[serde(rename = "application/vnd.dtg.local.html")]
     VndDtgLocalHtml,
     #[doc = "application/vnd.dvb.ait"]
-    #[serde(alias = "application/vnd.dvb.ait")]
+    #[serde(rename = "application/vnd.dvb.ait")]
     #[serde(alias = "ait")]
     VndDvbAit,
     #[doc = "application/vnd.dvb.dvbisl+xml"]
-    #[serde(alias = "application/vnd.dvb.dvbisl+xml")]
+    #[serde(rename = "application/vnd.dvb.dvbisl+xml")]
     VndDvbDvbislXml,
     #[doc = "application/vnd.dvb.dvbj"]
-    #[serde(alias = "application/vnd.dvb.dvbj")]
+    #[serde(rename = "application/vnd.dvb.dvbj")]
     VndDvbDvbj,
     #[doc = "application/vnd.dvb.esgcontainer"]
-    #[serde(alias = "application/vnd.dvb.esgcontainer")]
+    #[serde(rename = "application/vnd.dvb.esgcontainer")]
     VndDvbEsgcontainer,
     #[doc = "application/vnd.dvb.ipdcdftnotifaccess"]
-    #[serde(alias = "application/vnd.dvb.ipdcdftnotifaccess")]
+    #[serde(rename = "application/vnd.dvb.ipdcdftnotifaccess")]
     VndDvbIpdcdftnotifaccess,
     #[doc = "application/vnd.dvb.ipdcesgaccess"]
-    #[serde(alias = "application/vnd.dvb.ipdcesgaccess")]
+    #[serde(rename = "application/vnd.dvb.ipdcesgaccess")]
     VndDvbIpdcesgaccess,
     #[doc = "application/vnd.dvb.ipdcesgaccess2"]
-    #[serde(alias = "application/vnd.dvb.ipdcesgaccess2")]
+    #[serde(rename = "application/vnd.dvb.ipdcesgaccess2")]
     VndDvbIpdcesgaccess2,
     #[doc = "application/vnd.dvb.ipdcesgpdd"]
-    #[serde(alias = "application/vnd.dvb.ipdcesgpdd")]
+    #[serde(rename = "application/vnd.dvb.ipdcesgpdd")]
     VndDvbIpdcesgpdd,
     #[doc = "application/vnd.dvb.ipdcroaming"]
-    #[serde(alias = "application/vnd.dvb.ipdcroaming")]
+    #[serde(rename = "application/vnd.dvb.ipdcroaming")]
     VndDvbIpdcroaming,
     #[doc = "application/vnd.dvb.iptv.alfec-base"]
-    #[serde(alias = "application/vnd.dvb.iptv.alfec-base")]
+    #[serde(rename = "application/vnd.dvb.iptv.alfec-base")]
     VndDvbIptvAlfecBase,
     #[doc = "application/vnd.dvb.iptv.alfec-enhancement"]
-    #[serde(alias = "application/vnd.dvb.iptv.alfec-enhancement")]
+    #[serde(rename = "application/vnd.dvb.iptv.alfec-enhancement")]
     VndDvbIptvAlfecEnhancement,
     #[doc = "application/vnd.dvb.notif-aggregate-root+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-aggregate-root+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-aggregate-root+xml")]
     VndDvbNotifAggregateRootXml,
     #[doc = "application/vnd.dvb.notif-container+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-container+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-container+xml")]
     VndDvbNotifContainerXml,
     #[doc = "application/vnd.dvb.notif-generic+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-generic+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-generic+xml")]
     VndDvbNotifGenericXml,
     #[doc = "application/vnd.dvb.notif-ia-msglist+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-ia-msglist+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-ia-msglist+xml")]
     VndDvbNotifIaMsglistXml,
     #[doc = "application/vnd.dvb.notif-ia-registration-request+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-ia-registration-request+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-ia-registration-request+xml")]
     VndDvbNotifIaRegistrationRequestXml,
     #[doc = "application/vnd.dvb.notif-ia-registration-response+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-ia-registration-response+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-ia-registration-response+xml")]
     VndDvbNotifIaRegistrationResponseXml,
     #[doc = "application/vnd.dvb.notif-init+xml"]
-    #[serde(alias = "application/vnd.dvb.notif-init+xml")]
+    #[serde(rename = "application/vnd.dvb.notif-init+xml")]
     VndDvbNotifInitXml,
     #[doc = "application/vnd.dvb.pfr"]
-    #[serde(alias = "application/vnd.dvb.pfr")]
+    #[serde(rename = "application/vnd.dvb.pfr")]
     VndDvbPfr,
     #[doc = "application/vnd.dvb.service"]
-    #[serde(alias = "application/vnd.dvb.service")]
+    #[serde(rename = "application/vnd.dvb.service")]
     #[serde(alias = "svc")]
     VndDvbService,
     #[doc = "application/vnd.dxr"]
-    #[serde(alias = "application/vnd.dxr")]
+    #[serde(rename = "application/vnd.dxr")]
     VndDxr,
     #[doc = "application/vnd.dynageo"]
-    #[serde(alias = "application/vnd.dynageo")]
+    #[serde(rename = "application/vnd.dynageo")]
     #[serde(alias = "geo")]
     VndDynageo,
     #[doc = "application/vnd.dzr"]
-    #[serde(alias = "application/vnd.dzr")]
+    #[serde(rename = "application/vnd.dzr")]
     #[serde(alias = "dzr")]
     VndDzr,
     #[doc = "application/vnd.easykaraoke.cdgdownload"]
-    #[serde(alias = "application/vnd.easykaraoke.cdgdownload")]
+    #[serde(rename = "application/vnd.easykaraoke.cdgdownload")]
     VndEasykaraokeCdgdownload,
     #[doc = "application/vnd.ecip.rlp"]
-    #[serde(alias = "application/vnd.ecip.rlp")]
+    #[serde(rename = "application/vnd.ecip.rlp")]
     VndEcipRlp,
     #[doc = "application/vnd.ecdis-update"]
-    #[serde(alias = "application/vnd.ecdis-update")]
+    #[serde(rename = "application/vnd.ecdis-update")]
     VndEcdisUpdate,
     #[doc = "application/vnd.eclipse.ditto+json"]
-    #[serde(alias = "application/vnd.eclipse.ditto+json")]
+    #[serde(rename = "application/vnd.eclipse.ditto+json")]
     VndEclipseDittoJson,
     #[doc = "application/vnd.ecowin.chart"]
-    #[serde(alias = "application/vnd.ecowin.chart")]
+    #[serde(rename = "application/vnd.ecowin.chart")]
     #[serde(alias = "mag")]
     VndEcowinChart,
     #[doc = "application/vnd.ecowin.filerequest"]
-    #[serde(alias = "application/vnd.ecowin.filerequest")]
+    #[serde(rename = "application/vnd.ecowin.filerequest")]
     VndEcowinFilerequest,
     #[doc = "application/vnd.ecowin.fileupdate"]
-    #[serde(alias = "application/vnd.ecowin.fileupdate")]
+    #[serde(rename = "application/vnd.ecowin.fileupdate")]
     VndEcowinFileupdate,
     #[doc = "application/vnd.ecowin.series"]
-    #[serde(alias = "application/vnd.ecowin.series")]
+    #[serde(rename = "application/vnd.ecowin.series")]
     VndEcowinSeries,
     #[doc = "application/vnd.ecowin.seriesrequest"]
-    #[serde(alias = "application/vnd.ecowin.seriesrequest")]
+    #[serde(rename = "application/vnd.ecowin.seriesrequest")]
     VndEcowinSeriesrequest,
     #[doc = "application/vnd.ecowin.seriesupdate"]
-    #[serde(alias = "application/vnd.ecowin.seriesupdate")]
+    #[serde(rename = "application/vnd.ecowin.seriesupdate")]
     VndEcowinSeriesupdate,
     #[doc = "application/vnd.efi.img"]
-    #[serde(alias = "application/vnd.efi.img")]
+    #[serde(rename = "application/vnd.efi.img")]
     VndEfiImg,
     #[doc = "application/vnd.efi.iso"]
-    #[serde(alias = "application/vnd.efi.iso")]
+    #[serde(rename = "application/vnd.efi.iso")]
     VndEfiIso,
     #[doc = "application/vnd.eln+zip"]
-    #[serde(alias = "application/vnd.eln+zip")]
+    #[serde(rename = "application/vnd.eln+zip")]
     #[serde(alias = "eln")]
     VndElnZip,
     #[doc = "application/vnd.emclient.accessrequest+xml"]
-    #[serde(alias = "application/vnd.emclient.accessrequest+xml")]
+    #[serde(rename = "application/vnd.emclient.accessrequest+xml")]
     VndEmclientAccessrequestXml,
     #[doc = "application/vnd.enliven"]
-    #[serde(alias = "application/vnd.enliven")]
+    #[serde(rename = "application/vnd.enliven")]
     #[serde(alias = "nml")]
     VndEnliven,
     #[doc = "application/vnd.enphase.envoy"]
-    #[serde(alias = "application/vnd.enphase.envoy")]
+    #[serde(rename = "application/vnd.enphase.envoy")]
     VndEnphaseEnvoy,
     #[doc = "application/vnd.eprints.data+xml"]
-    #[serde(alias = "application/vnd.eprints.data+xml")]
+    #[serde(rename = "application/vnd.eprints.data+xml")]
     VndEprintsDataXml,
     #[doc = "application/vnd.epson.esf"]
-    #[serde(alias = "application/vnd.epson.esf")]
+    #[serde(rename = "application/vnd.epson.esf")]
     #[serde(alias = "esf")]
     VndEpsonEsf,
     #[doc = "application/vnd.epson.msf"]
-    #[serde(alias = "application/vnd.epson.msf")]
+    #[serde(rename = "application/vnd.epson.msf")]
     #[serde(alias = "msf")]
     VndEpsonMsf,
     #[doc = "application/vnd.epson.quickanime"]
-    #[serde(alias = "application/vnd.epson.quickanime")]
+    #[serde(rename = "application/vnd.epson.quickanime")]
     #[serde(alias = "qam")]
     VndEpsonQuickanime,
     #[doc = "application/vnd.epson.salt"]
-    #[serde(alias = "application/vnd.epson.salt")]
+    #[serde(rename = "application/vnd.epson.salt")]
     #[serde(alias = "slt")]
     VndEpsonSalt,
     #[doc = "application/vnd.epson.ssf"]
-    #[serde(alias = "application/vnd.epson.ssf")]
+    #[serde(rename = "application/vnd.epson.ssf")]
     #[serde(alias = "ssf")]
     VndEpsonSsf,
     #[doc = "application/vnd.ericsson.quickcall"]
-    #[serde(alias = "application/vnd.ericsson.quickcall")]
+    #[serde(rename = "application/vnd.ericsson.quickcall")]
     #[serde(alias = "qcall")]
     #[serde(alias = "qca")]
     VndEricssonQuickcall,
     #[doc = "application/vnd.espass-espass+zip"]
-    #[serde(alias = "application/vnd.espass-espass+zip")]
+    #[serde(rename = "application/vnd.espass-espass+zip")]
     #[serde(alias = "espass")]
     VndEspassEspassZip,
     #[doc = "application/vnd.eszigno3+xml"]
-    #[serde(alias = "application/vnd.eszigno3+xml")]
+    #[serde(rename = "application/vnd.eszigno3+xml")]
     #[serde(alias = "es3")]
     #[serde(alias = "et3")]
     VndEszigno3Xml,
     #[doc = "application/vnd.etsi.aoc+xml"]
-    #[serde(alias = "application/vnd.etsi.aoc+xml")]
+    #[serde(rename = "application/vnd.etsi.aoc+xml")]
     VndEtsiAocXml,
     #[doc = "application/vnd.etsi.asic-s+zip"]
-    #[serde(alias = "application/vnd.etsi.asic-s+zip")]
+    #[serde(rename = "application/vnd.etsi.asic-s+zip")]
     #[serde(alias = "asics")]
     VndEtsiAsicSZip,
     #[doc = "application/vnd.etsi.asic-e+zip"]
-    #[serde(alias = "application/vnd.etsi.asic-e+zip")]
+    #[serde(rename = "application/vnd.etsi.asic-e+zip")]
     #[serde(alias = "asice")]
     #[serde(alias = "sce")]
     VndEtsiAsicEZip,
     #[doc = "application/vnd.etsi.cug+xml"]
-    #[serde(alias = "application/vnd.etsi.cug+xml")]
+    #[serde(rename = "application/vnd.etsi.cug+xml")]
     VndEtsiCugXml,
     #[doc = "application/vnd.etsi.iptvcommand+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvcommand+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvcommand+xml")]
     VndEtsiIptvcommandXml,
     #[doc = "application/vnd.etsi.iptvdiscovery+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvdiscovery+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvdiscovery+xml")]
     VndEtsiIptvdiscoveryXml,
     #[doc = "application/vnd.etsi.iptvprofile+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvprofile+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvprofile+xml")]
     VndEtsiIptvprofileXml,
     #[doc = "application/vnd.etsi.iptvsad-bc+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvsad-bc+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvsad-bc+xml")]
     VndEtsiIptvsadBcXml,
     #[doc = "application/vnd.etsi.iptvsad-cod+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvsad-cod+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvsad-cod+xml")]
     VndEtsiIptvsadCodXml,
     #[doc = "application/vnd.etsi.iptvsad-npvr+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvsad-npvr+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvsad-npvr+xml")]
     VndEtsiIptvsadNpvrXml,
     #[doc = "application/vnd.etsi.iptvservice+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvservice+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvservice+xml")]
     VndEtsiIptvserviceXml,
     #[doc = "application/vnd.etsi.iptvsync+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvsync+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvsync+xml")]
     VndEtsiIptvsyncXml,
     #[doc = "application/vnd.etsi.iptvueprofile+xml"]
-    #[serde(alias = "application/vnd.etsi.iptvueprofile+xml")]
+    #[serde(rename = "application/vnd.etsi.iptvueprofile+xml")]
     VndEtsiIptvueprofileXml,
     #[doc = "application/vnd.etsi.mcid+xml"]
-    #[serde(alias = "application/vnd.etsi.mcid+xml")]
+    #[serde(rename = "application/vnd.etsi.mcid+xml")]
     VndEtsiMcidXml,
     #[doc = "application/vnd.etsi.mheg5"]
-    #[serde(alias = "application/vnd.etsi.mheg5")]
+    #[serde(rename = "application/vnd.etsi.mheg5")]
     VndEtsiMheg5,
     #[doc = "application/vnd.etsi.overload-control-policy-dataset+xml"]
-    #[serde(alias = "application/vnd.etsi.overload-control-policy-dataset+xml")]
+    #[serde(rename = "application/vnd.etsi.overload-control-policy-dataset+xml")]
     VndEtsiOverloadControlPolicyDatasetXml,
     #[doc = "application/vnd.etsi.pstn+xml"]
-    #[serde(alias = "application/vnd.etsi.pstn+xml")]
+    #[serde(rename = "application/vnd.etsi.pstn+xml")]
     VndEtsiPstnXml,
     #[doc = "application/vnd.etsi.sci+xml"]
-    #[serde(alias = "application/vnd.etsi.sci+xml")]
+    #[serde(rename = "application/vnd.etsi.sci+xml")]
     VndEtsiSciXml,
     #[doc = "application/vnd.etsi.simservs+xml"]
-    #[serde(alias = "application/vnd.etsi.simservs+xml")]
+    #[serde(rename = "application/vnd.etsi.simservs+xml")]
     VndEtsiSimservsXml,
     #[doc = "application/vnd.etsi.timestamp-token"]
-    #[serde(alias = "application/vnd.etsi.timestamp-token")]
+    #[serde(rename = "application/vnd.etsi.timestamp-token")]
     #[serde(alias = "tst")]
     VndEtsiTimestampToken,
     #[doc = "application/vnd.etsi.tsl+xml"]
-    #[serde(alias = "application/vnd.etsi.tsl+xml")]
+    #[serde(rename = "application/vnd.etsi.tsl+xml")]
     VndEtsiTslXml,
     #[doc = "application/vnd.etsi.tsl.der"]
-    #[serde(alias = "application/vnd.etsi.tsl.der")]
+    #[serde(rename = "application/vnd.etsi.tsl.der")]
     VndEtsiTslDer,
     #[doc = "application/vnd.eu.kasparian.car+json"]
-    #[serde(alias = "application/vnd.eu.kasparian.car+json")]
+    #[serde(rename = "application/vnd.eu.kasparian.car+json")]
     #[serde(alias = "carjson")]
     VndEuKasparianCarJson,
     #[doc = "application/vnd.eudora.data"]
-    #[serde(alias = "application/vnd.eudora.data")]
+    #[serde(rename = "application/vnd.eudora.data")]
     VndEudoraData,
     #[doc = "application/vnd.evolv.ecig.profile"]
-    #[serde(alias = "application/vnd.evolv.ecig.profile")]
+    #[serde(rename = "application/vnd.evolv.ecig.profile")]
     #[serde(alias = "ecigprofile")]
     VndEvolvEcigProfile,
     #[doc = "application/vnd.evolv.ecig.settings"]
-    #[serde(alias = "application/vnd.evolv.ecig.settings")]
+    #[serde(rename = "application/vnd.evolv.ecig.settings")]
     #[serde(alias = "ecig")]
     VndEvolvEcigSettings,
     #[doc = "application/vnd.evolv.ecig.theme"]
-    #[serde(alias = "application/vnd.evolv.ecig.theme")]
+    #[serde(rename = "application/vnd.evolv.ecig.theme")]
     #[serde(alias = "ecigtheme")]
     VndEvolvEcigTheme,
     #[doc = "application/vnd.exstream-empower+zip"]
-    #[serde(alias = "application/vnd.exstream-empower+zip")]
+    #[serde(rename = "application/vnd.exstream-empower+zip")]
     #[serde(alias = "mpw")]
     VndExstreamEmpowerZip,
     #[doc = "application/vnd.exstream-package"]
-    #[serde(alias = "application/vnd.exstream-package")]
+    #[serde(rename = "application/vnd.exstream-package")]
     #[serde(alias = "pub")]
     VndExstreamPackage,
     #[doc = "application/vnd.ezpix-album"]
-    #[serde(alias = "application/vnd.ezpix-album")]
+    #[serde(rename = "application/vnd.ezpix-album")]
     #[serde(alias = "ez2")]
     VndEzpixAlbum,
     #[doc = "application/vnd.ezpix-package"]
-    #[serde(alias = "application/vnd.ezpix-package")]
+    #[serde(rename = "application/vnd.ezpix-package")]
     #[serde(alias = "ez3")]
     VndEzpixPackage,
     #[doc = "application/vnd.f-secure.mobile"]
-    #[serde(alias = "application/vnd.f-secure.mobile")]
+    #[serde(rename = "application/vnd.f-secure.mobile")]
     VndFSecureMobile,
     #[doc = "application/vnd.fastcopy-disk-image"]
-    #[serde(alias = "application/vnd.fastcopy-disk-image")]
+    #[serde(rename = "application/vnd.fastcopy-disk-image")]
     #[serde(alias = "dim")]
     VndFastcopyDiskImage,
     #[doc = "application/vnd.familysearch.gedcom+zip"]
-    #[serde(alias = "application/vnd.familysearch.gedcom+zip")]
+    #[serde(rename = "application/vnd.familysearch.gedcom+zip")]
     #[serde(alias = "gdz")]
     VndFamilysearchGedcomZip,
     #[doc = "application/vnd.fdsn.mseed"]
-    #[serde(alias = "application/vnd.fdsn.mseed")]
+    #[serde(rename = "application/vnd.fdsn.mseed")]
     #[serde(alias = "msd")]
     #[serde(alias = "mseed")]
     VndFdsnMseed,
     #[doc = "application/vnd.fdsn.seed"]
-    #[serde(alias = "application/vnd.fdsn.seed")]
+    #[serde(rename = "application/vnd.fdsn.seed")]
     #[serde(alias = "seed")]
     #[serde(alias = "dataless")]
     VndFdsnSeed,
     #[doc = "application/vnd.ffsns"]
-    #[serde(alias = "application/vnd.ffsns")]
+    #[serde(rename = "application/vnd.ffsns")]
     VndFfsns,
     #[doc = "application/vnd.ficlab.flb+zip"]
-    #[serde(alias = "application/vnd.ficlab.flb+zip")]
+    #[serde(rename = "application/vnd.ficlab.flb+zip")]
     #[serde(alias = "flb")]
     VndFiclabFlbZip,
     #[doc = "application/vnd.filmit.zfc"]
-    #[serde(alias = "application/vnd.filmit.zfc")]
+    #[serde(rename = "application/vnd.filmit.zfc")]
     #[serde(alias = "zfc")]
     VndFilmitZfc,
     #[doc = "application/vnd.fints"]
-    #[serde(alias = "application/vnd.fints")]
+    #[serde(rename = "application/vnd.fints")]
     VndFints,
     #[doc = "application/vnd.firemonkeys.cloudcell"]
-    #[serde(alias = "application/vnd.firemonkeys.cloudcell")]
+    #[serde(rename = "application/vnd.firemonkeys.cloudcell")]
     VndFiremonkeysCloudcell,
     #[doc = "application/vnd.FloGraphIt"]
-    #[serde(alias = "application/vnd.FloGraphIt")]
+    #[serde(rename = "application/vnd.FloGraphIt")]
     #[serde(alias = "gph")]
     VndFloGraphIt,
     #[doc = "application/vnd.fluxtime.clip"]
-    #[serde(alias = "application/vnd.fluxtime.clip")]
+    #[serde(rename = "application/vnd.fluxtime.clip")]
     #[serde(alias = "ftc")]
     VndFluxtimeClip,
     #[doc = "application/vnd.font-fontforge-sfd"]
-    #[serde(alias = "application/vnd.font-fontforge-sfd")]
+    #[serde(rename = "application/vnd.font-fontforge-sfd")]
     #[serde(alias = "sfd")]
     VndFontFontforgeSfd,
     #[doc = "application/vnd.framemaker"]
-    #[serde(alias = "application/vnd.framemaker")]
+    #[serde(rename = "application/vnd.framemaker")]
     #[serde(alias = "fm")]
     VndFramemaker,
     #[doc = "application/vnd.fsc.weblaunch"]
-    #[serde(alias = "application/vnd.fsc.weblaunch")]
+    #[serde(rename = "application/vnd.fsc.weblaunch")]
     #[serde(alias = "fsc")]
     VndFscWeblaunch,
     #[doc = "application/vnd.fujifilm.fb.docuworks"]
-    #[serde(alias = "application/vnd.fujifilm.fb.docuworks")]
+    #[serde(rename = "application/vnd.fujifilm.fb.docuworks")]
     VndFujifilmFbDocuworks,
     #[doc = "application/vnd.fujifilm.fb.docuworks.binder"]
-    #[serde(alias = "application/vnd.fujifilm.fb.docuworks.binder")]
+    #[serde(rename = "application/vnd.fujifilm.fb.docuworks.binder")]
     VndFujifilmFbDocuworksBinder,
     #[doc = "application/vnd.fujifilm.fb.docuworks.container"]
-    #[serde(alias = "application/vnd.fujifilm.fb.docuworks.container")]
+    #[serde(rename = "application/vnd.fujifilm.fb.docuworks.container")]
     VndFujifilmFbDocuworksContainer,
     #[doc = "application/vnd.fujifilm.fb.jfi+xml"]
-    #[serde(alias = "application/vnd.fujifilm.fb.jfi+xml")]
+    #[serde(rename = "application/vnd.fujifilm.fb.jfi+xml")]
     VndFujifilmFbJfiXml,
     #[doc = "application/vnd.fujitsu.oasys"]
-    #[serde(alias = "application/vnd.fujitsu.oasys")]
+    #[serde(rename = "application/vnd.fujitsu.oasys")]
     #[serde(alias = "oas")]
     VndFujitsuOasys,
     #[doc = "application/vnd.fujitsu.oasys2"]
-    #[serde(alias = "application/vnd.fujitsu.oasys2")]
+    #[serde(rename = "application/vnd.fujitsu.oasys2")]
     #[serde(alias = "oa2")]
     VndFujitsuOasys2,
     #[doc = "application/vnd.fujitsu.oasys3"]
-    #[serde(alias = "application/vnd.fujitsu.oasys3")]
+    #[serde(rename = "application/vnd.fujitsu.oasys3")]
     #[serde(alias = "oa3")]
     VndFujitsuOasys3,
     #[doc = "application/vnd.fujitsu.oasysgp"]
-    #[serde(alias = "application/vnd.fujitsu.oasysgp")]
+    #[serde(rename = "application/vnd.fujitsu.oasysgp")]
     #[serde(alias = "fg5")]
     VndFujitsuOasysgp,
     #[doc = "application/vnd.fujitsu.oasysprs"]
-    #[serde(alias = "application/vnd.fujitsu.oasysprs")]
+    #[serde(rename = "application/vnd.fujitsu.oasysprs")]
     #[serde(alias = "bh2")]
     VndFujitsuOasysprs,
     #[doc = "application/vnd.fujixerox.ART4"]
-    #[serde(alias = "application/vnd.fujixerox.ART4")]
+    #[serde(rename = "application/vnd.fujixerox.ART4")]
     VndFujixeroxART4,
     #[doc = "application/vnd.fujixerox.ART-EX"]
-    #[serde(alias = "application/vnd.fujixerox.ART-EX")]
+    #[serde(rename = "application/vnd.fujixerox.ART-EX")]
     VndFujixeroxARTEX,
     #[doc = "application/vnd.fujixerox.ddd"]
-    #[serde(alias = "application/vnd.fujixerox.ddd")]
+    #[serde(rename = "application/vnd.fujixerox.ddd")]
     #[serde(alias = "ddd")]
     VndFujixeroxDdd,
     #[doc = "application/vnd.fujixerox.docuworks"]
-    #[serde(alias = "application/vnd.fujixerox.docuworks")]
+    #[serde(rename = "application/vnd.fujixerox.docuworks")]
     #[serde(alias = "xdw")]
     VndFujixeroxDocuworks,
     #[doc = "application/vnd.fujixerox.docuworks.binder"]
-    #[serde(alias = "application/vnd.fujixerox.docuworks.binder")]
+    #[serde(rename = "application/vnd.fujixerox.docuworks.binder")]
     #[serde(alias = "xbd")]
     VndFujixeroxDocuworksBinder,
     #[doc = "application/vnd.fujixerox.docuworks.container"]
-    #[serde(alias = "application/vnd.fujixerox.docuworks.container")]
+    #[serde(rename = "application/vnd.fujixerox.docuworks.container")]
     #[serde(alias = "xct")]
     VndFujixeroxDocuworksContainer,
     #[doc = "application/vnd.fujixerox.HBPL"]
-    #[serde(alias = "application/vnd.fujixerox.HBPL")]
+    #[serde(rename = "application/vnd.fujixerox.HBPL")]
     VndFujixeroxHBPL,
     #[doc = "application/vnd.fut-misnet"]
-    #[serde(alias = "application/vnd.fut-misnet")]
+    #[serde(rename = "application/vnd.fut-misnet")]
     VndFutMisnet,
     #[doc = "application/vnd.futoin+cbor"]
-    #[serde(alias = "application/vnd.futoin+cbor")]
+    #[serde(rename = "application/vnd.futoin+cbor")]
     VndFutoinCbor,
     #[doc = "application/vnd.futoin+json"]
-    #[serde(alias = "application/vnd.futoin+json")]
+    #[serde(rename = "application/vnd.futoin+json")]
     VndFutoinJson,
     #[doc = "application/vnd.fuzzysheet"]
-    #[serde(alias = "application/vnd.fuzzysheet")]
+    #[serde(rename = "application/vnd.fuzzysheet")]
     #[serde(alias = "fzs")]
     VndFuzzysheet,
     #[doc = "application/vnd.genomatix.tuxedo"]
-    #[serde(alias = "application/vnd.genomatix.tuxedo")]
+    #[serde(rename = "application/vnd.genomatix.tuxedo")]
     #[serde(alias = "txd")]
     VndGenomatixTuxedo,
     #[doc = "application/vnd.genozip"]
-    #[serde(alias = "application/vnd.genozip")]
+    #[serde(rename = "application/vnd.genozip")]
     #[serde(alias = "genozip")]
     VndGenozip,
     #[doc = "application/vnd.gentics.grd+json"]
-    #[serde(alias = "application/vnd.gentics.grd+json")]
+    #[serde(rename = "application/vnd.gentics.grd+json")]
     VndGenticsGrdJson,
     #[doc = "application/vnd.gentoo.catmetadata+xml"]
-    #[serde(alias = "application/vnd.gentoo.catmetadata+xml")]
+    #[serde(rename = "application/vnd.gentoo.catmetadata+xml")]
     VndGentooCatmetadataXml,
     #[doc = "application/vnd.gentoo.ebuild"]
-    #[serde(alias = "application/vnd.gentoo.ebuild")]
+    #[serde(rename = "application/vnd.gentoo.ebuild")]
     #[serde(alias = "ebuild")]
     VndGentooEbuild,
     #[doc = "application/vnd.gentoo.eclass"]
-    #[serde(alias = "application/vnd.gentoo.eclass")]
+    #[serde(rename = "application/vnd.gentoo.eclass")]
     #[serde(alias = "eclass")]
     VndGentooEclass,
     #[doc = "application/vnd.gentoo.gpkg"]
-    #[serde(alias = "application/vnd.gentoo.gpkg")]
+    #[serde(rename = "application/vnd.gentoo.gpkg")]
     #[serde(alias = "gpkg.tar")]
     VndGentooGpkg,
     #[doc = "application/vnd.gentoo.manifest"]
-    #[serde(alias = "application/vnd.gentoo.manifest")]
+    #[serde(rename = "application/vnd.gentoo.manifest")]
     VndGentooManifest,
     #[doc = "application/vnd.gentoo.xpak"]
-    #[serde(alias = "application/vnd.gentoo.xpak")]
+    #[serde(rename = "application/vnd.gentoo.xpak")]
     #[serde(alias = "tbz2")]
     #[serde(alias = "xpak")]
     VndGentooXpak,
     #[doc = "application/vnd.gentoo.pkgmetadata+xml"]
-    #[serde(alias = "application/vnd.gentoo.pkgmetadata+xml")]
+    #[serde(rename = "application/vnd.gentoo.pkgmetadata+xml")]
     VndGentooPkgmetadataXml,
     #[doc = "application/vnd.geogebra.file"]
-    #[serde(alias = "application/vnd.geogebra.file")]
+    #[serde(rename = "application/vnd.geogebra.file")]
     #[serde(alias = "ggb")]
     VndGeogebraFile,
     #[doc = "application/vnd.geogebra.slides"]
-    #[serde(alias = "application/vnd.geogebra.slides")]
+    #[serde(rename = "application/vnd.geogebra.slides")]
     #[serde(alias = "ggs")]
     VndGeogebraSlides,
     #[doc = "application/vnd.geogebra.tool"]
-    #[serde(alias = "application/vnd.geogebra.tool")]
+    #[serde(rename = "application/vnd.geogebra.tool")]
     #[serde(alias = "ggt")]
     VndGeogebraTool,
     #[doc = "application/vnd.geometry-explorer"]
-    #[serde(alias = "application/vnd.geometry-explorer")]
+    #[serde(rename = "application/vnd.geometry-explorer")]
     #[serde(alias = "gex")]
     #[serde(alias = "gre")]
     VndGeometryExplorer,
     #[doc = "application/vnd.geonext"]
-    #[serde(alias = "application/vnd.geonext")]
+    #[serde(rename = "application/vnd.geonext")]
     #[serde(alias = "gxt")]
     VndGeonext,
     #[doc = "application/vnd.geoplan"]
-    #[serde(alias = "application/vnd.geoplan")]
+    #[serde(rename = "application/vnd.geoplan")]
     #[serde(alias = "g2w")]
     VndGeoplan,
     #[doc = "application/vnd.geospace"]
-    #[serde(alias = "application/vnd.geospace")]
+    #[serde(rename = "application/vnd.geospace")]
     #[serde(alias = "g3w")]
     VndGeospace,
     #[doc = "application/vnd.gerber"]
-    #[serde(alias = "application/vnd.gerber")]
+    #[serde(rename = "application/vnd.gerber")]
     VndGerber,
     #[doc = "application/vnd.globalplatform.card-content-mgt"]
-    #[serde(alias = "application/vnd.globalplatform.card-content-mgt")]
+    #[serde(rename = "application/vnd.globalplatform.card-content-mgt")]
     VndGlobalplatformCardContentMgt,
     #[doc = "application/vnd.globalplatform.card-content-mgt-response"]
-    #[serde(alias = "application/vnd.globalplatform.card-content-mgt-response")]
+    #[serde(rename = "application/vnd.globalplatform.card-content-mgt-response")]
     VndGlobalplatformCardContentMgtResponse,
     #[doc = "application/vnd.gnu.taler.exchange+json"]
-    #[serde(alias = "application/vnd.gnu.taler.exchange+json")]
+    #[serde(rename = "application/vnd.gnu.taler.exchange+json")]
     VndGnuTalerExchangeJson,
     #[doc = "application/vnd.gnu.taler.merchant+json"]
-    #[serde(alias = "application/vnd.gnu.taler.merchant+json")]
+    #[serde(rename = "application/vnd.gnu.taler.merchant+json")]
     VndGnuTalerMerchantJson,
     #[doc = "application/vnd.google-earth.kml+xml"]
-    #[serde(alias = "application/vnd.google-earth.kml+xml")]
+    #[serde(rename = "application/vnd.google-earth.kml+xml")]
     #[serde(alias = "kml")]
     VndGoogleEarthKmlXml,
     #[doc = "application/vnd.google-earth.kmz"]
-    #[serde(alias = "application/vnd.google-earth.kmz")]
+    #[serde(rename = "application/vnd.google-earth.kmz")]
     #[serde(alias = "kmz")]
     VndGoogleEarthKmz,
     #[doc = "application/vnd.gov.sk.e-form+xml"]
-    #[serde(alias = "application/vnd.gov.sk.e-form+xml")]
+    #[serde(rename = "application/vnd.gov.sk.e-form+xml")]
     VndGovSkEFormXml,
     #[doc = "application/vnd.gov.sk.e-form+zip"]
-    #[serde(alias = "application/vnd.gov.sk.e-form+zip")]
+    #[serde(rename = "application/vnd.gov.sk.e-form+zip")]
     VndGovSkEFormZip,
     #[doc = "application/vnd.gov.sk.xmldatacontainer+xml"]
-    #[serde(alias = "application/vnd.gov.sk.xmldatacontainer+xml")]
+    #[serde(rename = "application/vnd.gov.sk.xmldatacontainer+xml")]
     VndGovSkXmldatacontainerXml,
     #[doc = "application/vnd.gpxsee.map+xml"]
-    #[serde(alias = "application/vnd.gpxsee.map+xml")]
+    #[serde(rename = "application/vnd.gpxsee.map+xml")]
     VndGpxseeMapXml,
     #[doc = "application/vnd.grafeq"]
-    #[serde(alias = "application/vnd.grafeq")]
+    #[serde(rename = "application/vnd.grafeq")]
     #[serde(alias = "gqf")]
     #[serde(alias = "gqs")]
     VndGrafeq,
     #[doc = "application/vnd.gridmp"]
-    #[serde(alias = "application/vnd.gridmp")]
+    #[serde(rename = "application/vnd.gridmp")]
     VndGridmp,
     #[doc = "application/vnd.groove-account"]
-    #[serde(alias = "application/vnd.groove-account")]
+    #[serde(rename = "application/vnd.groove-account")]
     #[serde(alias = "gac")]
     VndGrooveAccount,
     #[doc = "application/vnd.groove-help"]
-    #[serde(alias = "application/vnd.groove-help")]
+    #[serde(rename = "application/vnd.groove-help")]
     #[serde(alias = "ghf")]
     VndGrooveHelp,
     #[doc = "application/vnd.groove-identity-message"]
-    #[serde(alias = "application/vnd.groove-identity-message")]
+    #[serde(rename = "application/vnd.groove-identity-message")]
     #[serde(alias = "gim")]
     VndGrooveIdentityMessage,
     #[doc = "application/vnd.groove-injector"]
-    #[serde(alias = "application/vnd.groove-injector")]
+    #[serde(rename = "application/vnd.groove-injector")]
     #[serde(alias = "grv")]
     VndGrooveInjector,
     #[doc = "application/vnd.groove-tool-message"]
-    #[serde(alias = "application/vnd.groove-tool-message")]
+    #[serde(rename = "application/vnd.groove-tool-message")]
     #[serde(alias = "gtm")]
     VndGrooveToolMessage,
     #[doc = "application/vnd.groove-tool-template"]
-    #[serde(alias = "application/vnd.groove-tool-template")]
+    #[serde(rename = "application/vnd.groove-tool-template")]
     #[serde(alias = "tpl")]
     VndGrooveToolTemplate,
     #[doc = "application/vnd.groove-vcard"]
-    #[serde(alias = "application/vnd.groove-vcard")]
+    #[serde(rename = "application/vnd.groove-vcard")]
     #[serde(alias = "vcg")]
     VndGrooveVcard,
     #[doc = "application/vnd.hal+json"]
-    #[serde(alias = "application/vnd.hal+json")]
+    #[serde(rename = "application/vnd.hal+json")]
     VndHalJson,
     #[doc = "application/vnd.hal+xml"]
-    #[serde(alias = "application/vnd.hal+xml")]
+    #[serde(rename = "application/vnd.hal+xml")]
     #[serde(alias = "hal")]
     VndHalXml,
     #[doc = "application/vnd.HandHeld-Entertainment+xml"]
-    #[serde(alias = "application/vnd.HandHeld-Entertainment+xml")]
+    #[serde(rename = "application/vnd.HandHeld-Entertainment+xml")]
     #[serde(alias = "zmm")]
     VndHandHeldEntertainmentXml,
     #[doc = "application/vnd.hbci"]
-    #[serde(alias = "application/vnd.hbci")]
+    #[serde(rename = "application/vnd.hbci")]
     #[serde(alias = "hbci")]
     #[serde(alias = "hbc")]
     #[serde(alias = "kom")]
@@ -3015,402 +3015,402 @@ pub enum Application {
     #[serde(alias = "bpd")]
     VndHbci,
     #[doc = "application/vnd.hc+json"]
-    #[serde(alias = "application/vnd.hc+json")]
+    #[serde(rename = "application/vnd.hc+json")]
     VndHcJson,
     #[doc = "application/vnd.hcl-bireports"]
-    #[serde(alias = "application/vnd.hcl-bireports")]
+    #[serde(rename = "application/vnd.hcl-bireports")]
     VndHclBireports,
     #[doc = "application/vnd.hdt"]
-    #[serde(alias = "application/vnd.hdt")]
+    #[serde(rename = "application/vnd.hdt")]
     #[serde(alias = "hdt")]
     VndHdt,
     #[doc = "application/vnd.heroku+json"]
-    #[serde(alias = "application/vnd.heroku+json")]
+    #[serde(rename = "application/vnd.heroku+json")]
     VndHerokuJson,
     #[doc = "application/vnd.hhe.lesson-player"]
-    #[serde(alias = "application/vnd.hhe.lesson-player")]
+    #[serde(rename = "application/vnd.hhe.lesson-player")]
     #[serde(alias = "les")]
     VndHheLessonPlayer,
     #[doc = "application/vnd.hp-HPGL"]
-    #[serde(alias = "application/vnd.hp-HPGL")]
+    #[serde(rename = "application/vnd.hp-HPGL")]
     #[serde(alias = "hpgl")]
     VndHpHPGL,
     #[doc = "application/vnd.hp-hpid"]
-    #[serde(alias = "application/vnd.hp-hpid")]
+    #[serde(rename = "application/vnd.hp-hpid")]
     #[serde(alias = "hpi")]
     #[serde(alias = "hpid")]
     VndHpHpid,
     #[doc = "application/vnd.hp-hps"]
-    #[serde(alias = "application/vnd.hp-hps")]
+    #[serde(rename = "application/vnd.hp-hps")]
     #[serde(alias = "hps")]
     VndHpHps,
     #[doc = "application/vnd.hp-jlyt"]
-    #[serde(alias = "application/vnd.hp-jlyt")]
+    #[serde(rename = "application/vnd.hp-jlyt")]
     #[serde(alias = "jlt")]
     VndHpJlyt,
     #[doc = "application/vnd.hp-PCL"]
-    #[serde(alias = "application/vnd.hp-PCL")]
+    #[serde(rename = "application/vnd.hp-PCL")]
     #[serde(alias = "pcl")]
     VndHpPCL,
     #[doc = "application/vnd.hp-PCLXL"]
-    #[serde(alias = "application/vnd.hp-PCLXL")]
+    #[serde(rename = "application/vnd.hp-PCLXL")]
     VndHpPCLXL,
     #[doc = "application/vnd.hsl"]
-    #[serde(alias = "application/vnd.hsl")]
+    #[serde(rename = "application/vnd.hsl")]
     #[serde(alias = "hsl")]
     VndHsl,
     #[doc = "application/vnd.httphone"]
-    #[serde(alias = "application/vnd.httphone")]
+    #[serde(rename = "application/vnd.httphone")]
     VndHttphone,
     #[doc = "application/vnd.hydrostatix.sof-data"]
-    #[serde(alias = "application/vnd.hydrostatix.sof-data")]
+    #[serde(rename = "application/vnd.hydrostatix.sof-data")]
     #[serde(alias = "sfd-hdstx")]
     VndHydrostatixSofData,
     #[doc = "application/vnd.hyper-item+json"]
-    #[serde(alias = "application/vnd.hyper-item+json")]
+    #[serde(rename = "application/vnd.hyper-item+json")]
     VndHyperItemJson,
     #[doc = "application/vnd.hyper+json"]
-    #[serde(alias = "application/vnd.hyper+json")]
+    #[serde(rename = "application/vnd.hyper+json")]
     VndHyperJson,
     #[doc = "application/vnd.hyperdrive+json"]
-    #[serde(alias = "application/vnd.hyperdrive+json")]
+    #[serde(rename = "application/vnd.hyperdrive+json")]
     VndHyperdriveJson,
     #[doc = "application/vnd.hzn-3d-crossword"]
-    #[serde(alias = "application/vnd.hzn-3d-crossword")]
+    #[serde(rename = "application/vnd.hzn-3d-crossword")]
     #[serde(alias = "x3d")]
     VndHzn3DCrossword,
     #[doc = "application/vnd.ibm.electronic-media"]
-    #[serde(alias = "application/vnd.ibm.electronic-media")]
+    #[serde(rename = "application/vnd.ibm.electronic-media")]
     #[serde(alias = "emm")]
     VndIbmElectronicMedia,
     #[doc = "application/vnd.ibm.MiniPay"]
-    #[serde(alias = "application/vnd.ibm.MiniPay")]
+    #[serde(rename = "application/vnd.ibm.MiniPay")]
     #[serde(alias = "mpy")]
     VndIbmMiniPay,
     #[doc = "application/vnd.ibm.rights-management"]
-    #[serde(alias = "application/vnd.ibm.rights-management")]
+    #[serde(rename = "application/vnd.ibm.rights-management")]
     #[serde(alias = "irm")]
     VndIbmRightsManagement,
     #[doc = "application/vnd.ibm.secure-container"]
-    #[serde(alias = "application/vnd.ibm.secure-container")]
+    #[serde(rename = "application/vnd.ibm.secure-container")]
     #[serde(alias = "sc")]
     VndIbmSecureContainer,
     #[doc = "application/vnd.iccprofile"]
-    #[serde(alias = "application/vnd.iccprofile")]
+    #[serde(rename = "application/vnd.iccprofile")]
     #[serde(alias = "icc")]
     #[serde(alias = "icm")]
     VndIccprofile,
     #[doc = "application/vnd.ieee.1905"]
-    #[serde(alias = "application/vnd.ieee.1905")]
+    #[serde(rename = "application/vnd.ieee.1905")]
     #[serde(alias = "1905.1")]
     VndIeee1905,
     #[doc = "application/vnd.igloader"]
-    #[serde(alias = "application/vnd.igloader")]
+    #[serde(rename = "application/vnd.igloader")]
     #[serde(alias = "igl")]
     VndIgloader,
     #[doc = "application/vnd.imagemeter.folder+zip"]
-    #[serde(alias = "application/vnd.imagemeter.folder+zip")]
+    #[serde(rename = "application/vnd.imagemeter.folder+zip")]
     #[serde(alias = "imf")]
     VndImagemeterFolderZip,
     #[doc = "application/vnd.imagemeter.image+zip"]
-    #[serde(alias = "application/vnd.imagemeter.image+zip")]
+    #[serde(rename = "application/vnd.imagemeter.image+zip")]
     #[serde(alias = "imi")]
     VndImagemeterImageZip,
     #[doc = "application/vnd.immervision-ivp"]
-    #[serde(alias = "application/vnd.immervision-ivp")]
+    #[serde(rename = "application/vnd.immervision-ivp")]
     #[serde(alias = "ivp")]
     VndImmervisionIvp,
     #[doc = "application/vnd.immervision-ivu"]
-    #[serde(alias = "application/vnd.immervision-ivu")]
+    #[serde(rename = "application/vnd.immervision-ivu")]
     #[serde(alias = "ivu")]
     VndImmervisionIvu,
     #[doc = "application/vnd.ims.imsccv1p1"]
-    #[serde(alias = "application/vnd.ims.imsccv1p1")]
+    #[serde(rename = "application/vnd.ims.imsccv1p1")]
     #[serde(alias = "imscc")]
     VndImsImsccv1P1,
     #[doc = "application/vnd.ims.imsccv1p2"]
-    #[serde(alias = "application/vnd.ims.imsccv1p2")]
+    #[serde(rename = "application/vnd.ims.imsccv1p2")]
     VndImsImsccv1P2,
     #[doc = "application/vnd.ims.imsccv1p3"]
-    #[serde(alias = "application/vnd.ims.imsccv1p3")]
+    #[serde(rename = "application/vnd.ims.imsccv1p3")]
     VndImsImsccv1P3,
     #[doc = "application/vnd.ims.lis.v2.result+json"]
-    #[serde(alias = "application/vnd.ims.lis.v2.result+json")]
+    #[serde(rename = "application/vnd.ims.lis.v2.result+json")]
     VndImsLisV2ResultJson,
     #[doc = "application/vnd.ims.lti.v2.toolconsumerprofile+json"]
-    #[serde(alias = "application/vnd.ims.lti.v2.toolconsumerprofile+json")]
+    #[serde(rename = "application/vnd.ims.lti.v2.toolconsumerprofile+json")]
     VndImsLtiV2ToolconsumerprofileJson,
     #[doc = "application/vnd.ims.lti.v2.toolproxy.id+json"]
-    #[serde(alias = "application/vnd.ims.lti.v2.toolproxy.id+json")]
+    #[serde(rename = "application/vnd.ims.lti.v2.toolproxy.id+json")]
     VndImsLtiV2ToolproxyIdJson,
     #[doc = "application/vnd.ims.lti.v2.toolproxy+json"]
-    #[serde(alias = "application/vnd.ims.lti.v2.toolproxy+json")]
+    #[serde(rename = "application/vnd.ims.lti.v2.toolproxy+json")]
     VndImsLtiV2ToolproxyJson,
     #[doc = "application/vnd.ims.lti.v2.toolsettings+json"]
-    #[serde(alias = "application/vnd.ims.lti.v2.toolsettings+json")]
+    #[serde(rename = "application/vnd.ims.lti.v2.toolsettings+json")]
     VndImsLtiV2ToolsettingsJson,
     #[doc = "application/vnd.ims.lti.v2.toolsettings.simple+json"]
-    #[serde(alias = "application/vnd.ims.lti.v2.toolsettings.simple+json")]
+    #[serde(rename = "application/vnd.ims.lti.v2.toolsettings.simple+json")]
     VndImsLtiV2ToolsettingsSimpleJson,
     #[doc = "application/vnd.informedcontrol.rms+xml"]
-    #[serde(alias = "application/vnd.informedcontrol.rms+xml")]
+    #[serde(rename = "application/vnd.informedcontrol.rms+xml")]
     VndInformedcontrolRmsXml,
     #[doc = "application/vnd.infotech.project"]
-    #[serde(alias = "application/vnd.infotech.project")]
+    #[serde(rename = "application/vnd.infotech.project")]
     VndInfotechProject,
     #[doc = "application/vnd.infotech.project+xml"]
-    #[serde(alias = "application/vnd.infotech.project+xml")]
+    #[serde(rename = "application/vnd.infotech.project+xml")]
     VndInfotechProjectXml,
     #[doc = "application/vnd.innopath.wamp.notification"]
-    #[serde(alias = "application/vnd.innopath.wamp.notification")]
+    #[serde(rename = "application/vnd.innopath.wamp.notification")]
     VndInnopathWampNotification,
     #[doc = "application/vnd.insors.igm"]
-    #[serde(alias = "application/vnd.insors.igm")]
+    #[serde(rename = "application/vnd.insors.igm")]
     #[serde(alias = "igm")]
     VndInsorsIgm,
     #[doc = "application/vnd.intercon.formnet"]
-    #[serde(alias = "application/vnd.intercon.formnet")]
+    #[serde(rename = "application/vnd.intercon.formnet")]
     #[serde(alias = "xpw")]
     #[serde(alias = "xpx")]
     VndInterconFormnet,
     #[doc = "application/vnd.intergeo"]
-    #[serde(alias = "application/vnd.intergeo")]
+    #[serde(rename = "application/vnd.intergeo")]
     #[serde(alias = "i2g")]
     VndIntergeo,
     #[doc = "application/vnd.intertrust.digibox"]
-    #[serde(alias = "application/vnd.intertrust.digibox")]
+    #[serde(rename = "application/vnd.intertrust.digibox")]
     VndIntertrustDigibox,
     #[doc = "application/vnd.intertrust.nncp"]
-    #[serde(alias = "application/vnd.intertrust.nncp")]
+    #[serde(rename = "application/vnd.intertrust.nncp")]
     VndIntertrustNncp,
     #[doc = "application/vnd.intu.qbo"]
-    #[serde(alias = "application/vnd.intu.qbo")]
+    #[serde(rename = "application/vnd.intu.qbo")]
     #[serde(alias = "qbo")]
     VndIntuQbo,
     #[doc = "application/vnd.intu.qfx"]
-    #[serde(alias = "application/vnd.intu.qfx")]
+    #[serde(rename = "application/vnd.intu.qfx")]
     #[serde(alias = "qfx")]
     VndIntuQfx,
     #[doc = "application/vnd.ipfs.ipns-record"]
-    #[serde(alias = "application/vnd.ipfs.ipns-record")]
+    #[serde(rename = "application/vnd.ipfs.ipns-record")]
     VndIpfsIpnsRecord,
     #[doc = "application/vnd.ipld.car"]
-    #[serde(alias = "application/vnd.ipld.car")]
+    #[serde(rename = "application/vnd.ipld.car")]
     #[serde(alias = "car")]
     VndIpldCar,
     #[doc = "application/vnd.ipld.dag-cbor"]
-    #[serde(alias = "application/vnd.ipld.dag-cbor")]
+    #[serde(rename = "application/vnd.ipld.dag-cbor")]
     VndIpldDagCbor,
     #[doc = "application/vnd.ipld.dag-json"]
-    #[serde(alias = "application/vnd.ipld.dag-json")]
+    #[serde(rename = "application/vnd.ipld.dag-json")]
     VndIpldDagJson,
     #[doc = "application/vnd.ipld.raw"]
-    #[serde(alias = "application/vnd.ipld.raw")]
+    #[serde(rename = "application/vnd.ipld.raw")]
     VndIpldRaw,
     #[doc = "application/vnd.iptc.g2.catalogitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.catalogitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.catalogitem+xml")]
     VndIptcG2CatalogitemXml,
     #[doc = "application/vnd.iptc.g2.conceptitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.conceptitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.conceptitem+xml")]
     VndIptcG2ConceptitemXml,
     #[doc = "application/vnd.iptc.g2.knowledgeitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.knowledgeitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.knowledgeitem+xml")]
     VndIptcG2KnowledgeitemXml,
     #[doc = "application/vnd.iptc.g2.newsitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.newsitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.newsitem+xml")]
     VndIptcG2NewsitemXml,
     #[doc = "application/vnd.iptc.g2.newsmessage+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.newsmessage+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.newsmessage+xml")]
     VndIptcG2NewsmessageXml,
     #[doc = "application/vnd.iptc.g2.packageitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.packageitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.packageitem+xml")]
     VndIptcG2PackageitemXml,
     #[doc = "application/vnd.iptc.g2.planningitem+xml"]
-    #[serde(alias = "application/vnd.iptc.g2.planningitem+xml")]
+    #[serde(rename = "application/vnd.iptc.g2.planningitem+xml")]
     VndIptcG2PlanningitemXml,
     #[doc = "application/vnd.ipunplugged.rcprofile"]
-    #[serde(alias = "application/vnd.ipunplugged.rcprofile")]
+    #[serde(rename = "application/vnd.ipunplugged.rcprofile")]
     #[serde(alias = "rcprofile")]
     VndIpunpluggedRcprofile,
     #[doc = "application/vnd.irepository.package+xml"]
-    #[serde(alias = "application/vnd.irepository.package+xml")]
+    #[serde(rename = "application/vnd.irepository.package+xml")]
     #[serde(alias = "irp")]
     VndIrepositoryPackageXml,
     #[doc = "application/vnd.is-xpr"]
-    #[serde(alias = "application/vnd.is-xpr")]
+    #[serde(rename = "application/vnd.is-xpr")]
     #[serde(alias = "xpr")]
     VndIsXpr,
     #[doc = "application/vnd.isac.fcs"]
-    #[serde(alias = "application/vnd.isac.fcs")]
+    #[serde(rename = "application/vnd.isac.fcs")]
     #[serde(alias = "fcs")]
     VndIsacFcs,
     #[doc = "application/vnd.jam"]
-    #[serde(alias = "application/vnd.jam")]
+    #[serde(rename = "application/vnd.jam")]
     #[serde(alias = "jam")]
     VndJam,
     #[doc = "application/vnd.iso11783-10+zip"]
-    #[serde(alias = "application/vnd.iso11783-10+zip")]
+    #[serde(rename = "application/vnd.iso11783-10+zip")]
     VndIso1178310Zip,
     #[doc = "application/vnd.japannet-directory-service"]
-    #[serde(alias = "application/vnd.japannet-directory-service")]
+    #[serde(rename = "application/vnd.japannet-directory-service")]
     VndJapannetDirectoryService,
     #[doc = "application/vnd.japannet-jpnstore-wakeup"]
-    #[serde(alias = "application/vnd.japannet-jpnstore-wakeup")]
+    #[serde(rename = "application/vnd.japannet-jpnstore-wakeup")]
     VndJapannetJpnstoreWakeup,
     #[doc = "application/vnd.japannet-payment-wakeup"]
-    #[serde(alias = "application/vnd.japannet-payment-wakeup")]
+    #[serde(rename = "application/vnd.japannet-payment-wakeup")]
     VndJapannetPaymentWakeup,
     #[doc = "application/vnd.japannet-registration"]
-    #[serde(alias = "application/vnd.japannet-registration")]
+    #[serde(rename = "application/vnd.japannet-registration")]
     VndJapannetRegistration,
     #[doc = "application/vnd.japannet-registration-wakeup"]
-    #[serde(alias = "application/vnd.japannet-registration-wakeup")]
+    #[serde(rename = "application/vnd.japannet-registration-wakeup")]
     VndJapannetRegistrationWakeup,
     #[doc = "application/vnd.japannet-setstore-wakeup"]
-    #[serde(alias = "application/vnd.japannet-setstore-wakeup")]
+    #[serde(rename = "application/vnd.japannet-setstore-wakeup")]
     VndJapannetSetstoreWakeup,
     #[doc = "application/vnd.japannet-verification"]
-    #[serde(alias = "application/vnd.japannet-verification")]
+    #[serde(rename = "application/vnd.japannet-verification")]
     VndJapannetVerification,
     #[doc = "application/vnd.japannet-verification-wakeup"]
-    #[serde(alias = "application/vnd.japannet-verification-wakeup")]
+    #[serde(rename = "application/vnd.japannet-verification-wakeup")]
     VndJapannetVerificationWakeup,
     #[doc = "application/vnd.jcp.javame.midlet-rms"]
-    #[serde(alias = "application/vnd.jcp.javame.midlet-rms")]
+    #[serde(rename = "application/vnd.jcp.javame.midlet-rms")]
     #[serde(alias = "rms")]
     VndJcpJavameMidletRms,
     #[doc = "application/vnd.jisp"]
-    #[serde(alias = "application/vnd.jisp")]
+    #[serde(rename = "application/vnd.jisp")]
     #[serde(alias = "jisp")]
     VndJisp,
     #[doc = "application/vnd.joost.joda-archive"]
-    #[serde(alias = "application/vnd.joost.joda-archive")]
+    #[serde(rename = "application/vnd.joost.joda-archive")]
     #[serde(alias = "joda")]
     VndJoostJodaArchive,
     #[doc = "application/vnd.jsk.isdn-ngn"]
-    #[serde(alias = "application/vnd.jsk.isdn-ngn")]
+    #[serde(rename = "application/vnd.jsk.isdn-ngn")]
     VndJskIsdnNgn,
     #[doc = "application/vnd.kahootz"]
-    #[serde(alias = "application/vnd.kahootz")]
+    #[serde(rename = "application/vnd.kahootz")]
     #[serde(alias = "ktz")]
     #[serde(alias = "ktr")]
     VndKahootz,
     #[doc = "application/vnd.kde.karbon"]
-    #[serde(alias = "application/vnd.kde.karbon")]
+    #[serde(rename = "application/vnd.kde.karbon")]
     #[serde(alias = "karbon")]
     VndKdeKarbon,
     #[doc = "application/vnd.kde.kchart"]
-    #[serde(alias = "application/vnd.kde.kchart")]
+    #[serde(rename = "application/vnd.kde.kchart")]
     #[serde(alias = "chrt")]
     VndKdeKchart,
     #[doc = "application/vnd.kde.kformula"]
-    #[serde(alias = "application/vnd.kde.kformula")]
+    #[serde(rename = "application/vnd.kde.kformula")]
     #[serde(alias = "kfo")]
     VndKdeKformula,
     #[doc = "application/vnd.kde.kivio"]
-    #[serde(alias = "application/vnd.kde.kivio")]
+    #[serde(rename = "application/vnd.kde.kivio")]
     #[serde(alias = "flw")]
     VndKdeKivio,
     #[doc = "application/vnd.kde.kontour"]
-    #[serde(alias = "application/vnd.kde.kontour")]
+    #[serde(rename = "application/vnd.kde.kontour")]
     #[serde(alias = "kon")]
     VndKdeKontour,
     #[doc = "application/vnd.kde.kpresenter"]
-    #[serde(alias = "application/vnd.kde.kpresenter")]
+    #[serde(rename = "application/vnd.kde.kpresenter")]
     #[serde(alias = "kpr")]
     #[serde(alias = "kpt")]
     VndKdeKpresenter,
     #[doc = "application/vnd.kde.kspread"]
-    #[serde(alias = "application/vnd.kde.kspread")]
+    #[serde(rename = "application/vnd.kde.kspread")]
     #[serde(alias = "ksp")]
     VndKdeKspread,
     #[doc = "application/vnd.kde.kword"]
-    #[serde(alias = "application/vnd.kde.kword")]
+    #[serde(rename = "application/vnd.kde.kword")]
     #[serde(alias = "kwd")]
     #[serde(alias = "kwt")]
     VndKdeKword,
     #[doc = "application/vnd.kenameaapp"]
-    #[serde(alias = "application/vnd.kenameaapp")]
+    #[serde(rename = "application/vnd.kenameaapp")]
     #[serde(alias = "htke")]
     VndKenameaapp,
     #[doc = "application/vnd.kidspiration"]
-    #[serde(alias = "application/vnd.kidspiration")]
+    #[serde(rename = "application/vnd.kidspiration")]
     #[serde(alias = "kia")]
     VndKidspiration,
     #[doc = "application/vnd.Kinar"]
-    #[serde(alias = "application/vnd.Kinar")]
+    #[serde(rename = "application/vnd.Kinar")]
     #[serde(alias = "kne")]
     #[serde(alias = "knp")]
     #[serde(alias = "sdf")]
     VndKinar,
     #[doc = "application/vnd.koan"]
-    #[serde(alias = "application/vnd.koan")]
+    #[serde(rename = "application/vnd.koan")]
     #[serde(alias = "skp")]
     #[serde(alias = "skd")]
     #[serde(alias = "skm")]
     #[serde(alias = "skt")]
     VndKoan,
     #[doc = "application/vnd.kodak-descriptor"]
-    #[serde(alias = "application/vnd.kodak-descriptor")]
+    #[serde(rename = "application/vnd.kodak-descriptor")]
     #[serde(alias = "sse")]
     VndKodakDescriptor,
     #[doc = "application/vnd.las"]
-    #[serde(alias = "application/vnd.las")]
+    #[serde(rename = "application/vnd.las")]
     #[serde(alias = "las")]
     VndLas,
     #[doc = "application/vnd.las.las+json"]
-    #[serde(alias = "application/vnd.las.las+json")]
+    #[serde(rename = "application/vnd.las.las+json")]
     #[serde(alias = "lasjson")]
     VndLasLasJson,
     #[doc = "application/vnd.las.las+xml"]
-    #[serde(alias = "application/vnd.las.las+xml")]
+    #[serde(rename = "application/vnd.las.las+xml")]
     #[serde(alias = "lasxml")]
     VndLasLasXml,
     #[doc = "application/vnd.laszip"]
-    #[serde(alias = "application/vnd.laszip")]
+    #[serde(rename = "application/vnd.laszip")]
     VndLaszip,
     #[doc = "application/vnd.leap+json"]
-    #[serde(alias = "application/vnd.leap+json")]
+    #[serde(rename = "application/vnd.leap+json")]
     VndLeapJson,
     #[doc = "application/vnd.liberty-request+xml"]
-    #[serde(alias = "application/vnd.liberty-request+xml")]
+    #[serde(rename = "application/vnd.liberty-request+xml")]
     VndLibertyRequestXml,
     #[doc = "application/vnd.llamagraphics.life-balance.desktop"]
-    #[serde(alias = "application/vnd.llamagraphics.life-balance.desktop")]
+    #[serde(rename = "application/vnd.llamagraphics.life-balance.desktop")]
     #[serde(alias = "lbd")]
     VndLlamagraphicsLifeBalanceDesktop,
     #[doc = "application/vnd.llamagraphics.life-balance.exchange+xml"]
-    #[serde(alias = "application/vnd.llamagraphics.life-balance.exchange+xml")]
+    #[serde(rename = "application/vnd.llamagraphics.life-balance.exchange+xml")]
     #[serde(alias = "lbe")]
     VndLlamagraphicsLifeBalanceExchangeXml,
     #[doc = "application/vnd.logipipe.circuit+zip"]
-    #[serde(alias = "application/vnd.logipipe.circuit+zip")]
+    #[serde(rename = "application/vnd.logipipe.circuit+zip")]
     #[serde(alias = "lcs")]
     #[serde(alias = "lca")]
     VndLogipipeCircuitZip,
     #[doc = "application/vnd.loom"]
-    #[serde(alias = "application/vnd.loom")]
+    #[serde(rename = "application/vnd.loom")]
     #[serde(alias = "loom")]
     VndLoom,
     #[doc = "application/vnd.lotus-1-2-3"]
-    #[serde(alias = "application/vnd.lotus-1-2-3")]
+    #[serde(rename = "application/vnd.lotus-1-2-3")]
     #[serde(alias = "123")]
     #[serde(alias = "wk4")]
     #[serde(alias = "wk3")]
     #[serde(alias = "wk1")]
     VndLotus123,
     #[doc = "application/vnd.lotus-approach"]
-    #[serde(alias = "application/vnd.lotus-approach")]
+    #[serde(rename = "application/vnd.lotus-approach")]
     #[serde(alias = "apr")]
     #[serde(alias = "vew")]
     VndLotusApproach,
     #[doc = "application/vnd.lotus-freelance"]
-    #[serde(alias = "application/vnd.lotus-freelance")]
+    #[serde(rename = "application/vnd.lotus-freelance")]
     #[serde(alias = "prz")]
     #[serde(alias = "pre")]
     VndLotusFreelance,
     #[doc = "application/vnd.lotus-notes"]
-    #[serde(alias = "application/vnd.lotus-notes")]
+    #[serde(rename = "application/vnd.lotus-notes")]
     #[serde(alias = "nsf")]
     #[serde(alias = "ntf")]
     #[serde(alias = "ndl")]
@@ -3421,203 +3421,203 @@ pub enum Application {
     #[serde(alias = "nsg")]
     VndLotusNotes,
     #[doc = "application/vnd.lotus-organizer"]
-    #[serde(alias = "application/vnd.lotus-organizer")]
+    #[serde(rename = "application/vnd.lotus-organizer")]
     #[serde(alias = "or3")]
     #[serde(alias = "or2")]
     #[serde(alias = "org")]
     VndLotusOrganizer,
     #[doc = "application/vnd.lotus-screencam"]
-    #[serde(alias = "application/vnd.lotus-screencam")]
+    #[serde(rename = "application/vnd.lotus-screencam")]
     #[serde(alias = "scm")]
     VndLotusScreencam,
     #[doc = "application/vnd.lotus-wordpro"]
-    #[serde(alias = "application/vnd.lotus-wordpro")]
+    #[serde(rename = "application/vnd.lotus-wordpro")]
     #[serde(alias = "lwp")]
     #[serde(alias = "sam")]
     VndLotusWordpro,
     #[doc = "application/vnd.macports.portpkg"]
-    #[serde(alias = "application/vnd.macports.portpkg")]
+    #[serde(rename = "application/vnd.macports.portpkg")]
     #[serde(alias = "portpkg")]
     VndMacportsPortpkg,
     #[doc = "application/vnd.mapbox-vector-tile"]
-    #[serde(alias = "application/vnd.mapbox-vector-tile")]
+    #[serde(rename = "application/vnd.mapbox-vector-tile")]
     #[serde(alias = "mvt")]
     VndMapboxVectorTile,
     #[doc = "application/vnd.marlin.drm.actiontoken+xml"]
-    #[serde(alias = "application/vnd.marlin.drm.actiontoken+xml")]
+    #[serde(rename = "application/vnd.marlin.drm.actiontoken+xml")]
     VndMarlinDrmActiontokenXml,
     #[doc = "application/vnd.marlin.drm.conftoken+xml"]
-    #[serde(alias = "application/vnd.marlin.drm.conftoken+xml")]
+    #[serde(rename = "application/vnd.marlin.drm.conftoken+xml")]
     VndMarlinDrmConftokenXml,
     #[doc = "application/vnd.marlin.drm.license+xml"]
-    #[serde(alias = "application/vnd.marlin.drm.license+xml")]
+    #[serde(rename = "application/vnd.marlin.drm.license+xml")]
     VndMarlinDrmLicenseXml,
     #[doc = "application/vnd.marlin.drm.mdcf"]
-    #[serde(alias = "application/vnd.marlin.drm.mdcf")]
+    #[serde(rename = "application/vnd.marlin.drm.mdcf")]
     #[serde(alias = "mdc")]
     VndMarlinDrmMdcf,
     #[doc = "application/vnd.mason+json"]
-    #[serde(alias = "application/vnd.mason+json")]
+    #[serde(rename = "application/vnd.mason+json")]
     VndMasonJson,
     #[doc = "application/vnd.maxar.archive.3tz+zip"]
-    #[serde(alias = "application/vnd.maxar.archive.3tz+zip")]
+    #[serde(rename = "application/vnd.maxar.archive.3tz+zip")]
     #[serde(alias = "3tz")]
     VndMaxarArchive3TzZip,
     #[doc = "application/vnd.maxmind.maxmind-db"]
-    #[serde(alias = "application/vnd.maxmind.maxmind-db")]
+    #[serde(rename = "application/vnd.maxmind.maxmind-db")]
     #[serde(alias = "mmdb")]
     VndMaxmindMaxmindDb,
     #[doc = "application/vnd.mcd"]
-    #[serde(alias = "application/vnd.mcd")]
+    #[serde(rename = "application/vnd.mcd")]
     #[serde(alias = "mcd")]
     VndMcd,
     #[doc = "application/vnd.mdl"]
-    #[serde(alias = "application/vnd.mdl")]
+    #[serde(rename = "application/vnd.mdl")]
     #[serde(alias = "mdl")]
     VndMdl,
     #[doc = "application/vnd.mdl-mbsdf"]
-    #[serde(alias = "application/vnd.mdl-mbsdf")]
+    #[serde(rename = "application/vnd.mdl-mbsdf")]
     #[serde(alias = "mbsdf")]
     VndMdlMbsdf,
     #[doc = "application/vnd.medcalcdata"]
-    #[serde(alias = "application/vnd.medcalcdata")]
+    #[serde(rename = "application/vnd.medcalcdata")]
     #[serde(alias = "mc1")]
     VndMedcalcdata,
     #[doc = "application/vnd.mediastation.cdkey"]
-    #[serde(alias = "application/vnd.mediastation.cdkey")]
+    #[serde(rename = "application/vnd.mediastation.cdkey")]
     #[serde(alias = "cdkey")]
     VndMediastationCdkey,
     #[doc = "application/vnd.medicalholodeck.recordxr"]
-    #[serde(alias = "application/vnd.medicalholodeck.recordxr")]
+    #[serde(rename = "application/vnd.medicalholodeck.recordxr")]
     #[serde(alias = "rxr")]
     VndMedicalholodeckRecordxr,
     #[doc = "application/vnd.meridian-slingshot"]
-    #[serde(alias = "application/vnd.meridian-slingshot")]
+    #[serde(rename = "application/vnd.meridian-slingshot")]
     VndMeridianSlingshot,
     #[doc = "application/vnd.MFER"]
-    #[serde(alias = "application/vnd.MFER")]
+    #[serde(rename = "application/vnd.MFER")]
     #[serde(alias = "mwf")]
     VndMFER,
     #[doc = "application/vnd.mfmp"]
-    #[serde(alias = "application/vnd.mfmp")]
+    #[serde(rename = "application/vnd.mfmp")]
     #[serde(alias = "mfm")]
     VndMfmp,
     #[doc = "application/vnd.micro+json"]
-    #[serde(alias = "application/vnd.micro+json")]
+    #[serde(rename = "application/vnd.micro+json")]
     VndMicroJson,
     #[doc = "application/vnd.micrografx.flo"]
-    #[serde(alias = "application/vnd.micrografx.flo")]
+    #[serde(rename = "application/vnd.micrografx.flo")]
     #[serde(alias = "flo")]
     VndMicrografxFlo,
     #[doc = "application/vnd.micrografx.igx"]
-    #[serde(alias = "application/vnd.micrografx.igx")]
+    #[serde(rename = "application/vnd.micrografx.igx")]
     #[serde(alias = "igx")]
     VndMicrografxIgx,
     #[doc = "application/vnd.microsoft.portable-executable"]
-    #[serde(alias = "application/vnd.microsoft.portable-executable")]
+    #[serde(rename = "application/vnd.microsoft.portable-executable")]
     VndMicrosoftPortableExecutable,
     #[doc = "application/vnd.microsoft.windows.thumbnail-cache"]
-    #[serde(alias = "application/vnd.microsoft.windows.thumbnail-cache")]
+    #[serde(rename = "application/vnd.microsoft.windows.thumbnail-cache")]
     VndMicrosoftWindowsThumbnailCache,
     #[doc = "application/vnd.miele+json"]
-    #[serde(alias = "application/vnd.miele+json")]
+    #[serde(rename = "application/vnd.miele+json")]
     VndMieleJson,
     #[doc = "application/vnd.mif"]
-    #[serde(alias = "application/vnd.mif")]
+    #[serde(rename = "application/vnd.mif")]
     #[serde(alias = "mif")]
     VndMif,
     #[doc = "application/vnd.minisoft-hp3000-save"]
-    #[serde(alias = "application/vnd.minisoft-hp3000-save")]
+    #[serde(rename = "application/vnd.minisoft-hp3000-save")]
     VndMinisoftHp3000Save,
     #[doc = "application/vnd.mitsubishi.misty-guard.trustweb"]
-    #[serde(alias = "application/vnd.mitsubishi.misty-guard.trustweb")]
+    #[serde(rename = "application/vnd.mitsubishi.misty-guard.trustweb")]
     VndMitsubishiMistyGuardTrustweb,
     #[doc = "application/vnd.Mobius.DAF"]
-    #[serde(alias = "application/vnd.Mobius.DAF")]
+    #[serde(rename = "application/vnd.Mobius.DAF")]
     #[serde(alias = "daf")]
     VndMobiusDAF,
     #[doc = "application/vnd.Mobius.DIS"]
-    #[serde(alias = "application/vnd.Mobius.DIS")]
+    #[serde(rename = "application/vnd.Mobius.DIS")]
     #[serde(alias = "dis")]
     VndMobiusDIS,
     #[doc = "application/vnd.Mobius.MBK"]
-    #[serde(alias = "application/vnd.Mobius.MBK")]
+    #[serde(rename = "application/vnd.Mobius.MBK")]
     #[serde(alias = "mbk")]
     VndMobiusMBK,
     #[doc = "application/vnd.Mobius.MQY"]
-    #[serde(alias = "application/vnd.Mobius.MQY")]
+    #[serde(rename = "application/vnd.Mobius.MQY")]
     #[serde(alias = "mqy")]
     VndMobiusMQY,
     #[doc = "application/vnd.Mobius.MSL"]
-    #[serde(alias = "application/vnd.Mobius.MSL")]
+    #[serde(rename = "application/vnd.Mobius.MSL")]
     #[serde(alias = "msl")]
     VndMobiusMSL,
     #[doc = "application/vnd.Mobius.PLC"]
-    #[serde(alias = "application/vnd.Mobius.PLC")]
+    #[serde(rename = "application/vnd.Mobius.PLC")]
     #[serde(alias = "plc")]
     VndMobiusPLC,
     #[doc = "application/vnd.Mobius.TXF"]
-    #[serde(alias = "application/vnd.Mobius.TXF")]
+    #[serde(rename = "application/vnd.Mobius.TXF")]
     #[serde(alias = "txf")]
     VndMobiusTXF,
     #[doc = "application/vnd.modl"]
-    #[serde(alias = "application/vnd.modl")]
+    #[serde(rename = "application/vnd.modl")]
     #[serde(alias = "modl")]
     VndModl,
     #[doc = "application/vnd.mophun.application"]
-    #[serde(alias = "application/vnd.mophun.application")]
+    #[serde(rename = "application/vnd.mophun.application")]
     #[serde(alias = "mpn")]
     VndMophunApplication,
     #[doc = "application/vnd.mophun.certificate"]
-    #[serde(alias = "application/vnd.mophun.certificate")]
+    #[serde(rename = "application/vnd.mophun.certificate")]
     #[serde(alias = "mpc")]
     VndMophunCertificate,
     #[doc = "application/vnd.motorola.flexsuite"]
-    #[serde(alias = "application/vnd.motorola.flexsuite")]
+    #[serde(rename = "application/vnd.motorola.flexsuite")]
     VndMotorolaFlexsuite,
     #[doc = "application/vnd.motorola.flexsuite.adsi"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.adsi")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.adsi")]
     VndMotorolaFlexsuiteAdsi,
     #[doc = "application/vnd.motorola.flexsuite.fis"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.fis")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.fis")]
     VndMotorolaFlexsuiteFis,
     #[doc = "application/vnd.motorola.flexsuite.gotap"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.gotap")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.gotap")]
     VndMotorolaFlexsuiteGotap,
     #[doc = "application/vnd.motorola.flexsuite.kmr"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.kmr")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.kmr")]
     VndMotorolaFlexsuiteKmr,
     #[doc = "application/vnd.motorola.flexsuite.ttc"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.ttc")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.ttc")]
     VndMotorolaFlexsuiteTtc,
     #[doc = "application/vnd.motorola.flexsuite.wem"]
-    #[serde(alias = "application/vnd.motorola.flexsuite.wem")]
+    #[serde(rename = "application/vnd.motorola.flexsuite.wem")]
     VndMotorolaFlexsuiteWem,
     #[doc = "application/vnd.motorola.iprm"]
-    #[serde(alias = "application/vnd.motorola.iprm")]
+    #[serde(rename = "application/vnd.motorola.iprm")]
     VndMotorolaIprm,
     #[doc = "application/vnd.mozilla.xul+xml"]
-    #[serde(alias = "application/vnd.mozilla.xul+xml")]
+    #[serde(rename = "application/vnd.mozilla.xul+xml")]
     #[serde(alias = "xul")]
     VndMozillaXulXml,
     #[doc = "application/vnd.ms-artgalry"]
-    #[serde(alias = "application/vnd.ms-artgalry")]
+    #[serde(rename = "application/vnd.ms-artgalry")]
     #[serde(alias = "cil")]
     VndMsArtgalry,
     #[doc = "application/vnd.ms-asf"]
-    #[serde(alias = "application/vnd.ms-asf")]
+    #[serde(rename = "application/vnd.ms-asf")]
     #[serde(alias = "asf")]
     VndMsAsf,
     #[doc = "application/vnd.ms-cab-compressed"]
-    #[serde(alias = "application/vnd.ms-cab-compressed")]
+    #[serde(rename = "application/vnd.ms-cab-compressed")]
     #[serde(alias = "cab")]
     VndMsCabCompressed,
     #[doc = "application/vnd.ms-3mfdocument"]
-    #[serde(alias = "application/vnd.ms-3mfdocument")]
+    #[serde(rename = "application/vnd.ms-3mfdocument")]
     #[serde(alias = "3mf")]
     VndMs3Mfdocument,
     #[doc = "application/vnd.ms-excel"]
-    #[serde(alias = "application/vnd.ms-excel")]
+    #[serde(rename = "application/vnd.ms-excel")]
     #[serde(alias = "xls")]
     #[serde(alias = "xlm")]
     #[serde(alias = "xla")]
@@ -3626,1033 +3626,1047 @@ pub enum Application {
     #[serde(alias = "xlw")]
     VndMsExcel,
     #[doc = "application/vnd.ms-excel.addin.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-excel.addin.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-excel.addin.macroEnabled.12")]
     #[serde(alias = "xlam")]
     VndMsExcelAddinMacroEnabled12,
     #[doc = "application/vnd.ms-excel.sheet.binary.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-excel.sheet.binary.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-excel.sheet.binary.macroEnabled.12")]
     #[serde(alias = "xlsb")]
     VndMsExcelSheetBinaryMacroEnabled12,
     #[doc = "application/vnd.ms-excel.sheet.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-excel.sheet.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-excel.sheet.macroEnabled.12")]
     #[serde(alias = "xlsm")]
     VndMsExcelSheetMacroEnabled12,
     #[doc = "application/vnd.ms-excel.template.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-excel.template.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-excel.template.macroEnabled.12")]
     #[serde(alias = "xltm")]
     VndMsExcelTemplateMacroEnabled12,
     #[doc = "application/vnd.ms-fontobject"]
-    #[serde(alias = "application/vnd.ms-fontobject")]
+    #[serde(rename = "application/vnd.ms-fontobject")]
     #[serde(alias = "eot")]
     VndMsFontobject,
     #[doc = "application/vnd.ms-htmlhelp"]
-    #[serde(alias = "application/vnd.ms-htmlhelp")]
+    #[serde(rename = "application/vnd.ms-htmlhelp")]
     #[serde(alias = "chm")]
     VndMsHtmlhelp,
     #[doc = "application/vnd.ms-ims"]
-    #[serde(alias = "application/vnd.ms-ims")]
+    #[serde(rename = "application/vnd.ms-ims")]
     #[serde(alias = "ims")]
     VndMsIms,
     #[doc = "application/vnd.ms-lrm"]
-    #[serde(alias = "application/vnd.ms-lrm")]
+    #[serde(rename = "application/vnd.ms-lrm")]
     #[serde(alias = "lrm")]
     VndMsLrm,
     #[doc = "application/vnd.ms-office.activeX+xml"]
-    #[serde(alias = "application/vnd.ms-office.activeX+xml")]
+    #[serde(rename = "application/vnd.ms-office.activeX+xml")]
     VndMsOfficeActiveXXml,
     #[doc = "application/vnd.ms-officetheme"]
-    #[serde(alias = "application/vnd.ms-officetheme")]
+    #[serde(rename = "application/vnd.ms-officetheme")]
     #[serde(alias = "thmx")]
     VndMsOfficetheme,
     #[doc = "application/vnd.ms-playready.initiator+xml"]
-    #[serde(alias = "application/vnd.ms-playready.initiator+xml")]
+    #[serde(rename = "application/vnd.ms-playready.initiator+xml")]
     VndMsPlayreadyInitiatorXml,
     #[doc = "application/vnd.ms-powerpoint"]
-    #[serde(alias = "application/vnd.ms-powerpoint")]
+    #[serde(rename = "application/vnd.ms-powerpoint")]
     #[serde(alias = "ppt")]
     #[serde(alias = "pps")]
     #[serde(alias = "pot")]
     VndMsPowerpoint,
     #[doc = "application/vnd.ms-powerpoint.addin.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-powerpoint.addin.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-powerpoint.addin.macroEnabled.12")]
     #[serde(alias = "ppam")]
     VndMsPowerpointAddinMacroEnabled12,
     #[doc = "application/vnd.ms-powerpoint.presentation.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-powerpoint.presentation.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-powerpoint.presentation.macroEnabled.12")]
     #[serde(alias = "pptm")]
     VndMsPowerpointPresentationMacroEnabled12,
     #[doc = "application/vnd.ms-powerpoint.slide.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-powerpoint.slide.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-powerpoint.slide.macroEnabled.12")]
     #[serde(alias = "sldm")]
     VndMsPowerpointSlideMacroEnabled12,
     #[doc = "application/vnd.ms-powerpoint.slideshow.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-powerpoint.slideshow.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-powerpoint.slideshow.macroEnabled.12")]
     #[serde(alias = "ppsm")]
     VndMsPowerpointSlideshowMacroEnabled12,
     #[doc = "application/vnd.ms-powerpoint.template.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-powerpoint.template.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-powerpoint.template.macroEnabled.12")]
     #[serde(alias = "potm")]
     VndMsPowerpointTemplateMacroEnabled12,
     #[doc = "application/vnd.ms-PrintDeviceCapabilities+xml"]
-    #[serde(alias = "application/vnd.ms-PrintDeviceCapabilities+xml")]
+    #[serde(rename = "application/vnd.ms-PrintDeviceCapabilities+xml")]
     VndMsPrintDeviceCapabilitiesXml,
     #[doc = "application/vnd.ms-PrintSchemaTicket+xml"]
-    #[serde(alias = "application/vnd.ms-PrintSchemaTicket+xml")]
+    #[serde(rename = "application/vnd.ms-PrintSchemaTicket+xml")]
     VndMsPrintSchemaTicketXml,
     #[doc = "application/vnd.ms-project"]
-    #[serde(alias = "application/vnd.ms-project")]
+    #[serde(rename = "application/vnd.ms-project")]
     #[serde(alias = "mpp")]
     #[serde(alias = "mpt")]
     VndMsProject,
     #[doc = "application/vnd.ms-tnef"]
-    #[serde(alias = "application/vnd.ms-tnef")]
+    #[serde(rename = "application/vnd.ms-tnef")]
     #[serde(alias = "tnef")]
     #[serde(alias = "tnf")]
     VndMsTnef,
     #[doc = "application/vnd.ms-windows.devicepairing"]
-    #[serde(alias = "application/vnd.ms-windows.devicepairing")]
+    #[serde(rename = "application/vnd.ms-windows.devicepairing")]
     VndMsWindowsDevicepairing,
     #[doc = "application/vnd.ms-windows.nwprinting.oob"]
-    #[serde(alias = "application/vnd.ms-windows.nwprinting.oob")]
+    #[serde(rename = "application/vnd.ms-windows.nwprinting.oob")]
     VndMsWindowsNwprintingOob,
     #[doc = "application/vnd.ms-windows.printerpairing"]
-    #[serde(alias = "application/vnd.ms-windows.printerpairing")]
+    #[serde(rename = "application/vnd.ms-windows.printerpairing")]
     VndMsWindowsPrinterpairing,
     #[doc = "application/vnd.ms-windows.wsd.oob"]
-    #[serde(alias = "application/vnd.ms-windows.wsd.oob")]
+    #[serde(rename = "application/vnd.ms-windows.wsd.oob")]
     VndMsWindowsWsdOob,
     #[doc = "application/vnd.ms-wmdrm.lic-chlg-req"]
-    #[serde(alias = "application/vnd.ms-wmdrm.lic-chlg-req")]
+    #[serde(rename = "application/vnd.ms-wmdrm.lic-chlg-req")]
     VndMsWmdrmLicChlgReq,
     #[doc = "application/vnd.ms-wmdrm.lic-resp"]
-    #[serde(alias = "application/vnd.ms-wmdrm.lic-resp")]
+    #[serde(rename = "application/vnd.ms-wmdrm.lic-resp")]
     VndMsWmdrmLicResp,
     #[doc = "application/vnd.ms-wmdrm.meter-chlg-req"]
-    #[serde(alias = "application/vnd.ms-wmdrm.meter-chlg-req")]
+    #[serde(rename = "application/vnd.ms-wmdrm.meter-chlg-req")]
     VndMsWmdrmMeterChlgReq,
     #[doc = "application/vnd.ms-wmdrm.meter-resp"]
-    #[serde(alias = "application/vnd.ms-wmdrm.meter-resp")]
+    #[serde(rename = "application/vnd.ms-wmdrm.meter-resp")]
     VndMsWmdrmMeterResp,
     #[doc = "application/vnd.ms-word.document.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-word.document.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-word.document.macroEnabled.12")]
     #[serde(alias = "docm")]
     VndMsWordDocumentMacroEnabled12,
     #[doc = "application/vnd.ms-word.template.macroEnabled.12"]
-    #[serde(alias = "application/vnd.ms-word.template.macroEnabled.12")]
+    #[serde(rename = "application/vnd.ms-word.template.macroEnabled.12")]
     #[serde(alias = "dotm")]
     VndMsWordTemplateMacroEnabled12,
     #[doc = "application/vnd.ms-works"]
-    #[serde(alias = "application/vnd.ms-works")]
+    #[serde(rename = "application/vnd.ms-works")]
     #[serde(alias = "wcm")]
     #[serde(alias = "wdb")]
     #[serde(alias = "wks")]
     #[serde(alias = "wps")]
     VndMsWorks,
     #[doc = "application/vnd.ms-wpl"]
-    #[serde(alias = "application/vnd.ms-wpl")]
+    #[serde(rename = "application/vnd.ms-wpl")]
     #[serde(alias = "wpl")]
     VndMsWpl,
     #[doc = "application/vnd.ms-xpsdocument"]
-    #[serde(alias = "application/vnd.ms-xpsdocument")]
+    #[serde(rename = "application/vnd.ms-xpsdocument")]
     #[serde(alias = "xps")]
     VndMsXpsdocument,
     #[doc = "application/vnd.msa-disk-image"]
-    #[serde(alias = "application/vnd.msa-disk-image")]
+    #[serde(rename = "application/vnd.msa-disk-image")]
     #[serde(alias = "msa")]
     VndMsaDiskImage,
     #[doc = "application/vnd.mseq"]
-    #[serde(alias = "application/vnd.mseq")]
+    #[serde(rename = "application/vnd.mseq")]
     #[serde(alias = "mseq")]
     VndMseq,
     #[doc = "application/vnd.msign"]
-    #[serde(alias = "application/vnd.msign")]
+    #[serde(rename = "application/vnd.msign")]
     VndMsign,
     #[doc = "application/vnd.multiad.creator"]
-    #[serde(alias = "application/vnd.multiad.creator")]
+    #[serde(rename = "application/vnd.multiad.creator")]
     #[serde(alias = "crtr")]
     VndMultiadCreator,
     #[doc = "application/vnd.multiad.creator.cif"]
-    #[serde(alias = "application/vnd.multiad.creator.cif")]
+    #[serde(rename = "application/vnd.multiad.creator.cif")]
     #[serde(alias = "cif")]
     VndMultiadCreatorCif,
     #[doc = "application/vnd.musician"]
-    #[serde(alias = "application/vnd.musician")]
+    #[serde(rename = "application/vnd.musician")]
     #[serde(alias = "mus")]
     VndMusician,
     #[doc = "application/vnd.music-niff"]
-    #[serde(alias = "application/vnd.music-niff")]
+    #[serde(rename = "application/vnd.music-niff")]
     VndMusicNiff,
     #[doc = "application/vnd.muvee.style"]
-    #[serde(alias = "application/vnd.muvee.style")]
+    #[serde(rename = "application/vnd.muvee.style")]
     #[serde(alias = "msty")]
     VndMuveeStyle,
     #[doc = "application/vnd.mynfc"]
-    #[serde(alias = "application/vnd.mynfc")]
+    #[serde(rename = "application/vnd.mynfc")]
     #[serde(alias = "taglet")]
     VndMynfc,
     #[doc = "application/vnd.nacamar.ybrid+json"]
-    #[serde(alias = "application/vnd.nacamar.ybrid+json")]
+    #[serde(rename = "application/vnd.nacamar.ybrid+json")]
     VndNacamarYbridJson,
     #[doc = "application/vnd.ncd.control"]
-    #[serde(alias = "application/vnd.ncd.control")]
+    #[serde(rename = "application/vnd.ncd.control")]
     VndNcdControl,
     #[doc = "application/vnd.ncd.reference"]
-    #[serde(alias = "application/vnd.ncd.reference")]
+    #[serde(rename = "application/vnd.ncd.reference")]
     VndNcdReference,
     #[doc = "application/vnd.nearst.inv+json"]
-    #[serde(alias = "application/vnd.nearst.inv+json")]
+    #[serde(rename = "application/vnd.nearst.inv+json")]
     VndNearstInvJson,
     #[doc = "application/vnd.nebumind.line"]
-    #[serde(alias = "application/vnd.nebumind.line")]
+    #[serde(rename = "application/vnd.nebumind.line")]
     #[serde(alias = "nebul")]
     #[serde(alias = "line")]
     VndNebumindLine,
     #[doc = "application/vnd.nervana"]
-    #[serde(alias = "application/vnd.nervana")]
+    #[serde(rename = "application/vnd.nervana")]
     #[serde(alias = "entity")]
     #[serde(alias = "request")]
     #[serde(alias = "bkm")]
     #[serde(alias = "kcm")]
     VndNervana,
     #[doc = "application/vnd.netfpx"]
-    #[serde(alias = "application/vnd.netfpx")]
+    #[serde(rename = "application/vnd.netfpx")]
     VndNetfpx,
     #[doc = "application/vnd.neurolanguage.nlu"]
-    #[serde(alias = "application/vnd.neurolanguage.nlu")]
+    #[serde(rename = "application/vnd.neurolanguage.nlu")]
     #[serde(alias = "nlu")]
     VndNeurolanguageNlu,
     #[doc = "application/vnd.nimn"]
-    #[serde(alias = "application/vnd.nimn")]
+    #[serde(rename = "application/vnd.nimn")]
     #[serde(alias = "nimn")]
     VndNimn,
     #[doc = "application/vnd.nintendo.snes.rom"]
-    #[serde(alias = "application/vnd.nintendo.snes.rom")]
+    #[serde(rename = "application/vnd.nintendo.snes.rom")]
     #[serde(alias = "sfc")]
     #[serde(alias = "smc")]
     VndNintendoSnesRom,
     #[doc = "application/vnd.nintendo.nitro.rom"]
-    #[serde(alias = "application/vnd.nintendo.nitro.rom")]
+    #[serde(rename = "application/vnd.nintendo.nitro.rom")]
     #[serde(alias = "nds")]
     VndNintendoNitroRom,
     #[doc = "application/vnd.nitf"]
-    #[serde(alias = "application/vnd.nitf")]
+    #[serde(rename = "application/vnd.nitf")]
     #[serde(alias = "nitf")]
     VndNitf,
     #[doc = "application/vnd.noblenet-directory"]
-    #[serde(alias = "application/vnd.noblenet-directory")]
+    #[serde(rename = "application/vnd.noblenet-directory")]
     #[serde(alias = "nnd")]
     VndNoblenetDirectory,
     #[doc = "application/vnd.noblenet-sealer"]
-    #[serde(alias = "application/vnd.noblenet-sealer")]
+    #[serde(rename = "application/vnd.noblenet-sealer")]
     #[serde(alias = "nns")]
     VndNoblenetSealer,
     #[doc = "application/vnd.noblenet-web"]
-    #[serde(alias = "application/vnd.noblenet-web")]
+    #[serde(rename = "application/vnd.noblenet-web")]
     #[serde(alias = "nnw")]
     VndNoblenetWeb,
     #[doc = "application/vnd.nokia.catalogs"]
-    #[serde(alias = "application/vnd.nokia.catalogs")]
+    #[serde(rename = "application/vnd.nokia.catalogs")]
     VndNokiaCatalogs,
     #[doc = "application/vnd.nokia.conml+wbxml"]
-    #[serde(alias = "application/vnd.nokia.conml+wbxml")]
+    #[serde(rename = "application/vnd.nokia.conml+wbxml")]
     VndNokiaConmlWbxml,
     #[doc = "application/vnd.nokia.conml+xml"]
-    #[serde(alias = "application/vnd.nokia.conml+xml")]
+    #[serde(rename = "application/vnd.nokia.conml+xml")]
     VndNokiaConmlXml,
     #[doc = "application/vnd.nokia.iptv.config+xml"]
-    #[serde(alias = "application/vnd.nokia.iptv.config+xml")]
+    #[serde(rename = "application/vnd.nokia.iptv.config+xml")]
     VndNokiaIptvConfigXml,
     #[doc = "application/vnd.nokia.iSDS-radio-presets"]
-    #[serde(alias = "application/vnd.nokia.iSDS-radio-presets")]
+    #[serde(rename = "application/vnd.nokia.iSDS-radio-presets")]
     VndNokiaISDSRadioPresets,
     #[doc = "application/vnd.nokia.landmark+wbxml"]
-    #[serde(alias = "application/vnd.nokia.landmark+wbxml")]
+    #[serde(rename = "application/vnd.nokia.landmark+wbxml")]
     VndNokiaLandmarkWbxml,
     #[doc = "application/vnd.nokia.landmark+xml"]
-    #[serde(alias = "application/vnd.nokia.landmark+xml")]
+    #[serde(rename = "application/vnd.nokia.landmark+xml")]
     VndNokiaLandmarkXml,
     #[doc = "application/vnd.nokia.landmarkcollection+xml"]
-    #[serde(alias = "application/vnd.nokia.landmarkcollection+xml")]
+    #[serde(rename = "application/vnd.nokia.landmarkcollection+xml")]
     VndNokiaLandmarkcollectionXml,
     #[doc = "application/vnd.nokia.ncd"]
-    #[serde(alias = "application/vnd.nokia.ncd")]
+    #[serde(rename = "application/vnd.nokia.ncd")]
     VndNokiaNcd,
     #[doc = "application/vnd.nokia.n-gage.ac+xml"]
-    #[serde(alias = "application/vnd.nokia.n-gage.ac+xml")]
+    #[serde(rename = "application/vnd.nokia.n-gage.ac+xml")]
     #[serde(alias = "ac")]
     VndNokiaNGageAcXml,
     #[doc = "application/vnd.nokia.n-gage.data"]
-    #[serde(alias = "application/vnd.nokia.n-gage.data")]
+    #[serde(rename = "application/vnd.nokia.n-gage.data")]
     #[serde(alias = "ngdat")]
     VndNokiaNGageData,
     #[doc = "application/vnd.nokia.pcd+wbxml"]
-    #[serde(alias = "application/vnd.nokia.pcd+wbxml")]
+    #[serde(rename = "application/vnd.nokia.pcd+wbxml")]
     VndNokiaPcdWbxml,
     #[doc = "application/vnd.nokia.pcd+xml"]
-    #[serde(alias = "application/vnd.nokia.pcd+xml")]
+    #[serde(rename = "application/vnd.nokia.pcd+xml")]
     VndNokiaPcdXml,
     #[doc = "application/vnd.nokia.radio-preset"]
-    #[serde(alias = "application/vnd.nokia.radio-preset")]
+    #[serde(rename = "application/vnd.nokia.radio-preset")]
     #[serde(alias = "rpst")]
     VndNokiaRadioPreset,
     #[doc = "application/vnd.nokia.radio-presets"]
-    #[serde(alias = "application/vnd.nokia.radio-presets")]
+    #[serde(rename = "application/vnd.nokia.radio-presets")]
     #[serde(alias = "rpss")]
     VndNokiaRadioPresets,
     #[doc = "application/vnd.novadigm.EDM"]
-    #[serde(alias = "application/vnd.novadigm.EDM")]
+    #[serde(rename = "application/vnd.novadigm.EDM")]
     #[serde(alias = "edm")]
     VndNovadigmEDM,
     #[doc = "application/vnd.novadigm.EDX"]
-    #[serde(alias = "application/vnd.novadigm.EDX")]
+    #[serde(rename = "application/vnd.novadigm.EDX")]
     #[serde(alias = "edx")]
     VndNovadigmEDX,
     #[doc = "application/vnd.novadigm.EXT"]
-    #[serde(alias = "application/vnd.novadigm.EXT")]
+    #[serde(rename = "application/vnd.novadigm.EXT")]
     #[serde(alias = "ext")]
     VndNovadigmEXT,
     #[doc = "application/vnd.ntt-local.content-share"]
-    #[serde(alias = "application/vnd.ntt-local.content-share")]
+    #[serde(rename = "application/vnd.ntt-local.content-share")]
     VndNttLocalContentShare,
     #[doc = "application/vnd.ntt-local.file-transfer"]
-    #[serde(alias = "application/vnd.ntt-local.file-transfer")]
+    #[serde(rename = "application/vnd.ntt-local.file-transfer")]
     VndNttLocalFileTransfer,
     #[doc = "application/vnd.ntt-local.ogw_remote-access"]
-    #[serde(alias = "application/vnd.ntt-local.ogw_remote-access")]
+    #[serde(rename = "application/vnd.ntt-local.ogw_remote-access")]
     VndNttLocalOgwRemoteAccess,
     #[doc = "application/vnd.ntt-local.sip-ta_remote"]
-    #[serde(alias = "application/vnd.ntt-local.sip-ta_remote")]
+    #[serde(rename = "application/vnd.ntt-local.sip-ta_remote")]
     VndNttLocalSipTaRemote,
     #[doc = "application/vnd.ntt-local.sip-ta_tcp_stream"]
-    #[serde(alias = "application/vnd.ntt-local.sip-ta_tcp_stream")]
+    #[serde(rename = "application/vnd.ntt-local.sip-ta_tcp_stream")]
     VndNttLocalSipTaTcpStream,
     #[doc = "application/vnd.oasis.opendocument.base"]
-    #[serde(alias = "application/vnd.oasis.opendocument.base")]
+    #[serde(rename = "application/vnd.oasis.opendocument.base")]
     #[serde(alias = "odb")]
     VndOasisOpendocumentBase,
     #[doc = "application/vnd.oasis.opendocument.chart"]
-    #[serde(alias = "application/vnd.oasis.opendocument.chart")]
+    #[serde(rename = "application/vnd.oasis.opendocument.chart")]
     #[serde(alias = "odc")]
     VndOasisOpendocumentChart,
     #[doc = "application/vnd.oasis.opendocument.chart-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.chart-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.chart-template")]
     #[serde(alias = "otc")]
     VndOasisOpendocumentChartTemplate,
     #[doc = "application/vnd.oasis.opendocument.formula"]
-    #[serde(alias = "application/vnd.oasis.opendocument.formula")]
+    #[serde(rename = "application/vnd.oasis.opendocument.formula")]
     #[serde(alias = "odf")]
     VndOasisOpendocumentFormula,
     #[doc = "application/vnd.oasis.opendocument.formula-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.formula-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.formula-template")]
     VndOasisOpendocumentFormulaTemplate,
     #[doc = "application/vnd.oasis.opendocument.graphics"]
-    #[serde(alias = "application/vnd.oasis.opendocument.graphics")]
+    #[serde(rename = "application/vnd.oasis.opendocument.graphics")]
     #[serde(alias = "odg")]
     VndOasisOpendocumentGraphics,
     #[doc = "application/vnd.oasis.opendocument.graphics-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.graphics-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.graphics-template")]
     #[serde(alias = "otg")]
     VndOasisOpendocumentGraphicsTemplate,
     #[doc = "application/vnd.oasis.opendocument.image"]
-    #[serde(alias = "application/vnd.oasis.opendocument.image")]
+    #[serde(rename = "application/vnd.oasis.opendocument.image")]
     #[serde(alias = "odi")]
     VndOasisOpendocumentImage,
     #[doc = "application/vnd.oasis.opendocument.image-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.image-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.image-template")]
     #[serde(alias = "oti")]
     VndOasisOpendocumentImageTemplate,
     #[doc = "application/vnd.oasis.opendocument.presentation"]
-    #[serde(alias = "application/vnd.oasis.opendocument.presentation")]
+    #[serde(rename = "application/vnd.oasis.opendocument.presentation")]
     #[serde(alias = "odp")]
     VndOasisOpendocumentPresentation,
     #[doc = "application/vnd.oasis.opendocument.presentation-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.presentation-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.presentation-template")]
     #[serde(alias = "otp")]
     VndOasisOpendocumentPresentationTemplate,
     #[doc = "application/vnd.oasis.opendocument.spreadsheet"]
-    #[serde(alias = "application/vnd.oasis.opendocument.spreadsheet")]
+    #[serde(rename = "application/vnd.oasis.opendocument.spreadsheet")]
     #[serde(alias = "ods")]
     VndOasisOpendocumentSpreadsheet,
     #[doc = "application/vnd.oasis.opendocument.spreadsheet-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.spreadsheet-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.spreadsheet-template")]
     #[serde(alias = "ots")]
     VndOasisOpendocumentSpreadsheetTemplate,
     #[doc = "application/vnd.oasis.opendocument.text"]
-    #[serde(alias = "application/vnd.oasis.opendocument.text")]
+    #[serde(rename = "application/vnd.oasis.opendocument.text")]
     #[serde(alias = "odt")]
     VndOasisOpendocumentText,
     #[doc = "application/vnd.oasis.opendocument.text-master"]
-    #[serde(alias = "application/vnd.oasis.opendocument.text-master")]
+    #[serde(rename = "application/vnd.oasis.opendocument.text-master")]
     #[serde(alias = "odm")]
     VndOasisOpendocumentTextMaster,
     #[doc = "application/vnd.oasis.opendocument.text-master-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.text-master-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.text-master-template")]
     #[serde(alias = "otm")]
     VndOasisOpendocumentTextMasterTemplate,
     #[doc = "application/vnd.oasis.opendocument.text-template"]
-    #[serde(alias = "application/vnd.oasis.opendocument.text-template")]
+    #[serde(rename = "application/vnd.oasis.opendocument.text-template")]
     #[serde(alias = "ott")]
     VndOasisOpendocumentTextTemplate,
     #[doc = "application/vnd.oasis.opendocument.text-web"]
-    #[serde(alias = "application/vnd.oasis.opendocument.text-web")]
+    #[serde(rename = "application/vnd.oasis.opendocument.text-web")]
     #[serde(alias = "oth")]
     VndOasisOpendocumentTextWeb,
     #[doc = "application/vnd.obn"]
-    #[serde(alias = "application/vnd.obn")]
+    #[serde(rename = "application/vnd.obn")]
     VndObn,
     #[doc = "application/vnd.ocf+cbor"]
-    #[serde(alias = "application/vnd.ocf+cbor")]
+    #[serde(rename = "application/vnd.ocf+cbor")]
     VndOcfCbor,
     #[doc = "application/vnd.oci.image.manifest.v1+json"]
-    #[serde(alias = "application/vnd.oci.image.manifest.v1+json")]
+    #[serde(rename = "application/vnd.oci.image.manifest.v1+json")]
     VndOciImageManifestV1Json,
     #[doc = "application/vnd.oftn.l10n+json"]
-    #[serde(alias = "application/vnd.oftn.l10n+json")]
+    #[serde(rename = "application/vnd.oftn.l10n+json")]
     VndOftnL10NJson,
     #[doc = "application/vnd.oipf.contentaccessdownload+xml"]
-    #[serde(alias = "application/vnd.oipf.contentaccessdownload+xml")]
+    #[serde(rename = "application/vnd.oipf.contentaccessdownload+xml")]
     VndOipfContentaccessdownloadXml,
     #[doc = "application/vnd.oipf.contentaccessstreaming+xml"]
-    #[serde(alias = "application/vnd.oipf.contentaccessstreaming+xml")]
+    #[serde(rename = "application/vnd.oipf.contentaccessstreaming+xml")]
     VndOipfContentaccessstreamingXml,
     #[doc = "application/vnd.oipf.cspg-hexbinary"]
-    #[serde(alias = "application/vnd.oipf.cspg-hexbinary")]
+    #[serde(rename = "application/vnd.oipf.cspg-hexbinary")]
     VndOipfCspgHexbinary,
     #[doc = "application/vnd.oipf.dae.svg+xml"]
-    #[serde(alias = "application/vnd.oipf.dae.svg+xml")]
+    #[serde(rename = "application/vnd.oipf.dae.svg+xml")]
     VndOipfDaeSvgXml,
     #[doc = "application/vnd.oipf.dae.xhtml+xml"]
-    #[serde(alias = "application/vnd.oipf.dae.xhtml+xml")]
+    #[serde(rename = "application/vnd.oipf.dae.xhtml+xml")]
     VndOipfDaeXhtmlXml,
     #[doc = "application/vnd.oipf.mippvcontrolmessage+xml"]
-    #[serde(alias = "application/vnd.oipf.mippvcontrolmessage+xml")]
+    #[serde(rename = "application/vnd.oipf.mippvcontrolmessage+xml")]
     VndOipfMippvcontrolmessageXml,
     #[doc = "application/vnd.oipf.pae.gem"]
-    #[serde(alias = "application/vnd.oipf.pae.gem")]
+    #[serde(rename = "application/vnd.oipf.pae.gem")]
     VndOipfPaeGem,
     #[doc = "application/vnd.oipf.spdiscovery+xml"]
-    #[serde(alias = "application/vnd.oipf.spdiscovery+xml")]
+    #[serde(rename = "application/vnd.oipf.spdiscovery+xml")]
     VndOipfSpdiscoveryXml,
     #[doc = "application/vnd.oipf.spdlist+xml"]
-    #[serde(alias = "application/vnd.oipf.spdlist+xml")]
+    #[serde(rename = "application/vnd.oipf.spdlist+xml")]
     VndOipfSpdlistXml,
     #[doc = "application/vnd.oipf.ueprofile+xml"]
-    #[serde(alias = "application/vnd.oipf.ueprofile+xml")]
+    #[serde(rename = "application/vnd.oipf.ueprofile+xml")]
     VndOipfUeprofileXml,
     #[doc = "application/vnd.oipf.userprofile+xml"]
-    #[serde(alias = "application/vnd.oipf.userprofile+xml")]
+    #[serde(rename = "application/vnd.oipf.userprofile+xml")]
     VndOipfUserprofileXml,
     #[doc = "application/vnd.olpc-sugar"]
-    #[serde(alias = "application/vnd.olpc-sugar")]
+    #[serde(rename = "application/vnd.olpc-sugar")]
     #[serde(alias = "xo")]
     VndOlpcSugar,
     #[doc = "application/vnd.oma.bcast.associated-procedure-parameter+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.associated-procedure-parameter+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.associated-procedure-parameter+xml")]
     VndOmaBcastAssociatedProcedureParameterXml,
     #[doc = "application/vnd.oma.bcast.drm-trigger+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.drm-trigger+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.drm-trigger+xml")]
     VndOmaBcastDrmTriggerXml,
     #[doc = "application/vnd.oma.bcast.imd+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.imd+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.imd+xml")]
     VndOmaBcastImdXml,
     #[doc = "application/vnd.oma.bcast.ltkm"]
-    #[serde(alias = "application/vnd.oma.bcast.ltkm")]
+    #[serde(rename = "application/vnd.oma.bcast.ltkm")]
     VndOmaBcastLtkm,
     #[doc = "application/vnd.oma.bcast.notification+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.notification+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.notification+xml")]
     VndOmaBcastNotificationXml,
     #[doc = "application/vnd.oma.bcast.provisioningtrigger"]
-    #[serde(alias = "application/vnd.oma.bcast.provisioningtrigger")]
+    #[serde(rename = "application/vnd.oma.bcast.provisioningtrigger")]
     VndOmaBcastProvisioningtrigger,
     #[doc = "application/vnd.oma.bcast.sgboot"]
-    #[serde(alias = "application/vnd.oma.bcast.sgboot")]
+    #[serde(rename = "application/vnd.oma.bcast.sgboot")]
     VndOmaBcastSgboot,
     #[doc = "application/vnd.oma.bcast.sgdd+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.sgdd+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.sgdd+xml")]
     VndOmaBcastSgddXml,
     #[doc = "application/vnd.oma.bcast.sgdu"]
-    #[serde(alias = "application/vnd.oma.bcast.sgdu")]
+    #[serde(rename = "application/vnd.oma.bcast.sgdu")]
     VndOmaBcastSgdu,
     #[doc = "application/vnd.oma.bcast.simple-symbol-container"]
-    #[serde(alias = "application/vnd.oma.bcast.simple-symbol-container")]
+    #[serde(rename = "application/vnd.oma.bcast.simple-symbol-container")]
     VndOmaBcastSimpleSymbolContainer,
     #[doc = "application/vnd.oma.bcast.smartcard-trigger+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.smartcard-trigger+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.smartcard-trigger+xml")]
     VndOmaBcastSmartcardTriggerXml,
     #[doc = "application/vnd.oma.bcast.sprov+xml"]
-    #[serde(alias = "application/vnd.oma.bcast.sprov+xml")]
+    #[serde(rename = "application/vnd.oma.bcast.sprov+xml")]
     VndOmaBcastSprovXml,
     #[doc = "application/vnd.oma.bcast.stkm"]
-    #[serde(alias = "application/vnd.oma.bcast.stkm")]
+    #[serde(rename = "application/vnd.oma.bcast.stkm")]
     VndOmaBcastStkm,
     #[doc = "application/vnd.oma.cab-address-book+xml"]
-    #[serde(alias = "application/vnd.oma.cab-address-book+xml")]
+    #[serde(rename = "application/vnd.oma.cab-address-book+xml")]
     VndOmaCabAddressBookXml,
     #[doc = "application/vnd.oma.cab-feature-handler+xml"]
-    #[serde(alias = "application/vnd.oma.cab-feature-handler+xml")]
+    #[serde(rename = "application/vnd.oma.cab-feature-handler+xml")]
     VndOmaCabFeatureHandlerXml,
     #[doc = "application/vnd.oma.cab-pcc+xml"]
-    #[serde(alias = "application/vnd.oma.cab-pcc+xml")]
+    #[serde(rename = "application/vnd.oma.cab-pcc+xml")]
     VndOmaCabPccXml,
     #[doc = "application/vnd.oma.cab-subs-invite+xml"]
-    #[serde(alias = "application/vnd.oma.cab-subs-invite+xml")]
+    #[serde(rename = "application/vnd.oma.cab-subs-invite+xml")]
     VndOmaCabSubsInviteXml,
     #[doc = "application/vnd.oma.cab-user-prefs+xml"]
-    #[serde(alias = "application/vnd.oma.cab-user-prefs+xml")]
+    #[serde(rename = "application/vnd.oma.cab-user-prefs+xml")]
     VndOmaCabUserPrefsXml,
     #[doc = "application/vnd.oma.dcd"]
-    #[serde(alias = "application/vnd.oma.dcd")]
+    #[serde(rename = "application/vnd.oma.dcd")]
     VndOmaDcd,
     #[doc = "application/vnd.oma.dcdc"]
-    #[serde(alias = "application/vnd.oma.dcdc")]
+    #[serde(rename = "application/vnd.oma.dcdc")]
     VndOmaDcdc,
     #[doc = "application/vnd.oma.dd2+xml"]
-    #[serde(alias = "application/vnd.oma.dd2+xml")]
+    #[serde(rename = "application/vnd.oma.dd2+xml")]
     #[serde(alias = "dd2")]
     VndOmaDd2Xml,
     #[doc = "application/vnd.oma.drm.risd+xml"]
-    #[serde(alias = "application/vnd.oma.drm.risd+xml")]
+    #[serde(rename = "application/vnd.oma.drm.risd+xml")]
     VndOmaDrmRisdXml,
     #[doc = "application/vnd.oma.group-usage-list+xml"]
-    #[serde(alias = "application/vnd.oma.group-usage-list+xml")]
+    #[serde(rename = "application/vnd.oma.group-usage-list+xml")]
     VndOmaGroupUsageListXml,
     #[doc = "application/vnd.oma.lwm2m+cbor"]
-    #[serde(alias = "application/vnd.oma.lwm2m+cbor")]
+    #[serde(rename = "application/vnd.oma.lwm2m+cbor")]
     VndOmaLwm2MCbor,
     #[doc = "application/vnd.oma.lwm2m+json"]
-    #[serde(alias = "application/vnd.oma.lwm2m+json")]
+    #[serde(rename = "application/vnd.oma.lwm2m+json")]
     VndOmaLwm2MJson,
     #[doc = "application/vnd.oma.lwm2m+tlv"]
-    #[serde(alias = "application/vnd.oma.lwm2m+tlv")]
+    #[serde(rename = "application/vnd.oma.lwm2m+tlv")]
     VndOmaLwm2MTlv,
     #[doc = "application/vnd.oma.pal+xml"]
-    #[serde(alias = "application/vnd.oma.pal+xml")]
+    #[serde(rename = "application/vnd.oma.pal+xml")]
     VndOmaPalXml,
     #[doc = "application/vnd.oma.poc.detailed-progress-report+xml"]
-    #[serde(alias = "application/vnd.oma.poc.detailed-progress-report+xml")]
+    #[serde(rename = "application/vnd.oma.poc.detailed-progress-report+xml")]
     VndOmaPocDetailedProgressReportXml,
     #[doc = "application/vnd.oma.poc.final-report+xml"]
-    #[serde(alias = "application/vnd.oma.poc.final-report+xml")]
+    #[serde(rename = "application/vnd.oma.poc.final-report+xml")]
     VndOmaPocFinalReportXml,
     #[doc = "application/vnd.oma.poc.groups+xml"]
-    #[serde(alias = "application/vnd.oma.poc.groups+xml")]
+    #[serde(rename = "application/vnd.oma.poc.groups+xml")]
     VndOmaPocGroupsXml,
     #[doc = "application/vnd.oma.poc.invocation-descriptor+xml"]
-    #[serde(alias = "application/vnd.oma.poc.invocation-descriptor+xml")]
+    #[serde(rename = "application/vnd.oma.poc.invocation-descriptor+xml")]
     VndOmaPocInvocationDescriptorXml,
     #[doc = "application/vnd.oma.poc.optimized-progress-report+xml"]
-    #[serde(alias = "application/vnd.oma.poc.optimized-progress-report+xml")]
+    #[serde(rename = "application/vnd.oma.poc.optimized-progress-report+xml")]
     VndOmaPocOptimizedProgressReportXml,
     #[doc = "application/vnd.oma.push"]
-    #[serde(alias = "application/vnd.oma.push")]
+    #[serde(rename = "application/vnd.oma.push")]
     VndOmaPush,
     #[doc = "application/vnd.oma.scidm.messages+xml"]
-    #[serde(alias = "application/vnd.oma.scidm.messages+xml")]
+    #[serde(rename = "application/vnd.oma.scidm.messages+xml")]
     VndOmaScidmMessagesXml,
     #[doc = "application/vnd.oma.xcap-directory+xml"]
-    #[serde(alias = "application/vnd.oma.xcap-directory+xml")]
+    #[serde(rename = "application/vnd.oma.xcap-directory+xml")]
     VndOmaXcapDirectoryXml,
     #[doc = "application/vnd.omads-email+xml"]
-    #[serde(alias = "application/vnd.omads-email+xml")]
+    #[serde(rename = "application/vnd.omads-email+xml")]
     VndOmadsEmailXml,
     #[doc = "application/vnd.omads-file+xml"]
-    #[serde(alias = "application/vnd.omads-file+xml")]
+    #[serde(rename = "application/vnd.omads-file+xml")]
     VndOmadsFileXml,
     #[doc = "application/vnd.omads-folder+xml"]
-    #[serde(alias = "application/vnd.omads-folder+xml")]
+    #[serde(rename = "application/vnd.omads-folder+xml")]
     VndOmadsFolderXml,
     #[doc = "application/vnd.omaloc-supl-init"]
-    #[serde(alias = "application/vnd.omaloc-supl-init")]
+    #[serde(rename = "application/vnd.omaloc-supl-init")]
     VndOmalocSuplInit,
     #[doc = "application/vnd.oma-scws-config"]
-    #[serde(alias = "application/vnd.oma-scws-config")]
+    #[serde(rename = "application/vnd.oma-scws-config")]
     VndOmaScwsConfig,
     #[doc = "application/vnd.oma-scws-http-request"]
-    #[serde(alias = "application/vnd.oma-scws-http-request")]
+    #[serde(rename = "application/vnd.oma-scws-http-request")]
     VndOmaScwsHttpRequest,
     #[doc = "application/vnd.oma-scws-http-response"]
-    #[serde(alias = "application/vnd.oma-scws-http-response")]
+    #[serde(rename = "application/vnd.oma-scws-http-response")]
     VndOmaScwsHttpResponse,
     #[doc = "application/vnd.onepager"]
-    #[serde(alias = "application/vnd.onepager")]
+    #[serde(rename = "application/vnd.onepager")]
     #[serde(alias = "tam")]
     VndOnepager,
     #[doc = "application/vnd.onepagertamp"]
-    #[serde(alias = "application/vnd.onepagertamp")]
+    #[serde(rename = "application/vnd.onepagertamp")]
     #[serde(alias = "tamp")]
     VndOnepagertamp,
     #[doc = "application/vnd.onepagertamx"]
-    #[serde(alias = "application/vnd.onepagertamx")]
+    #[serde(rename = "application/vnd.onepagertamx")]
     #[serde(alias = "tamx")]
     VndOnepagertamx,
     #[doc = "application/vnd.onepagertat"]
-    #[serde(alias = "application/vnd.onepagertat")]
+    #[serde(rename = "application/vnd.onepagertat")]
     #[serde(alias = "tat")]
     VndOnepagertat,
     #[doc = "application/vnd.onepagertatp"]
-    #[serde(alias = "application/vnd.onepagertatp")]
+    #[serde(rename = "application/vnd.onepagertatp")]
     #[serde(alias = "tatp")]
     VndOnepagertatp,
     #[doc = "application/vnd.onepagertatx"]
-    #[serde(alias = "application/vnd.onepagertatx")]
+    #[serde(rename = "application/vnd.onepagertatx")]
     #[serde(alias = "tatx")]
     VndOnepagertatx,
     #[doc = "application/vnd.onvif.metadata"]
-    #[serde(alias = "application/vnd.onvif.metadata")]
+    #[serde(rename = "application/vnd.onvif.metadata")]
     VndOnvifMetadata,
     #[doc = "application/vnd.openblox.game-binary"]
-    #[serde(alias = "application/vnd.openblox.game-binary")]
+    #[serde(rename = "application/vnd.openblox.game-binary")]
     #[serde(alias = "obg")]
     VndOpenbloxGameBinary,
     #[doc = "application/vnd.openblox.game+xml"]
-    #[serde(alias = "application/vnd.openblox.game+xml")]
+    #[serde(rename = "application/vnd.openblox.game+xml")]
     #[serde(alias = "obgx")]
     VndOpenbloxGameXml,
     #[doc = "application/vnd.openeye.oeb"]
-    #[serde(alias = "application/vnd.openeye.oeb")]
+    #[serde(rename = "application/vnd.openeye.oeb")]
     #[serde(alias = "oeb")]
     VndOpeneyeOeb,
     #[doc = "application/vnd.openstreetmap.data+xml"]
-    #[serde(alias = "application/vnd.openstreetmap.data+xml")]
+    #[serde(rename = "application/vnd.openstreetmap.data+xml")]
     #[serde(alias = "osm")]
     VndOpenstreetmapDataXml,
     #[doc = "application/vnd.opentimestamps.ots"]
-    #[serde(alias = "application/vnd.opentimestamps.ots")]
+    #[serde(rename = "application/vnd.opentimestamps.ots")]
     VndOpentimestampsOts,
     #[doc = "application/vnd.openxmlformats-officedocument.custom-properties+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.custom-properties+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.custom-properties+xml")]
     VndOpenxmlformatsOfficedocumentCustomPropertiesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.customXmlProperties+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.customXmlProperties+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.customXmlProperties+xml")]
     VndOpenxmlformatsOfficedocumentCustomXmlPropertiesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawing+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawing+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawing+xml")]
     VndOpenxmlformatsOfficedocumentDrawingXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.chart+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.chart+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.chart+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlChartXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlChartshapesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramColorsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramData+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.diagramData+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.diagramData+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramDataXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramLayoutXml,
     #[doc = "application/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml")]
     VndOpenxmlformatsOfficedocumentDrawingmlDiagramStyleXml,
     #[doc = "application/vnd.openxmlformats-officedocument.extended-properties+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.extended-properties+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.extended-properties+xml")]
     VndOpenxmlformatsOfficedocumentExtendedPropertiesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlCommentAuthorsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.comments+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.comments+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.comments+xml")]
     VndOpenxmlformatsOfficedocumentPresentationmlCommentsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlHandoutMasterXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlNotesMasterXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"
+    )]
     VndOpenxmlformatsOfficedocumentPresentationmlNotesSlideXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presentation"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.presentation")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.presentation")]
     #[serde(alias = "pptx")]
     VndOpenxmlformatsOfficedocumentPresentationmlPresentation,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlPresentationMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.presProps+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.presProps+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.presProps+xml")]
     VndOpenxmlformatsOfficedocumentPresentationmlPresPropsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slide"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.slide")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.slide")]
     #[serde(alias = "sldx")]
     VndOpenxmlformatsOfficedocumentPresentationmlSlide,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slide+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.slide+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.slide+xml")]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideLayoutXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideMasterXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideshow"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.slideshow")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.slideshow")]
     #[serde(alias = "ppsx")]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideshow,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideshowMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlSlideUpdateInfoXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlTableStylesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.tags+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.tags+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.tags+xml")]
     VndOpenxmlformatsOfficedocumentPresentationmlTagsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.template"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.template")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.template")]
     #[serde(alias = "potx")]
     VndOpenxmlformatsOfficedocumentPresentationmlTemplate,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentPresentationmlTemplateMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.presentationml.viewProps+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.presentationml.viewProps+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.presentationml.viewProps+xml")]
     VndOpenxmlformatsOfficedocumentPresentationmlViewPropsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlCalcChainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlChartsheetXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlCommentsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml"
+    )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlConnectionsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml"
+    )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlDialogsheetXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlExternalLinkXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotCacheDefinitionXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotCacheRecordsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlPivotTableXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlQueryTableXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlRevisionHeadersXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml"
+    )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlRevisionLogXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSharedStringsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")]
     #[serde(alias = "xlsx")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheet,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheetMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlSheetMetadataXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlStylesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTableXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTableSingleCellsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.template"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.template")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.template")]
     #[serde(alias = "xltx")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTemplate,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlTemplateMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlUserNamesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml"
+        rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml"
     )]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlVolatileDependenciesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml")]
     VndOpenxmlformatsOfficedocumentSpreadsheetmlWorksheetXml,
     #[doc = "application/vnd.openxmlformats-officedocument.theme+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.theme+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.theme+xml")]
     VndOpenxmlformatsOfficedocumentThemeXml,
     #[doc = "application/vnd.openxmlformats-officedocument.themeOverride+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.themeOverride+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.themeOverride+xml")]
     VndOpenxmlformatsOfficedocumentThemeOverrideXml,
     #[doc = "application/vnd.openxmlformats-officedocument.vmlDrawing"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.vmlDrawing")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.vmlDrawing")]
     VndOpenxmlformatsOfficedocumentVmlDrawing,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml"
+    )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlCommentsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.document")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.document")]
     #[serde(alias = "docx")]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocument,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocumentGlossaryXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlDocumentMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml"
+    )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlEndnotesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFontTableXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml")]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFooterXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlFootnotesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlNumberingXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml")]
+    #[serde(
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"
+    )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlSettingsXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml")]
     VndOpenxmlformatsOfficedocumentWordprocessingmlStylesXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.template"]
-    #[serde(alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.template")]
+    #[serde(rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.template")]
     #[serde(alias = "dotx")]
     VndOpenxmlformatsOfficedocumentWordprocessingmlTemplate,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlTemplateMainXml,
     #[doc = "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"]
     #[serde(
-        alias = "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"
+        rename = "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"
     )]
     VndOpenxmlformatsOfficedocumentWordprocessingmlWebSettingsXml,
     #[doc = "application/vnd.openxmlformats-package.core-properties+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-package.core-properties+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-package.core-properties+xml")]
     VndOpenxmlformatsPackageCorePropertiesXml,
     #[doc = "application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml")]
     VndOpenxmlformatsPackageDigitalSignatureXmlsignatureXml,
     #[doc = "application/vnd.openxmlformats-package.relationships+xml"]
-    #[serde(alias = "application/vnd.openxmlformats-package.relationships+xml")]
+    #[serde(rename = "application/vnd.openxmlformats-package.relationships+xml")]
     VndOpenxmlformatsPackageRelationshipsXml,
     #[doc = "application/vnd.oracle.resource+json"]
-    #[serde(alias = "application/vnd.oracle.resource+json")]
+    #[serde(rename = "application/vnd.oracle.resource+json")]
     VndOracleResourceJson,
     #[doc = "application/vnd.orange.indata"]
-    #[serde(alias = "application/vnd.orange.indata")]
+    #[serde(rename = "application/vnd.orange.indata")]
     VndOrangeIndata,
     #[doc = "application/vnd.osa.netdeploy"]
-    #[serde(alias = "application/vnd.osa.netdeploy")]
+    #[serde(rename = "application/vnd.osa.netdeploy")]
     #[serde(alias = "ndc")]
     VndOsaNetdeploy,
     #[doc = "application/vnd.osgeo.mapguide.package"]
-    #[serde(alias = "application/vnd.osgeo.mapguide.package")]
+    #[serde(rename = "application/vnd.osgeo.mapguide.package")]
     #[serde(alias = "mgp")]
     VndOsgeoMapguidePackage,
     #[doc = "application/vnd.osgi.bundle"]
-    #[serde(alias = "application/vnd.osgi.bundle")]
+    #[serde(rename = "application/vnd.osgi.bundle")]
     VndOsgiBundle,
     #[doc = "application/vnd.osgi.dp"]
-    #[serde(alias = "application/vnd.osgi.dp")]
+    #[serde(rename = "application/vnd.osgi.dp")]
     #[serde(alias = "dp")]
     VndOsgiDp,
     #[doc = "application/vnd.osgi.subsystem"]
-    #[serde(alias = "application/vnd.osgi.subsystem")]
+    #[serde(rename = "application/vnd.osgi.subsystem")]
     #[serde(alias = "esa")]
     VndOsgiSubsystem,
     #[doc = "application/vnd.otps.ct-kip+xml"]
-    #[serde(alias = "application/vnd.otps.ct-kip+xml")]
+    #[serde(rename = "application/vnd.otps.ct-kip+xml")]
     VndOtpsCtKipXml,
     #[doc = "application/vnd.oxli.countgraph"]
-    #[serde(alias = "application/vnd.oxli.countgraph")]
+    #[serde(rename = "application/vnd.oxli.countgraph")]
     #[serde(alias = "oxlicg")]
     VndOxliCountgraph,
     #[doc = "application/vnd.pagerduty+json"]
-    #[serde(alias = "application/vnd.pagerduty+json")]
+    #[serde(rename = "application/vnd.pagerduty+json")]
     VndPagerdutyJson,
     #[doc = "application/vnd.palm"]
-    #[serde(alias = "application/vnd.palm")]
+    #[serde(rename = "application/vnd.palm")]
     #[serde(alias = "prc")]
     #[serde(alias = "pdb")]
     #[serde(alias = "pqa")]
     #[serde(alias = "oprc")]
     VndPalm,
     #[doc = "application/vnd.panoply"]
-    #[serde(alias = "application/vnd.panoply")]
+    #[serde(rename = "application/vnd.panoply")]
     #[serde(alias = "plp")]
     VndPanoply,
     #[doc = "application/vnd.paos.xml"]
-    #[serde(alias = "application/vnd.paos.xml")]
+    #[serde(rename = "application/vnd.paos.xml")]
     VndPaosXml,
     #[doc = "application/vnd.patentdive"]
-    #[serde(alias = "application/vnd.patentdive")]
+    #[serde(rename = "application/vnd.patentdive")]
     #[serde(alias = "dive")]
     VndPatentdive,
     #[doc = "application/vnd.patientecommsdoc"]
-    #[serde(alias = "application/vnd.patientecommsdoc")]
+    #[serde(rename = "application/vnd.patientecommsdoc")]
     VndPatientecommsdoc,
     #[doc = "application/vnd.pawaafile"]
-    #[serde(alias = "application/vnd.pawaafile")]
+    #[serde(rename = "application/vnd.pawaafile")]
     #[serde(alias = "paw")]
     VndPawaafile,
     #[doc = "application/vnd.pcos"]
-    #[serde(alias = "application/vnd.pcos")]
+    #[serde(rename = "application/vnd.pcos")]
     VndPcos,
     #[doc = "application/vnd.pg.format"]
-    #[serde(alias = "application/vnd.pg.format")]
+    #[serde(rename = "application/vnd.pg.format")]
     #[serde(alias = "str")]
     VndPgFormat,
     #[doc = "application/vnd.pg.osasli"]
-    #[serde(alias = "application/vnd.pg.osasli")]
+    #[serde(rename = "application/vnd.pg.osasli")]
     #[serde(alias = "ei6")]
     VndPgOsasli,
     #[doc = "application/vnd.piaccess.application-licence"]
-    #[serde(alias = "application/vnd.piaccess.application-licence")]
+    #[serde(rename = "application/vnd.piaccess.application-licence")]
     #[serde(alias = "pil")]
     VndPiaccessApplicationLicence,
     #[doc = "application/vnd.picsel"]
-    #[serde(alias = "application/vnd.picsel")]
+    #[serde(rename = "application/vnd.picsel")]
     #[serde(alias = "efif")]
     VndPicsel,
     #[doc = "application/vnd.pmi.widget"]
-    #[serde(alias = "application/vnd.pmi.widget")]
+    #[serde(rename = "application/vnd.pmi.widget")]
     #[serde(alias = "wg")]
     VndPmiWidget,
     #[doc = "application/vnd.poc.group-advertisement+xml"]
-    #[serde(alias = "application/vnd.poc.group-advertisement+xml")]
+    #[serde(rename = "application/vnd.poc.group-advertisement+xml")]
     VndPocGroupAdvertisementXml,
     #[doc = "application/vnd.pocketlearn"]
-    #[serde(alias = "application/vnd.pocketlearn")]
+    #[serde(rename = "application/vnd.pocketlearn")]
     #[serde(alias = "plf")]
     VndPocketlearn,
     #[doc = "application/vnd.powerbuilder6"]
-    #[serde(alias = "application/vnd.powerbuilder6")]
+    #[serde(rename = "application/vnd.powerbuilder6")]
     #[serde(alias = "pbd")]
     VndPowerbuilder6,
     #[doc = "application/vnd.powerbuilder6-s"]
-    #[serde(alias = "application/vnd.powerbuilder6-s")]
+    #[serde(rename = "application/vnd.powerbuilder6-s")]
     VndPowerbuilder6S,
     #[doc = "application/vnd.powerbuilder7"]
-    #[serde(alias = "application/vnd.powerbuilder7")]
+    #[serde(rename = "application/vnd.powerbuilder7")]
     VndPowerbuilder7,
     #[doc = "application/vnd.powerbuilder75"]
-    #[serde(alias = "application/vnd.powerbuilder75")]
+    #[serde(rename = "application/vnd.powerbuilder75")]
     VndPowerbuilder75,
     #[doc = "application/vnd.powerbuilder75-s"]
-    #[serde(alias = "application/vnd.powerbuilder75-s")]
+    #[serde(rename = "application/vnd.powerbuilder75-s")]
     VndPowerbuilder75S,
     #[doc = "application/vnd.powerbuilder7-s"]
-    #[serde(alias = "application/vnd.powerbuilder7-s")]
+    #[serde(rename = "application/vnd.powerbuilder7-s")]
     VndPowerbuilder7S,
     #[doc = "application/vnd.preminet"]
-    #[serde(alias = "application/vnd.preminet")]
+    #[serde(rename = "application/vnd.preminet")]
     #[serde(alias = "preminet")]
     VndPreminet,
     #[doc = "application/vnd.previewsystems.box"]
-    #[serde(alias = "application/vnd.previewsystems.box")]
+    #[serde(rename = "application/vnd.previewsystems.box")]
     #[serde(alias = "box")]
     #[serde(alias = "vbox")]
     VndPreviewsystemsBox,
     #[doc = "application/vnd.proteus.magazine"]
-    #[serde(alias = "application/vnd.proteus.magazine")]
+    #[serde(rename = "application/vnd.proteus.magazine")]
     #[serde(alias = "mgz")]
     VndProteusMagazine,
     #[doc = "application/vnd.psfs"]
-    #[serde(alias = "application/vnd.psfs")]
+    #[serde(rename = "application/vnd.psfs")]
     #[serde(alias = "psfs")]
     VndPsfs,
     #[doc = "application/vnd.pt.mundusmundi"]
-    #[serde(alias = "application/vnd.pt.mundusmundi")]
+    #[serde(rename = "application/vnd.pt.mundusmundi")]
     VndPtMundusmundi,
     #[doc = "application/vnd.publishare-delta-tree"]
-    #[serde(alias = "application/vnd.publishare-delta-tree")]
+    #[serde(rename = "application/vnd.publishare-delta-tree")]
     #[serde(alias = "qps")]
     VndPublishareDeltaTree,
     #[doc = "application/vnd.pvi.ptid1"]
-    #[serde(alias = "application/vnd.pvi.ptid1")]
+    #[serde(rename = "application/vnd.pvi.ptid1")]
     #[serde(alias = "ptid")]
     VndPviPtid1,
     #[doc = "application/vnd.pwg-multiplexed"]
-    #[serde(alias = "application/vnd.pwg-multiplexed")]
+    #[serde(rename = "application/vnd.pwg-multiplexed")]
     VndPwgMultiplexed,
     #[doc = "application/vnd.pwg-xhtml-print+xml"]
-    #[serde(alias = "application/vnd.pwg-xhtml-print+xml")]
+    #[serde(rename = "application/vnd.pwg-xhtml-print+xml")]
     VndPwgXhtmlPrintXml,
     #[doc = "application/vnd.qualcomm.brew-app-res"]
-    #[serde(alias = "application/vnd.qualcomm.brew-app-res")]
+    #[serde(rename = "application/vnd.qualcomm.brew-app-res")]
     #[serde(alias = "bar")]
     VndQualcommBrewAppRes,
     #[doc = "application/vnd.quarantainenet"]
-    #[serde(alias = "application/vnd.quarantainenet")]
+    #[serde(rename = "application/vnd.quarantainenet")]
     VndQuarantainenet,
     #[doc = "application/vnd.Quark.QuarkXPress"]
-    #[serde(alias = "application/vnd.Quark.QuarkXPress")]
+    #[serde(rename = "application/vnd.Quark.QuarkXPress")]
     #[serde(alias = "qxd")]
     #[serde(alias = "qxt")]
     #[serde(alias = "qwd")]
@@ -4661,906 +4675,906 @@ pub enum Application {
     #[serde(alias = "qxb")]
     VndQuarkQuarkXPress,
     #[doc = "application/vnd.quobject-quoxdocument"]
-    #[serde(alias = "application/vnd.quobject-quoxdocument")]
+    #[serde(rename = "application/vnd.quobject-quoxdocument")]
     #[serde(alias = "quox")]
     #[serde(alias = "quiz")]
     VndQuobjectQuoxdocument,
     #[doc = "application/vnd.radisys.moml+xml"]
-    #[serde(alias = "application/vnd.radisys.moml+xml")]
+    #[serde(rename = "application/vnd.radisys.moml+xml")]
     VndRadisysMomlXml,
     #[doc = "application/vnd.radisys.msml-audit-conf+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-audit-conf+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-audit-conf+xml")]
     VndRadisysMsmlAuditConfXml,
     #[doc = "application/vnd.radisys.msml-audit-conn+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-audit-conn+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-audit-conn+xml")]
     VndRadisysMsmlAuditConnXml,
     #[doc = "application/vnd.radisys.msml-audit-dialog+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-audit-dialog+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-audit-dialog+xml")]
     VndRadisysMsmlAuditDialogXml,
     #[doc = "application/vnd.radisys.msml-audit-stream+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-audit-stream+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-audit-stream+xml")]
     VndRadisysMsmlAuditStreamXml,
     #[doc = "application/vnd.radisys.msml-audit+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-audit+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-audit+xml")]
     VndRadisysMsmlAuditXml,
     #[doc = "application/vnd.radisys.msml-conf+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-conf+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-conf+xml")]
     VndRadisysMsmlConfXml,
     #[doc = "application/vnd.radisys.msml-dialog-base+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-base+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-base+xml")]
     VndRadisysMsmlDialogBaseXml,
     #[doc = "application/vnd.radisys.msml-dialog-fax-detect+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-fax-detect+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-fax-detect+xml")]
     VndRadisysMsmlDialogFaxDetectXml,
     #[doc = "application/vnd.radisys.msml-dialog-fax-sendrecv+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-fax-sendrecv+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-fax-sendrecv+xml")]
     VndRadisysMsmlDialogFaxSendrecvXml,
     #[doc = "application/vnd.radisys.msml-dialog-group+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-group+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-group+xml")]
     VndRadisysMsmlDialogGroupXml,
     #[doc = "application/vnd.radisys.msml-dialog-speech+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-speech+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-speech+xml")]
     VndRadisysMsmlDialogSpeechXml,
     #[doc = "application/vnd.radisys.msml-dialog-transform+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog-transform+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog-transform+xml")]
     VndRadisysMsmlDialogTransformXml,
     #[doc = "application/vnd.radisys.msml-dialog+xml"]
-    #[serde(alias = "application/vnd.radisys.msml-dialog+xml")]
+    #[serde(rename = "application/vnd.radisys.msml-dialog+xml")]
     VndRadisysMsmlDialogXml,
     #[doc = "application/vnd.radisys.msml+xml"]
-    #[serde(alias = "application/vnd.radisys.msml+xml")]
+    #[serde(rename = "application/vnd.radisys.msml+xml")]
     VndRadisysMsmlXml,
     #[doc = "application/vnd.rainstor.data"]
-    #[serde(alias = "application/vnd.rainstor.data")]
+    #[serde(rename = "application/vnd.rainstor.data")]
     #[serde(alias = "tree")]
     VndRainstorData,
     #[doc = "application/vnd.rapid"]
-    #[serde(alias = "application/vnd.rapid")]
+    #[serde(rename = "application/vnd.rapid")]
     VndRapid,
     #[doc = "application/vnd.rar"]
-    #[serde(alias = "application/vnd.rar")]
+    #[serde(rename = "application/vnd.rar")]
     #[serde(alias = "rar")]
     VndRar,
     #[doc = "application/vnd.realvnc.bed"]
-    #[serde(alias = "application/vnd.realvnc.bed")]
+    #[serde(rename = "application/vnd.realvnc.bed")]
     #[serde(alias = "bed")]
     VndRealvncBed,
     #[doc = "application/vnd.recordare.musicxml"]
-    #[serde(alias = "application/vnd.recordare.musicxml")]
+    #[serde(rename = "application/vnd.recordare.musicxml")]
     #[serde(alias = "mxl")]
     VndRecordareMusicxml,
     #[doc = "application/vnd.recordare.musicxml+xml"]
-    #[serde(alias = "application/vnd.recordare.musicxml+xml")]
+    #[serde(rename = "application/vnd.recordare.musicxml+xml")]
     VndRecordareMusicxmlXml,
     #[doc = "application/vnd.RenLearn.rlprint"]
-    #[serde(alias = "application/vnd.RenLearn.rlprint")]
+    #[serde(rename = "application/vnd.RenLearn.rlprint")]
     VndRenLearnRlprint,
     #[doc = "application/vnd.resilient.logic"]
-    #[serde(alias = "application/vnd.resilient.logic")]
+    #[serde(rename = "application/vnd.resilient.logic")]
     #[serde(alias = "rlm")]
     #[serde(alias = "reload")]
     VndResilientLogic,
     #[doc = "application/vnd.restful+json"]
-    #[serde(alias = "application/vnd.restful+json")]
+    #[serde(rename = "application/vnd.restful+json")]
     VndRestfulJson,
     #[doc = "application/vnd.rig.cryptonote"]
-    #[serde(alias = "application/vnd.rig.cryptonote")]
+    #[serde(rename = "application/vnd.rig.cryptonote")]
     #[serde(alias = "cryptonote")]
     VndRigCryptonote,
     #[doc = "application/vnd.route66.link66+xml"]
-    #[serde(alias = "application/vnd.route66.link66+xml")]
+    #[serde(rename = "application/vnd.route66.link66+xml")]
     #[serde(alias = "link66")]
     VndRoute66Link66Xml,
     #[doc = "application/vnd.rs-274x"]
-    #[serde(alias = "application/vnd.rs-274x")]
+    #[serde(rename = "application/vnd.rs-274x")]
     VndRs274X,
     #[doc = "application/vnd.ruckus.download"]
-    #[serde(alias = "application/vnd.ruckus.download")]
+    #[serde(rename = "application/vnd.ruckus.download")]
     VndRuckusDownload,
     #[doc = "application/vnd.s3sms"]
-    #[serde(alias = "application/vnd.s3sms")]
+    #[serde(rename = "application/vnd.s3sms")]
     VndS3Sms,
     #[doc = "application/vnd.sailingtracker.track"]
-    #[serde(alias = "application/vnd.sailingtracker.track")]
+    #[serde(rename = "application/vnd.sailingtracker.track")]
     #[serde(alias = "st")]
     VndSailingtrackerTrack,
     #[doc = "application/vnd.sar"]
-    #[serde(alias = "application/vnd.sar")]
+    #[serde(rename = "application/vnd.sar")]
     #[serde(alias = "SAR")]
     VndSar,
     #[doc = "application/vnd.sbm.cid"]
-    #[serde(alias = "application/vnd.sbm.cid")]
+    #[serde(rename = "application/vnd.sbm.cid")]
     VndSbmCid,
     #[doc = "application/vnd.sbm.mid2"]
-    #[serde(alias = "application/vnd.sbm.mid2")]
+    #[serde(rename = "application/vnd.sbm.mid2")]
     VndSbmMid2,
     #[doc = "application/vnd.scribus"]
-    #[serde(alias = "application/vnd.scribus")]
+    #[serde(rename = "application/vnd.scribus")]
     #[serde(alias = "scd")]
     #[serde(alias = "sla")]
     #[serde(alias = "slaz")]
     VndScribus,
     #[doc = "application/vnd.sealed.3df"]
-    #[serde(alias = "application/vnd.sealed.3df")]
+    #[serde(rename = "application/vnd.sealed.3df")]
     #[serde(alias = "s3df")]
     VndSealed3Df,
     #[doc = "application/vnd.sealed.csf"]
-    #[serde(alias = "application/vnd.sealed.csf")]
+    #[serde(rename = "application/vnd.sealed.csf")]
     #[serde(alias = "scsf")]
     VndSealedCsf,
     #[doc = "application/vnd.sealed.doc"]
-    #[serde(alias = "application/vnd.sealed.doc")]
+    #[serde(rename = "application/vnd.sealed.doc")]
     #[serde(alias = "sdoc")]
     #[serde(alias = "sdo")]
     #[serde(alias = "s1w")]
     VndSealedDoc,
     #[doc = "application/vnd.sealed.eml"]
-    #[serde(alias = "application/vnd.sealed.eml")]
+    #[serde(rename = "application/vnd.sealed.eml")]
     #[serde(alias = "seml")]
     #[serde(alias = "sem")]
     VndSealedEml,
     #[doc = "application/vnd.sealed.mht"]
-    #[serde(alias = "application/vnd.sealed.mht")]
+    #[serde(rename = "application/vnd.sealed.mht")]
     #[serde(alias = "smht")]
     #[serde(alias = "smh")]
     VndSealedMht,
     #[doc = "application/vnd.sealed.net"]
-    #[serde(alias = "application/vnd.sealed.net")]
+    #[serde(rename = "application/vnd.sealed.net")]
     VndSealedNet,
     #[doc = "application/vnd.sealed.ppt"]
-    #[serde(alias = "application/vnd.sealed.ppt")]
+    #[serde(rename = "application/vnd.sealed.ppt")]
     #[serde(alias = "sppt")]
     #[serde(alias = "s1p")]
     VndSealedPpt,
     #[doc = "application/vnd.sealed.tiff"]
-    #[serde(alias = "application/vnd.sealed.tiff")]
+    #[serde(rename = "application/vnd.sealed.tiff")]
     #[serde(alias = "stif")]
     VndSealedTiff,
     #[doc = "application/vnd.sealed.xls"]
-    #[serde(alias = "application/vnd.sealed.xls")]
+    #[serde(rename = "application/vnd.sealed.xls")]
     #[serde(alias = "sxls")]
     #[serde(alias = "sxl")]
     #[serde(alias = "s1e")]
     VndSealedXls,
     #[doc = "application/vnd.sealedmedia.softseal.html"]
-    #[serde(alias = "application/vnd.sealedmedia.softseal.html")]
+    #[serde(rename = "application/vnd.sealedmedia.softseal.html")]
     #[serde(alias = "stml")]
     #[serde(alias = "s1h")]
     VndSealedmediaSoftsealHtml,
     #[doc = "application/vnd.sealedmedia.softseal.pdf"]
-    #[serde(alias = "application/vnd.sealedmedia.softseal.pdf")]
+    #[serde(rename = "application/vnd.sealedmedia.softseal.pdf")]
     #[serde(alias = "spdf")]
     #[serde(alias = "spd")]
     #[serde(alias = "s1a")]
     VndSealedmediaSoftsealPdf,
     #[doc = "application/vnd.seemail"]
-    #[serde(alias = "application/vnd.seemail")]
+    #[serde(rename = "application/vnd.seemail")]
     #[serde(alias = "see")]
     VndSeemail,
     #[doc = "application/vnd.seis+json"]
-    #[serde(alias = "application/vnd.seis+json")]
+    #[serde(rename = "application/vnd.seis+json")]
     VndSeisJson,
     #[doc = "application/vnd.sema"]
-    #[serde(alias = "application/vnd.sema")]
+    #[serde(rename = "application/vnd.sema")]
     #[serde(alias = "sema")]
     VndSema,
     #[doc = "application/vnd.semd"]
-    #[serde(alias = "application/vnd.semd")]
+    #[serde(rename = "application/vnd.semd")]
     #[serde(alias = "semd")]
     VndSemd,
     #[doc = "application/vnd.semf"]
-    #[serde(alias = "application/vnd.semf")]
+    #[serde(rename = "application/vnd.semf")]
     #[serde(alias = "semf")]
     VndSemf,
     #[doc = "application/vnd.shade-save-file"]
-    #[serde(alias = "application/vnd.shade-save-file")]
+    #[serde(rename = "application/vnd.shade-save-file")]
     #[serde(alias = "ssv")]
     VndShadeSaveFile,
     #[doc = "application/vnd.shana.informed.formdata"]
-    #[serde(alias = "application/vnd.shana.informed.formdata")]
+    #[serde(rename = "application/vnd.shana.informed.formdata")]
     #[serde(alias = "ifm")]
     VndShanaInformedFormdata,
     #[doc = "application/vnd.shana.informed.formtemplate"]
-    #[serde(alias = "application/vnd.shana.informed.formtemplate")]
+    #[serde(rename = "application/vnd.shana.informed.formtemplate")]
     #[serde(alias = "itp")]
     VndShanaInformedFormtemplate,
     #[doc = "application/vnd.shana.informed.interchange"]
-    #[serde(alias = "application/vnd.shana.informed.interchange")]
+    #[serde(rename = "application/vnd.shana.informed.interchange")]
     #[serde(alias = "iif")]
     VndShanaInformedInterchange,
     #[doc = "application/vnd.shana.informed.package"]
-    #[serde(alias = "application/vnd.shana.informed.package")]
+    #[serde(rename = "application/vnd.shana.informed.package")]
     #[serde(alias = "ipk")]
     VndShanaInformedPackage,
     #[doc = "application/vnd.shootproof+json"]
-    #[serde(alias = "application/vnd.shootproof+json")]
+    #[serde(rename = "application/vnd.shootproof+json")]
     VndShootproofJson,
     #[doc = "application/vnd.shopkick+json"]
-    #[serde(alias = "application/vnd.shopkick+json")]
+    #[serde(rename = "application/vnd.shopkick+json")]
     VndShopkickJson,
     #[doc = "application/vnd.shp"]
-    #[serde(alias = "application/vnd.shp")]
+    #[serde(rename = "application/vnd.shp")]
     #[serde(alias = "shp")]
     VndShp,
     #[doc = "application/vnd.shx"]
-    #[serde(alias = "application/vnd.shx")]
+    #[serde(rename = "application/vnd.shx")]
     #[serde(alias = "shx")]
     VndShx,
     #[doc = "application/vnd.sigrok.session"]
-    #[serde(alias = "application/vnd.sigrok.session")]
+    #[serde(rename = "application/vnd.sigrok.session")]
     #[serde(alias = "sr")]
     VndSigrokSession,
     #[doc = "application/vnd.SimTech-MindMapper"]
-    #[serde(alias = "application/vnd.SimTech-MindMapper")]
+    #[serde(rename = "application/vnd.SimTech-MindMapper")]
     #[serde(alias = "twd")]
     #[serde(alias = "twds")]
     VndSimTechMindMapper,
     #[doc = "application/vnd.siren+json"]
-    #[serde(alias = "application/vnd.siren+json")]
+    #[serde(rename = "application/vnd.siren+json")]
     VndSirenJson,
     #[doc = "application/vnd.smaf"]
-    #[serde(alias = "application/vnd.smaf")]
+    #[serde(rename = "application/vnd.smaf")]
     #[serde(alias = "mmf")]
     VndSmaf,
     #[doc = "application/vnd.smart.notebook"]
-    #[serde(alias = "application/vnd.smart.notebook")]
+    #[serde(rename = "application/vnd.smart.notebook")]
     #[serde(alias = "notebook")]
     VndSmartNotebook,
     #[doc = "application/vnd.smart.teacher"]
-    #[serde(alias = "application/vnd.smart.teacher")]
+    #[serde(rename = "application/vnd.smart.teacher")]
     #[serde(alias = "teacher")]
     VndSmartTeacher,
     #[doc = "application/vnd.smintio.portals.archive"]
-    #[serde(alias = "application/vnd.smintio.portals.archive")]
+    #[serde(rename = "application/vnd.smintio.portals.archive")]
     #[serde(alias = "sipa")]
     VndSmintioPortalsArchive,
     #[doc = "application/vnd.snesdev-page-table"]
-    #[serde(alias = "application/vnd.snesdev-page-table")]
+    #[serde(rename = "application/vnd.snesdev-page-table")]
     #[serde(alias = "ptrom")]
     #[serde(alias = "pt")]
     VndSnesdevPageTable,
     #[doc = "application/vnd.software602.filler.form+xml"]
-    #[serde(alias = "application/vnd.software602.filler.form+xml")]
+    #[serde(rename = "application/vnd.software602.filler.form+xml")]
     #[serde(alias = "fo")]
     VndSoftware602FillerFormXml,
     #[doc = "application/vnd.software602.filler.form-xml-zip"]
-    #[serde(alias = "application/vnd.software602.filler.form-xml-zip")]
+    #[serde(rename = "application/vnd.software602.filler.form-xml-zip")]
     #[serde(alias = "zfo")]
     VndSoftware602FillerFormXmlZip,
     #[doc = "application/vnd.solent.sdkm+xml"]
-    #[serde(alias = "application/vnd.solent.sdkm+xml")]
+    #[serde(rename = "application/vnd.solent.sdkm+xml")]
     #[serde(alias = "sdkm")]
     #[serde(alias = "sdkd")]
     VndSolentSdkmXml,
     #[doc = "application/vnd.spotfire.dxp"]
-    #[serde(alias = "application/vnd.spotfire.dxp")]
+    #[serde(rename = "application/vnd.spotfire.dxp")]
     #[serde(alias = "dxp")]
     VndSpotfireDxp,
     #[doc = "application/vnd.spotfire.sfs"]
-    #[serde(alias = "application/vnd.spotfire.sfs")]
+    #[serde(rename = "application/vnd.spotfire.sfs")]
     #[serde(alias = "sfs")]
     VndSpotfireSfs,
     #[doc = "application/vnd.sqlite3"]
-    #[serde(alias = "application/vnd.sqlite3")]
+    #[serde(rename = "application/vnd.sqlite3")]
     #[serde(alias = "sqlite")]
     #[serde(alias = "sqlite3")]
     VndSqlite3,
     #[doc = "application/vnd.sss-cod"]
-    #[serde(alias = "application/vnd.sss-cod")]
+    #[serde(rename = "application/vnd.sss-cod")]
     VndSssCod,
     #[doc = "application/vnd.sss-dtf"]
-    #[serde(alias = "application/vnd.sss-dtf")]
+    #[serde(rename = "application/vnd.sss-dtf")]
     VndSssDtf,
     #[doc = "application/vnd.sss-ntf"]
-    #[serde(alias = "application/vnd.sss-ntf")]
+    #[serde(rename = "application/vnd.sss-ntf")]
     VndSssNtf,
     #[doc = "application/vnd.stepmania.package"]
-    #[serde(alias = "application/vnd.stepmania.package")]
+    #[serde(rename = "application/vnd.stepmania.package")]
     #[serde(alias = "smzip")]
     VndStepmaniaPackage,
     #[doc = "application/vnd.stepmania.stepchart"]
-    #[serde(alias = "application/vnd.stepmania.stepchart")]
+    #[serde(rename = "application/vnd.stepmania.stepchart")]
     #[serde(alias = "sm")]
     VndStepmaniaStepchart,
     #[doc = "application/vnd.street-stream"]
-    #[serde(alias = "application/vnd.street-stream")]
+    #[serde(rename = "application/vnd.street-stream")]
     VndStreetStream,
     #[doc = "application/vnd.sun.wadl+xml"]
-    #[serde(alias = "application/vnd.sun.wadl+xml")]
+    #[serde(rename = "application/vnd.sun.wadl+xml")]
     #[serde(alias = "wadl")]
     VndSunWadlXml,
     #[doc = "application/vnd.sus-calendar"]
-    #[serde(alias = "application/vnd.sus-calendar")]
+    #[serde(rename = "application/vnd.sus-calendar")]
     #[serde(alias = "sus")]
     #[serde(alias = "susp")]
     VndSusCalendar,
     #[doc = "application/vnd.svd"]
-    #[serde(alias = "application/vnd.svd")]
+    #[serde(rename = "application/vnd.svd")]
     VndSvd,
     #[doc = "application/vnd.swiftview-ics"]
-    #[serde(alias = "application/vnd.swiftview-ics")]
+    #[serde(rename = "application/vnd.swiftview-ics")]
     VndSwiftviewIcs,
     #[doc = "application/vnd.sybyl.mol2"]
-    #[serde(alias = "application/vnd.sybyl.mol2")]
+    #[serde(rename = "application/vnd.sybyl.mol2")]
     #[serde(alias = "ml2")]
     #[serde(alias = "mol2")]
     #[serde(alias = "sy2")]
     VndSybylMol2,
     #[doc = "application/vnd.sycle+xml"]
-    #[serde(alias = "application/vnd.sycle+xml")]
+    #[serde(rename = "application/vnd.sycle+xml")]
     #[serde(alias = "scl")]
     VndSycleXml,
     #[doc = "application/vnd.syft+json"]
-    #[serde(alias = "application/vnd.syft+json")]
+    #[serde(rename = "application/vnd.syft+json")]
     #[serde(alias = "syft.json")]
     VndSyftJson,
     #[doc = "application/vnd.syncml.dm.notification"]
-    #[serde(alias = "application/vnd.syncml.dm.notification")]
+    #[serde(rename = "application/vnd.syncml.dm.notification")]
     VndSyncmlDmNotification,
     #[doc = "application/vnd.syncml.dmddf+xml"]
-    #[serde(alias = "application/vnd.syncml.dmddf+xml")]
+    #[serde(rename = "application/vnd.syncml.dmddf+xml")]
     #[serde(alias = "ddf")]
     VndSyncmlDmddfXml,
     #[doc = "application/vnd.syncml.dmtnds+wbxml"]
-    #[serde(alias = "application/vnd.syncml.dmtnds+wbxml")]
+    #[serde(rename = "application/vnd.syncml.dmtnds+wbxml")]
     VndSyncmlDmtndsWbxml,
     #[doc = "application/vnd.syncml.dmtnds+xml"]
-    #[serde(alias = "application/vnd.syncml.dmtnds+xml")]
+    #[serde(rename = "application/vnd.syncml.dmtnds+xml")]
     VndSyncmlDmtndsXml,
     #[doc = "application/vnd.syncml.dmddf+wbxml"]
-    #[serde(alias = "application/vnd.syncml.dmddf+wbxml")]
+    #[serde(rename = "application/vnd.syncml.dmddf+wbxml")]
     VndSyncmlDmddfWbxml,
     #[doc = "application/vnd.syncml.dm+wbxml"]
-    #[serde(alias = "application/vnd.syncml.dm+wbxml")]
+    #[serde(rename = "application/vnd.syncml.dm+wbxml")]
     #[serde(alias = "bdm")]
     VndSyncmlDmWbxml,
     #[doc = "application/vnd.syncml.dm+xml"]
-    #[serde(alias = "application/vnd.syncml.dm+xml")]
+    #[serde(rename = "application/vnd.syncml.dm+xml")]
     #[serde(alias = "xdm")]
     VndSyncmlDmXml,
     #[doc = "application/vnd.syncml.ds.notification"]
-    #[serde(alias = "application/vnd.syncml.ds.notification")]
+    #[serde(rename = "application/vnd.syncml.ds.notification")]
     VndSyncmlDsNotification,
     #[doc = "application/vnd.syncml+xml"]
-    #[serde(alias = "application/vnd.syncml+xml")]
+    #[serde(rename = "application/vnd.syncml+xml")]
     #[serde(alias = "xsm")]
     VndSyncmlXml,
     #[doc = "application/vnd.tableschema+json"]
-    #[serde(alias = "application/vnd.tableschema+json")]
+    #[serde(rename = "application/vnd.tableschema+json")]
     VndTableschemaJson,
     #[doc = "application/vnd.tao.intent-module-archive"]
-    #[serde(alias = "application/vnd.tao.intent-module-archive")]
+    #[serde(rename = "application/vnd.tao.intent-module-archive")]
     #[serde(alias = "tao")]
     VndTaoIntentModuleArchive,
     #[doc = "application/vnd.tcpdump.pcap"]
-    #[serde(alias = "application/vnd.tcpdump.pcap")]
+    #[serde(rename = "application/vnd.tcpdump.pcap")]
     #[serde(alias = "pcap")]
     #[serde(alias = "cap")]
     #[serde(alias = "dmp")]
     VndTcpdumpPcap,
     #[doc = "application/vnd.think-cell.ppttc+json"]
-    #[serde(alias = "application/vnd.think-cell.ppttc+json")]
+    #[serde(rename = "application/vnd.think-cell.ppttc+json")]
     #[serde(alias = "ppttc")]
     VndThinkCellPpttcJson,
     #[doc = "application/vnd.tml"]
-    #[serde(alias = "application/vnd.tml")]
+    #[serde(rename = "application/vnd.tml")]
     #[serde(alias = "vfr")]
     #[serde(alias = "viaframe")]
     VndTml,
     #[doc = "application/vnd.tmd.mediaflex.api+xml"]
-    #[serde(alias = "application/vnd.tmd.mediaflex.api+xml")]
+    #[serde(rename = "application/vnd.tmd.mediaflex.api+xml")]
     VndTmdMediaflexApiXml,
     #[doc = "application/vnd.tmobile-livetv"]
-    #[serde(alias = "application/vnd.tmobile-livetv")]
+    #[serde(rename = "application/vnd.tmobile-livetv")]
     #[serde(alias = "tmo")]
     VndTmobileLivetv,
     #[doc = "application/vnd.tri.onesource"]
-    #[serde(alias = "application/vnd.tri.onesource")]
+    #[serde(rename = "application/vnd.tri.onesource")]
     VndTriOnesource,
     #[doc = "application/vnd.trid.tpt"]
-    #[serde(alias = "application/vnd.trid.tpt")]
+    #[serde(rename = "application/vnd.trid.tpt")]
     #[serde(alias = "tpt")]
     VndTridTpt,
     #[doc = "application/vnd.triscape.mxs"]
-    #[serde(alias = "application/vnd.triscape.mxs")]
+    #[serde(rename = "application/vnd.triscape.mxs")]
     #[serde(alias = "mxs")]
     VndTriscapeMxs,
     #[doc = "application/vnd.trueapp"]
-    #[serde(alias = "application/vnd.trueapp")]
+    #[serde(rename = "application/vnd.trueapp")]
     #[serde(alias = "tra")]
     VndTrueapp,
     #[doc = "application/vnd.truedoc"]
-    #[serde(alias = "application/vnd.truedoc")]
+    #[serde(rename = "application/vnd.truedoc")]
     VndTruedoc,
     #[doc = "application/vnd.ubisoft.webplayer"]
-    #[serde(alias = "application/vnd.ubisoft.webplayer")]
+    #[serde(rename = "application/vnd.ubisoft.webplayer")]
     VndUbisoftWebplayer,
     #[doc = "application/vnd.ufdl"]
-    #[serde(alias = "application/vnd.ufdl")]
+    #[serde(rename = "application/vnd.ufdl")]
     #[serde(alias = "ufdl")]
     #[serde(alias = "ufd")]
     #[serde(alias = "frm")]
     VndUfdl,
     #[doc = "application/vnd.uiq.theme"]
-    #[serde(alias = "application/vnd.uiq.theme")]
+    #[serde(rename = "application/vnd.uiq.theme")]
     #[serde(alias = "utz")]
     VndUiqTheme,
     #[doc = "application/vnd.umajin"]
-    #[serde(alias = "application/vnd.umajin")]
+    #[serde(rename = "application/vnd.umajin")]
     #[serde(alias = "umj")]
     VndUmajin,
     #[doc = "application/vnd.unity"]
-    #[serde(alias = "application/vnd.unity")]
+    #[serde(rename = "application/vnd.unity")]
     #[serde(alias = "unityweb")]
     VndUnity,
     #[doc = "application/vnd.uoml+xml"]
-    #[serde(alias = "application/vnd.uoml+xml")]
+    #[serde(rename = "application/vnd.uoml+xml")]
     #[serde(alias = "uoml")]
     #[serde(alias = "uo")]
     VndUomlXml,
     #[doc = "application/vnd.uplanet.alert"]
-    #[serde(alias = "application/vnd.uplanet.alert")]
+    #[serde(rename = "application/vnd.uplanet.alert")]
     VndUplanetAlert,
     #[doc = "application/vnd.uplanet.alert-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.alert-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.alert-wbxml")]
     VndUplanetAlertWbxml,
     #[doc = "application/vnd.uplanet.bearer-choice"]
-    #[serde(alias = "application/vnd.uplanet.bearer-choice")]
+    #[serde(rename = "application/vnd.uplanet.bearer-choice")]
     VndUplanetBearerChoice,
     #[doc = "application/vnd.uplanet.bearer-choice-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.bearer-choice-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.bearer-choice-wbxml")]
     VndUplanetBearerChoiceWbxml,
     #[doc = "application/vnd.uplanet.cacheop"]
-    #[serde(alias = "application/vnd.uplanet.cacheop")]
+    #[serde(rename = "application/vnd.uplanet.cacheop")]
     VndUplanetCacheop,
     #[doc = "application/vnd.uplanet.cacheop-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.cacheop-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.cacheop-wbxml")]
     VndUplanetCacheopWbxml,
     #[doc = "application/vnd.uplanet.channel"]
-    #[serde(alias = "application/vnd.uplanet.channel")]
+    #[serde(rename = "application/vnd.uplanet.channel")]
     VndUplanetChannel,
     #[doc = "application/vnd.uplanet.channel-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.channel-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.channel-wbxml")]
     VndUplanetChannelWbxml,
     #[doc = "application/vnd.uplanet.list"]
-    #[serde(alias = "application/vnd.uplanet.list")]
+    #[serde(rename = "application/vnd.uplanet.list")]
     VndUplanetList,
     #[doc = "application/vnd.uplanet.listcmd"]
-    #[serde(alias = "application/vnd.uplanet.listcmd")]
+    #[serde(rename = "application/vnd.uplanet.listcmd")]
     VndUplanetListcmd,
     #[doc = "application/vnd.uplanet.listcmd-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.listcmd-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.listcmd-wbxml")]
     VndUplanetListcmdWbxml,
     #[doc = "application/vnd.uplanet.list-wbxml"]
-    #[serde(alias = "application/vnd.uplanet.list-wbxml")]
+    #[serde(rename = "application/vnd.uplanet.list-wbxml")]
     VndUplanetListWbxml,
     #[doc = "application/vnd.uri-map"]
-    #[serde(alias = "application/vnd.uri-map")]
+    #[serde(rename = "application/vnd.uri-map")]
     #[serde(alias = "urim")]
     #[serde(alias = "urimap")]
     VndUriMap,
     #[doc = "application/vnd.uplanet.signal"]
-    #[serde(alias = "application/vnd.uplanet.signal")]
+    #[serde(rename = "application/vnd.uplanet.signal")]
     VndUplanetSignal,
     #[doc = "application/vnd.valve.source.material"]
-    #[serde(alias = "application/vnd.valve.source.material")]
+    #[serde(rename = "application/vnd.valve.source.material")]
     #[serde(alias = "vmt")]
     VndValveSourceMaterial,
     #[doc = "application/vnd.vcx"]
-    #[serde(alias = "application/vnd.vcx")]
+    #[serde(rename = "application/vnd.vcx")]
     #[serde(alias = "vcx")]
     VndVcx,
     #[doc = "application/vnd.vd-study"]
-    #[serde(alias = "application/vnd.vd-study")]
+    #[serde(rename = "application/vnd.vd-study")]
     #[serde(alias = "mxi")]
     #[serde(alias = "study-inter")]
     #[serde(alias = "model-inter")]
     VndVdStudy,
     #[doc = "application/vnd.vectorworks"]
-    #[serde(alias = "application/vnd.vectorworks")]
+    #[serde(rename = "application/vnd.vectorworks")]
     #[serde(alias = "vwx")]
     VndVectorworks,
     #[doc = "application/vnd.vel+json"]
-    #[serde(alias = "application/vnd.vel+json")]
+    #[serde(rename = "application/vnd.vel+json")]
     VndVelJson,
     #[doc = "application/vnd.verimatrix.vcas"]
-    #[serde(alias = "application/vnd.verimatrix.vcas")]
+    #[serde(rename = "application/vnd.verimatrix.vcas")]
     VndVerimatrixVcas,
     #[doc = "application/vnd.veritone.aion+json"]
-    #[serde(alias = "application/vnd.veritone.aion+json")]
+    #[serde(rename = "application/vnd.veritone.aion+json")]
     #[serde(alias = "aion")]
     #[serde(alias = "vtnstd")]
     VndVeritoneAionJson,
     #[doc = "application/vnd.veryant.thin"]
-    #[serde(alias = "application/vnd.veryant.thin")]
+    #[serde(rename = "application/vnd.veryant.thin")]
     #[serde(alias = "istc")]
     #[serde(alias = "isws")]
     VndVeryantThin,
     #[doc = "application/vnd.ves.encrypted"]
-    #[serde(alias = "application/vnd.ves.encrypted")]
+    #[serde(rename = "application/vnd.ves.encrypted")]
     #[serde(alias = "VES")]
     VndVesEncrypted,
     #[doc = "application/vnd.vidsoft.vidconference"]
-    #[serde(alias = "application/vnd.vidsoft.vidconference")]
+    #[serde(rename = "application/vnd.vidsoft.vidconference")]
     #[serde(alias = "vsc")]
     VndVidsoftVidconference,
     #[doc = "application/vnd.visio"]
-    #[serde(alias = "application/vnd.visio")]
+    #[serde(rename = "application/vnd.visio")]
     #[serde(alias = "vsd")]
     #[serde(alias = "vst")]
     #[serde(alias = "vsw")]
     #[serde(alias = "vss")]
     VndVisio,
     #[doc = "application/vnd.visionary"]
-    #[serde(alias = "application/vnd.visionary")]
+    #[serde(rename = "application/vnd.visionary")]
     #[serde(alias = "vis")]
     VndVisionary,
     #[doc = "application/vnd.vividence.scriptfile"]
-    #[serde(alias = "application/vnd.vividence.scriptfile")]
+    #[serde(rename = "application/vnd.vividence.scriptfile")]
     VndVividenceScriptfile,
     #[doc = "application/vnd.vsf"]
-    #[serde(alias = "application/vnd.vsf")]
+    #[serde(rename = "application/vnd.vsf")]
     #[serde(alias = "vsf")]
     VndVsf,
     #[doc = "application/vnd.wap.sic"]
-    #[serde(alias = "application/vnd.wap.sic")]
+    #[serde(rename = "application/vnd.wap.sic")]
     #[serde(alias = "sic")]
     VndWapSic,
     #[doc = "application/vnd.wap.slc"]
-    #[serde(alias = "application/vnd.wap.slc")]
+    #[serde(rename = "application/vnd.wap.slc")]
     #[serde(alias = "slc")]
     VndWapSlc,
     #[doc = "application/vnd.wap.wbxml"]
-    #[serde(alias = "application/vnd.wap.wbxml")]
+    #[serde(rename = "application/vnd.wap.wbxml")]
     #[serde(alias = "wbxml")]
     VndWapWbxml,
     #[doc = "application/vnd.wap.wmlc"]
-    #[serde(alias = "application/vnd.wap.wmlc")]
+    #[serde(rename = "application/vnd.wap.wmlc")]
     #[serde(alias = "wmlc")]
     VndWapWmlc,
     #[doc = "application/vnd.wap.wmlscriptc"]
-    #[serde(alias = "application/vnd.wap.wmlscriptc")]
+    #[serde(rename = "application/vnd.wap.wmlscriptc")]
     #[serde(alias = "wmlsc")]
     VndWapWmlscriptc,
     #[doc = "application/vnd.wasmflow.wafl"]
-    #[serde(alias = "application/vnd.wasmflow.wafl")]
+    #[serde(rename = "application/vnd.wasmflow.wafl")]
     #[serde(alias = "wafl")]
     VndWasmflowWafl,
     #[doc = "application/vnd.webturbo"]
-    #[serde(alias = "application/vnd.webturbo")]
+    #[serde(rename = "application/vnd.webturbo")]
     #[serde(alias = "wtb")]
     VndWebturbo,
     #[doc = "application/vnd.wfa.dpp"]
-    #[serde(alias = "application/vnd.wfa.dpp")]
+    #[serde(rename = "application/vnd.wfa.dpp")]
     VndWfaDpp,
     #[doc = "application/vnd.wfa.p2p"]
-    #[serde(alias = "application/vnd.wfa.p2p")]
+    #[serde(rename = "application/vnd.wfa.p2p")]
     #[serde(alias = "p2p")]
     VndWfaP2P,
     #[doc = "application/vnd.wfa.wsc"]
-    #[serde(alias = "application/vnd.wfa.wsc")]
+    #[serde(rename = "application/vnd.wfa.wsc")]
     #[serde(alias = "wsc")]
     VndWfaWsc,
     #[doc = "application/vnd.windows.devicepairing"]
-    #[serde(alias = "application/vnd.windows.devicepairing")]
+    #[serde(rename = "application/vnd.windows.devicepairing")]
     VndWindowsDevicepairing,
     #[doc = "application/vnd.wmc"]
-    #[serde(alias = "application/vnd.wmc")]
+    #[serde(rename = "application/vnd.wmc")]
     #[serde(alias = "wmc")]
     VndWmc,
     #[doc = "application/vnd.wmf.bootstrap"]
-    #[serde(alias = "application/vnd.wmf.bootstrap")]
+    #[serde(rename = "application/vnd.wmf.bootstrap")]
     VndWmfBootstrap,
     #[doc = "application/vnd.wolfram.mathematica"]
-    #[serde(alias = "application/vnd.wolfram.mathematica")]
+    #[serde(rename = "application/vnd.wolfram.mathematica")]
     VndWolframMathematica,
     #[doc = "application/vnd.wolfram.mathematica.package"]
-    #[serde(alias = "application/vnd.wolfram.mathematica.package")]
+    #[serde(rename = "application/vnd.wolfram.mathematica.package")]
     #[serde(alias = "m")]
     VndWolframMathematicaPackage,
     #[doc = "application/vnd.wolfram.player"]
-    #[serde(alias = "application/vnd.wolfram.player")]
+    #[serde(rename = "application/vnd.wolfram.player")]
     #[serde(alias = "nbp")]
     VndWolframPlayer,
     #[doc = "application/vnd.wordlift"]
-    #[serde(alias = "application/vnd.wordlift")]
+    #[serde(rename = "application/vnd.wordlift")]
     VndWordlift,
     #[doc = "application/vnd.wordperfect"]
-    #[serde(alias = "application/vnd.wordperfect")]
+    #[serde(rename = "application/vnd.wordperfect")]
     #[serde(alias = "wpd")]
     VndWordperfect,
     #[doc = "application/vnd.wqd"]
-    #[serde(alias = "application/vnd.wqd")]
+    #[serde(rename = "application/vnd.wqd")]
     #[serde(alias = "wqd")]
     VndWqd,
     #[doc = "application/vnd.wrq-hp3000-labelled"]
-    #[serde(alias = "application/vnd.wrq-hp3000-labelled")]
+    #[serde(rename = "application/vnd.wrq-hp3000-labelled")]
     VndWrqHp3000Labelled,
     #[doc = "application/vnd.wt.stf"]
-    #[serde(alias = "application/vnd.wt.stf")]
+    #[serde(rename = "application/vnd.wt.stf")]
     #[serde(alias = "stf")]
     VndWtStf,
     #[doc = "application/vnd.wv.csp+xml"]
-    #[serde(alias = "application/vnd.wv.csp+xml")]
+    #[serde(rename = "application/vnd.wv.csp+xml")]
     VndWvCspXml,
     #[doc = "application/vnd.wv.csp+wbxml"]
-    #[serde(alias = "application/vnd.wv.csp+wbxml")]
+    #[serde(rename = "application/vnd.wv.csp+wbxml")]
     #[serde(alias = "wv")]
     VndWvCspWbxml,
     #[doc = "application/vnd.wv.ssp+xml"]
-    #[serde(alias = "application/vnd.wv.ssp+xml")]
+    #[serde(rename = "application/vnd.wv.ssp+xml")]
     VndWvSspXml,
     #[doc = "application/vnd.xacml+json"]
-    #[serde(alias = "application/vnd.xacml+json")]
+    #[serde(rename = "application/vnd.xacml+json")]
     VndXacmlJson,
     #[doc = "application/vnd.xara"]
-    #[serde(alias = "application/vnd.xara")]
+    #[serde(rename = "application/vnd.xara")]
     #[serde(alias = "xar")]
     VndXara,
     #[doc = "application/vnd.xfdl"]
-    #[serde(alias = "application/vnd.xfdl")]
+    #[serde(rename = "application/vnd.xfdl")]
     #[serde(alias = "xfdl")]
     #[serde(alias = "xfd")]
     VndXfdl,
     #[doc = "application/vnd.xfdl.webform"]
-    #[serde(alias = "application/vnd.xfdl.webform")]
+    #[serde(rename = "application/vnd.xfdl.webform")]
     VndXfdlWebform,
     #[doc = "application/vnd.xmi+xml"]
-    #[serde(alias = "application/vnd.xmi+xml")]
+    #[serde(rename = "application/vnd.xmi+xml")]
     VndXmiXml,
     #[doc = "application/vnd.xmpie.cpkg"]
-    #[serde(alias = "application/vnd.xmpie.cpkg")]
+    #[serde(rename = "application/vnd.xmpie.cpkg")]
     #[serde(alias = "cpkg")]
     VndXmpieCpkg,
     #[doc = "application/vnd.xmpie.dpkg"]
-    #[serde(alias = "application/vnd.xmpie.dpkg")]
+    #[serde(rename = "application/vnd.xmpie.dpkg")]
     #[serde(alias = "dpkg")]
     VndXmpieDpkg,
     #[doc = "application/vnd.xmpie.plan"]
-    #[serde(alias = "application/vnd.xmpie.plan")]
+    #[serde(rename = "application/vnd.xmpie.plan")]
     VndXmpiePlan,
     #[doc = "application/vnd.xmpie.ppkg"]
-    #[serde(alias = "application/vnd.xmpie.ppkg")]
+    #[serde(rename = "application/vnd.xmpie.ppkg")]
     #[serde(alias = "ppkg")]
     VndXmpiePpkg,
     #[doc = "application/vnd.xmpie.xlim"]
-    #[serde(alias = "application/vnd.xmpie.xlim")]
+    #[serde(rename = "application/vnd.xmpie.xlim")]
     #[serde(alias = "xlim")]
     VndXmpieXlim,
     #[doc = "application/vnd.yamaha.hv-dic"]
-    #[serde(alias = "application/vnd.yamaha.hv-dic")]
+    #[serde(rename = "application/vnd.yamaha.hv-dic")]
     #[serde(alias = "hvd")]
     VndYamahaHvDic,
     #[doc = "application/vnd.yamaha.hv-script"]
-    #[serde(alias = "application/vnd.yamaha.hv-script")]
+    #[serde(rename = "application/vnd.yamaha.hv-script")]
     #[serde(alias = "hvs")]
     VndYamahaHvScript,
     #[doc = "application/vnd.yamaha.hv-voice"]
-    #[serde(alias = "application/vnd.yamaha.hv-voice")]
+    #[serde(rename = "application/vnd.yamaha.hv-voice")]
     #[serde(alias = "hvp")]
     VndYamahaHvVoice,
     #[doc = "application/vnd.yamaha.openscoreformat.osfpvg+xml"]
-    #[serde(alias = "application/vnd.yamaha.openscoreformat.osfpvg+xml")]
+    #[serde(rename = "application/vnd.yamaha.openscoreformat.osfpvg+xml")]
     VndYamahaOpenscoreformatOsfpvgXml,
     #[doc = "application/vnd.yamaha.openscoreformat"]
-    #[serde(alias = "application/vnd.yamaha.openscoreformat")]
+    #[serde(rename = "application/vnd.yamaha.openscoreformat")]
     #[serde(alias = "osf")]
     VndYamahaOpenscoreformat,
     #[doc = "application/vnd.yamaha.remote-setup"]
-    #[serde(alias = "application/vnd.yamaha.remote-setup")]
+    #[serde(rename = "application/vnd.yamaha.remote-setup")]
     VndYamahaRemoteSetup,
     #[doc = "application/vnd.yamaha.smaf-audio"]
-    #[serde(alias = "application/vnd.yamaha.smaf-audio")]
+    #[serde(rename = "application/vnd.yamaha.smaf-audio")]
     #[serde(alias = "saf")]
     VndYamahaSmafAudio,
     #[doc = "application/vnd.yamaha.smaf-phrase"]
-    #[serde(alias = "application/vnd.yamaha.smaf-phrase")]
+    #[serde(rename = "application/vnd.yamaha.smaf-phrase")]
     #[serde(alias = "spf")]
     VndYamahaSmafPhrase,
     #[doc = "application/vnd.yamaha.through-ngn"]
-    #[serde(alias = "application/vnd.yamaha.through-ngn")]
+    #[serde(rename = "application/vnd.yamaha.through-ngn")]
     VndYamahaThroughNgn,
     #[doc = "application/vnd.yamaha.tunnel-udpencap"]
-    #[serde(alias = "application/vnd.yamaha.tunnel-udpencap")]
+    #[serde(rename = "application/vnd.yamaha.tunnel-udpencap")]
     VndYamahaTunnelUdpencap,
     #[doc = "application/vnd.yaoweme"]
-    #[serde(alias = "application/vnd.yaoweme")]
+    #[serde(rename = "application/vnd.yaoweme")]
     #[serde(alias = "yme")]
     VndYaoweme,
     #[doc = "application/vnd.yellowriver-custom-menu"]
-    #[serde(alias = "application/vnd.yellowriver-custom-menu")]
+    #[serde(rename = "application/vnd.yellowriver-custom-menu")]
     #[serde(alias = "cmp")]
     VndYellowriverCustomMenu,
     #[doc = "application/vnd.zul"]
-    #[serde(alias = "application/vnd.zul")]
+    #[serde(rename = "application/vnd.zul")]
     #[serde(alias = "zir")]
     #[serde(alias = "zirz")]
     VndZul,
     #[doc = "application/vnd.zzazz.deck+xml"]
-    #[serde(alias = "application/vnd.zzazz.deck+xml")]
+    #[serde(rename = "application/vnd.zzazz.deck+xml")]
     #[serde(alias = "zaz")]
     VndZzazzDeckXml,
     #[doc = "application/voicexml+xml"]
-    #[serde(alias = "application/voicexml+xml")]
+    #[serde(rename = "application/voicexml+xml")]
     #[serde(alias = "vxml")]
     VoicexmlXml,
     #[doc = "application/voucher-cms+json"]
-    #[serde(alias = "application/voucher-cms+json")]
+    #[serde(rename = "application/voucher-cms+json")]
     #[serde(alias = "vcj")]
     VoucherCmsJson,
     #[doc = "application/vq-rtcpxr"]
-    #[serde(alias = "application/vq-rtcpxr")]
+    #[serde(rename = "application/vq-rtcpxr")]
     VqRtcpxr,
     #[doc = "application/wasm"]
-    #[serde(alias = "application/wasm")]
+    #[serde(rename = "application/wasm")]
     #[serde(alias = "wasm")]
     Wasm,
     #[doc = "application/watcherinfo+xml"]
-    #[serde(alias = "application/watcherinfo+xml")]
+    #[serde(rename = "application/watcherinfo+xml")]
     #[serde(alias = "wif")]
     WatcherinfoXml,
     #[doc = "application/webpush-options+json"]
-    #[serde(alias = "application/webpush-options+json")]
+    #[serde(rename = "application/webpush-options+json")]
     WebpushOptionsJson,
     #[doc = "application/whoispp-query"]
-    #[serde(alias = "application/whoispp-query")]
+    #[serde(rename = "application/whoispp-query")]
     WhoisppQuery,
     #[doc = "application/whoispp-response"]
-    #[serde(alias = "application/whoispp-response")]
+    #[serde(rename = "application/whoispp-response")]
     WhoisppResponse,
     #[doc = "application/widget"]
-    #[serde(alias = "application/widget")]
+    #[serde(rename = "application/widget")]
     #[serde(alias = "wgt")]
     Widget,
     #[doc = "application/wita"]
-    #[serde(alias = "application/wita")]
+    #[serde(rename = "application/wita")]
     Wita,
     #[doc = "application/wordperfect5.1"]
-    #[serde(alias = "application/wordperfect5.1")]
+    #[serde(rename = "application/wordperfect5.1")]
     Wordperfect51,
     #[doc = "application/wsdl+xml"]
-    #[serde(alias = "application/wsdl+xml")]
+    #[serde(rename = "application/wsdl+xml")]
     #[serde(alias = "wsdl")]
     WsdlXml,
     #[doc = "application/wspolicy+xml"]
-    #[serde(alias = "application/wspolicy+xml")]
+    #[serde(rename = "application/wspolicy+xml")]
     #[serde(alias = "wspolicy")]
     WspolicyXml,
     #[doc = "application/x-pki-message"]
-    #[serde(alias = "application/x-pki-message")]
+    #[serde(rename = "application/x-pki-message")]
     XPkiMessage,
     #[doc = "application/x-www-form-urlencoded"]
-    #[serde(alias = "application/x-www-form-urlencoded")]
+    #[serde(rename = "application/x-www-form-urlencoded")]
     XWwwFormUrlencoded,
     #[doc = "application/x-x509-ca-cert"]
-    #[serde(alias = "application/x-x509-ca-cert")]
+    #[serde(rename = "application/x-x509-ca-cert")]
     XX509CaCert,
     #[doc = "application/x-x509-ca-ra-cert"]
-    #[serde(alias = "application/x-x509-ca-ra-cert")]
+    #[serde(rename = "application/x-x509-ca-ra-cert")]
     XX509CaRaCert,
     #[doc = "application/x-x509-next-ca-cert"]
-    #[serde(alias = "application/x-x509-next-ca-cert")]
+    #[serde(rename = "application/x-x509-next-ca-cert")]
     XX509NextCaCert,
     #[doc = "application/x400-bp"]
-    #[serde(alias = "application/x400-bp")]
+    #[serde(rename = "application/x400-bp")]
     X400Bp,
     #[doc = "application/xacml+xml"]
-    #[serde(alias = "application/xacml+xml")]
+    #[serde(rename = "application/xacml+xml")]
     XacmlXml,
     #[doc = "application/xcap-att+xml"]
-    #[serde(alias = "application/xcap-att+xml")]
+    #[serde(rename = "application/xcap-att+xml")]
     #[serde(alias = "xav")]
     XcapAttXml,
     #[doc = "application/xcap-caps+xml"]
-    #[serde(alias = "application/xcap-caps+xml")]
+    #[serde(rename = "application/xcap-caps+xml")]
     #[serde(alias = "xca")]
     XcapCapsXml,
     #[doc = "application/xcap-diff+xml"]
-    #[serde(alias = "application/xcap-diff+xml")]
+    #[serde(rename = "application/xcap-diff+xml")]
     #[serde(alias = "xdf")]
     XcapDiffXml,
     #[doc = "application/xcap-el+xml"]
-    #[serde(alias = "application/xcap-el+xml")]
+    #[serde(rename = "application/xcap-el+xml")]
     #[serde(alias = "xel")]
     XcapElXml,
     #[doc = "application/xcap-error+xml"]
-    #[serde(alias = "application/xcap-error+xml")]
+    #[serde(rename = "application/xcap-error+xml")]
     #[serde(alias = "xer")]
     XcapErrorXml,
     #[doc = "application/xcap-ns+xml"]
-    #[serde(alias = "application/xcap-ns+xml")]
+    #[serde(rename = "application/xcap-ns+xml")]
     #[serde(alias = "xns")]
     XcapNsXml,
     #[doc = "application/xcon-conference-info-diff+xml"]
-    #[serde(alias = "application/xcon-conference-info-diff+xml")]
+    #[serde(rename = "application/xcon-conference-info-diff+xml")]
     XconConferenceInfoDiffXml,
     #[doc = "application/xcon-conference-info+xml"]
-    #[serde(alias = "application/xcon-conference-info+xml")]
+    #[serde(rename = "application/xcon-conference-info+xml")]
     XconConferenceInfoXml,
     #[doc = "application/xenc+xml"]
-    #[serde(alias = "application/xenc+xml")]
+    #[serde(rename = "application/xenc+xml")]
     XencXml,
     #[doc = "application/xfdf"]
-    #[serde(alias = "application/xfdf")]
+    #[serde(rename = "application/xfdf")]
     #[serde(alias = "xfdf")]
     Xfdf,
     #[doc = "application/xhtml+xml"]
-    #[serde(alias = "application/xhtml+xml")]
+    #[serde(rename = "application/xhtml+xml")]
     #[serde(alias = "xhtml")]
     #[serde(alias = "xhtm")]
     #[serde(alias = "xht")]
     XhtmlXml,
     #[doc = "application/xliff+xml"]
-    #[serde(alias = "application/xliff+xml")]
+    #[serde(rename = "application/xliff+xml")]
     #[serde(alias = "xlf")]
     XliffXml,
     #[doc = "application/xml"]
-    #[serde(alias = "application/xml")]
+    #[serde(rename = "application/xml")]
     Xml,
     #[doc = "application/xml-dtd"]
-    #[serde(alias = "application/xml-dtd")]
+    #[serde(rename = "application/xml-dtd")]
     #[serde(alias = "dtd")]
     XmlDtd,
     #[doc = "application/xml-external-parsed-entity"]
-    #[serde(alias = "application/xml-external-parsed-entity")]
+    #[serde(rename = "application/xml-external-parsed-entity")]
     XmlExternalParsedEntity,
     #[doc = "application/xml-patch+xml"]
-    #[serde(alias = "application/xml-patch+xml")]
+    #[serde(rename = "application/xml-patch+xml")]
     XmlPatchXml,
     #[doc = "application/xmpp+xml"]
-    #[serde(alias = "application/xmpp+xml")]
+    #[serde(rename = "application/xmpp+xml")]
     XmppXml,
     #[doc = "application/xop+xml"]
-    #[serde(alias = "application/xop+xml")]
+    #[serde(rename = "application/xop+xml")]
     #[serde(alias = "xop")]
     XopXml,
     #[doc = "application/xslt+xml"]
-    #[serde(alias = "application/xslt+xml")]
+    #[serde(rename = "application/xslt+xml")]
     #[serde(alias = "xsl")]
     #[serde(alias = "xslt")]
     XsltXml,
     #[doc = "application/xv+xml"]
-    #[serde(alias = "application/xv+xml")]
+    #[serde(rename = "application/xv+xml")]
     #[serde(alias = "mxml")]
     #[serde(alias = "xhvml")]
     #[serde(alias = "xvml")]
     #[serde(alias = "xvm")]
     XvXml,
     #[doc = "application/yaml"]
-    #[serde(alias = "application/yaml")]
+    #[serde(rename = "application/yaml")]
     Yaml,
     #[doc = "application/yang"]
-    #[serde(alias = "application/yang")]
+    #[serde(rename = "application/yang")]
     #[serde(alias = "yang")]
     Yang,
     #[doc = "application/yang-data+cbor"]
-    #[serde(alias = "application/yang-data+cbor")]
+    #[serde(rename = "application/yang-data+cbor")]
     YangDataCbor,
     #[doc = "application/yang-data+json"]
-    #[serde(alias = "application/yang-data+json")]
+    #[serde(rename = "application/yang-data+json")]
     YangDataJson,
     #[doc = "application/yang-data+xml"]
-    #[serde(alias = "application/yang-data+xml")]
+    #[serde(rename = "application/yang-data+xml")]
     YangDataXml,
     #[doc = "application/yang-patch+json"]
-    #[serde(alias = "application/yang-patch+json")]
+    #[serde(rename = "application/yang-patch+json")]
     YangPatchJson,
     #[doc = "application/yang-patch+xml"]
-    #[serde(alias = "application/yang-patch+xml")]
+    #[serde(rename = "application/yang-patch+xml")]
     YangPatchXml,
     #[doc = "application/yin+xml"]
-    #[serde(alias = "application/yin+xml")]
+    #[serde(rename = "application/yin+xml")]
     #[serde(alias = "yin")]
     YinXml,
     #[doc = "application/zip"]
-    #[serde(alias = "application/zip")]
+    #[serde(rename = "application/zip")]
     #[serde(alias = "zip")]
     Zip,
     #[doc = "application/zlib"]
-    #[serde(alias = "application/zlib")]
+    #[serde(rename = "application/zlib")]
     Zlib,
     #[doc = "application/zstd"]
-    #[serde(alias = "application/zstd")]
+    #[serde(rename = "application/zstd")]
     #[serde(alias = "zst")]
     Zstd,
 }

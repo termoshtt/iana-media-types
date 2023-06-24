@@ -11,318 +11,318 @@
 )]
 pub enum Image {
     #[doc = "image/aces"]
-    #[serde(alias = "image/aces")]
+    #[serde(rename = "image/aces")]
     #[serde(alias = "exr")]
     Aces,
     #[doc = "image/apng"]
-    #[serde(alias = "image/apng")]
+    #[serde(rename = "image/apng")]
     Apng,
     #[doc = "image/avci"]
-    #[serde(alias = "image/avci")]
+    #[serde(rename = "image/avci")]
     #[serde(alias = "avci")]
     Avci,
     #[doc = "image/avcs"]
-    #[serde(alias = "image/avcs")]
+    #[serde(rename = "image/avcs")]
     #[serde(alias = "avcs")]
     Avcs,
     #[doc = "image/avif"]
-    #[serde(alias = "image/avif")]
+    #[serde(rename = "image/avif")]
     #[serde(alias = "avif")]
     #[serde(alias = "hif")]
     Avif,
     #[doc = "image/bmp"]
-    #[serde(alias = "image/bmp")]
+    #[serde(rename = "image/bmp")]
     #[serde(alias = "bmp")]
     #[serde(alias = "dib")]
     Bmp,
     #[doc = "image/cgm"]
-    #[serde(alias = "image/cgm")]
+    #[serde(rename = "image/cgm")]
     #[serde(alias = "cgm")]
     Cgm,
     #[doc = "image/dicom-rle"]
-    #[serde(alias = "image/dicom-rle")]
+    #[serde(rename = "image/dicom-rle")]
     #[serde(alias = "drle")]
     DicomRle,
     #[doc = "image/dpx"]
-    #[serde(alias = "image/dpx")]
+    #[serde(rename = "image/dpx")]
     #[serde(alias = "dpx")]
     Dpx,
     #[doc = "image/emf"]
-    #[serde(alias = "image/emf")]
+    #[serde(rename = "image/emf")]
     #[serde(alias = "emf")]
     Emf,
     #[doc = "image/example"]
-    #[serde(alias = "image/example")]
+    #[serde(rename = "image/example")]
     Example,
     #[doc = "image/fits"]
-    #[serde(alias = "image/fits")]
+    #[serde(rename = "image/fits")]
     #[serde(alias = "fits")]
     #[serde(alias = "fit")]
     #[serde(alias = "fts")]
     Fits,
     #[doc = "image/g3fax"]
-    #[serde(alias = "image/g3fax")]
+    #[serde(rename = "image/g3fax")]
     G3Fax,
     #[doc = "image/heic"]
-    #[serde(alias = "image/heic")]
+    #[serde(rename = "image/heic")]
     #[serde(alias = "heic")]
     Gif,
     #[doc = "image/heic-sequence"]
-    #[serde(alias = "image/heic-sequence")]
+    #[serde(rename = "image/heic-sequence")]
     #[serde(alias = "heics")]
     Heic,
     #[doc = "image/heif"]
-    #[serde(alias = "image/heif")]
+    #[serde(rename = "image/heif")]
     #[serde(alias = "heif")]
     HeicSequence,
     #[doc = "image/heif-sequence"]
-    #[serde(alias = "image/heif-sequence")]
+    #[serde(rename = "image/heif-sequence")]
     #[serde(alias = "heifs")]
     Heif,
     #[doc = "image/hej2k"]
-    #[serde(alias = "image/hej2k")]
+    #[serde(rename = "image/hej2k")]
     #[serde(alias = "hej2")]
     HeifSequence,
     #[doc = "image/hsj2"]
-    #[serde(alias = "image/hsj2")]
+    #[serde(rename = "image/hsj2")]
     #[serde(alias = "hsj2")]
     Hej2K,
     #[doc = "image/j2c"]
-    #[serde(alias = "image/j2c")]
+    #[serde(rename = "image/j2c")]
     Hsj2,
     #[doc = "image/jls"]
-    #[serde(alias = "image/jls")]
+    #[serde(rename = "image/jls")]
     #[serde(alias = "jls")]
     Ief,
     #[doc = "image/jp2"]
-    #[serde(alias = "image/jp2")]
+    #[serde(rename = "image/jp2")]
     #[serde(alias = "jp2")]
     #[serde(alias = "jpg2")]
     J2C,
     #[doc = "image/jph"]
-    #[serde(alias = "image/jph")]
+    #[serde(rename = "image/jph")]
     #[serde(alias = "jph")]
     Jls,
     #[doc = "image/jphc"]
-    #[serde(alias = "image/jphc")]
+    #[serde(rename = "image/jphc")]
     #[serde(alias = "jhc")]
     Jp2,
     #[doc = "image/jpm"]
-    #[serde(alias = "image/jpm")]
+    #[serde(rename = "image/jpm")]
     #[serde(alias = "jpm")]
     #[serde(alias = "jpgm")]
     Jpeg,
     #[doc = "image/jpx"]
-    #[serde(alias = "image/jpx")]
+    #[serde(rename = "image/jpx")]
     #[serde(alias = "jpx")]
     #[serde(alias = "jpf")]
     Jph,
     #[doc = "image/jxr"]
-    #[serde(alias = "image/jxr")]
+    #[serde(rename = "image/jxr")]
     #[serde(alias = "jxr")]
     Jphc,
     #[doc = "image/jxrA"]
-    #[serde(alias = "image/jxrA")]
+    #[serde(rename = "image/jxrA")]
     #[serde(alias = "jxra")]
     Jpm,
     #[doc = "image/jxrS"]
-    #[serde(alias = "image/jxrS")]
+    #[serde(rename = "image/jxrS")]
     #[serde(alias = "jxrs")]
     Jpx,
     #[doc = "image/jxs"]
-    #[serde(alias = "image/jxs")]
+    #[serde(rename = "image/jxs")]
     #[serde(alias = "jxs")]
     Jxr,
     #[doc = "image/jxsc"]
-    #[serde(alias = "image/jxsc")]
+    #[serde(rename = "image/jxsc")]
     #[serde(alias = "jxsc")]
     JxrA,
     #[doc = "image/jxsi"]
-    #[serde(alias = "image/jxsi")]
+    #[serde(rename = "image/jxsi")]
     #[serde(alias = "jxsi")]
     JxrS,
     #[doc = "image/jxss"]
-    #[serde(alias = "image/jxss")]
+    #[serde(rename = "image/jxss")]
     #[serde(alias = "jxss")]
     Jxs,
     #[doc = "image/ktx"]
-    #[serde(alias = "image/ktx")]
+    #[serde(rename = "image/ktx")]
     #[serde(alias = "ktx")]
     Jxsc,
     #[doc = "image/ktx2"]
-    #[serde(alias = "image/ktx2")]
+    #[serde(rename = "image/ktx2")]
     #[serde(alias = "ktx2")]
     Jxsi,
     #[doc = "image/naplps"]
-    #[serde(alias = "image/naplps")]
+    #[serde(rename = "image/naplps")]
     Jxss,
     #[doc = "image/png"]
-    #[serde(alias = "image/png")]
+    #[serde(rename = "image/png")]
     #[serde(alias = "png")]
     Ktx,
     #[doc = "image/prs.btif"]
-    #[serde(alias = "image/prs.btif")]
+    #[serde(rename = "image/prs.btif")]
     #[serde(alias = "btif")]
     #[serde(alias = "btf")]
     Ktx2,
     #[doc = "image/prs.pti"]
-    #[serde(alias = "image/prs.pti")]
+    #[serde(rename = "image/prs.pti")]
     #[serde(alias = "pti")]
     Naplps,
     #[doc = "image/pwg-raster"]
-    #[serde(alias = "image/pwg-raster")]
+    #[serde(rename = "image/pwg-raster")]
     Png,
     #[doc = "image/svg+xml"]
-    #[serde(alias = "image/svg+xml")]
+    #[serde(rename = "image/svg+xml")]
     #[serde(alias = "svg")]
     #[serde(alias = "svgz")]
     PrsBtif,
     #[doc = "image/t38"]
-    #[serde(alias = "image/t38")]
+    #[serde(rename = "image/t38")]
     #[serde(alias = "t38")]
     PrsPti,
     #[doc = "image/tiff"]
-    #[serde(alias = "image/tiff")]
+    #[serde(rename = "image/tiff")]
     #[serde(alias = "tiff")]
     #[serde(alias = "tif")]
     PwgRaster,
     #[doc = "image/tiff-fx"]
-    #[serde(alias = "image/tiff-fx")]
+    #[serde(rename = "image/tiff-fx")]
     #[serde(alias = "tfx")]
     SvgXml,
     #[doc = "image/vnd.adobe.photoshop"]
-    #[serde(alias = "image/vnd.adobe.photoshop")]
+    #[serde(rename = "image/vnd.adobe.photoshop")]
     #[serde(alias = "psd")]
     T38,
     #[doc = "image/vnd.airzip.accelerator.azv"]
-    #[serde(alias = "image/vnd.airzip.accelerator.azv")]
+    #[serde(rename = "image/vnd.airzip.accelerator.azv")]
     #[serde(alias = "azv")]
     Tiff,
     #[doc = "image/vnd.cns.inf2"]
-    #[serde(alias = "image/vnd.cns.inf2")]
+    #[serde(rename = "image/vnd.cns.inf2")]
     TiffFx,
     #[doc = "image/vnd.dece.graphic"]
-    #[serde(alias = "image/vnd.dece.graphic")]
+    #[serde(rename = "image/vnd.dece.graphic")]
     #[serde(alias = "uvi")]
     #[serde(alias = "uvvi")]
     #[serde(alias = "uvg")]
     #[serde(alias = "uvvg")]
     VndAdobePhotoshop,
     #[doc = "image/vnd.djvu"]
-    #[serde(alias = "image/vnd.djvu")]
+    #[serde(rename = "image/vnd.djvu")]
     #[serde(alias = "djvu")]
     #[serde(alias = "djv")]
     VndAirzipAcceleratorAzv,
     #[doc = "image/vnd.dwg"]
-    #[serde(alias = "image/vnd.dwg")]
+    #[serde(rename = "image/vnd.dwg")]
     #[serde(alias = "dwg")]
     VndCnsInf2,
     #[doc = "image/vnd.dxf"]
-    #[serde(alias = "image/vnd.dxf")]
+    #[serde(rename = "image/vnd.dxf")]
     #[serde(alias = "dxf")]
     VndDeceGraphic,
     #[doc = "image/vnd.dvb.subtitle"]
-    #[serde(alias = "image/vnd.dvb.subtitle")]
+    #[serde(rename = "image/vnd.dvb.subtitle")]
     VndDjvu,
     #[doc = "image/vnd.fastbidsheet"]
-    #[serde(alias = "image/vnd.fastbidsheet")]
+    #[serde(rename = "image/vnd.fastbidsheet")]
     #[serde(alias = "fbs")]
     VndDwg,
     #[doc = "image/vnd.fpx"]
-    #[serde(alias = "image/vnd.fpx")]
+    #[serde(rename = "image/vnd.fpx")]
     #[serde(alias = "fpx")]
     VndDxf,
     #[doc = "image/vnd.fst"]
-    #[serde(alias = "image/vnd.fst")]
+    #[serde(rename = "image/vnd.fst")]
     #[serde(alias = "fst")]
     VndDvbSubtitle,
     #[doc = "image/vnd.fujixerox.edmics-mmr"]
-    #[serde(alias = "image/vnd.fujixerox.edmics-mmr")]
+    #[serde(rename = "image/vnd.fujixerox.edmics-mmr")]
     #[serde(alias = "mmr")]
     VndFastbidsheet,
     #[doc = "image/vnd.fujixerox.edmics-rlc"]
-    #[serde(alias = "image/vnd.fujixerox.edmics-rlc")]
+    #[serde(rename = "image/vnd.fujixerox.edmics-rlc")]
     #[serde(alias = "rlc")]
     VndFpx,
     #[doc = "image/vnd.globalgraphics.pgb"]
-    #[serde(alias = "image/vnd.globalgraphics.pgb")]
+    #[serde(rename = "image/vnd.globalgraphics.pgb")]
     #[serde(alias = "pgb")]
     VndFst,
     #[doc = "image/vnd.microsoft.icon"]
-    #[serde(alias = "image/vnd.microsoft.icon")]
+    #[serde(rename = "image/vnd.microsoft.icon")]
     #[serde(alias = "ico")]
     VndFujixeroxEdmicsMmr,
     #[doc = "image/vnd.mix"]
-    #[serde(alias = "image/vnd.mix")]
+    #[serde(rename = "image/vnd.mix")]
     VndFujixeroxEdmicsRlc,
     #[doc = "image/vnd.ms-modi"]
-    #[serde(alias = "image/vnd.ms-modi")]
+    #[serde(rename = "image/vnd.ms-modi")]
     #[serde(alias = "mdi")]
     VndGlobalgraphicsPgb,
     #[doc = "image/vnd.mozilla.apng"]
-    #[serde(alias = "image/vnd.mozilla.apng")]
+    #[serde(rename = "image/vnd.mozilla.apng")]
     #[serde(alias = "apng")]
     VndMicrosoftIcon,
     #[doc = "image/vnd.net-fpx"]
-    #[serde(alias = "image/vnd.net-fpx")]
+    #[serde(rename = "image/vnd.net-fpx")]
     VndMix,
     #[doc = "image/vnd.pco.b16"]
-    #[serde(alias = "image/vnd.pco.b16")]
+    #[serde(rename = "image/vnd.pco.b16")]
     #[serde(alias = "b16")]
     VndMsModi,
     #[doc = "image/vnd.radiance"]
-    #[serde(alias = "image/vnd.radiance")]
+    #[serde(rename = "image/vnd.radiance")]
     #[serde(alias = "hdr")]
     #[serde(alias = "rgbe")]
     #[serde(alias = "xyze")]
     VndMozillaApng,
     #[doc = "image/vnd.sealed.png"]
-    #[serde(alias = "image/vnd.sealed.png")]
+    #[serde(rename = "image/vnd.sealed.png")]
     #[serde(alias = "spng")]
     #[serde(alias = "spn")]
     #[serde(alias = "s1n")]
     VndNetFpx,
     #[doc = "image/vnd.sealedmedia.softseal.gif"]
-    #[serde(alias = "image/vnd.sealedmedia.softseal.gif")]
+    #[serde(rename = "image/vnd.sealedmedia.softseal.gif")]
     #[serde(alias = "sgif")]
     #[serde(alias = "sgi")]
     #[serde(alias = "s1g")]
     VndPcoB16,
     #[doc = "image/vnd.sealedmedia.softseal.jpg"]
-    #[serde(alias = "image/vnd.sealedmedia.softseal.jpg")]
+    #[serde(rename = "image/vnd.sealedmedia.softseal.jpg")]
     #[serde(alias = "sjpg")]
     #[serde(alias = "sjp")]
     #[serde(alias = "s1j")]
     VndRadiance,
     #[doc = "image/vnd.svf"]
-    #[serde(alias = "image/vnd.svf")]
+    #[serde(rename = "image/vnd.svf")]
     VndSealedPng,
     #[doc = "image/vnd.tencent.tap"]
-    #[serde(alias = "image/vnd.tencent.tap")]
+    #[serde(rename = "image/vnd.tencent.tap")]
     #[serde(alias = "tap")]
     VndSealedmediaSoftsealGif,
     #[doc = "image/vnd.valve.source.texture"]
-    #[serde(alias = "image/vnd.valve.source.texture")]
+    #[serde(rename = "image/vnd.valve.source.texture")]
     #[serde(alias = "vtf")]
     VndSealedmediaSoftsealJpg,
     #[doc = "image/vnd.wap.wbmp"]
-    #[serde(alias = "image/vnd.wap.wbmp")]
+    #[serde(rename = "image/vnd.wap.wbmp")]
     #[serde(alias = "wbmp")]
     VndSvf,
     #[doc = "image/vnd.xiff"]
-    #[serde(alias = "image/vnd.xiff")]
+    #[serde(rename = "image/vnd.xiff")]
     #[serde(alias = "xif")]
     VndTencentTap,
     #[doc = "image/vnd.zbrush.pcx"]
-    #[serde(alias = "image/vnd.zbrush.pcx")]
+    #[serde(rename = "image/vnd.zbrush.pcx")]
     #[serde(alias = "pcx")]
     VndValveSourceTexture,
     #[doc = "image/webp"]
-    #[serde(alias = "image/webp")]
+    #[serde(rename = "image/webp")]
     #[serde(alias = "webp")]
     VndWapWbmp,
     #[doc = "image/wmf"]
-    #[serde(alias = "image/wmf")]
+    #[serde(rename = "image/wmf")]
     #[serde(alias = "wmf")]
     VndXiff,
 }

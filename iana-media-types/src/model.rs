@@ -11,85 +11,85 @@
 )]
 pub enum Model {
     #[doc = "model/3mf"]
-    #[serde(alias = "model/3mf")]
+    #[serde(rename = "model/3mf")]
     _3Mf,
     #[doc = "model/e57"]
-    #[serde(alias = "model/e57")]
+    #[serde(rename = "model/e57")]
     E57,
     #[doc = "model/example"]
-    #[serde(alias = "model/example")]
+    #[serde(rename = "model/example")]
     Example,
     #[doc = "model/gltf-binary"]
-    #[serde(alias = "model/gltf-binary")]
+    #[serde(rename = "model/gltf-binary")]
     #[serde(alias = "glb")]
     GltfBinary,
     #[doc = "model/gltf+json"]
-    #[serde(alias = "model/gltf+json")]
+    #[serde(rename = "model/gltf+json")]
     #[serde(alias = "gltf")]
     GltfJson,
     #[doc = "model/JT"]
-    #[serde(alias = "model/JT")]
+    #[serde(rename = "model/JT")]
     #[serde(alias = "jt")]
     Jt,
     #[doc = "model/iges"]
-    #[serde(alias = "model/iges")]
+    #[serde(rename = "model/iges")]
     #[serde(alias = "igs")]
     #[serde(alias = "iges")]
     Iges,
     #[doc = "model/mtl"]
-    #[serde(alias = "model/mtl")]
+    #[serde(rename = "model/mtl")]
     #[serde(alias = "mtl")]
     Mesh,
     #[doc = "model/obj"]
-    #[serde(alias = "model/obj")]
+    #[serde(rename = "model/obj")]
     #[serde(alias = "obj")]
     Mtl,
     #[doc = "model/prc"]
-    #[serde(alias = "model/prc")]
+    #[serde(rename = "model/prc")]
     Obj,
     #[doc = "model/step"]
-    #[serde(alias = "model/step")]
+    #[serde(rename = "model/step")]
     Prc,
     #[doc = "model/step+xml"]
-    #[serde(alias = "model/step+xml")]
+    #[serde(rename = "model/step+xml")]
     #[serde(alias = "stpx")]
     Step,
     #[doc = "model/step+zip"]
-    #[serde(alias = "model/step+zip")]
+    #[serde(rename = "model/step+zip")]
     StepXml,
     #[doc = "model/step-xml+zip"]
-    #[serde(alias = "model/step-xml+zip")]
+    #[serde(rename = "model/step-xml+zip")]
     #[serde(alias = "stpxz")]
     StepZip,
     #[doc = "model/stl"]
-    #[serde(alias = "model/stl")]
+    #[serde(rename = "model/stl")]
     #[serde(alias = "stl")]
     StepXmlZip,
     #[doc = "model/u3d"]
-    #[serde(alias = "model/u3d")]
+    #[serde(rename = "model/u3d")]
     #[serde(alias = "u3d")]
     Stl,
     #[doc = "model/vnd.bary"]
-    #[serde(alias = "model/vnd.bary")]
+    #[serde(rename = "model/vnd.bary")]
     #[serde(alias = "bary")]
     U3D,
     #[doc = "model/vnd.cld"]
-    #[serde(alias = "model/vnd.cld")]
+    #[serde(rename = "model/vnd.cld")]
     #[serde(alias = "cld")]
     VndBary,
     #[doc = "model/vnd.collada+xml"]
-    #[serde(alias = "model/vnd.collada+xml")]
+    #[serde(rename = "model/vnd.collada+xml")]
     #[serde(alias = "dae")]
     VndCld,
     #[doc = "model/vnd.dwf"]
-    #[serde(alias = "model/vnd.dwf")]
+    #[serde(rename = "model/vnd.dwf")]
     #[serde(alias = "dwf")]
     VndColladaXml,
     #[doc = "model/vnd.flatland.3dml"]
-    #[serde(alias = "model/vnd.flatland.3dml")]
+    #[serde(rename = "model/vnd.flatland.3dml")]
     VndDwf,
     #[doc = "model/vnd.gdl"]
-    #[serde(alias = "model/vnd.gdl")]
+    #[serde(rename = "model/vnd.gdl")]
     #[serde(alias = "gdl")]
     #[serde(alias = "gsm")]
     #[serde(alias = "win")]
@@ -100,72 +100,72 @@ pub enum Model {
     #[serde(alias = "ism")]
     VndFlatland3Dml,
     #[doc = "model/vnd.gs-gdl"]
-    #[serde(alias = "model/vnd.gs-gdl")]
+    #[serde(rename = "model/vnd.gs-gdl")]
     VndGdl,
     #[doc = "model/vnd.gtw"]
-    #[serde(alias = "model/vnd.gtw")]
+    #[serde(rename = "model/vnd.gtw")]
     #[serde(alias = "gtw")]
     VndGsGdl,
     #[doc = "model/vnd.moml+xml"]
-    #[serde(alias = "model/vnd.moml+xml")]
+    #[serde(rename = "model/vnd.moml+xml")]
     #[serde(alias = "moml")]
     VndGtw,
     #[doc = "model/vnd.mts"]
-    #[serde(alias = "model/vnd.mts")]
+    #[serde(rename = "model/vnd.mts")]
     #[serde(alias = "mts")]
     VndMomlXml,
     #[doc = "model/vnd.opengex"]
-    #[serde(alias = "model/vnd.opengex")]
+    #[serde(rename = "model/vnd.opengex")]
     #[serde(alias = "ogex")]
     VndMts,
     #[doc = "model/vnd.parasolid.transmit.binary"]
-    #[serde(alias = "model/vnd.parasolid.transmit.binary")]
+    #[serde(rename = "model/vnd.parasolid.transmit.binary")]
     #[serde(alias = "x_b")]
     #[serde(alias = "xmt_bin")]
     VndOpengex,
     #[doc = "model/vnd.parasolid.transmit.text"]
-    #[serde(alias = "model/vnd.parasolid.transmit.text")]
+    #[serde(rename = "model/vnd.parasolid.transmit.text")]
     #[serde(alias = "x_t")]
     #[serde(alias = "xmt_txt")]
     VndParasolidTransmitBinary,
     #[doc = "model/vnd.pytha.pyox"]
-    #[serde(alias = "model/vnd.pytha.pyox")]
+    #[serde(rename = "model/vnd.pytha.pyox")]
     #[serde(alias = "pyo")]
     #[serde(alias = "pyox")]
     VndParasolidTransmitText,
     #[doc = "model/vnd.rosette.annotated-data-model"]
-    #[serde(alias = "model/vnd.rosette.annotated-data-model")]
+    #[serde(rename = "model/vnd.rosette.annotated-data-model")]
     VndPythaPyox,
     #[doc = "model/vnd.sap.vds"]
-    #[serde(alias = "model/vnd.sap.vds")]
+    #[serde(rename = "model/vnd.sap.vds")]
     #[serde(alias = "vds")]
     VndRosetteAnnotatedDataModel,
     #[doc = "model/vnd.usda"]
-    #[serde(alias = "model/vnd.usda")]
+    #[serde(rename = "model/vnd.usda")]
     #[serde(alias = "usda")]
     VndSapVds,
     #[doc = "model/vnd.usdz+zip"]
-    #[serde(alias = "model/vnd.usdz+zip")]
+    #[serde(rename = "model/vnd.usdz+zip")]
     #[serde(alias = "usdz")]
     VndUsda,
     #[doc = "model/vnd.valve.source.compiled-map"]
-    #[serde(alias = "model/vnd.valve.source.compiled-map")]
+    #[serde(rename = "model/vnd.valve.source.compiled-map")]
     #[serde(alias = "bsp")]
     VndUsdzZip,
     #[doc = "model/vnd.vtu"]
-    #[serde(alias = "model/vnd.vtu")]
+    #[serde(rename = "model/vnd.vtu")]
     #[serde(alias = "vtu")]
     VndValveSourceCompiledMap,
     #[doc = "model/x3d-vrml"]
-    #[serde(alias = "model/x3d-vrml")]
+    #[serde(rename = "model/x3d-vrml")]
     #[serde(alias = "x3dv")]
     #[serde(alias = "x3dvz")]
     VndVtu,
     #[doc = "model/x3d+fastinfoset"]
-    #[serde(alias = "model/x3d+fastinfoset")]
+    #[serde(rename = "model/x3d+fastinfoset")]
     Vrml,
     #[doc = "model/x3d+xml"]
-    #[serde(alias = "model/x3d+xml")]
+    #[serde(rename = "model/x3d+xml")]
     #[serde(alias = "x3db")]
     X3DVrml,
 }

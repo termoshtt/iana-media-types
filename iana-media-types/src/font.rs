@@ -11,26 +11,26 @@
 )]
 pub enum Font {
     #[doc = "font/collection"]
-    #[serde(alias = "font/collection")]
+    #[serde(rename = "font/collection")]
     #[serde(alias = "ttc")]
     Collection,
     #[doc = "font/otf"]
-    #[serde(alias = "font/otf")]
+    #[serde(rename = "font/otf")]
     #[serde(alias = "otf")]
     Otf,
     #[doc = "font/sfnt"]
-    #[serde(alias = "font/sfnt")]
+    #[serde(rename = "font/sfnt")]
     Sfnt,
     #[doc = "font/ttf"]
-    #[serde(alias = "font/ttf")]
+    #[serde(rename = "font/ttf")]
     #[serde(alias = "ttf")]
     Ttf,
     #[doc = "font/woff"]
-    #[serde(alias = "font/woff")]
+    #[serde(rename = "font/woff")]
     #[serde(alias = "woff")]
     Woff,
     #[doc = "font/woff2"]
-    #[serde(alias = "font/woff2")]
+    #[serde(rename = "font/woff2")]
     #[serde(alias = "woff2")]
     Woff2,
 }

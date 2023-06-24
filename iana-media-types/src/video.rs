@@ -11,312 +11,312 @@
 )]
 pub enum Video {
     #[doc = "video/1d-interleaved-parityfec"]
-    #[serde(alias = "video/1d-interleaved-parityfec")]
+    #[serde(rename = "video/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "video/3gpp"]
-    #[serde(alias = "video/3gpp")]
+    #[serde(rename = "video/3gpp")]
     #[serde(alias = "3gp")]
     #[serde(alias = "3gpp")]
     _3Gpp,
     #[doc = "video/3gpp2"]
-    #[serde(alias = "video/3gpp2")]
+    #[serde(rename = "video/3gpp2")]
     #[serde(alias = "3g2")]
     #[serde(alias = "3gpp2")]
     _3Gpp2,
     #[doc = "video/3gpp-tt"]
-    #[serde(alias = "video/3gpp-tt")]
+    #[serde(rename = "video/3gpp-tt")]
     _3GppTt,
     #[doc = "video/AV1"]
-    #[serde(alias = "video/AV1")]
+    #[serde(rename = "video/AV1")]
     Av1,
     #[doc = "video/BMPEG"]
-    #[serde(alias = "video/BMPEG")]
+    #[serde(rename = "video/BMPEG")]
     Bmpeg,
     #[doc = "video/BT656"]
-    #[serde(alias = "video/BT656")]
+    #[serde(rename = "video/BT656")]
     Bt656,
     #[doc = "video/CelB"]
-    #[serde(alias = "video/CelB")]
+    #[serde(rename = "video/CelB")]
     CelB,
     #[doc = "video/DV"]
-    #[serde(alias = "video/DV")]
+    #[serde(rename = "video/DV")]
     Dv,
     #[doc = "video/encaprtp"]
-    #[serde(alias = "video/encaprtp")]
+    #[serde(rename = "video/encaprtp")]
     Encaprtp,
     #[doc = "video/example"]
-    #[serde(alias = "video/example")]
+    #[serde(rename = "video/example")]
     Example,
     #[doc = "video/FFV1"]
-    #[serde(alias = "video/FFV1")]
+    #[serde(rename = "video/FFV1")]
     Ffv1,
     #[doc = "video/flexfec"]
-    #[serde(alias = "video/flexfec")]
+    #[serde(rename = "video/flexfec")]
     Flexfec,
     #[doc = "video/H261"]
-    #[serde(alias = "video/H261")]
+    #[serde(rename = "video/H261")]
     H261,
     #[doc = "video/H263"]
-    #[serde(alias = "video/H263")]
+    #[serde(rename = "video/H263")]
     H263,
     #[doc = "video/H263-1998"]
-    #[serde(alias = "video/H263-1998")]
+    #[serde(rename = "video/H263-1998")]
     H2631998,
     #[doc = "video/H263-2000"]
-    #[serde(alias = "video/H263-2000")]
+    #[serde(rename = "video/H263-2000")]
     H2632000,
     #[doc = "video/H264"]
-    #[serde(alias = "video/H264")]
+    #[serde(rename = "video/H264")]
     H264,
     #[doc = "video/H264-RCDO"]
-    #[serde(alias = "video/H264-RCDO")]
+    #[serde(rename = "video/H264-RCDO")]
     H264Rcdo,
     #[doc = "video/H264-SVC"]
-    #[serde(alias = "video/H264-SVC")]
+    #[serde(rename = "video/H264-SVC")]
     H264Svc,
     #[doc = "video/H265"]
-    #[serde(alias = "video/H265")]
+    #[serde(rename = "video/H265")]
     H265,
     #[doc = "video/H266"]
-    #[serde(alias = "video/H266")]
+    #[serde(rename = "video/H266")]
     H266,
     #[doc = "video/iso.segment"]
-    #[serde(alias = "video/iso.segment")]
+    #[serde(rename = "video/iso.segment")]
     #[serde(alias = "m4s")]
     IsoSegment,
     #[doc = "video/JPEG"]
-    #[serde(alias = "video/JPEG")]
+    #[serde(rename = "video/JPEG")]
     Jpeg,
     #[doc = "video/jpeg2000"]
-    #[serde(alias = "video/jpeg2000")]
+    #[serde(rename = "video/jpeg2000")]
     Jpeg2000,
     #[doc = "video/jxsv"]
-    #[serde(alias = "video/jxsv")]
+    #[serde(rename = "video/jxsv")]
     Jxsv,
     #[doc = "video/mj2"]
-    #[serde(alias = "video/mj2")]
+    #[serde(rename = "video/mj2")]
     #[serde(alias = "mj2")]
     #[serde(alias = "mjp2")]
     Mj2,
     #[doc = "video/MP1S"]
-    #[serde(alias = "video/MP1S")]
+    #[serde(rename = "video/MP1S")]
     Mp1S,
     #[doc = "video/MP2P"]
-    #[serde(alias = "video/MP2P")]
+    #[serde(rename = "video/MP2P")]
     Mp2P,
     #[doc = "video/MP2T"]
-    #[serde(alias = "video/MP2T")]
+    #[serde(rename = "video/MP2T")]
     Mp2T,
     #[doc = "video/mp4"]
-    #[serde(alias = "video/mp4")]
+    #[serde(rename = "video/mp4")]
     #[serde(alias = "mp4")]
     #[serde(alias = "mpg4")]
     #[serde(alias = "m4v")]
     Mp4,
     #[doc = "video/MP4V-ES"]
-    #[serde(alias = "video/MP4V-ES")]
+    #[serde(rename = "video/MP4V-ES")]
     Mp4VEs,
     #[doc = "video/MPV"]
-    #[serde(alias = "video/MPV")]
+    #[serde(rename = "video/MPV")]
     Mpv,
     #[doc = "video/mpeg4-generic"]
-    #[serde(alias = "video/mpeg4-generic")]
+    #[serde(rename = "video/mpeg4-generic")]
     Mpeg,
     #[doc = "video/nv"]
-    #[serde(alias = "video/nv")]
+    #[serde(rename = "video/nv")]
     Mpeg4Generic,
     #[doc = "video/ogg"]
-    #[serde(alias = "video/ogg")]
+    #[serde(rename = "video/ogg")]
     #[serde(alias = "ogv")]
     Nv,
     #[doc = "video/parityfec"]
-    #[serde(alias = "video/parityfec")]
+    #[serde(rename = "video/parityfec")]
     Ogg,
     #[doc = "video/pointer"]
-    #[serde(alias = "video/pointer")]
+    #[serde(rename = "video/pointer")]
     Parityfec,
     #[doc = "video/quicktime"]
-    #[serde(alias = "video/quicktime")]
+    #[serde(rename = "video/quicktime")]
     #[serde(alias = "mov")]
     #[serde(alias = "qt")]
     Pointer,
     #[doc = "video/raptorfec"]
-    #[serde(alias = "video/raptorfec")]
+    #[serde(rename = "video/raptorfec")]
     Quicktime,
     #[doc = "video/raw"]
-    #[serde(alias = "video/raw")]
+    #[serde(rename = "video/raw")]
     Raptorfec,
     #[doc = "video/rtp-enc-aescm128"]
-    #[serde(alias = "video/rtp-enc-aescm128")]
+    #[serde(rename = "video/rtp-enc-aescm128")]
     Raw,
     #[doc = "video/rtploopback"]
-    #[serde(alias = "video/rtploopback")]
+    #[serde(rename = "video/rtploopback")]
     RtpEncAescm128,
     #[doc = "video/rtx"]
-    #[serde(alias = "video/rtx")]
+    #[serde(rename = "video/rtx")]
     Rtploopback,
     #[doc = "video/scip"]
-    #[serde(alias = "video/scip")]
+    #[serde(rename = "video/scip")]
     Rtx,
     #[doc = "video/smpte291"]
-    #[serde(alias = "video/smpte291")]
+    #[serde(rename = "video/smpte291")]
     Scip,
     #[doc = "video/SMPTE292M"]
-    #[serde(alias = "video/SMPTE292M")]
+    #[serde(rename = "video/SMPTE292M")]
     Smpte291,
     #[doc = "video/ulpfec"]
-    #[serde(alias = "video/ulpfec")]
+    #[serde(rename = "video/ulpfec")]
     Smpte292M,
     #[doc = "video/vc1"]
-    #[serde(alias = "video/vc1")]
+    #[serde(rename = "video/vc1")]
     Ulpfec,
     #[doc = "video/vc2"]
-    #[serde(alias = "video/vc2")]
+    #[serde(rename = "video/vc2")]
     Vc1,
     #[doc = "video/vnd.CCTV"]
-    #[serde(alias = "video/vnd.CCTV")]
+    #[serde(rename = "video/vnd.CCTV")]
     Vc2,
     #[doc = "video/vnd.dece.hd"]
-    #[serde(alias = "video/vnd.dece.hd")]
+    #[serde(rename = "video/vnd.dece.hd")]
     #[serde(alias = "uvh")]
     #[serde(alias = "uvvh")]
     VndCCTV,
     #[doc = "video/vnd.dece.mobile"]
-    #[serde(alias = "video/vnd.dece.mobile")]
+    #[serde(rename = "video/vnd.dece.mobile")]
     #[serde(alias = "uvm")]
     #[serde(alias = "uvvm")]
     VndDeceHd,
     #[doc = "video/vnd.dece.mp4"]
-    #[serde(alias = "video/vnd.dece.mp4")]
+    #[serde(rename = "video/vnd.dece.mp4")]
     #[serde(alias = "uvu")]
     #[serde(alias = "uvvu")]
     VndDeceMobile,
     #[doc = "video/vnd.dece.pd"]
-    #[serde(alias = "video/vnd.dece.pd")]
+    #[serde(rename = "video/vnd.dece.pd")]
     #[serde(alias = "uvp")]
     #[serde(alias = "uvvp")]
     VndDeceMp4,
     #[doc = "video/vnd.dece.sd"]
-    #[serde(alias = "video/vnd.dece.sd")]
+    #[serde(rename = "video/vnd.dece.sd")]
     #[serde(alias = "uvs")]
     #[serde(alias = "uvvs")]
     VndDecePd,
     #[doc = "video/vnd.dece.video"]
-    #[serde(alias = "video/vnd.dece.video")]
+    #[serde(rename = "video/vnd.dece.video")]
     #[serde(alias = "uvv")]
     #[serde(alias = "uvvv")]
     VndDeceSd,
     #[doc = "video/vnd.directv.mpeg"]
-    #[serde(alias = "video/vnd.directv.mpeg")]
+    #[serde(rename = "video/vnd.directv.mpeg")]
     VndDeceVideo,
     #[doc = "video/vnd.directv.mpeg-tts"]
-    #[serde(alias = "video/vnd.directv.mpeg-tts")]
+    #[serde(rename = "video/vnd.directv.mpeg-tts")]
     VndDirectvMpeg,
     #[doc = "video/vnd.dlna.mpeg-tts"]
-    #[serde(alias = "video/vnd.dlna.mpeg-tts")]
+    #[serde(rename = "video/vnd.dlna.mpeg-tts")]
     VndDirectvMpegTts,
     #[doc = "video/vnd.dvb.file"]
-    #[serde(alias = "video/vnd.dvb.file")]
+    #[serde(rename = "video/vnd.dvb.file")]
     #[serde(alias = "dvb")]
     VndDlnaMpegTts,
     #[doc = "video/vnd.fvt"]
-    #[serde(alias = "video/vnd.fvt")]
+    #[serde(rename = "video/vnd.fvt")]
     #[serde(alias = "fvt")]
     VndDvbFile,
     #[doc = "video/vnd.hns.video"]
-    #[serde(alias = "video/vnd.hns.video")]
+    #[serde(rename = "video/vnd.hns.video")]
     VndFvt,
     #[doc = "video/vnd.iptvforum.1dparityfec-1010"]
-    #[serde(alias = "video/vnd.iptvforum.1dparityfec-1010")]
+    #[serde(rename = "video/vnd.iptvforum.1dparityfec-1010")]
     VndHnsVideo,
     #[doc = "video/vnd.iptvforum.1dparityfec-2005"]
-    #[serde(alias = "video/vnd.iptvforum.1dparityfec-2005")]
+    #[serde(rename = "video/vnd.iptvforum.1dparityfec-2005")]
     VndIptvforum1Dparityfec1010,
     #[doc = "video/vnd.iptvforum.2dparityfec-1010"]
-    #[serde(alias = "video/vnd.iptvforum.2dparityfec-1010")]
+    #[serde(rename = "video/vnd.iptvforum.2dparityfec-1010")]
     VndIptvforum1Dparityfec2005,
     #[doc = "video/vnd.iptvforum.2dparityfec-2005"]
-    #[serde(alias = "video/vnd.iptvforum.2dparityfec-2005")]
+    #[serde(rename = "video/vnd.iptvforum.2dparityfec-2005")]
     VndIptvforum2Dparityfec1010,
     #[doc = "video/vnd.iptvforum.ttsavc"]
-    #[serde(alias = "video/vnd.iptvforum.ttsavc")]
+    #[serde(rename = "video/vnd.iptvforum.ttsavc")]
     VndIptvforum2Dparityfec2005,
     #[doc = "video/vnd.iptvforum.ttsmpeg2"]
-    #[serde(alias = "video/vnd.iptvforum.ttsmpeg2")]
+    #[serde(rename = "video/vnd.iptvforum.ttsmpeg2")]
     VndIptvforumTtsavc,
     #[doc = "video/vnd.motorola.video"]
-    #[serde(alias = "video/vnd.motorola.video")]
+    #[serde(rename = "video/vnd.motorola.video")]
     VndIptvforumTtsmpeg2,
     #[doc = "video/vnd.motorola.videop"]
-    #[serde(alias = "video/vnd.motorola.videop")]
+    #[serde(rename = "video/vnd.motorola.videop")]
     VndMotorolaVideo,
     #[doc = "video/vnd.mpegurl"]
-    #[serde(alias = "video/vnd.mpegurl")]
+    #[serde(rename = "video/vnd.mpegurl")]
     #[serde(alias = "mxu")]
     #[serde(alias = "m4u")]
     VndMotorolaVideop,
     #[doc = "video/vnd.ms-playready.media.pyv"]
-    #[serde(alias = "video/vnd.ms-playready.media.pyv")]
+    #[serde(rename = "video/vnd.ms-playready.media.pyv")]
     #[serde(alias = "pyv")]
     VndMpegurl,
     #[doc = "video/vnd.nokia.interleaved-multimedia"]
-    #[serde(alias = "video/vnd.nokia.interleaved-multimedia")]
+    #[serde(rename = "video/vnd.nokia.interleaved-multimedia")]
     #[serde(alias = "nim")]
     VndMsPlayreadyMediaPyv,
     #[doc = "video/vnd.nokia.mp4vr"]
-    #[serde(alias = "video/vnd.nokia.mp4vr")]
+    #[serde(rename = "video/vnd.nokia.mp4vr")]
     VndNokiaInterleavedMultimedia,
     #[doc = "video/vnd.nokia.videovoip"]
-    #[serde(alias = "video/vnd.nokia.videovoip")]
+    #[serde(rename = "video/vnd.nokia.videovoip")]
     VndNokiaMp4Vr,
     #[doc = "video/vnd.objectvideo"]
-    #[serde(alias = "video/vnd.objectvideo")]
+    #[serde(rename = "video/vnd.objectvideo")]
     VndNokiaVideovoip,
     #[doc = "video/vnd.radgamettools.bink"]
-    #[serde(alias = "video/vnd.radgamettools.bink")]
+    #[serde(rename = "video/vnd.radgamettools.bink")]
     #[serde(alias = "bik")]
     #[serde(alias = "bk2")]
     VndObjectvideo,
     #[doc = "video/vnd.radgamettools.smacker"]
-    #[serde(alias = "video/vnd.radgamettools.smacker")]
+    #[serde(rename = "video/vnd.radgamettools.smacker")]
     #[serde(alias = "smk")]
     VndRadgamettoolsBink,
     #[doc = "video/vnd.sealed.mpeg1"]
-    #[serde(alias = "video/vnd.sealed.mpeg1")]
+    #[serde(rename = "video/vnd.sealed.mpeg1")]
     #[serde(alias = "smpg")]
     #[serde(alias = "s11")]
     VndRadgamettoolsSmacker,
     #[doc = "video/vnd.sealed.mpeg4"]
-    #[serde(alias = "video/vnd.sealed.mpeg4")]
+    #[serde(rename = "video/vnd.sealed.mpeg4")]
     #[serde(alias = "s14")]
     VndSealedMpeg1,
     #[doc = "video/vnd.sealed.swf"]
-    #[serde(alias = "video/vnd.sealed.swf")]
+    #[serde(rename = "video/vnd.sealed.swf")]
     #[serde(alias = "sswf")]
     #[serde(alias = "ssw")]
     VndSealedMpeg4,
     #[doc = "video/vnd.sealedmedia.softseal.mov"]
-    #[serde(alias = "video/vnd.sealedmedia.softseal.mov")]
+    #[serde(rename = "video/vnd.sealedmedia.softseal.mov")]
     #[serde(alias = "smov")]
     #[serde(alias = "smo")]
     #[serde(alias = "s1q")]
     VndSealedSwf,
     #[doc = "video/vnd.uvvu.mp4"]
-    #[serde(alias = "video/vnd.uvvu.mp4")]
+    #[serde(rename = "video/vnd.uvvu.mp4")]
     VndSealedmediaSoftsealMov,
     #[doc = "video/vnd.youtube.yt"]
-    #[serde(alias = "video/vnd.youtube.yt")]
+    #[serde(rename = "video/vnd.youtube.yt")]
     #[serde(alias = "yt")]
     VndUvvuMp4,
     #[doc = "video/vnd.vivo"]
-    #[serde(alias = "video/vnd.vivo")]
+    #[serde(rename = "video/vnd.vivo")]
     #[serde(alias = "viv")]
     VndYoutubeYt,
     #[doc = "video/VP8"]
-    #[serde(alias = "video/VP8")]
+    #[serde(rename = "video/VP8")]
     VndVivo,
     #[doc = "video/VP9"]
-    #[serde(alias = "video/VP9")]
+    #[serde(rename = "video/VP9")]
     Vp8,
 }
 impl ::std::fmt::Display for Video {
