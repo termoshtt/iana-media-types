@@ -15,6 +15,7 @@ pub enum Audio {
     _1DInterleavedParityfec,
     #[doc = "audio/32kadpcm"]
     #[serde(alias = "audio/32kadpcm")]
+    #[serde(alias = "726")]
     _32Kadpcm,
     #[doc = "audio/3gpp"]
     #[serde(alias = "audio/3gpp")]
@@ -24,15 +25,21 @@ pub enum Audio {
     _3Gpp2,
     #[doc = "audio/aac"]
     #[serde(alias = "audio/aac")]
+    #[serde(alias = "adts")]
+    #[serde(alias = "aac")]
+    #[serde(alias = "ass")]
     Aac,
     #[doc = "audio/ac3"]
     #[serde(alias = "audio/ac3")]
+    #[serde(alias = "ac3")]
     Ac3,
     #[doc = "audio/AMR"]
     #[serde(alias = "audio/AMR")]
+    #[serde(alias = "amr")]
     Amr,
     #[doc = "audio/AMR-WB"]
     #[serde(alias = "audio/AMR-WB")]
+    #[serde(alias = "awb")]
     AmrWb,
     #[doc = "audio/amr-wb+"]
     #[serde(alias = "audio/amr-wb+")]
@@ -42,18 +49,26 @@ pub enum Audio {
     Aptx,
     #[doc = "audio/asc"]
     #[serde(alias = "audio/asc")]
+    #[serde(alias = "acn")]
     Asc,
     #[doc = "audio/ATRAC-ADVANCED-LOSSLESS"]
     #[serde(alias = "audio/ATRAC-ADVANCED-LOSSLESS")]
+    #[serde(alias = "aal")]
     AtracAdvancedLossless,
     #[doc = "audio/ATRAC-X"]
     #[serde(alias = "audio/ATRAC-X")]
+    #[serde(alias = "atx")]
     AtracX,
     #[doc = "audio/ATRAC3"]
     #[serde(alias = "audio/ATRAC3")]
+    #[serde(alias = "at3")]
+    #[serde(alias = "aa3")]
+    #[serde(alias = "omg")]
     Atrac3,
     #[doc = "audio/basic"]
     #[serde(alias = "audio/basic")]
+    #[serde(alias = "au")]
+    #[serde(alias = "snd")]
     Basic,
     #[doc = "audio/BV16"]
     #[serde(alias = "audio/BV16")]
@@ -72,6 +87,7 @@ pub enum Audio {
     Dat12,
     #[doc = "audio/dls"]
     #[serde(alias = "audio/dls")]
+    #[serde(alias = "dls")]
     Dls,
     #[doc = "audio/dsr-es201108"]
     #[serde(alias = "audio/dsr-es201108")]
@@ -99,6 +115,7 @@ pub enum Audio {
     Encaprtp,
     #[doc = "audio/EVRC"]
     #[serde(alias = "audio/EVRC")]
+    #[serde(alias = "evc")]
     Evrc,
     #[doc = "audio/EVRC-QCP"]
     #[serde(alias = "audio/EVRC-QCP")]
@@ -111,6 +128,7 @@ pub enum Audio {
     Evrc1,
     #[doc = "audio/EVRCB"]
     #[serde(alias = "audio/EVRCB")]
+    #[serde(alias = "evb")]
     Evrcb,
     #[doc = "audio/EVRCB0"]
     #[serde(alias = "audio/EVRCB0")]
@@ -120,6 +138,7 @@ pub enum Audio {
     Evrcb1,
     #[doc = "audio/EVRCNW"]
     #[serde(alias = "audio/EVRCNW")]
+    #[serde(alias = "enw")]
     Evrcnw,
     #[doc = "audio/EVRCNW0"]
     #[serde(alias = "audio/EVRCNW0")]
@@ -129,6 +148,7 @@ pub enum Audio {
     Evrcnw1,
     #[doc = "audio/EVRCWB"]
     #[serde(alias = "audio/EVRCWB")]
+    #[serde(alias = "evw")]
     Evrcwb,
     #[doc = "audio/EVRCWB0"]
     #[serde(alias = "audio/EVRCWB0")]
@@ -201,6 +221,7 @@ pub enum Audio {
     GsmHr08,
     #[doc = "audio/iLBC"]
     #[serde(alias = "audio/iLBC")]
+    #[serde(alias = "lbc")]
     Ilbc,
     #[doc = "audio/ip-mr_v2.5"]
     #[serde(alias = "audio/ip-mr_v2.5")]
@@ -210,6 +231,7 @@ pub enum Audio {
     L8,
     #[doc = "audio/L16"]
     #[serde(alias = "audio/L16")]
+    #[serde(alias = "l16")]
     L16,
     #[doc = "audio/L20"]
     #[serde(alias = "audio/L20")]
@@ -234,15 +256,18 @@ pub enum Audio {
     Melp2400,
     #[doc = "audio/mhas"]
     #[serde(alias = "audio/mhas")]
+    #[serde(alias = "mhas")]
     Mhas,
     #[doc = "audio/mobile-xmf"]
     #[serde(alias = "audio/mobile-xmf")]
+    #[serde(alias = "mxmf")]
     MobileXmf,
     #[doc = "audio/MPA"]
     #[serde(alias = "audio/MPA")]
     Mpa,
     #[doc = "audio/mp4"]
     #[serde(alias = "audio/mp4")]
+    #[serde(alias = "m4a")]
     Mp4,
     #[doc = "audio/MP4A-LATM"]
     #[serde(alias = "audio/MP4A-LATM")]
@@ -252,12 +277,20 @@ pub enum Audio {
     MpaRobust,
     #[doc = "audio/mpeg"]
     #[serde(alias = "audio/mpeg")]
+    #[serde(alias = "mp3")]
+    #[serde(alias = "mpga")]
+    #[serde(alias = "mp1")]
+    #[serde(alias = "mp2")]
     Mpeg,
     #[doc = "audio/mpeg4-generic"]
     #[serde(alias = "audio/mpeg4-generic")]
     Mpeg4Generic,
     #[doc = "audio/ogg"]
     #[serde(alias = "audio/ogg")]
+    #[serde(alias = "oga")]
+    #[serde(alias = "ogg")]
+    #[serde(alias = "opus")]
+    #[serde(alias = "spx")]
     Ogg,
     #[doc = "audio/opus"]
     #[serde(alias = "audio/opus")]
@@ -279,9 +312,12 @@ pub enum Audio {
     PcmuWb,
     #[doc = "audio/prs.sid"]
     #[serde(alias = "audio/prs.sid")]
+    #[serde(alias = "sid")]
+    #[serde(alias = "psid")]
     PrsSid,
     #[doc = "audio/QCELP"]
     #[serde(alias = "audio/QCELP")]
+    #[serde(alias = "qcp")]
     Qcelp,
     #[doc = "audio/raptorfec"]
     #[serde(alias = "audio/raptorfec")]
@@ -306,6 +342,7 @@ pub enum Audio {
     Scip,
     #[doc = "audio/SMV"]
     #[serde(alias = "audio/SMV")]
+    #[serde(alias = "smv")]
     Smv,
     #[doc = "audio/SMV0"]
     #[serde(alias = "audio/SMV0")]
@@ -315,6 +352,7 @@ pub enum Audio {
     SmvQcp,
     #[doc = "audio/sofa"]
     #[serde(alias = "audio/sofa")]
+    #[serde(alias = "sofa")]
     Sofa,
     #[doc = "audio/sp-midi"]
     #[serde(alias = "audio/sp-midi")]
@@ -351,6 +389,8 @@ pub enum Audio {
     Ulpfec,
     #[doc = "audio/usac"]
     #[serde(alias = "audio/usac")]
+    #[serde(alias = "loas")]
+    #[serde(alias = "xhe")]
     Usac,
     #[doc = "audio/VDVI"]
     #[serde(alias = "audio/VDVI")]
@@ -366,6 +406,7 @@ pub enum Audio {
     Vnd4SB,
     #[doc = "audio/vnd.audiokoz"]
     #[serde(alias = "audio/vnd.audiokoz")]
+    #[serde(alias = "koz")]
     VndAudiokoz,
     #[doc = "audio/vnd.CELP"]
     #[serde(alias = "audio/vnd.CELP")]
@@ -384,9 +425,12 @@ pub enum Audio {
     VndCnsInf1,
     #[doc = "audio/vnd.dece.audio"]
     #[serde(alias = "audio/vnd.dece.audio")]
+    #[serde(alias = "uva")]
+    #[serde(alias = "uvva")]
     VndDeceAudio,
     #[doc = "audio/vnd.digital-winds"]
     #[serde(alias = "audio/vnd.digital-winds")]
+    #[serde(alias = "eol")]
     VndDigitalWinds,
     #[doc = "audio/vnd.dlna.adts"]
     #[serde(alias = "audio/vnd.dlna.adts")]
@@ -399,6 +443,7 @@ pub enum Audio {
     VndDolbyHeaac2,
     #[doc = "audio/vnd.dolby.mlp"]
     #[serde(alias = "audio/vnd.dolby.mlp")]
+    #[serde(alias = "mlp")]
     VndDolbyMlp,
     #[doc = "audio/vnd.dolby.mps"]
     #[serde(alias = "audio/vnd.dolby.mps")]
@@ -420,9 +465,11 @@ pub enum Audio {
     VndDra,
     #[doc = "audio/vnd.dts"]
     #[serde(alias = "audio/vnd.dts")]
+    #[serde(alias = "dts")]
     VndDts,
     #[doc = "audio/vnd.dts.hd"]
     #[serde(alias = "audio/vnd.dts.hd")]
+    #[serde(alias = "dtshd")]
     VndDtsHd,
     #[doc = "audio/vnd.dts.uhd"]
     #[serde(alias = "audio/vnd.dts.uhd")]
@@ -432,45 +479,57 @@ pub enum Audio {
     VndDvbFile,
     #[doc = "audio/vnd.everad.plj"]
     #[serde(alias = "audio/vnd.everad.plj")]
+    #[serde(alias = "plj")]
     VndEveradPlj,
     #[doc = "audio/vnd.hns.audio"]
     #[serde(alias = "audio/vnd.hns.audio")]
     VndHnsAudio,
     #[doc = "audio/vnd.lucent.voice"]
     #[serde(alias = "audio/vnd.lucent.voice")]
+    #[serde(alias = "lvp")]
     VndLucentVoice,
     #[doc = "audio/vnd.ms-playready.media.pya"]
     #[serde(alias = "audio/vnd.ms-playready.media.pya")]
+    #[serde(alias = "pya")]
     VndMsPlayreadyMediaPya,
     #[doc = "audio/vnd.nokia.mobile-xmf"]
     #[serde(alias = "audio/vnd.nokia.mobile-xmf")]
     VndNokiaMobileXmf,
     #[doc = "audio/vnd.nortel.vbk"]
     #[serde(alias = "audio/vnd.nortel.vbk")]
+    #[serde(alias = "vbk")]
     VndNortelVbk,
     #[doc = "audio/vnd.nuera.ecelp4800"]
     #[serde(alias = "audio/vnd.nuera.ecelp4800")]
+    #[serde(alias = "ecelp4800")]
     VndNueraEcelp4800,
     #[doc = "audio/vnd.nuera.ecelp7470"]
     #[serde(alias = "audio/vnd.nuera.ecelp7470")]
+    #[serde(alias = "ecelp7470")]
     VndNueraEcelp7470,
     #[doc = "audio/vnd.nuera.ecelp9600"]
     #[serde(alias = "audio/vnd.nuera.ecelp9600")]
+    #[serde(alias = "ecelp9600")]
     VndNueraEcelp9600,
     #[doc = "audio/vnd.octel.sbc"]
     #[serde(alias = "audio/vnd.octel.sbc")]
     VndOctelSbc,
     #[doc = "audio/vnd.presonus.multitrack"]
     #[serde(alias = "audio/vnd.presonus.multitrack")]
+    #[serde(alias = "multitrack")]
     VndPresonusMultitrack,
     #[doc = "audio/vnd.rhetorex.32kadpcm"]
     #[serde(alias = "audio/vnd.rhetorex.32kadpcm")]
     VndRhetorex32Kadpcm,
     #[doc = "audio/vnd.rip"]
     #[serde(alias = "audio/vnd.rip")]
+    #[serde(alias = "rip")]
     VndRip,
     #[doc = "audio/vnd.sealedmedia.softseal.mpeg"]
     #[serde(alias = "audio/vnd.sealedmedia.softseal.mpeg")]
+    #[serde(alias = "smp3")]
+    #[serde(alias = "smp")]
+    #[serde(alias = "s1m")]
     VndSealedmediaSoftsealMpeg,
     #[doc = "audio/vnd.vmx.cvsd"]
     #[serde(alias = "audio/vnd.vmx.cvsd")]
