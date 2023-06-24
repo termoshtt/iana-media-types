@@ -96,13 +96,14 @@ impl MediaType {
         let name = &self.name;
         let member_idents = &self.member_idents;
         let member_templates = &self.member_templates;
+        let member_extensions = &self.member_extensions;
         quote::quote! {
             impl ::std::str::FromStr for #name {
                 type Err = ();
                 fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
                     match input {
                         #(
-                        #member_templates => Ok(#name::#member_idents),
+                        #member_templates #(| #member_extensions)* => Ok(#name::#member_idents),
                         )*
                         _ => Err(()),
                     }

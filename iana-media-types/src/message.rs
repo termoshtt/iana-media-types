@@ -108,10 +108,12 @@ impl ::std::str::FromStr for Message {
             "message/disposition-notification" => Ok(Message::DispositionNotification),
             "message/example" => Ok(Message::Example),
             "message/feedback-report" => Ok(Message::ExternalBody),
-            "message/global" => Ok(Message::FeedbackReport),
-            "message/global-delivery-status" => Ok(Message::Global),
-            "message/global-disposition-notification" => Ok(Message::GlobalDeliveryStatus),
-            "message/global-headers" => Ok(Message::GlobalDispositionNotification),
+            "message/global" | "u8msg" => Ok(Message::FeedbackReport),
+            "message/global-delivery-status" | "u8dsn" => Ok(Message::Global),
+            "message/global-disposition-notification" | "u8mdn" => {
+                Ok(Message::GlobalDeliveryStatus)
+            }
+            "message/global-headers" | "u8hdr" => Ok(Message::GlobalDispositionNotification),
             "message/http" => Ok(Message::GlobalHeaders),
             "message/imdn+xml" => Ok(Message::Http),
             "message/mls" => Ok(Message::ImdnXml),

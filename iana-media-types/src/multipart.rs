@@ -86,8 +86,8 @@ impl ::std::str::FromStr for Multipart {
             "multipart/related" => Ok(Multipart::HeaderSet),
             "multipart/report" => Ok(Multipart::Mixed),
             "multipart/signed" => Ok(Multipart::Multilingual),
-            "multipart/vnd.bint.med-plus" => Ok(Multipart::Parallel),
-            "multipart/voice-message" => Ok(Multipart::Related),
+            "multipart/vnd.bint.med-plus" | "bmed" => Ok(Multipart::Parallel),
+            "multipart/voice-message" | "vpm" => Ok(Multipart::Related),
             "multipart/x-mixed-replace" => Ok(Multipart::Report),
             _ => Err(()),
         }

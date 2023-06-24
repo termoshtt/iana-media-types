@@ -51,12 +51,12 @@ impl ::std::str::FromStr for Font {
     type Err = ();
     fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
-            "font/collection" => Ok(Font::Collection),
-            "font/otf" => Ok(Font::Otf),
+            "font/collection" | "ttc" => Ok(Font::Collection),
+            "font/otf" | "otf" => Ok(Font::Otf),
             "font/sfnt" => Ok(Font::Sfnt),
-            "font/ttf" => Ok(Font::Ttf),
-            "font/woff" => Ok(Font::Woff),
-            "font/woff2" => Ok(Font::Woff2),
+            "font/ttf" | "ttf" => Ok(Font::Ttf),
+            "font/woff" | "woff" => Ok(Font::Woff),
+            "font/woff2" | "woff2" => Ok(Font::Woff2),
             _ => Err(()),
         }
     }
