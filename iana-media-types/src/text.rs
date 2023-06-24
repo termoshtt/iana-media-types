@@ -11,262 +11,265 @@
 )]
 pub enum Text {
     #[doc = "text/1d-interleaved-parityfec"]
-    #[serde(rename = "text/1d-interleaved-parityfec")]
+    #[serde(alias = "text/1d-interleaved-parityfec")]
     _1DInterleavedParityfec,
     #[doc = "text/cache-manifest"]
-    #[serde(rename = "text/cache-manifest")]
+    #[serde(alias = "text/cache-manifest")]
     CacheManifest,
     #[doc = "text/calendar"]
-    #[serde(rename = "text/calendar")]
+    #[serde(alias = "text/calendar")]
     Calendar,
     #[doc = "text/cql"]
-    #[serde(rename = "text/cql")]
+    #[serde(alias = "text/cql")]
     Cql,
     #[doc = "text/cql-expression"]
-    #[serde(rename = "text/cql-expression")]
+    #[serde(alias = "text/cql-expression")]
     CqlExpression,
     #[doc = "text/cql-identifier"]
-    #[serde(rename = "text/cql-identifier")]
+    #[serde(alias = "text/cql-identifier")]
     CqlIdentifier,
     #[doc = "text/css"]
-    #[serde(rename = "text/css")]
+    #[serde(alias = "text/css")]
     Css,
     #[doc = "text/csv"]
-    #[serde(rename = "text/csv")]
+    #[serde(alias = "text/csv")]
     Csv,
     #[doc = "text/csv-schema"]
-    #[serde(rename = "text/csv-schema")]
+    #[serde(alias = "text/csv-schema")]
     CsvSchema,
     #[doc = "text/dns"]
-    #[serde(rename = "text/dns")]
+    #[serde(alias = "text/dns")]
     Dns,
     #[doc = "text/encaprtp"]
-    #[serde(rename = "text/encaprtp")]
+    #[serde(alias = "text/encaprtp")]
     Encaprtp,
     #[doc = "text/example"]
-    #[serde(rename = "text/example")]
+    #[serde(alias = "text/example")]
     Example,
     #[doc = "text/fhirpath"]
-    #[serde(rename = "text/fhirpath")]
+    #[serde(alias = "text/fhirpath")]
     Fhirpath,
     #[doc = "text/flexfec"]
-    #[serde(rename = "text/flexfec")]
+    #[serde(alias = "text/flexfec")]
     Flexfec,
     #[doc = "text/fwdred"]
-    #[serde(rename = "text/fwdred")]
+    #[serde(alias = "text/fwdred")]
     Fwdred,
     #[doc = "text/gff3"]
-    #[serde(rename = "text/gff3")]
+    #[serde(alias = "text/gff3")]
     Gff3,
     #[doc = "text/grammar-ref-list"]
-    #[serde(rename = "text/grammar-ref-list")]
+    #[serde(alias = "text/grammar-ref-list")]
     GrammarRefList,
     #[doc = "text/hl7v2"]
-    #[serde(rename = "text/hl7v2")]
+    #[serde(alias = "text/hl7v2")]
     Hl7V2,
     #[doc = "text/html"]
-    #[serde(rename = "text/html")]
+    #[serde(alias = "text/html")]
     Html,
     #[doc = "text/javascript"]
-    #[serde(rename = "text/javascript")]
+    #[serde(alias = "text/javascript")]
     Javascript,
     #[doc = "text/jcr-cnd"]
-    #[serde(rename = "text/jcr-cnd")]
+    #[serde(alias = "text/jcr-cnd")]
     JcrCnd,
     #[doc = "text/markdown"]
-    #[serde(rename = "text/markdown")]
+    #[serde(alias = "text/markdown")]
     Markdown,
     #[doc = "text/mizar"]
-    #[serde(rename = "text/mizar")]
+    #[serde(alias = "text/mizar")]
     Mizar,
     #[doc = "text/n3"]
-    #[serde(rename = "text/n3")]
+    #[serde(alias = "text/n3")]
     N3,
     #[doc = "text/parameters"]
-    #[serde(rename = "text/parameters")]
+    #[serde(alias = "text/parameters")]
     Parameters,
     #[doc = "text/parityfec"]
-    #[serde(rename = "text/parityfec")]
+    #[serde(alias = "text/parityfec")]
     Parityfec,
     #[doc = "text/provenance-notation"]
-    #[serde(rename = "text/provenance-notation")]
+    #[serde(alias = "text/provenance-notation")]
     ProvenanceNotation,
     #[doc = "text/prs.fallenstein.rst"]
-    #[serde(rename = "text/prs.fallenstein.rst")]
+    #[serde(alias = "text/prs.fallenstein.rst")]
     PrsFallensteinRst,
     #[doc = "text/prs.lines.tag"]
-    #[serde(rename = "text/prs.lines.tag")]
+    #[serde(alias = "text/prs.lines.tag")]
     PrsLinesTag,
     #[doc = "text/prs.prop.logic"]
-    #[serde(rename = "text/prs.prop.logic")]
+    #[serde(alias = "text/prs.prop.logic")]
     PrsPropLogic,
     #[doc = "text/raptorfec"]
-    #[serde(rename = "text/raptorfec")]
+    #[serde(alias = "text/raptorfec")]
     Raptorfec,
     #[doc = "text/RED"]
-    #[serde(rename = "text/RED")]
+    #[serde(alias = "text/RED")]
     Red,
     #[doc = "text/rfc822-headers"]
-    #[serde(rename = "text/rfc822-headers")]
+    #[serde(alias = "text/rfc822-headers")]
     Rfc822Headers,
     #[doc = "text/rtf"]
-    #[serde(rename = "text/rtf")]
+    #[serde(alias = "text/rtf")]
     Rtf,
     #[doc = "text/rtp-enc-aescm128"]
-    #[serde(rename = "text/rtp-enc-aescm128")]
+    #[serde(alias = "text/rtp-enc-aescm128")]
     RtpEncAescm128,
     #[doc = "text/rtploopback"]
-    #[serde(rename = "text/rtploopback")]
+    #[serde(alias = "text/rtploopback")]
     Rtploopback,
     #[doc = "text/rtx"]
-    #[serde(rename = "text/rtx")]
+    #[serde(alias = "text/rtx")]
     Rtx,
     #[doc = "text/SGML"]
-    #[serde(rename = "text/SGML")]
+    #[serde(alias = "text/SGML")]
     Sgml,
     #[doc = "text/shaclc"]
-    #[serde(rename = "text/shaclc")]
+    #[serde(alias = "text/shaclc")]
     Shaclc,
     #[doc = "text/shex"]
-    #[serde(rename = "text/shex")]
+    #[serde(alias = "text/shex")]
     Shex,
     #[doc = "text/spdx"]
-    #[serde(rename = "text/spdx")]
+    #[serde(alias = "text/spdx")]
     Spdx,
     #[doc = "text/strings"]
-    #[serde(rename = "text/strings")]
+    #[serde(alias = "text/strings")]
     Strings,
     #[doc = "text/t140"]
-    #[serde(rename = "text/t140")]
+    #[serde(alias = "text/t140")]
     T140,
     #[doc = "text/tab-separated-values"]
-    #[serde(rename = "text/tab-separated-values")]
+    #[serde(alias = "text/tab-separated-values")]
     TabSeparatedValues,
     #[doc = "text/troff"]
-    #[serde(rename = "text/troff")]
+    #[serde(alias = "text/troff")]
     Troff,
     #[doc = "text/turtle"]
-    #[serde(rename = "text/turtle")]
+    #[serde(alias = "text/turtle")]
     Turtle,
     #[doc = "text/ulpfec"]
-    #[serde(rename = "text/ulpfec")]
+    #[serde(alias = "text/ulpfec")]
     Ulpfec,
     #[doc = "text/uri-list"]
-    #[serde(rename = "text/uri-list")]
+    #[serde(alias = "text/uri-list")]
     UriList,
     #[doc = "text/vcard"]
-    #[serde(rename = "text/vcard")]
+    #[serde(alias = "text/vcard")]
     Vcard,
     #[doc = "text/vnd.a"]
-    #[serde(rename = "text/vnd.a")]
+    #[serde(alias = "text/vnd.a")]
     VndA,
     #[doc = "text/vnd.abc"]
-    #[serde(rename = "text/vnd.abc")]
+    #[serde(alias = "text/vnd.abc")]
     VndAbc,
     #[doc = "text/vnd.ascii-art"]
-    #[serde(rename = "text/vnd.ascii-art")]
+    #[serde(alias = "text/vnd.ascii-art")]
     VndAsciiArt,
     #[doc = "text/vnd.curl"]
-    #[serde(rename = "text/vnd.curl")]
+    #[serde(alias = "text/vnd.curl")]
     VndCurl,
     #[doc = "text/vnd.debian.copyright"]
-    #[serde(rename = "text/vnd.debian.copyright")]
+    #[serde(alias = "text/vnd.debian.copyright")]
     VndDebianCopyright,
     #[doc = "text/vnd.DMClientScript"]
-    #[serde(rename = "text/vnd.DMClientScript")]
+    #[serde(alias = "text/vnd.DMClientScript")]
     VndDMClientScript,
     #[doc = "text/vnd.dvb.subtitle"]
-    #[serde(rename = "text/vnd.dvb.subtitle")]
+    #[serde(alias = "text/vnd.dvb.subtitle")]
     VndDvbSubtitle,
     #[doc = "text/vnd.esmertec.theme-descriptor"]
-    #[serde(rename = "text/vnd.esmertec.theme-descriptor")]
+    #[serde(alias = "text/vnd.esmertec.theme-descriptor")]
     VndEsmertecThemeDescriptor,
     #[doc = "text/vnd.exchangeable"]
-    #[serde(rename = "text/vnd.exchangeable")]
+    #[serde(alias = "text/vnd.exchangeable")]
     VndExchangeable,
     #[doc = "text/vnd.familysearch.gedcom"]
-    #[serde(rename = "text/vnd.familysearch.gedcom")]
+    #[serde(alias = "text/vnd.familysearch.gedcom")]
     VndFamilysearchGedcom,
     #[doc = "text/vnd.ficlab.flt"]
-    #[serde(rename = "text/vnd.ficlab.flt")]
+    #[serde(alias = "text/vnd.ficlab.flt")]
     VndFiclabFlt,
     #[doc = "text/vnd.fly"]
-    #[serde(rename = "text/vnd.fly")]
+    #[serde(alias = "text/vnd.fly")]
     VndFly,
     #[doc = "text/vnd.fmi.flexstor"]
-    #[serde(rename = "text/vnd.fmi.flexstor")]
+    #[serde(alias = "text/vnd.fmi.flexstor")]
     VndFmiFlexstor,
     #[doc = "text/vnd.gml"]
-    #[serde(rename = "text/vnd.gml")]
+    #[serde(alias = "text/vnd.gml")]
     VndGml,
     #[doc = "text/vnd.graphviz"]
-    #[serde(rename = "text/vnd.graphviz")]
+    #[serde(alias = "text/vnd.graphviz")]
     VndGraphviz,
     #[doc = "text/vnd.hans"]
-    #[serde(rename = "text/vnd.hans")]
+    #[serde(alias = "text/vnd.hans")]
     VndHans,
     #[doc = "text/vnd.hgl"]
-    #[serde(rename = "text/vnd.hgl")]
+    #[serde(alias = "text/vnd.hgl")]
     VndHgl,
     #[doc = "text/vnd.in3d.3dml"]
-    #[serde(rename = "text/vnd.in3d.3dml")]
+    #[serde(alias = "text/vnd.in3d.3dml")]
     VndIn3D3Dml,
     #[doc = "text/vnd.in3d.spot"]
-    #[serde(rename = "text/vnd.in3d.spot")]
+    #[serde(alias = "text/vnd.in3d.spot")]
     VndIn3DSpot,
     #[doc = "text/vnd.IPTC.NewsML"]
-    #[serde(rename = "text/vnd.IPTC.NewsML")]
+    #[serde(alias = "text/vnd.IPTC.NewsML")]
     VndIPTCNewsML,
     #[doc = "text/vnd.IPTC.NITF"]
-    #[serde(rename = "text/vnd.IPTC.NITF")]
+    #[serde(alias = "text/vnd.IPTC.NITF")]
     VndIPTCNITF,
     #[doc = "text/vnd.latex-z"]
-    #[serde(rename = "text/vnd.latex-z")]
+    #[serde(alias = "text/vnd.latex-z")]
     VndLatexZ,
     #[doc = "text/vnd.motorola.reflex"]
-    #[serde(rename = "text/vnd.motorola.reflex")]
+    #[serde(alias = "text/vnd.motorola.reflex")]
     VndMotorolaReflex,
     #[doc = "text/vnd.ms-mediapackage"]
-    #[serde(rename = "text/vnd.ms-mediapackage")]
+    #[serde(alias = "text/vnd.ms-mediapackage")]
     VndMsMediapackage,
     #[doc = "text/vnd.net2phone.commcenter.command"]
-    #[serde(rename = "text/vnd.net2phone.commcenter.command")]
+    #[serde(alias = "text/vnd.net2phone.commcenter.command")]
     VndNet2PhoneCommcenterCommand,
     #[doc = "text/vnd.radisys.msml-basic-layout"]
-    #[serde(rename = "text/vnd.radisys.msml-basic-layout")]
+    #[serde(alias = "text/vnd.radisys.msml-basic-layout")]
     VndRadisysMsmlBasicLayout,
     #[doc = "text/vnd.senx.warpscript"]
-    #[serde(rename = "text/vnd.senx.warpscript")]
+    #[serde(alias = "text/vnd.senx.warpscript")]
     VndSenxWarpscript,
     #[doc = "text/vnd.sun.j2me.app-descriptor"]
-    #[serde(rename = "text/vnd.sun.j2me.app-descriptor")]
+    #[serde(alias = "text/vnd.sun.j2me.app-descriptor")]
     VndSunJ2MeAppDescriptor,
     #[doc = "text/vnd.sosi"]
-    #[serde(rename = "text/vnd.sosi")]
+    #[serde(alias = "text/vnd.sosi")]
     VndSosi,
     #[doc = "text/vnd.trolltech.linguist"]
-    #[serde(rename = "text/vnd.trolltech.linguist")]
+    #[serde(alias = "text/vnd.trolltech.linguist")]
     VndTrolltechLinguist,
     #[doc = "text/vnd.wap.si"]
-    #[serde(rename = "text/vnd.wap.si")]
+    #[serde(alias = "text/vnd.wap.si")]
     VndWapSi,
     #[doc = "text/vnd.wap.sl"]
-    #[serde(rename = "text/vnd.wap.sl")]
+    #[serde(alias = "text/vnd.wap.sl")]
     VndWapSl,
     #[doc = "text/vnd.wap.wml"]
-    #[serde(rename = "text/vnd.wap.wml")]
+    #[serde(alias = "text/vnd.wap.wml")]
     VndWapWml,
     #[doc = "text/vnd.wap.wmlscript"]
-    #[serde(rename = "text/vnd.wap.wmlscript")]
+    #[serde(alias = "text/vnd.wap.wmlscript")]
     VndWapWmlscript,
     #[doc = "text/vtt"]
-    #[serde(rename = "text/vtt")]
+    #[serde(alias = "text/vtt")]
     Vtt,
+    #[doc = "text/wgsl"]
+    #[serde(alias = "text/wgsl")]
+    Wgsl,
     #[doc = "text/xml"]
-    #[serde(rename = "text/xml")]
+    #[serde(alias = "text/xml")]
     Xml,
     #[doc = "text/xml-external-parsed-entity"]
-    #[serde(rename = "text/xml-external-parsed-entity")]
+    #[serde(alias = "text/xml-external-parsed-entity")]
     XmlExternalParsedEntity,
 }
 impl ::std::fmt::Display for Text {
@@ -358,6 +361,7 @@ impl ::std::fmt::Display for Text {
             Text::VndWapWml => write!(f, "text/vnd.wap.wml")?,
             Text::VndWapWmlscript => write!(f, "text/vnd.wap.wmlscript")?,
             Text::Vtt => write!(f, "text/vtt")?,
+            Text::Wgsl => write!(f, "text/wgsl")?,
             Text::Xml => write!(f, "text/xml")?,
             Text::XmlExternalParsedEntity => write!(f, "text/xml-external-parsed-entity")?,
         }
@@ -452,6 +456,7 @@ impl ::std::str::FromStr for Text {
             "text/vnd.wap.wml" => Ok(Text::VndWapWml),
             "text/vnd.wap.wmlscript" => Ok(Text::VndWapWmlscript),
             "text/vtt" => Ok(Text::Vtt),
+            "text/wgsl" => Ok(Text::Wgsl),
             "text/xml" => Ok(Text::Xml),
             "text/xml-external-parsed-entity" => Ok(Text::XmlExternalParsedEntity),
             _ => Err(()),

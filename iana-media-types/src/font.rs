@@ -11,22 +11,22 @@
 )]
 pub enum Font {
     #[doc = "font/collection"]
-    #[serde(rename = "font/collection")]
+    #[serde(alias = "font/collection")]
     Collection,
     #[doc = "font/otf"]
-    #[serde(rename = "font/otf")]
+    #[serde(alias = "font/otf")]
     Otf,
     #[doc = "font/sfnt"]
-    #[serde(rename = "font/sfnt")]
+    #[serde(alias = "font/sfnt")]
     Sfnt,
     #[doc = "font/ttf"]
-    #[serde(rename = "font/ttf")]
+    #[serde(alias = "font/ttf")]
     Ttf,
     #[doc = "font/woff"]
-    #[serde(rename = "font/woff")]
+    #[serde(alias = "font/woff")]
     Woff,
     #[doc = "font/woff2"]
-    #[serde(rename = "font/woff2")]
+    #[serde(alias = "font/woff2")]
     Woff2,
 }
 impl ::std::fmt::Display for Font {
