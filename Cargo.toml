@@ -1,5 +1,16 @@
 [workspace]
+resolver = "2"
 members = [
   "iana-media-types",
   "iana-media-types-codegen",
 ]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/termoshtt/iana-media-types"
+readme = "README.md"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
