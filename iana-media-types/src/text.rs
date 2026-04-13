@@ -85,6 +85,9 @@ pub enum Text {
     #[doc = "text/n3"]
     #[serde(rename = "text/n3")]
     N3,
+    #[doc = "text/org"]
+    #[serde(rename = "text/org")]
+    Org,
     #[doc = "text/parameters"]
     #[serde(rename = "text/parameters")]
     Parameters,
@@ -256,6 +259,12 @@ pub enum Text {
     #[doc = "text/vnd.sosi"]
     #[serde(rename = "text/vnd.sosi")]
     VndSosi,
+    #[doc = "text/vnd.tps"]
+    #[serde(rename = "text/vnd.tps")]
+    VndTps,
+    #[doc = "text/vnd.typst"]
+    #[serde(rename = "text/vnd.typst")]
+    VndTypst,
     #[doc = "text/vnd.trolltech.linguist"]
     #[serde(rename = "text/vnd.trolltech.linguist")]
     VndTrolltechLinguist,
@@ -318,6 +327,7 @@ impl ::std::fmt::Display for Text {
             Text::Markdown => write!(f, "text/markdown")?,
             Text::Mizar => write!(f, "text/mizar")?,
             Text::N3 => write!(f, "text/n3")?,
+            Text::Org => write!(f, "text/org")?,
             Text::Parameters => write!(f, "text/parameters")?,
             Text::Parityfec => write!(f, "text/parityfec")?,
             Text::Plain => write!(f, "text/plain")?,
@@ -377,6 +387,8 @@ impl ::std::fmt::Display for Text {
             Text::VndSenxWarpscript => write!(f, "text/vnd.senx.warpscript")?,
             Text::VndSunJ2MeAppDescriptor => write!(f, "text/vnd.sun.j2me.app-descriptor")?,
             Text::VndSosi => write!(f, "text/vnd.sosi")?,
+            Text::VndTps => write!(f, "text/vnd.tps")?,
+            Text::VndTypst => write!(f, "text/vnd.typst")?,
             Text::VndTrolltechLinguist => write!(f, "text/vnd.trolltech.linguist")?,
             Text::VndVcf => write!(f, "text/vnd.vcf")?,
             Text::VndWapSi => write!(f, "text/vnd.wap.si")?,
@@ -421,6 +433,7 @@ impl ::std::str::FromStr for Text {
             "text/markdown" => Ok(Text::Markdown),
             "text/mizar" => Ok(Text::Mizar),
             "text/n3" => Ok(Text::N3),
+            "text/org" => Ok(Text::Org),
             "text/parameters" => Ok(Text::Parameters),
             "text/parityfec" => Ok(Text::Parityfec),
             "text/plain" => Ok(Text::Plain),
@@ -478,6 +491,8 @@ impl ::std::str::FromStr for Text {
             "text/vnd.senx.warpscript" => Ok(Text::VndSenxWarpscript),
             "text/vnd.sun.j2me.app-descriptor" => Ok(Text::VndSunJ2MeAppDescriptor),
             "text/vnd.sosi" => Ok(Text::VndSosi),
+            "text/vnd.tps" => Ok(Text::VndTps),
+            "text/vnd.typst" => Ok(Text::VndTypst),
             "text/vnd.trolltech.linguist" => Ok(Text::VndTrolltechLinguist),
             "text/vnd.vcf" => Ok(Text::VndVcf),
             "text/vnd.wap.si" => Ok(Text::VndWapSi),

@@ -325,6 +325,9 @@ pub enum Audio {
     #[doc = "audio/sofa"]
     #[serde(rename = "audio/sofa")]
     Sofa,
+    #[doc = "audio/soundfont"]
+    #[serde(rename = "audio/soundfont")]
+    Soundfont,
     #[doc = "audio/sp-midi"]
     #[serde(rename = "audio/sp-midi")]
     SpMidi,
@@ -376,6 +379,9 @@ pub enum Audio {
     #[doc = "audio/vnd.audiokoz"]
     #[serde(rename = "audio/vnd.audiokoz")]
     VndAudiokoz,
+    #[doc = "audio/vnd.blockfact.facta"]
+    #[serde(rename = "audio/vnd.blockfact.facta")]
+    VndBlockfactFacta,
     #[doc = "audio/vnd.CELP"]
     #[serde(rename = "audio/vnd.CELP")]
     VndCELP,
@@ -599,6 +605,7 @@ impl ::std::fmt::Display for Audio {
             Audio::Smv0 => write!(f, "audio/SMV0")?,
             Audio::SmvQcp => write!(f, "audio/SMV-QCP")?,
             Audio::Sofa => write!(f, "audio/sofa")?,
+            Audio::Soundfont => write!(f, "audio/soundfont")?,
             Audio::SpMidi => write!(f, "audio/sp-midi")?,
             Audio::Speex => write!(f, "audio/speex")?,
             Audio::T140C => write!(f, "audio/t140c")?,
@@ -616,6 +623,7 @@ impl ::std::fmt::Display for Audio {
             Audio::Vnd3GppIufp => write!(f, "audio/vnd.3gpp.iufp")?,
             Audio::Vnd4SB => write!(f, "audio/vnd.4SB")?,
             Audio::VndAudiokoz => write!(f, "audio/vnd.audiokoz")?,
+            Audio::VndBlockfactFacta => write!(f, "audio/vnd.blockfact.facta")?,
             Audio::VndCELP => write!(f, "audio/vnd.CELP")?,
             Audio::VndCiscoNse => write!(f, "audio/vnd.cisco.nse")?,
             Audio::VndCmlesRadioEvents => write!(f, "audio/vnd.cmles.radio-events")?,
@@ -767,6 +775,7 @@ impl ::std::str::FromStr for Audio {
             "audio/SMV0" => Ok(Audio::Smv0),
             "audio/SMV-QCP" => Ok(Audio::SmvQcp),
             "audio/sofa" => Ok(Audio::Sofa),
+            "audio/soundfont" => Ok(Audio::Soundfont),
             "audio/sp-midi" => Ok(Audio::SpMidi),
             "audio/speex" => Ok(Audio::Speex),
             "audio/t140c" => Ok(Audio::T140C),
@@ -784,6 +793,7 @@ impl ::std::str::FromStr for Audio {
             "audio/vnd.3gpp.iufp" => Ok(Audio::Vnd3GppIufp),
             "audio/vnd.4SB" => Ok(Audio::Vnd4SB),
             "audio/vnd.audiokoz" => Ok(Audio::VndAudiokoz),
+            "audio/vnd.blockfact.facta" => Ok(Audio::VndBlockfactFacta),
             "audio/vnd.CELP" => Ok(Audio::VndCELP),
             "audio/vnd.cisco.nse" => Ok(Audio::VndCiscoNse),
             "audio/vnd.cmles.radio-events" => Ok(Audio::VndCmlesRadioEvents),

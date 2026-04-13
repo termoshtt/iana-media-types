@@ -52,6 +52,12 @@ pub enum Message {
     #[doc = "message/mls"]
     #[serde(rename = "message/mls")]
     Mls,
+    #[doc = "message/ohttp-chunked-req"]
+    #[serde(rename = "message/ohttp-chunked-req")]
+    OhttpChunkedReq,
+    #[doc = "message/ohttp-chunked-res"]
+    #[serde(rename = "message/ohttp-chunked-res")]
+    OhttpChunkedRes,
     #[doc = "message/ohttp-req"]
     #[serde(rename = "message/ohttp-req")]
     OhttpReq,
@@ -96,6 +102,8 @@ impl ::std::fmt::Display for Message {
             Message::Http => write!(f, "message/http")?,
             Message::ImdnXml => write!(f, "message/imdn+xml")?,
             Message::Mls => write!(f, "message/mls")?,
+            Message::OhttpChunkedReq => write!(f, "message/ohttp-chunked-req")?,
+            Message::OhttpChunkedRes => write!(f, "message/ohttp-chunked-res")?,
             Message::OhttpReq => write!(f, "message/ohttp-req")?,
             Message::OhttpRes => write!(f, "message/ohttp-res")?,
             Message::Partial => write!(f, "message/partial")?,
@@ -126,6 +134,8 @@ impl ::std::str::FromStr for Message {
             "message/http" => Ok(Message::Http),
             "message/imdn+xml" => Ok(Message::ImdnXml),
             "message/mls" => Ok(Message::Mls),
+            "message/ohttp-chunked-req" => Ok(Message::OhttpChunkedReq),
+            "message/ohttp-chunked-res" => Ok(Message::OhttpChunkedRes),
             "message/ohttp-req" => Ok(Message::OhttpReq),
             "message/ohttp-res" => Ok(Message::OhttpRes),
             "message/partial" => Ok(Message::Partial),

@@ -88,9 +88,15 @@ pub enum Video {
     #[doc = "video/jpeg2000"]
     #[serde(rename = "video/jpeg2000")]
     Jpeg2000,
+    #[doc = "video/jpeg2000-scl"]
+    #[serde(rename = "video/jpeg2000-scl")]
+    Jpeg2000Scl,
     #[doc = "video/jxsv"]
     #[serde(rename = "video/jxsv")]
     Jxsv,
+    #[doc = "video/lottie+json"]
+    #[serde(rename = "video/lottie+json")]
+    LottieJson,
     #[doc = "video/matroska"]
     #[serde(rename = "video/matroska")]
     Matroska,
@@ -172,6 +178,9 @@ pub enum Video {
     #[doc = "video/vc2"]
     #[serde(rename = "video/vc2")]
     Vc2,
+    #[doc = "video/vnd.blockfact.factv"]
+    #[serde(rename = "video/vnd.blockfact.factv")]
+    VndBlockfactFactv,
     #[doc = "video/vnd.CCTV"]
     #[serde(rename = "video/vnd.CCTV")]
     VndCCTV,
@@ -253,6 +262,9 @@ pub enum Video {
     #[doc = "video/vnd.objectvideo"]
     #[serde(rename = "video/vnd.objectvideo")]
     VndObjectvideo,
+    #[doc = "video/vnd.planar"]
+    #[serde(rename = "video/vnd.planar")]
+    VndPlanar,
     #[doc = "video/vnd.radgamettools.bink"]
     #[serde(rename = "video/vnd.radgamettools.bink")]
     VndRadgamettoolsBink,
@@ -316,7 +328,9 @@ impl ::std::fmt::Display for Video {
             Video::IsoSegment => write!(f, "video/iso.segment")?,
             Video::Jpeg => write!(f, "video/JPEG")?,
             Video::Jpeg2000 => write!(f, "video/jpeg2000")?,
+            Video::Jpeg2000Scl => write!(f, "video/jpeg2000-scl")?,
             Video::Jxsv => write!(f, "video/jxsv")?,
+            Video::LottieJson => write!(f, "video/lottie+json")?,
             Video::Matroska => write!(f, "video/matroska")?,
             Video::Matroska3D => write!(f, "video/matroska-3d")?,
             Video::Mj2 => write!(f, "video/mj2")?,
@@ -344,6 +358,7 @@ impl ::std::fmt::Display for Video {
             Video::Ulpfec => write!(f, "video/ulpfec")?,
             Video::Vc1 => write!(f, "video/vc1")?,
             Video::Vc2 => write!(f, "video/vc2")?,
+            Video::VndBlockfactFactv => write!(f, "video/vnd.blockfact.factv")?,
             Video::VndCCTV => write!(f, "video/vnd.CCTV")?,
             Video::VndDeceHd => write!(f, "video/vnd.dece.hd")?,
             Video::VndDeceMobile => write!(f, "video/vnd.dece.mobile")?,
@@ -381,6 +396,7 @@ impl ::std::fmt::Display for Video {
             Video::VndNokiaMp4Vr => write!(f, "video/vnd.nokia.mp4vr")?,
             Video::VndNokiaVideovoip => write!(f, "video/vnd.nokia.videovoip")?,
             Video::VndObjectvideo => write!(f, "video/vnd.objectvideo")?,
+            Video::VndPlanar => write!(f, "video/vnd.planar")?,
             Video::VndRadgamettoolsBink => write!(f, "video/vnd.radgamettools.bink")?,
             Video::VndRadgamettoolsSmacker => write!(f, "video/vnd.radgamettools.smacker")?,
             Video::VndSealedMpeg1 => write!(f, "video/vnd.sealed.mpeg1")?,
@@ -426,7 +442,9 @@ impl ::std::str::FromStr for Video {
             "video/iso.segment" => Ok(Video::IsoSegment),
             "video/JPEG" => Ok(Video::Jpeg),
             "video/jpeg2000" => Ok(Video::Jpeg2000),
+            "video/jpeg2000-scl" => Ok(Video::Jpeg2000Scl),
             "video/jxsv" => Ok(Video::Jxsv),
+            "video/lottie+json" => Ok(Video::LottieJson),
             "video/matroska" => Ok(Video::Matroska),
             "video/matroska-3d" => Ok(Video::Matroska3D),
             "video/mj2" => Ok(Video::Mj2),
@@ -454,6 +472,7 @@ impl ::std::str::FromStr for Video {
             "video/ulpfec" => Ok(Video::Ulpfec),
             "video/vc1" => Ok(Video::Vc1),
             "video/vc2" => Ok(Video::Vc2),
+            "video/vnd.blockfact.factv" => Ok(Video::VndBlockfactFactv),
             "video/vnd.CCTV" => Ok(Video::VndCCTV),
             "video/vnd.dece.hd" => Ok(Video::VndDeceHd),
             "video/vnd.dece.mobile" => Ok(Video::VndDeceMobile),
@@ -481,6 +500,7 @@ impl ::std::str::FromStr for Video {
             "video/vnd.nokia.mp4vr" => Ok(Video::VndNokiaMp4Vr),
             "video/vnd.nokia.videovoip" => Ok(Video::VndNokiaVideovoip),
             "video/vnd.objectvideo" => Ok(Video::VndObjectvideo),
+            "video/vnd.planar" => Ok(Video::VndPlanar),
             "video/vnd.radgamettools.bink" => Ok(Video::VndRadgamettoolsBink),
             "video/vnd.radgamettools.smacker" => Ok(Video::VndRadgamettoolsSmacker),
             "video/vnd.sealed.mpeg1" => Ok(Video::VndSealedMpeg1),
