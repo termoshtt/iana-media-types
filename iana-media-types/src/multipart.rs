@@ -10,12 +10,18 @@
     :: serde :: Deserialize,
 )]
 pub enum Multipart {
+    #[doc = "multipart/alternative"]
+    #[serde(rename = "multipart/alternative")]
+    Alternative,
     #[doc = "multipart/appledouble"]
     #[serde(rename = "multipart/appledouble")]
     Appledouble,
     #[doc = "multipart/byteranges"]
     #[serde(rename = "multipart/byteranges")]
     Byteranges,
+    #[doc = "multipart/digest"]
+    #[serde(rename = "multipart/digest")]
+    Digest,
     #[doc = "multipart/encrypted"]
     #[serde(rename = "multipart/encrypted")]
     Encrypted,
@@ -28,9 +34,15 @@ pub enum Multipart {
     #[doc = "multipart/header-set"]
     #[serde(rename = "multipart/header-set")]
     HeaderSet,
+    #[doc = "multipart/mixed"]
+    #[serde(rename = "multipart/mixed")]
+    Mixed,
     #[doc = "multipart/multilingual"]
     #[serde(rename = "multipart/multilingual")]
     Multilingual,
+    #[doc = "multipart/parallel"]
+    #[serde(rename = "multipart/parallel")]
+    Parallel,
     #[doc = "multipart/related"]
     #[serde(rename = "multipart/related")]
     Related,
@@ -53,13 +65,17 @@ pub enum Multipart {
 impl ::std::fmt::Display for Multipart {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         match self {
+            Multipart::Alternative => write!(f, "multipart/alternative")?,
             Multipart::Appledouble => write!(f, "multipart/appledouble")?,
             Multipart::Byteranges => write!(f, "multipart/byteranges")?,
+            Multipart::Digest => write!(f, "multipart/digest")?,
             Multipart::Encrypted => write!(f, "multipart/encrypted")?,
             Multipart::Example => write!(f, "multipart/example")?,
             Multipart::FormData => write!(f, "multipart/form-data")?,
             Multipart::HeaderSet => write!(f, "multipart/header-set")?,
+            Multipart::Mixed => write!(f, "multipart/mixed")?,
             Multipart::Multilingual => write!(f, "multipart/multilingual")?,
+            Multipart::Parallel => write!(f, "multipart/parallel")?,
             Multipart::Related => write!(f, "multipart/related")?,
             Multipart::Report => write!(f, "multipart/report")?,
             Multipart::Signed => write!(f, "multipart/signed")?,
@@ -74,13 +90,17 @@ impl ::std::str::FromStr for Multipart {
     type Err = ();
     fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
+            "multipart/alternative" => Ok(Multipart::Alternative),
             "multipart/appledouble" => Ok(Multipart::Appledouble),
             "multipart/byteranges" => Ok(Multipart::Byteranges),
+            "multipart/digest" => Ok(Multipart::Digest),
             "multipart/encrypted" => Ok(Multipart::Encrypted),
             "multipart/example" => Ok(Multipart::Example),
             "multipart/form-data" => Ok(Multipart::FormData),
             "multipart/header-set" => Ok(Multipart::HeaderSet),
+            "multipart/mixed" => Ok(Multipart::Mixed),
             "multipart/multilingual" => Ok(Multipart::Multilingual),
+            "multipart/parallel" => Ok(Multipart::Parallel),
             "multipart/related" => Ok(Multipart::Related),
             "multipart/report" => Ok(Multipart::Report),
             "multipart/signed" => Ok(Multipart::Signed),

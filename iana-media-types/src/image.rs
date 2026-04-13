@@ -13,6 +13,9 @@ pub enum Image {
     #[doc = "image/aces"]
     #[serde(rename = "image/aces")]
     Aces,
+    #[doc = "image/apng"]
+    #[serde(rename = "image/apng")]
+    Apng,
     #[doc = "image/avci"]
     #[serde(rename = "image/avci")]
     Avci,
@@ -46,6 +49,9 @@ pub enum Image {
     #[doc = "image/g3fax"]
     #[serde(rename = "image/g3fax")]
     G3Fax,
+    #[doc = "image/gif"]
+    #[serde(rename = "image/gif")]
+    Gif,
     #[doc = "image/heic"]
     #[serde(rename = "image/heic")]
     Heic,
@@ -61,15 +67,27 @@ pub enum Image {
     #[doc = "image/hej2k"]
     #[serde(rename = "image/hej2k")]
     Hej2K,
-    #[doc = "image/hsj2"]
-    #[serde(rename = "image/hsj2")]
-    Hsj2,
+    #[doc = "image/ief"]
+    #[serde(rename = "image/ief")]
+    Ief,
+    #[doc = "image/j2c"]
+    #[serde(rename = "image/j2c")]
+    J2C,
+    #[doc = "image/jaii"]
+    #[serde(rename = "image/jaii")]
+    Jaii,
+    #[doc = "image/jais"]
+    #[serde(rename = "image/jais")]
+    Jais,
     #[doc = "image/jls"]
     #[serde(rename = "image/jls")]
     Jls,
     #[doc = "image/jp2"]
     #[serde(rename = "image/jp2")]
     Jp2,
+    #[doc = "image/jpeg"]
+    #[serde(rename = "image/jpeg")]
+    Jpeg,
     #[doc = "image/jph"]
     #[serde(rename = "image/jph")]
     Jph,
@@ -82,6 +100,9 @@ pub enum Image {
     #[doc = "image/jpx"]
     #[serde(rename = "image/jpx")]
     Jpx,
+    #[doc = "image/jxl"]
+    #[serde(rename = "image/jxl")]
+    Jxl,
     #[doc = "image/jxr"]
     #[serde(rename = "image/jxr")]
     Jxr,
@@ -142,6 +163,12 @@ pub enum Image {
     #[doc = "image/vnd.airzip.accelerator.azv"]
     #[serde(rename = "image/vnd.airzip.accelerator.azv")]
     VndAirzipAcceleratorAzv,
+    #[doc = "image/vnd.blockfact.facti"]
+    #[serde(rename = "image/vnd.blockfact.facti")]
+    VndBlockfactFacti,
+    #[doc = "image/vnd.clip"]
+    #[serde(rename = "image/vnd.clip")]
+    VndClip,
     #[doc = "image/vnd.cns.inf2"]
     #[serde(rename = "image/vnd.cns.inf2")]
     VndCnsInf2,
@@ -226,6 +253,9 @@ pub enum Image {
     #[doc = "image/vnd.zbrush.pcx"]
     #[serde(rename = "image/vnd.zbrush.pcx")]
     VndZbrushPcx,
+    #[doc = "image/webp"]
+    #[serde(rename = "image/webp")]
+    Webp,
     #[doc = "image/wmf"]
     #[serde(rename = "image/wmf")]
     Wmf,
@@ -234,6 +264,7 @@ impl ::std::fmt::Display for Image {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         match self {
             Image::Aces => write!(f, "image/aces")?,
+            Image::Apng => write!(f, "image/apng")?,
             Image::Avci => write!(f, "image/avci")?,
             Image::Avcs => write!(f, "image/avcs")?,
             Image::Avif => write!(f, "image/avif")?,
@@ -245,18 +276,24 @@ impl ::std::fmt::Display for Image {
             Image::Example => write!(f, "image/example")?,
             Image::Fits => write!(f, "image/fits")?,
             Image::G3Fax => write!(f, "image/g3fax")?,
+            Image::Gif => write!(f, "image/gif")?,
             Image::Heic => write!(f, "image/heic")?,
             Image::HeicSequence => write!(f, "image/heic-sequence")?,
             Image::Heif => write!(f, "image/heif")?,
             Image::HeifSequence => write!(f, "image/heif-sequence")?,
             Image::Hej2K => write!(f, "image/hej2k")?,
-            Image::Hsj2 => write!(f, "image/hsj2")?,
+            Image::Ief => write!(f, "image/ief")?,
+            Image::J2C => write!(f, "image/j2c")?,
+            Image::Jaii => write!(f, "image/jaii")?,
+            Image::Jais => write!(f, "image/jais")?,
             Image::Jls => write!(f, "image/jls")?,
             Image::Jp2 => write!(f, "image/jp2")?,
+            Image::Jpeg => write!(f, "image/jpeg")?,
             Image::Jph => write!(f, "image/jph")?,
             Image::Jphc => write!(f, "image/jphc")?,
             Image::Jpm => write!(f, "image/jpm")?,
             Image::Jpx => write!(f, "image/jpx")?,
+            Image::Jxl => write!(f, "image/jxl")?,
             Image::Jxr => write!(f, "image/jxr")?,
             Image::JxrA => write!(f, "image/jxrA")?,
             Image::JxrS => write!(f, "image/jxrS")?,
@@ -277,6 +314,8 @@ impl ::std::fmt::Display for Image {
             Image::TiffFx => write!(f, "image/tiff-fx")?,
             Image::VndAdobePhotoshop => write!(f, "image/vnd.adobe.photoshop")?,
             Image::VndAirzipAcceleratorAzv => write!(f, "image/vnd.airzip.accelerator.azv")?,
+            Image::VndBlockfactFacti => write!(f, "image/vnd.blockfact.facti")?,
+            Image::VndClip => write!(f, "image/vnd.clip")?,
             Image::VndCnsInf2 => write!(f, "image/vnd.cns.inf2")?,
             Image::VndDeceGraphic => write!(f, "image/vnd.dece.graphic")?,
             Image::VndDjvu => write!(f, "image/vnd.djvu")?,
@@ -305,6 +344,7 @@ impl ::std::fmt::Display for Image {
             Image::VndWapWbmp => write!(f, "image/vnd.wap.wbmp")?,
             Image::VndXiff => write!(f, "image/vnd.xiff")?,
             Image::VndZbrushPcx => write!(f, "image/vnd.zbrush.pcx")?,
+            Image::Webp => write!(f, "image/webp")?,
             Image::Wmf => write!(f, "image/wmf")?,
         }
         Ok(())
@@ -315,6 +355,7 @@ impl ::std::str::FromStr for Image {
     fn from_str(input: &str) -> ::std::result::Result<Self, Self::Err> {
         match input {
             "image/aces" => Ok(Image::Aces),
+            "image/apng" => Ok(Image::Apng),
             "image/avci" => Ok(Image::Avci),
             "image/avcs" => Ok(Image::Avcs),
             "image/avif" => Ok(Image::Avif),
@@ -326,18 +367,24 @@ impl ::std::str::FromStr for Image {
             "image/example" => Ok(Image::Example),
             "image/fits" => Ok(Image::Fits),
             "image/g3fax" => Ok(Image::G3Fax),
+            "image/gif" => Ok(Image::Gif),
             "image/heic" => Ok(Image::Heic),
             "image/heic-sequence" => Ok(Image::HeicSequence),
             "image/heif" => Ok(Image::Heif),
             "image/heif-sequence" => Ok(Image::HeifSequence),
             "image/hej2k" => Ok(Image::Hej2K),
-            "image/hsj2" => Ok(Image::Hsj2),
+            "image/ief" => Ok(Image::Ief),
+            "image/j2c" => Ok(Image::J2C),
+            "image/jaii" => Ok(Image::Jaii),
+            "image/jais" => Ok(Image::Jais),
             "image/jls" => Ok(Image::Jls),
             "image/jp2" => Ok(Image::Jp2),
+            "image/jpeg" => Ok(Image::Jpeg),
             "image/jph" => Ok(Image::Jph),
             "image/jphc" => Ok(Image::Jphc),
             "image/jpm" => Ok(Image::Jpm),
             "image/jpx" => Ok(Image::Jpx),
+            "image/jxl" => Ok(Image::Jxl),
             "image/jxr" => Ok(Image::Jxr),
             "image/jxrA" => Ok(Image::JxrA),
             "image/jxrS" => Ok(Image::JxrS),
@@ -358,6 +405,8 @@ impl ::std::str::FromStr for Image {
             "image/tiff-fx" => Ok(Image::TiffFx),
             "image/vnd.adobe.photoshop" => Ok(Image::VndAdobePhotoshop),
             "image/vnd.airzip.accelerator.azv" => Ok(Image::VndAirzipAcceleratorAzv),
+            "image/vnd.blockfact.facti" => Ok(Image::VndBlockfactFacti),
+            "image/vnd.clip" => Ok(Image::VndClip),
             "image/vnd.cns.inf2" => Ok(Image::VndCnsInf2),
             "image/vnd.dece.graphic" => Ok(Image::VndDeceGraphic),
             "image/vnd.djvu" => Ok(Image::VndDjvu),
@@ -386,6 +435,7 @@ impl ::std::str::FromStr for Image {
             "image/vnd.wap.wbmp" => Ok(Image::VndWapWbmp),
             "image/vnd.xiff" => Ok(Image::VndXiff),
             "image/vnd.zbrush.pcx" => Ok(Image::VndZbrushPcx),
+            "image/webp" => Ok(Image::Webp),
             "image/wmf" => Ok(Image::Wmf),
             _ => Err(()),
         }

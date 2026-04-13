@@ -25,6 +25,9 @@ pub enum Message {
     #[doc = "message/example"]
     #[serde(rename = "message/example")]
     Example,
+    #[doc = "message/external-body"]
+    #[serde(rename = "message/external-body")]
+    ExternalBody,
     #[doc = "message/feedback-report"]
     #[serde(rename = "message/feedback-report")]
     FeedbackReport,
@@ -46,6 +49,27 @@ pub enum Message {
     #[doc = "message/imdn+xml"]
     #[serde(rename = "message/imdn+xml")]
     ImdnXml,
+    #[doc = "message/mls"]
+    #[serde(rename = "message/mls")]
+    Mls,
+    #[doc = "message/ohttp-chunked-req"]
+    #[serde(rename = "message/ohttp-chunked-req")]
+    OhttpChunkedReq,
+    #[doc = "message/ohttp-chunked-res"]
+    #[serde(rename = "message/ohttp-chunked-res")]
+    OhttpChunkedRes,
+    #[doc = "message/ohttp-req"]
+    #[serde(rename = "message/ohttp-req")]
+    OhttpReq,
+    #[doc = "message/ohttp-res"]
+    #[serde(rename = "message/ohttp-res")]
+    OhttpRes,
+    #[doc = "message/partial"]
+    #[serde(rename = "message/partial")]
+    Partial,
+    #[doc = "message/rfc822"]
+    #[serde(rename = "message/rfc822")]
+    Rfc822,
     #[doc = "message/sip"]
     #[serde(rename = "message/sip")]
     Sip,
@@ -67,6 +91,7 @@ impl ::std::fmt::Display for Message {
             Message::DeliveryStatus => write!(f, "message/delivery-status")?,
             Message::DispositionNotification => write!(f, "message/disposition-notification")?,
             Message::Example => write!(f, "message/example")?,
+            Message::ExternalBody => write!(f, "message/external-body")?,
             Message::FeedbackReport => write!(f, "message/feedback-report")?,
             Message::Global => write!(f, "message/global")?,
             Message::GlobalDeliveryStatus => write!(f, "message/global-delivery-status")?,
@@ -76,6 +101,13 @@ impl ::std::fmt::Display for Message {
             Message::GlobalHeaders => write!(f, "message/global-headers")?,
             Message::Http => write!(f, "message/http")?,
             Message::ImdnXml => write!(f, "message/imdn+xml")?,
+            Message::Mls => write!(f, "message/mls")?,
+            Message::OhttpChunkedReq => write!(f, "message/ohttp-chunked-req")?,
+            Message::OhttpChunkedRes => write!(f, "message/ohttp-chunked-res")?,
+            Message::OhttpReq => write!(f, "message/ohttp-req")?,
+            Message::OhttpRes => write!(f, "message/ohttp-res")?,
+            Message::Partial => write!(f, "message/partial")?,
+            Message::Rfc822 => write!(f, "message/rfc822")?,
             Message::Sip => write!(f, "message/sip")?,
             Message::Sipfrag => write!(f, "message/sipfrag")?,
             Message::TrackingStatus => write!(f, "message/tracking-status")?,
@@ -93,6 +125,7 @@ impl ::std::str::FromStr for Message {
             "message/delivery-status" => Ok(Message::DeliveryStatus),
             "message/disposition-notification" => Ok(Message::DispositionNotification),
             "message/example" => Ok(Message::Example),
+            "message/external-body" => Ok(Message::ExternalBody),
             "message/feedback-report" => Ok(Message::FeedbackReport),
             "message/global" => Ok(Message::Global),
             "message/global-delivery-status" => Ok(Message::GlobalDeliveryStatus),
@@ -100,6 +133,13 @@ impl ::std::str::FromStr for Message {
             "message/global-headers" => Ok(Message::GlobalHeaders),
             "message/http" => Ok(Message::Http),
             "message/imdn+xml" => Ok(Message::ImdnXml),
+            "message/mls" => Ok(Message::Mls),
+            "message/ohttp-chunked-req" => Ok(Message::OhttpChunkedReq),
+            "message/ohttp-chunked-res" => Ok(Message::OhttpChunkedRes),
+            "message/ohttp-req" => Ok(Message::OhttpReq),
+            "message/ohttp-res" => Ok(Message::OhttpRes),
+            "message/partial" => Ok(Message::Partial),
+            "message/rfc822" => Ok(Message::Rfc822),
             "message/sip" => Ok(Message::Sip),
             "message/sipfrag" => Ok(Message::Sipfrag),
             "message/tracking-status" => Ok(Message::TrackingStatus),

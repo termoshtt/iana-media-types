@@ -43,6 +43,9 @@ pub enum Text {
     #[doc = "text/encaprtp"]
     #[serde(rename = "text/encaprtp")]
     Encaprtp,
+    #[doc = "text/enriched"]
+    #[serde(rename = "text/enriched")]
+    Enriched,
     #[doc = "text/example"]
     #[serde(rename = "text/example")]
     Example,
@@ -82,12 +85,18 @@ pub enum Text {
     #[doc = "text/n3"]
     #[serde(rename = "text/n3")]
     N3,
+    #[doc = "text/org"]
+    #[serde(rename = "text/org")]
+    Org,
     #[doc = "text/parameters"]
     #[serde(rename = "text/parameters")]
     Parameters,
     #[doc = "text/parityfec"]
     #[serde(rename = "text/parityfec")]
     Parityfec,
+    #[doc = "text/plain"]
+    #[serde(rename = "text/plain")]
+    Plain,
     #[doc = "text/provenance-notation"]
     #[serde(rename = "text/provenance-notation")]
     ProvenanceNotation,
@@ -100,6 +109,9 @@ pub enum Text {
     #[doc = "text/prs.prop.logic"]
     #[serde(rename = "text/prs.prop.logic")]
     PrsPropLogic,
+    #[doc = "text/prs.texi"]
+    #[serde(rename = "text/prs.texi")]
+    PrsTexi,
     #[doc = "text/raptorfec"]
     #[serde(rename = "text/raptorfec")]
     Raptorfec,
@@ -109,6 +121,9 @@ pub enum Text {
     #[doc = "text/rfc822-headers"]
     #[serde(rename = "text/rfc822-headers")]
     Rfc822Headers,
+    #[doc = "text/richtext"]
+    #[serde(rename = "text/richtext")]
+    Richtext,
     #[doc = "text/rtf"]
     #[serde(rename = "text/rtf")]
     Rtf,
@@ -244,9 +259,18 @@ pub enum Text {
     #[doc = "text/vnd.sosi"]
     #[serde(rename = "text/vnd.sosi")]
     VndSosi,
+    #[doc = "text/vnd.tps"]
+    #[serde(rename = "text/vnd.tps")]
+    VndTps,
+    #[doc = "text/vnd.typst"]
+    #[serde(rename = "text/vnd.typst")]
+    VndTypst,
     #[doc = "text/vnd.trolltech.linguist"]
     #[serde(rename = "text/vnd.trolltech.linguist")]
     VndTrolltechLinguist,
+    #[doc = "text/vnd.vcf"]
+    #[serde(rename = "text/vnd.vcf")]
+    VndVcf,
     #[doc = "text/vnd.wap.si"]
     #[serde(rename = "text/vnd.wap.si")]
     VndWapSi,
@@ -259,9 +283,15 @@ pub enum Text {
     #[doc = "text/vnd.wap.wmlscript"]
     #[serde(rename = "text/vnd.wap.wmlscript")]
     VndWapWmlscript,
+    #[doc = "text/vnd.zoo.kcl"]
+    #[serde(rename = "text/vnd.zoo.kcl")]
+    VndZooKcl,
     #[doc = "text/vtt"]
     #[serde(rename = "text/vtt")]
     Vtt,
+    #[doc = "text/wgsl"]
+    #[serde(rename = "text/wgsl")]
+    Wgsl,
     #[doc = "text/xml"]
     #[serde(rename = "text/xml")]
     Xml,
@@ -283,6 +313,7 @@ impl ::std::fmt::Display for Text {
             Text::CsvSchema => write!(f, "text/csv-schema")?,
             Text::Dns => write!(f, "text/dns")?,
             Text::Encaprtp => write!(f, "text/encaprtp")?,
+            Text::Enriched => write!(f, "text/enriched")?,
             Text::Example => write!(f, "text/example")?,
             Text::Fhirpath => write!(f, "text/fhirpath")?,
             Text::Flexfec => write!(f, "text/flexfec")?,
@@ -296,15 +327,19 @@ impl ::std::fmt::Display for Text {
             Text::Markdown => write!(f, "text/markdown")?,
             Text::Mizar => write!(f, "text/mizar")?,
             Text::N3 => write!(f, "text/n3")?,
+            Text::Org => write!(f, "text/org")?,
             Text::Parameters => write!(f, "text/parameters")?,
             Text::Parityfec => write!(f, "text/parityfec")?,
+            Text::Plain => write!(f, "text/plain")?,
             Text::ProvenanceNotation => write!(f, "text/provenance-notation")?,
             Text::PrsFallensteinRst => write!(f, "text/prs.fallenstein.rst")?,
             Text::PrsLinesTag => write!(f, "text/prs.lines.tag")?,
             Text::PrsPropLogic => write!(f, "text/prs.prop.logic")?,
+            Text::PrsTexi => write!(f, "text/prs.texi")?,
             Text::Raptorfec => write!(f, "text/raptorfec")?,
             Text::Red => write!(f, "text/RED")?,
             Text::Rfc822Headers => write!(f, "text/rfc822-headers")?,
+            Text::Richtext => write!(f, "text/richtext")?,
             Text::Rtf => write!(f, "text/rtf")?,
             Text::RtpEncAescm128 => write!(f, "text/rtp-enc-aescm128")?,
             Text::Rtploopback => write!(f, "text/rtploopback")?,
@@ -352,12 +387,17 @@ impl ::std::fmt::Display for Text {
             Text::VndSenxWarpscript => write!(f, "text/vnd.senx.warpscript")?,
             Text::VndSunJ2MeAppDescriptor => write!(f, "text/vnd.sun.j2me.app-descriptor")?,
             Text::VndSosi => write!(f, "text/vnd.sosi")?,
+            Text::VndTps => write!(f, "text/vnd.tps")?,
+            Text::VndTypst => write!(f, "text/vnd.typst")?,
             Text::VndTrolltechLinguist => write!(f, "text/vnd.trolltech.linguist")?,
+            Text::VndVcf => write!(f, "text/vnd.vcf")?,
             Text::VndWapSi => write!(f, "text/vnd.wap.si")?,
             Text::VndWapSl => write!(f, "text/vnd.wap.sl")?,
             Text::VndWapWml => write!(f, "text/vnd.wap.wml")?,
             Text::VndWapWmlscript => write!(f, "text/vnd.wap.wmlscript")?,
+            Text::VndZooKcl => write!(f, "text/vnd.zoo.kcl")?,
             Text::Vtt => write!(f, "text/vtt")?,
+            Text::Wgsl => write!(f, "text/wgsl")?,
             Text::Xml => write!(f, "text/xml")?,
             Text::XmlExternalParsedEntity => write!(f, "text/xml-external-parsed-entity")?,
         }
@@ -379,6 +419,7 @@ impl ::std::str::FromStr for Text {
             "text/csv-schema" => Ok(Text::CsvSchema),
             "text/dns" => Ok(Text::Dns),
             "text/encaprtp" => Ok(Text::Encaprtp),
+            "text/enriched" => Ok(Text::Enriched),
             "text/example" => Ok(Text::Example),
             "text/fhirpath" => Ok(Text::Fhirpath),
             "text/flexfec" => Ok(Text::Flexfec),
@@ -392,15 +433,19 @@ impl ::std::str::FromStr for Text {
             "text/markdown" => Ok(Text::Markdown),
             "text/mizar" => Ok(Text::Mizar),
             "text/n3" => Ok(Text::N3),
+            "text/org" => Ok(Text::Org),
             "text/parameters" => Ok(Text::Parameters),
             "text/parityfec" => Ok(Text::Parityfec),
+            "text/plain" => Ok(Text::Plain),
             "text/provenance-notation" => Ok(Text::ProvenanceNotation),
             "text/prs.fallenstein.rst" => Ok(Text::PrsFallensteinRst),
             "text/prs.lines.tag" => Ok(Text::PrsLinesTag),
             "text/prs.prop.logic" => Ok(Text::PrsPropLogic),
+            "text/prs.texi" => Ok(Text::PrsTexi),
             "text/raptorfec" => Ok(Text::Raptorfec),
             "text/RED" => Ok(Text::Red),
             "text/rfc822-headers" => Ok(Text::Rfc822Headers),
+            "text/richtext" => Ok(Text::Richtext),
             "text/rtf" => Ok(Text::Rtf),
             "text/rtp-enc-aescm128" => Ok(Text::RtpEncAescm128),
             "text/rtploopback" => Ok(Text::Rtploopback),
@@ -446,12 +491,17 @@ impl ::std::str::FromStr for Text {
             "text/vnd.senx.warpscript" => Ok(Text::VndSenxWarpscript),
             "text/vnd.sun.j2me.app-descriptor" => Ok(Text::VndSunJ2MeAppDescriptor),
             "text/vnd.sosi" => Ok(Text::VndSosi),
+            "text/vnd.tps" => Ok(Text::VndTps),
+            "text/vnd.typst" => Ok(Text::VndTypst),
             "text/vnd.trolltech.linguist" => Ok(Text::VndTrolltechLinguist),
+            "text/vnd.vcf" => Ok(Text::VndVcf),
             "text/vnd.wap.si" => Ok(Text::VndWapSi),
             "text/vnd.wap.sl" => Ok(Text::VndWapSl),
             "text/vnd.wap.wml" => Ok(Text::VndWapWml),
             "text/vnd.wap.wmlscript" => Ok(Text::VndWapWmlscript),
+            "text/vnd.zoo.kcl" => Ok(Text::VndZooKcl),
             "text/vtt" => Ok(Text::Vtt),
+            "text/wgsl" => Ok(Text::Wgsl),
             "text/xml" => Ok(Text::Xml),
             "text/xml-external-parsed-entity" => Ok(Text::XmlExternalParsedEntity),
             _ => Err(()),

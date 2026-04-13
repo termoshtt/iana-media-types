@@ -25,9 +25,15 @@ pub enum Model {
     #[doc = "model/gltf+json"]
     #[serde(rename = "model/gltf+json")]
     GltfJson,
+    #[doc = "model/JT"]
+    #[serde(rename = "model/JT")]
+    Jt,
     #[doc = "model/iges"]
     #[serde(rename = "model/iges")]
     Iges,
+    #[doc = "model/mesh"]
+    #[serde(rename = "model/mesh")]
+    Mesh,
     #[doc = "model/mtl"]
     #[serde(rename = "model/mtl")]
     Mtl,
@@ -55,6 +61,12 @@ pub enum Model {
     #[doc = "model/u3d"]
     #[serde(rename = "model/u3d")]
     U3D,
+    #[doc = "model/vnd.bary"]
+    #[serde(rename = "model/vnd.bary")]
+    VndBary,
+    #[doc = "model/vnd.cld"]
+    #[serde(rename = "model/vnd.cld")]
+    VndCld,
     #[doc = "model/vnd.collada+xml"]
     #[serde(rename = "model/vnd.collada+xml")]
     VndColladaXml,
@@ -109,6 +121,9 @@ pub enum Model {
     #[doc = "model/vnd.vtu"]
     #[serde(rename = "model/vnd.vtu")]
     VndVtu,
+    #[doc = "model/vrml"]
+    #[serde(rename = "model/vrml")]
+    Vrml,
     #[doc = "model/x3d-vrml"]
     #[serde(rename = "model/x3d-vrml")]
     X3DVrml,
@@ -127,7 +142,9 @@ impl ::std::fmt::Display for Model {
             Model::Example => write!(f, "model/example")?,
             Model::GltfBinary => write!(f, "model/gltf-binary")?,
             Model::GltfJson => write!(f, "model/gltf+json")?,
+            Model::Jt => write!(f, "model/JT")?,
             Model::Iges => write!(f, "model/iges")?,
+            Model::Mesh => write!(f, "model/mesh")?,
             Model::Mtl => write!(f, "model/mtl")?,
             Model::Obj => write!(f, "model/obj")?,
             Model::Prc => write!(f, "model/prc")?,
@@ -137,6 +154,8 @@ impl ::std::fmt::Display for Model {
             Model::StepXmlZip => write!(f, "model/step-xml+zip")?,
             Model::Stl => write!(f, "model/stl")?,
             Model::U3D => write!(f, "model/u3d")?,
+            Model::VndBary => write!(f, "model/vnd.bary")?,
+            Model::VndCld => write!(f, "model/vnd.cld")?,
             Model::VndColladaXml => write!(f, "model/vnd.collada+xml")?,
             Model::VndDwf => write!(f, "model/vnd.dwf")?,
             Model::VndFlatland3Dml => write!(f, "model/vnd.flatland.3dml")?,
@@ -157,6 +176,7 @@ impl ::std::fmt::Display for Model {
             Model::VndUsdzZip => write!(f, "model/vnd.usdz+zip")?,
             Model::VndValveSourceCompiledMap => write!(f, "model/vnd.valve.source.compiled-map")?,
             Model::VndVtu => write!(f, "model/vnd.vtu")?,
+            Model::Vrml => write!(f, "model/vrml")?,
             Model::X3DVrml => write!(f, "model/x3d-vrml")?,
             Model::X3DFastinfoset => write!(f, "model/x3d+fastinfoset")?,
             Model::X3DXml => write!(f, "model/x3d+xml")?,
@@ -173,7 +193,9 @@ impl ::std::str::FromStr for Model {
             "model/example" => Ok(Model::Example),
             "model/gltf-binary" => Ok(Model::GltfBinary),
             "model/gltf+json" => Ok(Model::GltfJson),
+            "model/JT" => Ok(Model::Jt),
             "model/iges" => Ok(Model::Iges),
+            "model/mesh" => Ok(Model::Mesh),
             "model/mtl" => Ok(Model::Mtl),
             "model/obj" => Ok(Model::Obj),
             "model/prc" => Ok(Model::Prc),
@@ -183,6 +205,8 @@ impl ::std::str::FromStr for Model {
             "model/step-xml+zip" => Ok(Model::StepXmlZip),
             "model/stl" => Ok(Model::Stl),
             "model/u3d" => Ok(Model::U3D),
+            "model/vnd.bary" => Ok(Model::VndBary),
+            "model/vnd.cld" => Ok(Model::VndCld),
             "model/vnd.collada+xml" => Ok(Model::VndColladaXml),
             "model/vnd.dwf" => Ok(Model::VndDwf),
             "model/vnd.flatland.3dml" => Ok(Model::VndFlatland3Dml),
@@ -201,6 +225,7 @@ impl ::std::str::FromStr for Model {
             "model/vnd.usdz+zip" => Ok(Model::VndUsdzZip),
             "model/vnd.valve.source.compiled-map" => Ok(Model::VndValveSourceCompiledMap),
             "model/vnd.vtu" => Ok(Model::VndVtu),
+            "model/vrml" => Ok(Model::Vrml),
             "model/x3d-vrml" => Ok(Model::X3DVrml),
             "model/x3d+fastinfoset" => Ok(Model::X3DFastinfoset),
             "model/x3d+xml" => Ok(Model::X3DXml),

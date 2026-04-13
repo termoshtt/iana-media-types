@@ -40,6 +40,9 @@ pub enum Video {
     #[doc = "video/encaprtp"]
     #[serde(rename = "video/encaprtp")]
     Encaprtp,
+    #[doc = "video/evc"]
+    #[serde(rename = "video/evc")]
+    Evc,
     #[doc = "video/example"]
     #[serde(rename = "video/example")]
     Example,
@@ -85,9 +88,21 @@ pub enum Video {
     #[doc = "video/jpeg2000"]
     #[serde(rename = "video/jpeg2000")]
     Jpeg2000,
+    #[doc = "video/jpeg2000-scl"]
+    #[serde(rename = "video/jpeg2000-scl")]
+    Jpeg2000Scl,
     #[doc = "video/jxsv"]
     #[serde(rename = "video/jxsv")]
     Jxsv,
+    #[doc = "video/lottie+json"]
+    #[serde(rename = "video/lottie+json")]
+    LottieJson,
+    #[doc = "video/matroska"]
+    #[serde(rename = "video/matroska")]
+    Matroska,
+    #[doc = "video/matroska-3d"]
+    #[serde(rename = "video/matroska-3d")]
+    Matroska3D,
     #[doc = "video/mj2"]
     #[serde(rename = "video/mj2")]
     Mj2,
@@ -109,6 +124,9 @@ pub enum Video {
     #[doc = "video/MPV"]
     #[serde(rename = "video/MPV")]
     Mpv,
+    #[doc = "video/mpeg"]
+    #[serde(rename = "video/mpeg")]
+    Mpeg,
     #[doc = "video/mpeg4-generic"]
     #[serde(rename = "video/mpeg4-generic")]
     Mpeg4Generic,
@@ -160,6 +178,9 @@ pub enum Video {
     #[doc = "video/vc2"]
     #[serde(rename = "video/vc2")]
     Vc2,
+    #[doc = "video/vnd.blockfact.factv"]
+    #[serde(rename = "video/vnd.blockfact.factv")]
+    VndBlockfactFactv,
     #[doc = "video/vnd.CCTV"]
     #[serde(rename = "video/vnd.CCTV")]
     VndCCTV,
@@ -241,6 +262,9 @@ pub enum Video {
     #[doc = "video/vnd.objectvideo"]
     #[serde(rename = "video/vnd.objectvideo")]
     VndObjectvideo,
+    #[doc = "video/vnd.planar"]
+    #[serde(rename = "video/vnd.planar")]
+    VndPlanar,
     #[doc = "video/vnd.radgamettools.bink"]
     #[serde(rename = "video/vnd.radgamettools.bink")]
     VndRadgamettoolsBink,
@@ -288,6 +312,7 @@ impl ::std::fmt::Display for Video {
             Video::CelB => write!(f, "video/CelB")?,
             Video::Dv => write!(f, "video/DV")?,
             Video::Encaprtp => write!(f, "video/encaprtp")?,
+            Video::Evc => write!(f, "video/evc")?,
             Video::Example => write!(f, "video/example")?,
             Video::Ffv1 => write!(f, "video/FFV1")?,
             Video::Flexfec => write!(f, "video/flexfec")?,
@@ -303,7 +328,11 @@ impl ::std::fmt::Display for Video {
             Video::IsoSegment => write!(f, "video/iso.segment")?,
             Video::Jpeg => write!(f, "video/JPEG")?,
             Video::Jpeg2000 => write!(f, "video/jpeg2000")?,
+            Video::Jpeg2000Scl => write!(f, "video/jpeg2000-scl")?,
             Video::Jxsv => write!(f, "video/jxsv")?,
+            Video::LottieJson => write!(f, "video/lottie+json")?,
+            Video::Matroska => write!(f, "video/matroska")?,
+            Video::Matroska3D => write!(f, "video/matroska-3d")?,
             Video::Mj2 => write!(f, "video/mj2")?,
             Video::Mp1S => write!(f, "video/MP1S")?,
             Video::Mp2P => write!(f, "video/MP2P")?,
@@ -311,6 +340,7 @@ impl ::std::fmt::Display for Video {
             Video::Mp4 => write!(f, "video/mp4")?,
             Video::Mp4VEs => write!(f, "video/MP4V-ES")?,
             Video::Mpv => write!(f, "video/MPV")?,
+            Video::Mpeg => write!(f, "video/mpeg")?,
             Video::Mpeg4Generic => write!(f, "video/mpeg4-generic")?,
             Video::Nv => write!(f, "video/nv")?,
             Video::Ogg => write!(f, "video/ogg")?,
@@ -328,6 +358,7 @@ impl ::std::fmt::Display for Video {
             Video::Ulpfec => write!(f, "video/ulpfec")?,
             Video::Vc1 => write!(f, "video/vc1")?,
             Video::Vc2 => write!(f, "video/vc2")?,
+            Video::VndBlockfactFactv => write!(f, "video/vnd.blockfact.factv")?,
             Video::VndCCTV => write!(f, "video/vnd.CCTV")?,
             Video::VndDeceHd => write!(f, "video/vnd.dece.hd")?,
             Video::VndDeceMobile => write!(f, "video/vnd.dece.mobile")?,
@@ -365,6 +396,7 @@ impl ::std::fmt::Display for Video {
             Video::VndNokiaMp4Vr => write!(f, "video/vnd.nokia.mp4vr")?,
             Video::VndNokiaVideovoip => write!(f, "video/vnd.nokia.videovoip")?,
             Video::VndObjectvideo => write!(f, "video/vnd.objectvideo")?,
+            Video::VndPlanar => write!(f, "video/vnd.planar")?,
             Video::VndRadgamettoolsBink => write!(f, "video/vnd.radgamettools.bink")?,
             Video::VndRadgamettoolsSmacker => write!(f, "video/vnd.radgamettools.smacker")?,
             Video::VndSealedMpeg1 => write!(f, "video/vnd.sealed.mpeg1")?,
@@ -394,6 +426,7 @@ impl ::std::str::FromStr for Video {
             "video/CelB" => Ok(Video::CelB),
             "video/DV" => Ok(Video::Dv),
             "video/encaprtp" => Ok(Video::Encaprtp),
+            "video/evc" => Ok(Video::Evc),
             "video/example" => Ok(Video::Example),
             "video/FFV1" => Ok(Video::Ffv1),
             "video/flexfec" => Ok(Video::Flexfec),
@@ -409,7 +442,11 @@ impl ::std::str::FromStr for Video {
             "video/iso.segment" => Ok(Video::IsoSegment),
             "video/JPEG" => Ok(Video::Jpeg),
             "video/jpeg2000" => Ok(Video::Jpeg2000),
+            "video/jpeg2000-scl" => Ok(Video::Jpeg2000Scl),
             "video/jxsv" => Ok(Video::Jxsv),
+            "video/lottie+json" => Ok(Video::LottieJson),
+            "video/matroska" => Ok(Video::Matroska),
+            "video/matroska-3d" => Ok(Video::Matroska3D),
             "video/mj2" => Ok(Video::Mj2),
             "video/MP1S" => Ok(Video::Mp1S),
             "video/MP2P" => Ok(Video::Mp2P),
@@ -417,6 +454,7 @@ impl ::std::str::FromStr for Video {
             "video/mp4" => Ok(Video::Mp4),
             "video/MP4V-ES" => Ok(Video::Mp4VEs),
             "video/MPV" => Ok(Video::Mpv),
+            "video/mpeg" => Ok(Video::Mpeg),
             "video/mpeg4-generic" => Ok(Video::Mpeg4Generic),
             "video/nv" => Ok(Video::Nv),
             "video/ogg" => Ok(Video::Ogg),
@@ -434,6 +472,7 @@ impl ::std::str::FromStr for Video {
             "video/ulpfec" => Ok(Video::Ulpfec),
             "video/vc1" => Ok(Video::Vc1),
             "video/vc2" => Ok(Video::Vc2),
+            "video/vnd.blockfact.factv" => Ok(Video::VndBlockfactFactv),
             "video/vnd.CCTV" => Ok(Video::VndCCTV),
             "video/vnd.dece.hd" => Ok(Video::VndDeceHd),
             "video/vnd.dece.mobile" => Ok(Video::VndDeceMobile),
@@ -461,6 +500,7 @@ impl ::std::str::FromStr for Video {
             "video/vnd.nokia.mp4vr" => Ok(Video::VndNokiaMp4Vr),
             "video/vnd.nokia.videovoip" => Ok(Video::VndNokiaVideovoip),
             "video/vnd.objectvideo" => Ok(Video::VndObjectvideo),
+            "video/vnd.planar" => Ok(Video::VndPlanar),
             "video/vnd.radgamettools.bink" => Ok(Video::VndRadgamettoolsBink),
             "video/vnd.radgamettools.smacker" => Ok(Video::VndRadgamettoolsSmacker),
             "video/vnd.sealed.mpeg1" => Ok(Video::VndSealedMpeg1),
